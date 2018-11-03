@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>OA的表单</title>
+    </head>
+    <body>
+    <br><br>
+        <table align="center" >
+            <tbody >
+                <tr class="firstRow">
+                    <td valign="center" colspan="12" align="middle">
+                        <p style="TEXT-ALIGN: center">
+                            <span style="FONT-SIZE: 30px">
+                                <strong>
+                                    <span style="FONT-FAMILY: 宋体">生产工时记录表</span>
+                                </strong>
+                            </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="titleRow">
+                    <td colspan="2">部门：</td>
+                    <td colspan="2" style="text-align: left">
+                        <input type="text" id="department" style="width: 320px; text-align: left">
+                    </td>
+                    <td colspan="8"></td>
+                </tr>
+                <tr class="titleRow">
+                    <td class="Blank"><button type="submit" onclick=test()>+</button></td>
+                    <td class="Order">订单号</td>
+                    <td class="Pinming">品名</td>
+                    <td class="Guige">规格</td>
+                    <td class="DingdanShuliang">预计产量</td>
+                    <td class="ShengchanShuliang">实际产量</td>
+                    <td class="ShangxianRiqi">要求上线日期</td>
+                    <td class="ShengchanRiqi">实际上线日期</td>
+                    <td class="Renshu">生产人数</td>
+                    <td class="RenjunGongshi">人均工时</td>
+                    <td class="ZongGongshi">总工时</td>
+                    <td class="TinggongGongshi">停工工时</td>
+                </tr >
+                <tr class="titleRow">
+                    <td class="Blank"><button type="submit" onchange="test()">-</button> </td>
+                    <td >
+                        <input class="Input Order" id="i2" type="text" onchange="Gongshi(this)">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input class="Input Renshu" id="i3">
+                    </td>
+                    <td >
+                        <input class="Input RenjunGongshi" id="i3">
+                    </td>
+                    <td >
+                        <label class="ZongGongshi"></label>
+                    </td>
+                    <td >
+                        <input class="Input TinggongGongshi" id="i3">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <style type="text/css">
+            table{
+                border-collapse: collapse;
+            }
+            td{
+                border-top: 1px solid #000000;
+                border-left: 1px solid #000000;
+                border-right: 1px solid #000000;
+                border-bottom: 1px solid #000000;
+                font-size: 13px;
+                text-align: center;
+            }
+            input{
+                background-color: #ffffff;
+                border-right: #ffffff 0 solid;
+                border-top: #ffffff 0 solid;
+                border-left: #ffffff 0 solid;
+                border-bottom: #656565 1px solid;
+                text-align: center;
+                height: 25px;
+                font-family: sans-serif;
+                font-size: 12px;
+            }
+            textarea{
+                border-right: #333333 0 solid;
+                border-top: #333333 0 solid;
+                border-left: #333333 0 solid;
+                border-bottom: #666666 1px solid;
+            }
+            .Order{
+                width: 150px;
+            }
+            .Pinming{
+                width: 250px;
+            }
+            .Guige{
+                width: 150px;
+            }
+            .DingdanShuliang{
+                width: 65px;
+            }
+            .ShengchanShuliang{
+                width: 65px;
+            }
+            .ShangxianRiqi{
+                width: 100px;
+            }
+            .ShengchanRiqi{
+                width: 100px;
+            }
+            .Renshu{
+                width: 65px;
+            }
+            .RenjunGongshi{
+                width: 65px;
+            }
+            .ZongGongshi{
+                width: 65px;
+            }
+            .TinggongGongshi{
+                width: 65px;
+            }
+            .titleRow{
+                height: 30px;
+            }
+            .Blank{
+                width: 30px;
+            }
+        </style>
+    </body>
+    <script type="text/javascript">
+        function Gongshi(element){
+            document.getElementById(element.id)
+            alert(element.id);
+        }
+        function dateFormat(element) {
+            var date = document.getElementById(element.id).value;
+            var len = date.length;
+            if (len == 4){
+                document.getElementById(element.id).innerHTML += "-";
+            }
+        }
+        function test(element) {
+            alert(element.id);
+        }
+    </script>
+</html>

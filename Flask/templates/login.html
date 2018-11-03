@@ -1,0 +1,17 @@
+{% extends 'home.html' %}
+{% block content %}
+    <div class="page-header">
+        <div class="container">
+            <h1>{{ title }}</h1>
+        </div>
+    </div>
+    <div class="container">
+        <form method="POST">
+            {{ form.username.label }}
+            {{ form.username() }}
+            {{ form.password.label }}
+            {{ form.password() }}
+            {{ form.submit() }}
+        </form>
+    </div>
+{% endblock %}
