@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f25bd68c-f558-47bf-aed1-65a0819c2235" name="Default" comment="" />
+    <list default="true" id="f25bd68c-f558-47bf-aed1-65a0819c2235" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/SelfModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/Module/SelfModule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/UserManage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/Module/UserManage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/WebHandeler/Route.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/WebHandeler/Route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AES.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPPZ.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIB/ModuleDictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/LIB/ModuleDictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SelfModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/SelfModule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
+    </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,18 +25,10 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/MASTER1$111.coverage" NAME="111 Coverage Results" MODIFIED="1539241593744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MASTER$file_open.coverage" NAME="file_open Coverage Results" MODIFIED="1529539804574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MASTER1$AES.coverage" NAME="AES Coverage Results" MODIFIED="1541124599775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MASTER$selftest.coverage" NAME="selftest Coverage Results" MODIFIED="1529554766824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MASTER$SocketSvr.coverage" NAME="SocketSvr Coverage Results" MODIFIED="1537717765895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MASTER$mdns_browser.coverage" NAME="mdns_browser Coverage Results" MODIFIED="1529558934877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MASTER$XMLtest.coverage" NAME="XMLtest Coverage Results" MODIFIED="1529994392091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MASTER$mdns_creator.coverage" NAME="mdns_creator Coverage Results" MODIFIED="1529626820575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MASTER$test.coverage" NAME="test Coverage Results" MODIFIED="1537973544595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MASTER$system_dectiver.coverage" NAME="system_dectiver Coverage Results" MODIFIED="1529552706178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MASTER$master.coverage" NAME="master Coverage Results" MODIFIED="1529631709044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MASTER$Web.coverage" NAME="Web Coverage Results" MODIFIED="1531201804755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Web" />
     <SUITE FILE_PATH="coverage/MASTER1$BOM.coverage" NAME="BOM Coverage Results" MODIFIED="1539244713958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MASTER1$CPPZ.coverage" NAME="CPPZ Coverage Results" MODIFIED="1540467122840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MASTER$QrCode.coverage" NAME="QrCode Coverage Results" MODIFIED="1537687217956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MASTER1$Main.coverage" NAME="Main Coverage Results" MODIFIED="1540131412574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MASTER$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1531116205364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -32,6 +37,16 @@
     <SUITE FILE_PATH="coverage/MASTER1$SQL.coverage" NAME="SQL Coverage Results" MODIFIED="1541062673530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MASTER$socketsvr.coverage" NAME="socketsvr Coverage Results" MODIFIED="1529806153193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MASTER$001.coverage" NAME="001 Coverage Results" MODIFIED="1529166735200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MASTER1$AES.coverage" NAME="AES Coverage Results" MODIFIED="1541399440954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MASTER$selftest.coverage" NAME="selftest Coverage Results" MODIFIED="1529554766824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MASTER$mdns_browser.coverage" NAME="mdns_browser Coverage Results" MODIFIED="1529558934877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MASTER$XMLtest.coverage" NAME="XMLtest Coverage Results" MODIFIED="1529994392091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MASTER$system_dectiver.coverage" NAME="system_dectiver Coverage Results" MODIFIED="1529552706178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MASTER1$BOMCOPTR.coverage" NAME="BOMCOPTR Coverage Results" MODIFIED="1541399197909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MASTER$master.coverage" NAME="master Coverage Results" MODIFIED="1529631709044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MASTER$Web.coverage" NAME="Web Coverage Results" MODIFIED="1531201804755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Web" />
+    <SUITE FILE_PATH="coverage/MASTER1$CPPZ.coverage" NAME="CPPZ Coverage Results" MODIFIED="1540467122840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MASTER1$TEST2.coverage" NAME="TEST2 Coverage Results" MODIFIED="1541397820167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MASTER$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1530864821814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -169,6 +184,35 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-224383574">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="398" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="398" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="5" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="MASTER" />
@@ -178,10 +222,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
-                <marker date="1540131757561" expanded="true" signature="343:1303" ph="..." />
+                <marker date="1541399436729" expanded="true" signature="0:2" ph="..." />
               </folding>
             </state>
           </provider>
@@ -190,8 +234,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1515">
-              <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
+            <state relative-caret-position="508">
+              <caret line="151" lean-forward="true" selection-start-line="70" selection-end-line="151" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
                 <marker date="1540133577370" expanded="true" signature="118:394" ph="..." />
@@ -204,15 +248,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CPPZ.py">
+        <entry file="file://$PROJECT_DIR$/BOM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="756">
+              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sqlfrm.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -224,23 +268,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AES.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BOM2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="345">
+              <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
               <folding>
                 <element signature="e#1#15#0" expanded="true" />
               </folding>
@@ -249,8 +281,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test2.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/BOMCOPTR.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-237">
+              <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#116#347#0" />
+                <element signature="e#120#391#0" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -268,10 +309,12 @@
       <find>25004970</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/aa615033-27ad-436c-a681-2ce1b2133734/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a0240b75-7faf-4be4-a70c-61cc757046f0/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bed8cf8a-068d-4deb-bde3-b2e2b3efc511/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/423b4687-6a73-4c2b-8ef6-bbc96caeea71/console.sql" />
@@ -303,25 +346,26 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9fe564e8-90e9-4898-a514-99239e694026/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9fe564e8-90e9-4898-a514-99239e694026/console_1.sql" />
         <option value="$PROJECT_DIR$/jsontest.py" />
-        <option value="$PROJECT_DIR$/LIB/ModuleDictionary.py" />
         <option value="$PROJECT_DIR$/flasktest.py" />
         <option value="$PROJECT_DIR$/Web/flasktest.py" />
         <option value="$PROJECT_DIR$/QrCode.py" />
-        <option value="$PROJECT_DIR$/SelfModule.py" />
         <option value="$PROJECT_DIR$/SocketSvr.py" />
         <option value="$PROJECT_DIR$/SocketHandler.py" />
         <option value="$PROJECT_DIR$/111.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1b016c6f-7c86-47ee-ae06-b99f2a7d8f4f/console.sql" />
-        <option value="$PROJECT_DIR$/test2.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9c9da72c-a29f-45a4-aa30-6c56ca21a8e0/console.sql" />
         <option value="$PROJECT_DIR$/BOM.py" />
         <option value="$PROJECT_DIR$/BOM2.py" />
         <option value="$PROJECT_DIR$/SelfModule2.py" />
-        <option value="$PROJECT_DIR$/Main.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/CPPZ.py" />
         <option value="$PROJECT_DIR$/sqlfrm.py" />
         <option value="$PROJECT_DIR$/AES.py" />
+        <option value="$PROJECT_DIR$/LIB/ModuleDictionary.py" />
+        <option value="$PROJECT_DIR$/SelfModule.py" />
+        <option value="$PROJECT_DIR$/test2.py" />
+        <option value="$PROJECT_DIR$/BOMCOPTR.py" />
+        <option value="$PROJECT_DIR$/Main.py" />
       </list>
     </option>
   </component>
@@ -331,10 +375,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="676" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="579" />
     <option name="y" value="23" />
-    <option name="width" value="1244" />
+    <option name="width" value="1341" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -356,7 +400,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -368,6 +414,11 @@
             <path>
               <item name="MASTER1" type="b2602c69:ProjectViewProjectNode" />
               <item name="MASTER1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MASTER1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MASTER1" type="462c0819:PsiDirectoryNode" />
+              <item name="LIB" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -427,28 +478,6 @@
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <method />
-    </configuration>
-    <configuration name="111" type="PythonConfigurationType" factoryName="Python">
-      <module name="MASTER" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.6" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/111.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="AES" type="PythonConfigurationType" factoryName="Python">
       <module name="MASTER" />
@@ -516,7 +545,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="CPPZ" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="BOMCOPTR" type="PythonConfigurationType" factoryName="Python">
       <module name="MASTER" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -529,7 +558,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CPPZ.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BOMCOPTR.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -582,6 +611,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="TEST2" type="PythonConfigurationType" factoryName="Python">
+      <module name="MASTER" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -614,13 +665,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.CPPZ" />
       <item itemvalue="Python.SQL" />
       <item itemvalue="Python.AES" />
+      <item itemvalue="Python.TEST2" />
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.BOM2" />
+      <item itemvalue="Python.BOMCOPTR" />
       <item itemvalue="Python.BOM" />
-      <item itemvalue="Python.111" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -646,15 +697,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="23" width="1244" height="1057" extended-state="0" />
+    <frame x="579" y="23" width="1341" height="1057" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3061564" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2925327" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32746115" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4936034" weight="0.31709844" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4936034" visible="true" weight="0.31709844" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -663,7 +714,7 @@
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32826087" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3284974" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Database Console" order="12" sideWeight="0.4936034" weight="0.30673575" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -695,20 +746,7 @@
       <path value="/usr/local/bin/git" />
     </ignored-roots>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>136</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test1.py" />
-    <entry file="file://$PROJECT_DIR$/LIB/test2.py" />
     <entry file="file://$PROJECT_DIR$/LIB/BOMCompare.py" />
     <entry file="file://C:/Program Files/Python36/Lib/encodings/__init__.py" />
     <entry file="file://$PROJECT_DIR$/XMLtest2.xml" />
@@ -768,13 +806,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Read_SQL.py" />
-    <entry file="file://$PROJECT_DIR$/LIB/ModuleDictionary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/000000" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1b016c6f-7c86-47ee-ae06-b99f2a7d8f4f/console.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -793,20 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1572">
-          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SelfModule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="881">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://9c9da72c-a29f-45a4-aa30-6c56ca21a8e0/schema/main/table/coptr" />
     <entry file="file://$PROJECT_DIR$/111.py" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f94dacaf-36c9-4adb-a744-2a79ee33f9d6/console.sql">
@@ -819,20 +836,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1199943127/pymssql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8957">
+          <caret line="755" column="15" selection-start-line="755" selection-start-column="8" selection-end-line="755" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LIB/ModuleDictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SelfModule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="275" column="11" selection-start-line="275" selection-start-column="11" selection-end-line="275" selection-end-column="11" />
+          <folding>
+            <element signature="e#43#122#0" />
+            <element signature="e#139#2867#0" />
+            <element signature="e#2884#2944#0" />
+            <element signature="e#2962#3022#0" />
+            <element signature="e#3040#5745#0" />
+            <element signature="e#5761#7829#0" />
+            <element signature="e#7847#8529#0" />
+            <element signature="e#8553#8557#0" />
+            <element signature="e#8576#8630#0" />
+            <element signature="e#8651#8655#0" />
+            <element signature="e#8676#8680#0" />
+            <element signature="e#8702#8706#0" />
+            <element signature="e#8728#8732#0" />
+            <element signature="e#8750#9807#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOM2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding>
+            <element signature="e#1#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BOMCOPTR.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-237">
+          <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#116#347#0" />
+            <element signature="e#120#391#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <marker date="1540131757561" expanded="true" signature="343:1303" ph="..." />
+            <marker date="1541399436729" expanded="true" signature="0:2" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1515">
-          <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
+        <state relative-caret-position="508">
+          <caret line="151" lean-forward="true" selection-start-line="70" selection-end-line="151" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
             <marker date="1540133577370" expanded="true" signature="118:394" ph="..." />
@@ -845,23 +931,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CPPZ.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BOM2.py">
+    <entry file="file://$PROJECT_DIR$/BOM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="756">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AES.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           <folding>
-            <element signature="e#1#15#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sqlfrm.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -869,16 +959,6 @@
           <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AES.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -12,8 +12,8 @@ def Route(app):
 	# 主页重指向
 	@app.route('/', methods=['GET', 'POST'])
 	def root():
-		# return redirect('/workhour')
-		return '<h1> Yes </h1>'
+		return redirect('/ip')
+		# return '<h1> Yes </h1>'
 
 	@app.route('/workhour')
 	def workhour():
@@ -21,4 +21,5 @@ def Route(app):
 
 	@app.route('/ip')
 	def conn_ip():
-		return '您的IP地址为：' + request.remote_addr
+		return ('<title>获取IP地址</title>' +
+		        '<h1>您的IP地址为：' + request.remote_addr + '</h1>')

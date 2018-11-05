@@ -6,7 +6,7 @@ class UserManege:
 	def __init__(self):
 		self.__mssql = MsSql()
 		self.__json = None
-		self.__back = {'Login_Status': str(None),
+		self.__back = {'Login_Status': 'N',
 		               'Login_Uid': None,
 		               'Login_Role': None,
 		               'Login_Dpt': None,
@@ -23,6 +23,7 @@ class UserManege:
 		self.__WG_Pwd = None
 		self.__WG_Type = None
 		self.__WG_Flag = None
+		self.__WG_ERP_Pwd = None
 
 		self.__ERP_Pwd = None
 		self.__ERP_Valid = None
@@ -46,22 +47,15 @@ class UserManege:
 		return self.__back
 
 	def __Login_Work(self):
-		self.__Get_WGInf()
-
 		self.__Get_ERPInf()
-
+		self.__Get_WGInf()
 		self.__Set_Inf()
 
 		if self.__Judge_ERPExist():
-			print(1)
 			if self.__ERP_Valid == 'Y':
-				print(2)
 				if self.__Judge_WGExist():
-					print(3)
 					if self.__WG_Flag == 'Y':
-						print(4)
 						if self.__Judge_WG_PwdSame():
-							print(5)
 							self.__Login_Status = 'Y'
 							self.__Set_UserInf()
 						else:
@@ -70,11 +64,11 @@ class UserManege:
 								self.__Set_UserInf()
 								self.__Update_WGInf()
 					else:
-						print(6)
 						self.__Login_Status = 'Y'
 						self.__Set_UserInf()
 						self.__Update_WGInf()
 				else:
+					self.__Login_Status = 'Y'
 					self.__Set_UserInf()
 					self.__Insert_WGInf()
 			else:
@@ -94,52 +88,70 @@ class UserManege:
 		self.__get_ERP = self.__mssql.Sqlwork(DataBase=self.__ERP_Conn, SqlStr=__sqlstr)
 
 	def __Judge_ERP_PwdSame(self):
-		if self.__ERP_Pwd == self.__WG_Pwd:
+		if self.__ERP_Pwd == self.__WG_ERP_Pwd:
 			return True
 		else:
 			return False
 
 	def __Judge_WG_PwdSame(self):
-		if self.__get_WG[0][2] == self.__Login_Pwd:
+		if self.__WG_Pwd == self.__Login_Pwd:
 			return True
 		else:
 			return False
 
 	def __Judge_WGExist(self):
-		if len(self.__get_WG) > 0:
+		# if len(self.__get_WG) > 0:
+		if self.__get_WG[0] is not 'None':
 			return True
 		else:
 			return False
 
 	def __Judge_ERPExist(self):
-		if len(self.__get_ERP) > 0:
+		# if len(self.__get_ERP) > 0:
+		if self.__get_ERP[0] is not 'None':
 			return True
 		else:
 			return False
 
 	def __Insert_WGInf(self):
-		print('INS')
-		__sqlstr = (r"INSERT INTO WG_USER (U_ID, U_NAME, U_PWD, ERP_PWD, DPT, ROLE, FLAG, TYPE) "
-		            r"VALUES("
-		            r"'" + self.__Login_Uid + "', "
-                    r"'" + self.__Login_Name + "', "
-                    r"'" + self.__WG_Pwd + "', "
-                    r"'" + self.__ERP_Pwd + "', "
-                    r"'" + self.__Login_Dpt + "', "
-                    r"'', 'Y', 'ERP'"
-		            r")")
+		if self.__Login_Dpt is not None:
+			__sqlstr = (r"INSERT INTO WG_USER (U_ID, U_NAME, U_PWD, ERP_PWD, DPT, ROLE, FLAG, TYPE) "
+			            r"VALUES("
+			            r"'" + self.__Login_Uid + "', "
+	                    r"'" + self.__Login_Name + "', "
+	                    r"'" + self.__WG_Pwd + "', "
+	                    r"'" + self.__ERP_Pwd + "', "
+	                    r"'" + self.__Login_Dpt + "', "
+	                    r"'', 'Y', 'ERP'"
+			            r")")
+		else:
+			__sqlstr = (r"INSERT INTO WG_USER (U_ID, U_NAME, U_PWD, ERP_PWD, ROLE, FLAG, TYPE) "
+			            r"VALUES("
+			            r"'" + self.__Login_Uid + "', "
+                        r"'" + self.__Login_Name + "', "
+                        r"'" + self.__WG_Pwd + "', "
+                        r"'" + self.__ERP_Pwd + "', "
+                        r"'', 'Y', 'ERP'"
+                        r")")
 		self.__mssql.Sqlwork(DataBase=self.__WG_Conn, SqlStr=__sqlstr)
 
 	def __Update_WGInf(self):
-		print('UPDATE')
-		__sqlstr = (r"UPDATE WG_USER SET "
-		            r"U_NAME = '" + self.__Login_Name + "', "
-                    r"U_PWD = '" + self.__Login_Pwd + "', "
-                    r"ERP_PWD = '" + self.__ERP_Pwd + "', "
-                    r"DPT = '" + self.__Login_Dpt + "', "
-                    r"FALG = 'Y' "
-		            r"WHERE U_ID = '" + self.__Login_Uid + "'")
-		print(__sqlstr)
+		self.__ERP_Pwd = self.__ERP_Pwd.replace("'", "''")
+		if self.__Login_Dpt is not None:
+			__sqlstr = (r"UPDATE WG_USER SET "
+			            r"U_NAME = '" + self.__Login_Name + "', "
+	                    r"U_PWD = '" + self.__Login_Pwd + "', "
+	                    r"ERP_PWD = '" + self.__ERP_Pwd + "', "
+	                    r"DPT = '" + self.__Login_Dpt + "', "
+	                    r"FLAG = 'Y' "
+			            r"WHERE U_ID = '" + self.__Login_Uid + "'")
+		else:
+			__sqlstr = (r"UPDATE WG_USER SET "
+			            r"U_NAME = '" + self.__Login_Name + "', "
+			            r"U_PWD = '" + self.__Login_Pwd + "', "
+			            r"ERP_PWD = '" + self.__ERP_Pwd + "', "
+			            r"FLAG = 'Y' "
+			            r"WHERE U_ID = '" + self.__Login_Uid + "'")
 		self.__mssql.Sqlwork(DataBase=self.__WG_Conn, SqlStr=__sqlstr)
 
 	def __Set_Inf(self):
@@ -150,13 +162,14 @@ class UserManege:
 			self.__ERP_Pwd = self.__get_ERP[0][3]
 			self.__ERP_Valid = self.__get_ERP[0][4]
 
-			self.__ERP_Pwd = self.__ERP_Pwd.replace("'", "''")
-
 		if self.__Judge_WGExist():
-			self.__WG_Pwd = self.__get_WG[0][3]
+			self.__WG_Pwd = self.__get_WG[0][2]
+			self.__WG_ERP_Pwd = self.__get_WG[0][3]
 			self.__Login_Role = self.__get_WG[0][5]
 			self.__WG_Flag = self.__get_WG[0][6]
 			self.__WG_Type = self.__get_WG[0][7]
+		else:
+			self.__WG_Pwd = self.__Login_Pwd
 
 	def __Set_UserInf(self):
 
@@ -165,6 +178,3 @@ class UserManege:
 		self.__back['Login_Role'] = self.__Login_Role
 		self.__back['Login_Dpt'] = self.__Login_Dpt
 		self.__back['Login_Name'] = self.__Login_Name
-
-		print('out')
-		print(self.__back)
