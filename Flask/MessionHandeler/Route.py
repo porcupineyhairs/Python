@@ -2,6 +2,8 @@ from flask import request, Response
 from Module import *
 import os
 import json
+import threading
+import _thread
 
 
 def Route(app):
@@ -23,3 +25,13 @@ def Route(app):
 		__get = request.get_json(force=True)
 		__back = __Usermanage.UserLogin(__get)
 		return Response(json.dumps(__back))
+
+	@app.route('/Client/MaDuo/GetInfo', methods=['POST'])
+	def MD_GetInfo_C():
+		__get = request.get_json(force=True)
+		from Module.MaDuoSystem.MD_GetInfo import GetInfo
+		if __get['Mode'] == 'Insert':
+			__getInfo = GetInfo()
+			__getInfo.MainWork()
+
+		return Response(json.dumps({'Mode': 'OK'}))

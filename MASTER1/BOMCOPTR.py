@@ -98,13 +98,6 @@ def Select(pinhao, level=0, List=None, LevelList=None):
 				# print(LevelList2)
 				Select(pinhao=pinhao2, level=level + 1, List=List, LevelList=LevelList2)
 
-	# PrintStr = ('\t' * int(level) + str(level) + '|-' + '\t' + pinhao2 + '\t' + pinming + '\t' + str(guige) + '\t'
-	# 			+ xuhao + '\t' + shuxing + '\t' + gongyi + '\t' + shengxiao + '\t' + shixiao)
-	#
-	# List.append(PrintStr + '\n')
-	#
-	# print(PrintStr)
-
 	return List
 
 

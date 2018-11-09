@@ -1,6 +1,5 @@
 from SelfModule import MsSql
 import time
-import sqlite3
 import LIB.ModuleDictionary
 
 mssql = MsSql()
@@ -69,8 +68,8 @@ def tes():
 
 
 def Select(pinhao, level=0, List=None, LevelList=None):
-	__Today = '20181021'
-	Type = 'mysql'
+	__Today = GetToday()
+	Type = 'mssql'
 
 	if LevelList == None:
 		LevelList = [pinhao]
@@ -120,12 +119,19 @@ def Select(pinhao, level=0, List=None, LevelList=None):
 			shengxiao = get[row][7]
 			shixiao = get[row][8]
 
+			PrintStr = ('\t' * int(level) + str(level) + '|-' + '\t' + pinhao2 + '\t' + pinming + '\t' + str(guige) + '\t'
+						+ xuhao + '\t' + shuxing + '\t' + gongyi + '\t' + shengxiao + '\t' + shixiao)
+
+			List.append(PrintStr + '\n')
+
+			print(PrintStr)
 
 			if shuxing == 'C':
-				print(pinhao2)
-				LevelList3 = LevelList[:]
-				LevelList3.append(str(pinhao2) + str(xuhao) + str(gongyi) + str(shengxiao))
-				print(str(level) + '    ' + str(LevelList3))
+				# print(pinhao2)
+				# LevelList3 = LevelList[:]
+				# LevelList3.append(str(pinhao2) + str(xuhao) + str(gongyi) + str(shengxiao))
+				# print(str(level) + '    ' + str(LevelList3))
+				pass
 
 			if shuxing == 'P':
 				PrintStr = ('\t' * int(level) + str(level) + '|-' + '\t' + pinhao2 + '\t' + pinming + '\t' + str(
@@ -141,12 +147,6 @@ def Select(pinhao, level=0, List=None, LevelList=None):
 				Select(pinhao=pinhao2, level=level + 1, List=List, LevelList=LevelList2)
 
 
-			# PrintStr = ('\t' * int(level) + str(level) + '|-' + '\t' + pinhao2 + '\t' + pinming + '\t' + str(guige) + '\t'
-			# 			+ xuhao + '\t' + shuxing + '\t' + gongyi + '\t' + shengxiao + '\t' + shixiao)
-			#
-			# List.append(PrintStr + '\n')
-			#
-			# print(PrintStr)
 	
 	return List
 
