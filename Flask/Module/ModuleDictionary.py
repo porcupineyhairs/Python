@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-Module_Dict = {
-	'TestModule': 'TestModule',
-	'BOMSelect': 'BOMSelect',
-	'BOMCompare': 'BOMCompare',
-	'CPPZSelect': 'CPPZSelect'
-}
 
 DataBase_Dict = {
 	'CONFIG': ['192.168.0.198', 'sa', 'COMfort123456', 'CONFIG'],

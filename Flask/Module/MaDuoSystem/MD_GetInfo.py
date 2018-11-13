@@ -89,11 +89,11 @@ class GetInfo:
 		if __get[0] != 'None':
 			for __get_Item in __get:
 				__get_Item = __get_Item[0]
-				__BoxSize = self.__GetBoxInfo(__get_Item)
-				if __BoxSize is not None:
-					self.__UpdBoxInfo(__get_Item, __BoxSize)
+				__BoxCode = self.__GetBoxInfo(__get_Item)
+				if __BoxCode is not None:
+					self.__UpdBoxInfo(__get_Item, __BoxCode)
 				else:
-					self.__UpdBoxInfo(__get_Item, '0*0*0')
+					self.__UpdBoxInfo(__get_Item, 'NULL')
 
 	def __GetBoxInfo(self, __Item):
 		__BoxSize = '0*0*0'
@@ -105,7 +105,17 @@ class GetInfo:
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ERP, SqlStr=__sqlstr.format(__Item))
 		if __get[0] != 'None':
 			__BoxSize = self.__GetBoxSize(__get)
-			return __BoxSize
+			__Code = self.__GetBoxSizeCode(__BoxSize)
+			return __Code
+		else:
+			return None
+
+	def __GetBoxSizeCode(self, __Size):
+		__sqlstr = r"SELECT Code FROM BoxSizeCode WHERE Size = '{0}'"
+		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr.format(__Size))
+		if __get[0] != 'None':
+			__Code = __get[0][0]
+			return __Code
 		else:
 			return None
 
@@ -127,9 +137,11 @@ class GetInfo:
 				__Num[__k] = str(__Num[__k]).split('（')[0]
 
 			__Size = int(__Num[0]) * int(__Num[1]) * int(__Num[2])
+			__Item[__i] = str(__Num[0]) + '*' + str(__Num[1]) + '*' + str(__Num[2])
 			__Vol.append(__Size)
 		return str(__Item[__Vol.index(max(__Vol))])
 
-	def __UpdBoxInfo(self, __Item, __Size):
+	def __UpdBoxInfo(self, __Item, __Code):
 		__sqlstr = r"UPDATE SCHEDULE SET SC038 = 'Y', SC036 = '{1}' WHERE SC001 = '{0}'"
-		self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr.format(__Item, __Size))
+		print(__sqlstr.format(__Item, __Code))
+		self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr.format(__Item, __Code))
