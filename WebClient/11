@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<!DOCTYPE SC[<!ENTITY stdd "&amp;stdd;">]>
+<STD_IN Origin="PDA">
+    <Factory>COMFORT</Factory>
+    <BuildXMLByMultiResource>Y</BuildXMLByMultiResource>
+    <WaitingForResult>Y</WaitingForResult>
+    <ObjectID>CheckERPUserInfo</ObjectID>
+    <Service Name="GetData">
+        <Operate>Insert</Operate>
+        <UserInfo>
+            <UserID Value="000068" />
+            <Password Value="654321" />
+        </UserInfo>
+    </Service>
+</STD_IN>

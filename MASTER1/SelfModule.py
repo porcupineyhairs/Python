@@ -1,8 +1,8 @@
-# -*- coding: utf-8 -*-
+# -*- coding: cp936 -*-
 class SelfModule:
 	def __str__(self):
-		"""ä½œè€…:Harvey.Z
-		ä½¿ç”¨åœºåˆ:ç§äººä½¿ç”¨"""
+		"""×÷Õß:Harvey.Z
+		Ê¹ÓÃ³¡ºÏ:Ë½ÈËÊ¹ÓÃ"""
 
 	def __init__(self):
 		pass
@@ -13,27 +13,27 @@ class MsSql:
 		pass
 
 	def __init__(self):
-				# æ•°æ®åº“è¿æ¥å­—è½¬æ¢
+				# Êı¾İ¿âÁ¬½Ó×Ö×ª»»
 		self.__ConnStr = ''
 
-		# Sqlworkæ–¹æ³•ä¼ å…¥å‚æ•°
+		# Sqlwork·½·¨´«Èë²ÎÊı
 		self.__SqlStr = ''
 		self.__DataBase = []
 		self.__Mode = ''
 		self.__GetRowCount = False
 
-		# æ•°æ®è¿”å›å‰å¯¹å…¶å¤„ç†çš„ä¸´æ—¶å˜é‡
+		# Êı¾İ·µ»ØÇ°¶ÔÆä´¦ÀíµÄÁÙÊ±±äÁ¿
 		self.__GetBackTmp1 = []
 		self.__GetBackTmp2 = None
 
-		# æ•°æ®åº“æŸ¥è¯¢è¿”å›å˜é‡
+		# Êı¾İ¿â²éÑ¯·µ»Ø±äÁ¿
 		self.__GetBack = []
 		self.__RowCount = 0
 
-		# æ˜¯å¦ç»§ç»­æµç¨‹çš„Flag
+		# ÊÇ·ñ¼ÌĞøÁ÷³ÌµÄFlag
 		self.__Flag = True
 
-	# åˆ¤æ–­ä¼ å…¥æ•°æ®åº“å‚æ•°æ˜¯å¦ä¸ºç©º
+	# ÅĞ¶Ï´«ÈëÊı¾İ¿â²ÎÊıÊÇ·ñÎª¿Õ
 	def __SetConnStr(self):
 		if self.__DataBase is not None:
 			self.__ConnStr = self.__DataBase
@@ -42,14 +42,14 @@ class MsSql:
 			self.__GetBack.append('DataBaseNotFound')
 			self.__Flag = False
 
-	# ä½¿ç”¨listæ•°æ®æ¥åˆ›å»ºè¿æ¥å­—åŠæ¸¸æ ‡
+	# Ê¹ÓÃlistÊı¾İÀ´´´½¨Á¬½Ó×Ö¼°ÓÎ±ê
 	def __SetConn(self):
 		import pymssql
 		self.__Conn = pymssql.connect(host=self.__ConnStr[0], user=self.__ConnStr[1], password=self.__ConnStr[2],
 										database=self.__ConnStr[3], charset='GBK')
 		self.__Cur = self.__Conn.cursor()
 
-	# åˆ¤æ–­SqlStræ˜¯å¦ä¸ºç©º
+	# ÅĞ¶ÏSqlStrÊÇ·ñÎª¿Õ
 	def __SetSqlStrNull(self):
 		if self.__SqlStr is None:
 			self.__GetBack.append('Error')
@@ -60,11 +60,11 @@ class MsSql:
 			self.__GetBack.append('SqlStrIsNull')
 			self.__Flag = False
 
-	# è·å–æŸ¥è¯¢æ¨¡å¼ï¼šselectè¿˜æ˜¯commitï¼Œå¹¶å¤„ç†
+	# »ñÈ¡²éÑ¯Ä£Ê½£ºselect»¹ÊÇcommit£¬²¢´¦Àí
 	def __SetGetMode(self):
-		# æ ¹æ®SQLç¬¬ä¸€ä¸ªå…³é”®å­—è·å–æ¨¡å¼
+		# ¸ù¾İSQLµÚÒ»¸ö¹Ø¼ü×Ö»ñÈ¡Ä£Ê½
 		self.__Mode = self.__SqlStr.lstrip().split(' ')[0].upper()
-		# æ ¹æ®ä¸åŒSQLå…³é”®å­—æ‰§è¡Œä¸åŒå‘½ä»¤
+		# ¸ù¾İ²»Í¬SQL¹Ø¼ü×ÖÖ´ĞĞ²»Í¬ÃüÁî
 		if self.__Mode == 'SELECT':
 			self.__SqlExecute()
 		elif self.__Mode in ('UPDATE', 'INSERT', 'DELETE'):
@@ -73,14 +73,14 @@ class MsSql:
 			self.__GetBack.append('Error')
 			self.__GetBack.append('SqlStrNotFoundKeyWord')
 
-	# æ¸…é™¤æ•°æ®
+	# Çå³ıÊı¾İ
 	def __SetClean(self):
-		# æ¸…é™¤è¿æ¥å­—åŠæ¸¸æ ‡
+		# Çå³ıÁ¬½Ó×Ö¼°ÓÎ±ê
 		self.__Cur.close()
 		del self.__Cur
 		del self.__Conn
 
-	# æŸ¥è¯¢å›æ¥çš„æ•°æ®æ•´ç†æˆlistï¼Œå¹¶ä¸”åˆ¤æ–­æ˜¯å¦ä¸ºç©º
+	# ²éÑ¯»ØÀ´µÄÊı¾İÕûÀí³Élist£¬²¢ÇÒÅĞ¶ÏÊÇ·ñÎª¿Õ
 	def __SetFormat(self):
 		if len(self.__GetBackTmp1) == 0:
 			self.__GetBack.append('None')
@@ -88,17 +88,17 @@ class MsSql:
 			for self.__GetBackTmp2 in self.__GetBackTmp1:
 				self.__GetBack.append(list(self.__GetBackTmp2))
 
-	# ä¸»å·¥ä½œæ–¹æ³•
+	# Ö÷¹¤×÷·½·¨
 	def Sqlwork(self, DataBase=None, SqlStr=None, GetRowCount=False):
-		# æ¸…ç©ºå†å²æ•°æ®ï¼Œä»¥é˜²é€’å½’å‡ºé”™
+		# Çå¿ÕÀúÊ·Êı¾İ£¬ÒÔ·Àµİ¹é³ö´í
 		self.__init__()
 
-		# ä¼ å…¥å˜é‡è½¬æ¢
+		# ´«Èë±äÁ¿×ª»»
 		self.__SqlStr = SqlStr
 		self.__DataBase = DataBase
 		self.__GetRowCount = GetRowCount
 
-		# å¤„ç†é€»è¾‘
+		# ´¦ÀíÂß¼­
 		self.__SetConnStr()
 
 		if self.__Flag:
@@ -110,7 +110,7 @@ class MsSql:
 			self.__SetFormat()
 			# self.__DefClean()
 
-		# åˆ¤æ–­æ˜¯å¦éœ€è¦è¿”å›æŸ¥è¯¢å‡ºçš„è¡Œæ•°
+		# ÅĞ¶ÏÊÇ·ñĞèÒª·µ»Ø²éÑ¯³öµÄĞĞÊı
 		if self.__GetRowCount:
 			if self.__Flag:
 				self.__RowCount = self.__Cur.rowcount
@@ -120,12 +120,12 @@ class MsSql:
 			self.__SetClean()
 			return self.__GetBack
 
-	# æ•°æ®åº“æŸ¥è¯¢æ–¹æ³•
+	# Êı¾İ¿â²éÑ¯·½·¨
 	def __SqlExecute(self):
 		self.__Cur.execute(self.__SqlStr)
 		self.__GetBackTmp1 = self.__Cur.fetchall()
 
-	# æ•°æ®åº“ä»»åŠ¡æäº¤æ–¹æ³•
+	# Êı¾İ¿âÈÎÎñÌá½»·½·¨
 	def __SqlCommit(self):
 		self.__Cur.execute(self.__SqlStr)
 		self.__Conn.commit()
@@ -155,27 +155,27 @@ class Sqlite:
 		pass
 
 	def __init__(self):
-				# æ•°æ®åº“è¿æ¥å­—è½¬æ¢
+				# Êı¾İ¿âÁ¬½Ó×Ö×ª»»
 		self.__ConnStr = ''
 
-		# Sqlworkæ–¹æ³•ä¼ å…¥å‚æ•°
+		# Sqlwork·½·¨´«Èë²ÎÊı
 		self.__SqlStr = ''
 		self.__DataBase = []
 		self.__Mode = ''
 		self.__GetRowCount = False
 
-		# æ•°æ®è¿”å›å‰å¯¹å…¶å¤„ç†çš„ä¸´æ—¶å˜é‡
+		# Êı¾İ·µ»ØÇ°¶ÔÆä´¦ÀíµÄÁÙÊ±±äÁ¿
 		self.__GetBackTmp1 = []
 		self.__GetBackTmp2 = None
 
-		# æ•°æ®åº“æŸ¥è¯¢è¿”å›å˜é‡
+		# Êı¾İ¿â²éÑ¯·µ»Ø±äÁ¿
 		self.__GetBack = []
 		self.__RowCount = 0
 
-		# æ˜¯å¦ç»§ç»­æµç¨‹çš„Flag
+		# ÊÇ·ñ¼ÌĞøÁ÷³ÌµÄFlag
 		self.__Flag = True
 
-	# åˆ¤æ–­ä¼ å…¥æ•°æ®åº“å‚æ•°æ˜¯å¦ä¸ºç©º
+	# ÅĞ¶Ï´«ÈëÊı¾İ¿â²ÎÊıÊÇ·ñÎª¿Õ
 	def __SetConnStr(self):
 		if self.__DataBase is not None:
 			self.__ConnStr = self.__DataBase
@@ -184,14 +184,14 @@ class Sqlite:
 			self.__GetBack.append('DataBaseNotFound')
 			self.__Flag = False
 
-	# ä½¿ç”¨listæ•°æ®æ¥åˆ›å»ºè¿æ¥å­—åŠæ¸¸æ ‡
+	# Ê¹ÓÃlistÊı¾İÀ´´´½¨Á¬½Ó×Ö¼°ÓÎ±ê
 	def __SetConn(self):
 		import pymssql
 		self.__Conn = pymssql.connect(host=self.__ConnStr[0], user=self.__ConnStr[1], password=self.__ConnStr[2],
 										database=self.__ConnStr[3], charset='GBK')
 		self.__Cur = self.__Conn.cursor()
 
-	# åˆ¤æ–­SqlStræ˜¯å¦ä¸ºç©º
+	# ÅĞ¶ÏSqlStrÊÇ·ñÎª¿Õ
 	def __SetSqlStrNull(self):
 		if self.__SqlStr is None:
 			self.__GetBack.append('Error')
@@ -202,11 +202,11 @@ class Sqlite:
 			self.__GetBack.append('SqlStrIsNull')
 			self.__Flag = False
 
-	# è·å–æŸ¥è¯¢æ¨¡å¼ï¼šselectè¿˜æ˜¯commitï¼Œå¹¶å¤„ç†
+	# »ñÈ¡²éÑ¯Ä£Ê½£ºselect»¹ÊÇcommit£¬²¢´¦Àí
 	def __SetGetMode(self):
-		# æ ¹æ®SQLç¬¬ä¸€ä¸ªå…³é”®å­—è·å–æ¨¡å¼
-		self.__Mode = self.__SqlStr.lstrip().split(' ')[0].upper()
-		# æ ¹æ®ä¸åŒSQLå…³é”®å­—æ‰§è¡Œä¸åŒå‘½ä»¤
+		# ¸ù¾İSQLµÚÒ»¸ö¹Ø¼ü×Ö»ñÈ¡Ä£Ê½
+		self.__Mode = str(self.__SqlStr).lstrip().split(' ')[0].upper()
+		# ¸ù¾İ²»Í¬SQL¹Ø¼ü×ÖÖ´ĞĞ²»Í¬ÃüÁî
 		if self.__Mode == 'SELECT':
 			self.__SqlExecute()
 		elif self.__Mode in ('UPDATE', 'INSERT', 'DELETE'):
@@ -215,14 +215,14 @@ class Sqlite:
 			self.__GetBack.append('Error')
 			self.__GetBack.append('SqlStrNotFoundKeyWord')
 
-	# æ¸…é™¤æ•°æ®
+	# Çå³ıÊı¾İ
 	def __SetClean(self):
-		# æ¸…é™¤è¿æ¥å­—åŠæ¸¸æ ‡
+		# Çå³ıÁ¬½Ó×Ö¼°ÓÎ±ê
 		self.__Cur.close()
 		del self.__Cur
 		del self.__Conn
 
-	# æŸ¥è¯¢å›æ¥çš„æ•°æ®æ•´ç†æˆlistï¼Œå¹¶ä¸”åˆ¤æ–­æ˜¯å¦ä¸ºç©º
+	# ²éÑ¯»ØÀ´µÄÊı¾İÕûÀí³Élist£¬²¢ÇÒÅĞ¶ÏÊÇ·ñÎª¿Õ
 	def __SetFormat(self):
 		if len(self.__GetBackTmp1) == 0:
 			self.__GetBack.append('None')
@@ -230,17 +230,17 @@ class Sqlite:
 			for self.__GetBackTmp2 in self.__GetBackTmp1:
 				self.__GetBack.append(list(self.__GetBackTmp2))
 
-	# ä¸»å·¥ä½œæ–¹æ³•
+	# Ö÷¹¤×÷·½·¨
 	def Sqlwork(self, DataBase=None, SqlStr=None, GetRowCount=False):
-		# æ¸…ç©ºå†å²æ•°æ®ï¼Œä»¥é˜²é€’å½’å‡ºé”™
+		# Çå¿ÕÀúÊ·Êı¾İ£¬ÒÔ·Àµİ¹é³ö´í
 		self.__init__()
 
-		# ä¼ å…¥å˜é‡è½¬æ¢
+		# ´«Èë±äÁ¿×ª»»
 		self.__SqlStr = SqlStr
 		self.__DataBase = DataBase
 		self.__GetRowCount = GetRowCount
 
-		# å¤„ç†é€»è¾‘
+		# ´¦ÀíÂß¼­
 		self.__SetConnStr()
 
 		if self.__Flag:
@@ -252,7 +252,7 @@ class Sqlite:
 			self.__SetFormat()
 			# self.__DefClean()
 
-		# åˆ¤æ–­æ˜¯å¦éœ€è¦è¿”å›æŸ¥è¯¢å‡ºçš„è¡Œæ•°
+		# ÅĞ¶ÏÊÇ·ñĞèÒª·µ»Ø²éÑ¯³öµÄĞĞÊı
 		if self.__GetRowCount:
 			if self.__Flag:
 				self.__RowCount = self.__Cur.rowcount
@@ -262,13 +262,14 @@ class Sqlite:
 			self.__SetClean()
 			return self.__GetBack
 
-	# æ•°æ®åº“æŸ¥è¯¢æ–¹æ³•
+	# Êı¾İ¿â²éÑ¯·½·¨
 	def __SqlExecute(self):
 		self.__Cur.execute(self.__SqlStr)
 		self.__GetBackTmp1 = self.__Cur.fetchall()
 
-	# æ•°æ®åº“ä»»åŠ¡æäº¤æ–¹æ³•
+	# Êı¾İ¿âÈÎÎñÌá½»·½·¨
 	def __SqlCommit(self):
+		self.__Cur.execute(self.__SqlStr.encode('GBK'))
 		self.__Cur.commint(self.__SqlStr)
 		self.__GetBackTmp1.append('Succeed')
 
@@ -373,7 +374,7 @@ class Socket:
 		self.__GetBack = ''
 
 	def send(self, Send_Addr=None, Send_Port=None, Send_Str=None):
-		# å˜é‡åˆå§‹åŒ–
+		# ±äÁ¿³õÊ¼»¯
 		self.__send_addr = Send_Addr
 		self.__send_port = Send_Port
 		self.__send_str = Send_Str

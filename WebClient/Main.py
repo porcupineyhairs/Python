@@ -2,11 +2,11 @@ import requests
 import json
 
 
-def WebClient():
-	info = {'Mode': 'Insert'}
-	r = requests.post("http://192.168.7.252/Client/MaDuo/GetInfo", data=json.dumps(info))
+def WebClient(url, data):
+	r = requests.post(url, data=data)
 	print(r.json())
 
 
 if __name__ == '__main__':
-	WebClient()
+	# WebClient()
+	WebClient(url='http://192.168.7.253:8099/Client/MaDuo/GetInfo', data=json.dumps({'Mode': 'Insert'}))

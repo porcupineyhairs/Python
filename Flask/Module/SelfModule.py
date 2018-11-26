@@ -269,7 +269,8 @@ class Sqlite:
 
 	# 数据库任务提交方法
 	def __SqlCommit(self):
-		self.__Cur.commint(self.__SqlStr)
+		self.__Cur.execute(self.__SqlStr)
+		self.__Conn.commit()
 		self.__GetBackTmp1.append('Succeed')
 
 

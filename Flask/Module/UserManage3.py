@@ -2,6 +2,18 @@ from Module import MsSql
 from Module import DataBase_Dict
 
 
+def ConvertStr(_str):
+	return _str.encode('GBK')
+
+
+class ErpUser:
+	pass
+
+
+class WgUser:
+	pass
+
+
 class UserManege:
 	def __init__(self):
 		self.__mssql = MsSql()
@@ -114,7 +126,6 @@ class UserManege:
 			return False
 
 	def __Insert_WGInf(self):
-		self.__ERP_Pwd = self.__ERP_Pwd.replace("'", "''")
 		if self.__Login_Dpt is not None:
 			__sqlstr = (r"INSERT INTO WG_USER (U_ID, U_NAME, U_PWD, ERP_PWD, DPT, ROLE, FLAG, TYPE) "
 			            r"VALUES("

@@ -76,17 +76,17 @@ def Select(pinhao, level=0):
 			gongyi = get[row][6]
 			shengxiao = get[row][7]
 			shixiao = get[row][8]
-			gongyinshang = get[row][9]
+			# gongyinshang = get[row][9]
 			# kuaiji = get[row][10]
 
-			if gongyinshang not in ['保友', '玖友公司', '耀友五金']:
-				gongyinshang = '其他供应商'
+			# if gongyinshang not in ['保友', '玖友公司', '耀友五金']:
+			# 	gongyinshang = '其他供应商'
 
 			shuxingLib = {'P': '采购件', 'S': '委外件', 'C': '配置件', 'Y': '虚设件', 'M': '自制件'}
 			shuxing2 = shuxingLib[str(shuxing)]
 
 			PrintStr = ('\t' * int(level) + str(level) + '|-' + '\t' + pinhao2 + '\t' + pinming + '\t' + guige + '\t'
-						+ xuhao + '\t' + shuxing2 + '\t' + gongyi + '\t' + gongyinshang)
+						+ xuhao + '\t' + shuxing2 + '\t' + gongyi )
 
 			STR.append(PrintStr + '\n')
 			print(PrintStr)
@@ -99,13 +99,13 @@ def Select(pinhao, level=0):
 
 if __name__ == '__main__':
 	startdate = time.ctime()
-	pinhao = ['10630503']
+	pinhao = ['10570530']
 	# pinhao = ['10860105', '10860108', '10910105', '10910107', '10910109']
 	for p in pinhao:
 		STR = []
 		count = 0
 		r = Select(p)
-		# WriteFile(p, STR)
+		WriteFile(p, STR)
 
 		print('共有' + str(count) + '项!\n\n\n')
 	enddate = time.ctime()

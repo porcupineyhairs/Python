@@ -1,0 +1,959 @@
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:8099/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 157-359-577
+192.168.7.251 - - [20/Nov/2018 13:22:35] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:22:35] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:22:38] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:23:24] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:23:25] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:23:27] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:32:15] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:32:15] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:32:20] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:33:48] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:33:48] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:33:53] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:34:17] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:34:17] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:34:22] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:34:50] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:34:50] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:34:55] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:35:12] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:35:12] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:35:15] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:37:36] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:37:36] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:37:41] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:37:53] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:37:53] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:37:57] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:42:21] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:42:21] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:42:50] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:42:50] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:42:53] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 13:54:36] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 13:54:36] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 13:54:45] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:56:56] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 13:56:56] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 13:58:30] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 13:58:30] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 13:58:32] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 13:58:37] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 13:58:37] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 13:58:51] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 13:58:51] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 13:58:55] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 13:58:58] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 14:00:20] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 14:00:20] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 14:00:27] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 14:27:22] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 14:27:22] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 14:27:31] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 14:27:35] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 14:41:39] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.128 - - [20/Nov/2018 14:41:39] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 14:55:06] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [20/Nov/2018 14:55:06] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.4.3 - - [20/Nov/2018 19:13:43] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.4.3 - - [20/Nov/2018 19:13:49] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.4.3 - - [21/Nov/2018 09:11:32] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.4.3 - - [21/Nov/2018 09:11:39] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.128 - - [21/Nov/2018 09:13:28] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.128 - - [21/Nov/2018 09:13:28] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 13:54:49] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 13:54:49] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 13:54:56] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 13:55:24] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 13:55:24] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 13:55:29] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 13:59:42] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 13:59:42] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 13:59:45] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 14:28:57] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 14:28:57] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 14:29:00] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 14:29:05] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 14:29:05] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 14:29:17] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 14:31:16] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 14:31:16] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 14:31:21] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 14:32:33] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 14:32:34] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 14:32:41] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 14:34:58] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.98 - - [21/Nov/2018 14:34:58] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.37 - - [21/Nov/2018 14:59:17] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.37 - - [21/Nov/2018 14:59:17] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.37 - - [21/Nov/2018 14:59:20] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.1.37 - - [21/Nov/2018 14:59:25] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.37 - - [21/Nov/2018 14:59:25] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.37 - - [21/Nov/2018 14:59:33] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 15:06:39] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 15:06:39] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 15:06:42] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 15:06:46] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 15:08:44] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 15:08:44] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 15:08:51] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:32:16] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:32:17] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:32:20] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:32:27] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:32:27] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.33 - - [21/Nov/2018 15:35:11] "POST /Client/LinkTest HTTP/1.1" 200 -
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.19'}
+{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.19'}
+{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000879', 'Login_Pwd': 'CFCD208495D565EF66E7DFF9F98764DA'}
+{'Login_Status': 'Y', 'Login_Uid': '000879', 'Login_Role': '生管', 'Login_Dpt': '仓储中心', 'Login_Name': '庞世友*#'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000879', 'Login_Pwd': 'CFCD208495D565EF66E7DFF9F98764DA'}
+{'Login_Status': 'Y', 'Login_Uid': '000879', 'Login_Role': '生管', 'Login_Dpt': '仓储中心', 'Login_Name': '庞世友*#'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.19'}
+{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.19'}
+{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.19'}
+{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.19'}
+{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '529873F335231182937EBDAA164907E'}
+{'Login_Status': 'N', 'Login_Uid': None, 'Login_Role': None, 'Login_Dpt': None, 'Login_Name': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '31FC2F56302EDC6EF851404847F2DF1D'}
+{'Login_Status': 'N', 'Login_Uid': None, 'Login_Role': None, 'Login_Dpt': None, 'Login_Name': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000960', 'Login_Pwd': 'BCBE3365E6AC95EA2C343A2395834DD'}
+{'Login_Status': 'Y', 'Login_Uid': '000960', 'Login_Role': '文员', 'Login_Dpt': '仓储中心', 'Login_Name': '吴祖梅'}
+{'Login_Uid': '000960', 'Login_Pwd': 'BCBE3365E6AC95EA2C343A2395834DD'}
+{'Login_Status': 'Y', 'Login_Uid': '000960', 'Login_Role': '文员', 'Login_Dpt': '仓储中心', 'Login_Name': '吴祖梅'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '文员', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '文员', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.19'}
+{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.19'}
+{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '文员', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000117', 'Login_Pwd': '9832EC13D8EBA4EEFF2FC3D37F64B44'}
+{'Login_Status': 'Y', 'Login_Uid': '000117', 'Login_Role': None, 'Login_Dpt': '生产一部', 'Login_Name': '王爱姣*#'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.19'}
+{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000117', 'Login_Pwd': '9832EC13D8EBA4EEFF2FC3D37F64B44'}
+{'Login_Status': 'Y', 'Login_Uid': '000117', 'Login_Role': '文员', 'Login_Dpt': '生产一部', 'Login_Name': '王爱姣*#'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'CFCD208495D565EF66E7DFF9F98764DA'}
+{'Login_Status': 'N', 'Login_Uid': None, 'Login_Role': None, 'Login_Dpt': None, 'Login_Name': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.19'}
+{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.19'}192.168.5.33 - - [21/Nov/2018 15:35:11] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.33 - - [21/Nov/2018 15:35:14] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.5.33 - - [21/Nov/2018 15:35:18] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.33 - - [21/Nov/2018 15:35:19] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.33 - - [21/Nov/2018 15:35:26] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.5.36 - - [21/Nov/2018 15:38:42] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.36 - - [21/Nov/2018 15:38:42] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.36 - - [21/Nov/2018 15:38:45] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.5.36 - - [21/Nov/2018 15:38:50] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.36 - - [21/Nov/2018 15:38:50] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.36 - - [21/Nov/2018 15:38:56] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.36 - - [21/Nov/2018 15:38:56] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.128 - - [21/Nov/2018 15:42:06] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.128 - - [21/Nov/2018 15:42:07] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.18 - - [21/Nov/2018 15:42:12] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.18 - - [21/Nov/2018 15:42:12] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.128 - - [21/Nov/2018 15:42:13] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.5.18 - - [21/Nov/2018 15:42:15] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.5.18 - - [21/Nov/2018 15:42:21] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.18 - - [21/Nov/2018 15:42:21] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.18 - - [21/Nov/2018 15:42:36] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.128 - - [21/Nov/2018 15:42:50] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.128 - - [21/Nov/2018 15:42:50] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.128 - - [21/Nov/2018 15:43:07] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:46:22] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:46:22] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:46:30] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:46:40] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:46:46] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:47:06] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:47:17] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:47:45] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:47:56] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:48:07] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:48:07] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:48:21] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [21/Nov/2018 15:49:24] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.4.3 - - [21/Nov/2018 16:24:26] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.4.3 - - [21/Nov/2018 16:24:32] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 16:37:34] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 16:37:35] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 16:38:10] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [21/Nov/2018 16:38:10] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.96 - - [21/Nov/2018 17:16:19] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.96 - - [21/Nov/2018 17:16:19] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.115 - - [21/Nov/2018 17:20:00] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.115 - - [21/Nov/2018 17:20:00] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.115 - - [21/Nov/2018 17:20:03] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.1.115 - - [21/Nov/2018 17:20:08] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.115 - - [21/Nov/2018 17:20:08] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.115 - - [21/Nov/2018 17:20:25] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.115 - - [21/Nov/2018 17:21:17] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.115 - - [21/Nov/2018 17:21:17] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.96 - - [21/Nov/2018 17:22:02] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.96 - - [21/Nov/2018 17:22:03] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.112 - - [21/Nov/2018 18:23:18] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.112 - - [21/Nov/2018 18:23:18] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.112 - - [21/Nov/2018 18:23:28] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.115 - - [21/Nov/2018 19:00:00] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.115 - - [21/Nov/2018 19:00:00] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.115 - - [21/Nov/2018 19:00:14] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.4.3 - - [21/Nov/2018 19:27:41] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.4.3 - - [21/Nov/2018 19:27:48] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.5.18 - - [22/Nov/2018 08:17:47] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.18 - - [22/Nov/2018 08:17:47] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.18 - - [22/Nov/2018 08:18:10] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [22/Nov/2018 11:43:59] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.5 - - [22/Nov/2018 11:43:59] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.5 - - [22/Nov/2018 11:45:21] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.6 - - [22/Nov/2018 11:51:13] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.6 - - [22/Nov/2018 11:51:14] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.6 - - [22/Nov/2018 11:51:16] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.1.6 - - [22/Nov/2018 11:51:21] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.6 - - [22/Nov/2018 11:51:22] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.5 - - [22/Nov/2018 13:40:40] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.5 - - [22/Nov/2018 13:40:41] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.112 - - [22/Nov/2018 13:40:46] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.112 - - [22/Nov/2018 13:40:46] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.112 - - [22/Nov/2018 13:40:58] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [22/Nov/2018 13:41:10] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [22/Nov/2018 14:17:34] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [22/Nov/2018 14:17:34] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [22/Nov/2018 14:17:38] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [22/Nov/2018 15:10:31] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [22/Nov/2018 15:10:31] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [22/Nov/2018 15:10:35] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [22/Nov/2018 15:13:02] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [22/Nov/2018 15:13:02] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [22/Nov/2018 15:13:12] "POST /Client/UserLogin HTTP/1.1" 200 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:8099/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 157-359-577
+192.168.6.191 - - [23/Nov/2018 15:12:21] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.6.191 - - [23/Nov/2018 15:12:22] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.6.191 - - [23/Nov/2018 15:12:25] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.6.191 - - [23/Nov/2018 15:12:31] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.6.191 - - [23/Nov/2018 15:12:31] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [23/Nov/2018 15:12:39] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.6.191 - - [23/Nov/2018 15:13:16] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.6.191 - - [23/Nov/2018 15:13:16] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.6.191 - - [23/Nov/2018 15:13:20] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.6.191 - - [23/Nov/2018 15:13:26] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.6.191 - - [23/Nov/2018 15:13:26] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.6.191 - - [23/Nov/2018 15:17:00] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.6.191 - - [23/Nov/2018 15:18:00] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.6.191 - - [23/Nov/2018 15:18:00] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.6.191 - - [23/Nov/2018 15:19:37] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.6.191 - - [23/Nov/2018 15:19:38] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.115 - - [23/Nov/2018 15:31:46] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.115 - - [23/Nov/2018 15:31:46] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.115 - - [23/Nov/2018 15:31:54] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.115 - - [23/Nov/2018 15:31:59] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.4.3 - - [23/Nov/2018 16:35:26] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.4.3 - - [23/Nov/2018 16:35:33] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.128 - - [23/Nov/2018 16:38:50] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.128 - - [23/Nov/2018 16:38:50] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.128 - - [23/Nov/2018 16:38:55] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.128 - - [23/Nov/2018 16:45:08] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.128 - - [23/Nov/2018 16:45:08] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.128 - - [23/Nov/2018 16:45:15] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.115 - - [23/Nov/2018 16:51:48] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.115 - - [23/Nov/2018 16:51:48] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.115 - - [23/Nov/2018 16:51:59] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.128 - - [23/Nov/2018 17:58:37] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.128 - - [23/Nov/2018 17:58:37] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.128 - - [23/Nov/2018 17:58:46] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.5.33 - - [23/Nov/2018 18:58:30] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.33 - - [23/Nov/2018 18:58:30] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.33 - - [23/Nov/2018 18:58:37] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.5.33 - - [23/Nov/2018 18:58:41] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.33 - - [23/Nov/2018 18:58:41] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.33 - - [23/Nov/2018 18:58:47] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.115 - - [24/Nov/2018 08:14:59] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.115 - - [24/Nov/2018 08:14:59] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.115 - - [24/Nov/2018 08:15:19] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.5.18 - - [24/Nov/2018 08:35:52] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.18 - - [24/Nov/2018 08:35:52] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.18 - - [24/Nov/2018 08:37:22] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.4.3 - - [24/Nov/2018 09:36:23] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.4.3 - - [24/Nov/2018 09:36:30] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.115 - - [24/Nov/2018 10:39:23] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.115 - - [24/Nov/2018 10:39:23] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.115 - - [24/Nov/2018 10:39:36] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.96 - - [24/Nov/2018 15:25:41] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.96 - - [24/Nov/2018 15:25:41] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.115 - - [24/Nov/2018 15:43:36] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.115 - - [24/Nov/2018 15:43:36] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.115 - - [24/Nov/2018 15:43:48] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.4.3 - - [24/Nov/2018 16:33:00] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.4.3 - - [24/Nov/2018 16:33:06] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.5.18 - - [25/Nov/2018 10:21:22] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.18 - - [25/Nov/2018 10:21:22] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.18 - - [25/Nov/2018 10:21:32] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [25/Nov/2018 11:05:11] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.5 - - [25/Nov/2018 11:05:11] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.5 - - [25/Nov/2018 11:05:19] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.115 - - [25/Nov/2018 13:14:09] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.115 - - [25/Nov/2018 13:14:09] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.115 - - [25/Nov/2018 13:14:20] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.115 - - [25/Nov/2018 13:21:51] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.115 - - [25/Nov/2018 13:21:51] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.115 - - [25/Nov/2018 13:22:29] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.5.18 - - [26/Nov/2018 08:09:03] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.18 - - [26/Nov/2018 08:09:03] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.18 - - [26/Nov/2018 08:09:21] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.5.33 - - [26/Nov/2018 08:33:29] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.33 - - [26/Nov/2018 08:33:29] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.33 - - [26/Nov/2018 08:33:33] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.5.33 - - [26/Nov/2018 08:33:37] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.5.33 - - [26/Nov/2018 08:33:40] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.33 - - [26/Nov/2018 08:33:40] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.33 - - [26/Nov/2018 08:33:46] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [26/Nov/2018 09:37:07] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.5 - - [26/Nov/2018 09:37:08] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.5 - - [26/Nov/2018 09:37:16] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:00:10] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:00:10] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:00:18] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:01:52] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:01:52] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:01:56] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:03:24] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:03:24] "POST /Client/GetVersion HTTP/1.1" 200 -
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.19'}
+{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.19'}
+{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000915', 'Login_Pwd': 'E1ADC3949BA59ABBE56E057F2F883E'}
+{'Login_Status': 'Y', 'Login_Uid': '000915', 'Login_Role': None, 'Login_Dpt': '生产三部', 'Login_Name': '谭月高*#'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': 'D41D8CD98F0B24E980998ECF8427E'}
+{'Login_Status': 'N', 'Login_Uid': None, 'Login_Role': None, 'Login_Dpt': None, 'Login_Name': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '文员', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'Login_Uid': '000960', 'Login_Pwd': 'BCBE3365E6AC95EA2C343A2395834DD'}
+{'Login_Status': 'Y', 'Login_Uid': '000960', 'Login_Role': '文员', 'Login_Dpt': '仓储中心', 'Login_Name': '吴祖梅'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '文员', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '文员', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '文员', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '文员', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000046', 'Login_Pwd': '426EE776C639BF7DD88CFEC8A53277'}
+{'Login_Status': 'Y', 'Login_Uid': '000046', 'Login_Role': None, 'Login_Dpt': '生产四部', 'Login_Name': '刘刚'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000046', 'Login_Pwd': '426EE776C639BF7DD88CFEC8A53277'}
+{'Login_Status': 'Y', 'Login_Uid': '000046', 'Login_Role': '', 'Login_Dpt': '生产四部', 'Login_Name': '刘刚'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '文员', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000124', 'Login_Pwd': '7EB03D58F85B7160FD9D3CDDCF6EC76'}
+{'Login_Status': 'Y', 'Login_Uid': '000124', 'Login_Role': '文员', 'Login_Dpt': '生产四部', 'Login_Name': '张相坤'}
+{'Login_Uid': '000960', 'Login_Pwd': 'BCBE3365E6AC95EA2C343A2395834DD'}
+{'Login_Status': 'Y', 'Login_Uid': '000960', 'Login_Role': '文员', 'Login_Dpt': '仓储中心', 'Login_Name': '吴祖梅'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '文员', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '文员', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'Login_Uid': '000960', 'Login_Pwd': 'BCBE3365E6AC95EA2C343A2395834DD'}
+{'Login_Status': 'Y', 'Login_Uid': '000960', 'Login_Role': '文员', 'Login_Dpt': '仓储中心', 'Login_Name': '吴祖梅'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000124', 'Login_Pwd': '7EB03D58F85B7160FD9D3CDDCF6EC76'}
+{'Login_Status': 'Y', 'Login_Uid': '000124', 'Login_Role': '文员', 'Login_Dpt': '生产四部', 'Login_Name': '张相坤'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000117', 'Login_Pwd': '9832EC13D8EBA4EEFF2FC3D37F64B44'}
+{'Login_Status': 'Y', 'Login_Uid': '000117', 'Login_Role': '文员', 'Login_Dpt': '生产一部', 'Login_Name': '王爱姣*#'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001159', 'Login_Pwd': '51AC20DD4BA973420D9353EB65416D'}
+{'Login_Status': 'Y', 'Login_Uid': '001159', 'Login_Role': '', 'Login_Dpt': '研发中心', 'Login_Name': '胡肇鹏'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '文员', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000124', 'Login_Pwd': '7EB03D58F85B7160FD9D3CDDCF6EC76'}
+{'Login_Status': 'Y', 'Login_Uid': '000124', 'Login_Role': '文员', 'Login_Dpt': '生产四部', 'Login_Name': '张相坤'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000046', 'Login_Pwd': 'D41D8CD98F0B24E980998ECF8427E'}
+{'Login_Status': 'N', 'Login_Uid': None, 'Login_Role': None, 'Login_Dpt': None, 'Login_Name': None}
+{'Login_Uid': '000046', 'Login_Pwd': '426EE776C639BF7DD88CFEC8A53277'}
+{'Login_Status': 'Y', 'Login_Uid': '000046', 'Login_Role': '', 'Login_Dpt': '生产四部', 'Login_Name': '刘刚'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000046', 'Login_Pwd': '426EE776C639BF7DD88CFEC8A53277'}
+{'Login_Status': 'Y', 'Login_Uid': '000046', 'Login_Role': '', 'Login_Dpt': '生产四部', 'Login_Name': '刘刚'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000117', 'Login_Pwd': '9832EC13D8EBA4EEFF2FC3D37F64B44'}
+{'Login_Status': 'Y', 'Login_Uid': '000117', 'Login_Role': '文员', 'Login_Dpt': '生产一部', 'Login_Name': '王爱姣*#'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}192.168.7.251 - - [26/Nov/2018 10:03:28] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:07:58] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:07:58] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:08:02] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:17:47] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:17:48] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:17:52] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:18:07] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:18:07] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:18:11] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:21:53] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:21:53] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:21:57] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:23:50] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:23:50] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:24:00] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [26/Nov/2018 10:37:30] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.5 - - [26/Nov/2018 10:37:30] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.5 - - [26/Nov/2018 10:37:42] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:49:32] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:49:32] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:49:38] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 10:49:46] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.4.3 - - [26/Nov/2018 11:38:15] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.4.3 - - [26/Nov/2018 11:38:21] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:15:14] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:15:14] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:15:18] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:16:45] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:16:45] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:16:48] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:22:29] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:22:29] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:22:32] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:23:13] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:23:13] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:23:16] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:28:41] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:28:41] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:28:45] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:29:24] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:29:24] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:29:27] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:30:36] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:30:36] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:30:40] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:32:55] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:32:55] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:32:59] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:33:35] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:33:35] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:33:38] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:34:23] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:34:23] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:34:27] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:35:34] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:35:34] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:35:37] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:41:42] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:41:42] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:41:47] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:46:03] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:46:03] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:46:07] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:50:27] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:50:27] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:50:36] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:50:36] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:50:40] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:56:04] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:56:04] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:56:08] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:57:50] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:57:50] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:57:55] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [26/Nov/2018 13:58:02] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.5 - - [26/Nov/2018 13:58:02] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.5 - - [26/Nov/2018 13:58:10] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.5 - - [26/Nov/2018 13:58:16] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:59:24] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:59:24] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 13:59:30] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:06:34] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:06:34] "POST /Client/GetVersion HTTP/1.1" 200 -
+
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000117', 'Login_Pwd': '9832EC13D8EBA4EEFF2FC3D37F64B44'}
+{'Login_Status': 'Y', 'Login_Uid': '000117', 'Login_Role': '文员', 'Login_Dpt': '生产一部', 'Login_Name': '王爱姣*#'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '00114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'N', 'Login_Uid': None, 'Login_Role': None, 'Login_Dpt': None, 'Login_Name': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'Login_Uid': '000960', 'Login_Pwd': 'BCBE3365E6AC95EA2C343A2395834DD'}
+{'Login_Status': 'Y', 'Login_Uid': '000960', 'Login_Role': '文员', 'Login_Dpt': '仓储中心', 'Login_Name': '吴祖梅'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000117', 'Login_Pwd': '4CEA574FF0849254597BD883879794FF'}
+{'Login_Status': 'N', 'Login_Uid': None, 'Login_Role': None, 'Login_Dpt': None, 'Login_Name': None}
+{'Login_Uid': '000117', 'Login_Pwd': '9832EC13D8EBA4EEFF2FC3D37F64B44'}
+{'Login_Status': 'Y', 'Login_Uid': '000117', 'Login_Role': '文员', 'Login_Dpt': '生产一部', 'Login_Name': '王爱姣*#'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000879', 'Login_Pwd': 'E1ADC3949BA59ABBE56E057F2F883E'}
+{'Login_Status': 'Y', 'Login_Uid': '000879', 'Login_Role': '生管', 'Login_Dpt': '仓储中心', 'Login_Name': '庞世友*#'}192.168.7.251 - - [26/Nov/2018 14:06:39] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:49:47] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:49:47] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:50:01] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:53:28] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:53:28] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:53:33] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:54:58] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:54:58] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:55:02] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:55:50] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:55:51] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:55:54] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:57:16] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:57:16] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:57:19] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:58:24] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:58:24] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 14:58:28] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:02:29] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:02:29] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:02:33] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:03:39] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:03:39] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:03:44] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:04:34] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:04:34] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:04:39] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:06:24] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:06:24] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:06:29] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:08:28] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:08:29] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:08:33] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:10:28] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:10:28] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:10:32] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:13:08] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:13:08] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:13:11] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:15:36] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:15:36] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:15:41] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:16:01] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:16:01] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:16:05] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:16:53] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:16:54] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:16:58] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:18:21] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:18:21] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:18:27] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:20:10] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:20:10] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:20:17] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:20:31] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:20:31] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:20:35] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:21:21] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:21:21] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 15:21:26] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.5.36 - - [26/Nov/2018 15:21:27] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.36 - - [26/Nov/2018 15:21:27] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.36 - - [26/Nov/2018 15:21:40] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.5.16 - - [26/Nov/2018 15:28:21] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.16 - - [26/Nov/2018 15:28:21] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.16 - - [26/Nov/2018 15:28:24] "GET /Client/WG/Download/%E8%81%94%E5%8F%8B%E7%94%9F%E4%BA%A7%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7.exe HTTP/1.1" 200 -
+192.168.5.16 - - [26/Nov/2018 15:28:29] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.16 - - [26/Nov/2018 15:28:29] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.36 - - [26/Nov/2018 15:42:13] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.5.36 - - [26/Nov/2018 15:42:13] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.5.36 - - [26/Nov/2018 15:42:25] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.1.115 - - [26/Nov/2018 16:01:01] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.1.115 - - [26/Nov/2018 16:01:01] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.1.115 - - [26/Nov/2018 16:01:18] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 16:38:24] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 16:38:24] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 16:38:27] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.4.3 - - [26/Nov/2018 19:30:32] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.4.3 - - [26/Nov/2018 19:30:43] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:35:56] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:35:56] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:36:01] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:37:14] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:37:14] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:37:18] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:41:33] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:41:33] "POST /Client/GetVersion HTTP/1.1" 200 -
+
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000682', 'Login_Pwd': '2FDF7348273070468984876D5845F3E'}
+{'Login_Status': 'Y', 'Login_Uid': '000682', 'Login_Role': None, 'Login_Dpt': '生产四部', 'Login_Name': '孙勇'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.19'}
+{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '000682', 'Login_Pwd': '2FDF7348273070468984876D5845F3E'}
+{'Login_Status': 'Y', 'Login_Uid': '000682', 'Login_Role': '', 'Login_Dpt': '生产四部', 'Login_Name': '孙勇'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '文员', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'Login_Uid': '000960', 'Login_Pwd': 'BCBE3365E6AC95EA2C343A2395834DD'}
+{'Login_Status': 'Y', 'Login_Uid': '000960', 'Login_Role': '文员', 'Login_Dpt': '仓储中心', 'Login_Name': '吴祖梅'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.20'}
+{'Mode': 'Yes', 'URL': None}
+{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
+{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}192.168.7.251 - - [26/Nov/2018 21:41:37] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:42:02] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:42:02] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:42:06] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:44:32] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:44:32] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:44:36] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:56:22] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:56:23] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 21:56:28] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 22:42:49] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 22:42:49] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 22:43:11] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 22:45:57] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 22:45:57] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 22:46:09] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 23:00:47] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 23:00:47] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 23:00:55] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 23:01:35] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 23:01:35] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 23:01:41] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 23:02:00] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 23:02:00] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 23:02:05] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 23:04:24] "POST /Client/LinkTest HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 23:04:24] "POST /Client/GetVersion HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 23:04:30] "POST /Client/UserLogin HTTP/1.1" 200 -
+192.168.7.251 - - [26/Nov/2018 23:04:34] "POST /Client/UserLogin HTTP/1.1" 200 -
