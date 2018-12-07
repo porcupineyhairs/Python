@@ -1,0 +1,12 @@
+2018-12-03 08:40:57,453 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.5.18 - get:{'Login_Uid': '000124', 'Login_Pwd': '7EB03D58F85B7160FD9D3CDDCF6EC76'}
+2018-12-03 08:40:57,458 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.5.18 - back:{'Login_Status': 'Y', 'Login_Uid': '000124', 'Login_Role': '文员', 'Login_Dpt': '生产四部', 'Login_Name': '张相坤'}
+2018-12-03 10:14:50,072 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.4.10 - get:{'Login_Uid': '000879', 'Login_Pwd': '4297F44B13955235245B2497399D7A93'}
+2018-12-03 10:14:50,072 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.4.10 - get:{'Login_Uid': '000879', 'Login_Pwd': '4297F44B13955235245B2497399D7A93'}
+2018-12-03 10:14:50,073 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.4.10 - back:{'Login_Status': 'Y', 'Login_Uid': '000879', 'Login_Role': '生管', 'Login_Dpt': '仓储中心', 'Login_Name': '庞世友*#'}
+2018-12-03 10:14:50,073 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.4.10 - back:{'Login_Status': 'Y', 'Login_Uid': '000879', 'Login_Role': '生管', 'Login_Dpt': '仓储中心', 'Login_Name': '庞世友*#'}
+2018-12-03 10:15:27,174 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - get:{'Login_Uid': '000117', 'Login_Pwd': '9832EC13D8EBA4EEFF2FC3D37F64B44'}
+2018-12-03 10:15:27,174 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - get:{'Login_Uid': '000117', 'Login_Pwd': '9832EC13D8EBA4EEFF2FC3D37F64B44'}
+2018-12-03 10:15:27,174 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - get:{'Login_Uid': '000117', 'Login_Pwd': '9832EC13D8EBA4EEFF2FC3D37F64B44'}
+2018-12-03 10:15:27,175 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - back:{'Login_Status': 'Y', 'Login_Uid': '000117', 'Login_Role': '文员', 'Login_Dpt': '生产一部', 'Login_Name': '王爱姣*#'}
+2018-12-03 10:15:27,175 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - back:{'Login_Status': 'Y', 'Login_Uid': '000117', 'Login_Role': '文员', 'Login_Dpt': '生产一部', 'Login_Name': '王爱姣*#'}
+2018-12-03 10:15:27,175 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - back:{'Login_Status': 'Y', 'Login_Uid': '000117', 'Login_Role': '文员', 'Login_Dpt': '生产一部', 'Login_Name': '王爱姣*#'}

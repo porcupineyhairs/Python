@@ -1,0 +1,20 @@
+2018-11-30 08:16:00,263 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.115 - get:{'Login_Uid': '001158', 'Login_Pwd': '1BBEA244702F37EC0E8C3766330DD3B'}
+2018-11-30 08:16:00,265 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.115 - back:{'Login_Status': 'Y', 'Login_Uid': '001158', 'Login_Role': '文员', 'Login_Dpt': '生产五部', 'Login_Name': '五部干部'}
+2018-11-30 08:29:27,398 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.5.18 - get:{'Login_Uid': '000124', 'Login_Pwd': '7EB03D58F85B7160FD9D3CDDCF6EC76'}
+2018-11-30 08:29:27,398 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.5.18 - back:{'Login_Status': 'Y', 'Login_Uid': '000124', 'Login_Role': '文员', 'Login_Dpt': '生产四部', 'Login_Name': '张相坤'}
+2018-11-30 10:36:21,241 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.5.36 - get:{'Login_Uid': '000682', 'Login_Pwd': '2FDF7348273070468984876D5845F3E'}
+2018-11-30 10:36:21,242 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.5.36 - back:{'Login_Status': 'Y', 'Login_Uid': '000682', 'Login_Role': '', 'Login_Dpt': '生产四部', 'Login_Name': '孙勇'}
+2018-11-30 10:37:34,268 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.5.36 - get:{'Login_Uid': '000682', 'Login_Pwd': '2FDF7348273070468984876D5845F3E'}
+2018-11-30 10:37:34,269 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.5.36 - back:{'Login_Status': 'Y', 'Login_Uid': '000682', 'Login_Role': '', 'Login_Dpt': '生产四部', 'Login_Name': '孙勇'}
+2018-11-30 12:52:27,499 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - get:{'Login_Uid': '000117', 'Login_Pwd': '67CFDF6FCB34F4C535E2303CA71E945E'}
+2018-11-30 12:52:27,499 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - back:{'Login_Status': 'N', 'Login_Uid': None, 'Login_Role': None, 'Login_Dpt': None, 'Login_Name': None}
+2018-11-30 12:52:31,924 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - get:{'Login_Uid': '000117', 'Login_Pwd': 'FD197AA4745887B05F3C6250982CC24'}
+2018-11-30 12:52:31,925 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - back:{'Login_Status': 'N', 'Login_Uid': None, 'Login_Role': None, 'Login_Dpt': None, 'Login_Name': None}
+2018-11-30 12:52:35,856 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - get:{'Login_Uid': '000117', 'Login_Pwd': '9832EC13D8EBA4EEFF2FC3D37F64B44'}
+2018-11-30 12:52:35,857 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - back:{'Login_Status': 'Y', 'Login_Uid': '000117', 'Login_Role': '文员', 'Login_Dpt': '生产一部', 'Login_Name': '王爱姣*#'}
+2018-11-30 16:35:52,800 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - get:{'Login_Uid': '000117', 'Login_Pwd': '67CFDF6FCB34F4C535E2303CA71E945E'}
+2018-11-30 16:35:52,801 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - back:{'Login_Status': 'N', 'Login_Uid': None, 'Login_Role': None, 'Login_Dpt': None, 'Login_Name': None}
+2018-11-30 16:35:59,966 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - get:{'Login_Uid': '000117', 'Login_Pwd': '9832EC13D8EBA4EEFF2FC3D37F64B44'}
+2018-11-30 16:35:59,967 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.5 - back:{'Login_Status': 'Y', 'Login_Uid': '000117', 'Login_Role': '文员', 'Login_Dpt': '生产一部', 'Login_Name': '王爱姣*#'}
+2018-11-30 19:06:34,568 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.4.3 - get:{'Login_Uid': '000960', 'Login_Pwd': 'BCBE3365E6AC95EA2C343A2395834DD'}
+2018-11-30 19:06:34,570 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.4.3 - back:{'Login_Status': 'Y', 'Login_Uid': '000960', 'Login_Role': '文员', 'Login_Dpt': '仓储中心', 'Login_Name': '吴祖梅'}

@@ -34,6 +34,7 @@ class GetInfo:
 	def __GetOrderInfo(self, __Item):
 		__sqlstr = (r"SELECT "
 		            r"(RTRIM(COPTD.TD001) + '-' + RTRIM(COPTD.TD002) + '-' + RTRIM(COPTD.TD003)) 订单号, "
+		            r"(CASE WHEN TC004='0118' THEN '内销' ELSE '外销' END) 订单类型, "
 		            r"CONVERT(INT, COPTD.TD008) 订单数量, "
 		            r"RTRIM(COPTD.TD005) 品名, "
 		            r"RTRIM(COPTD.UDF08) 保友品名, "
@@ -63,25 +64,26 @@ class GetInfo:
 
 	def __UpdOrderInfo(self, __Item):
 		__sqlstr = (r"UPDATE SCHEDULE SET SC038 = 'y', "
-		            r"SC013 = '{1}', "
-		            r"SC010 = '{2}', "
-		            r"SC011 = '{3}', "
-		            r"SC012 = '{4}', "
-		            r"SC025 = '{5}', "
-		            r"SC015 = '{6}', "
-		            r"SC016 = '{7}', "
-		            r"SC017 = '{8}', "
-		            r"SC024 = '{9}', "
-		            r"SC023 = '{10}', "
-		            r"SC026 = '{11}', "
-		            r"SC037 = '{12}' "
+		            r"SC002 = '{1}', "
+		            r"SC013 = '{2}', "
+		            r"SC010 = '{3}', "
+		            r"SC011 = '{4}', "
+		            r"SC012 = '{5}', "
+		            r"SC025 = '{6}', "
+		            r"SC015 = '{7}', "
+		            r"SC016 = '{8}', "
+		            r"SC017 = '{9}', "
+		            r"SC024 = '{10}', "
+		            r"SC023 = '{11}', "
+		            r"SC026 = '{12}', "
+		            r"SC037 = '{13}' "
 		            r"WHERE SC001 = '{0}'")
 		print(__sqlstr.format(__Item[0], __Item[1], __Item[2],
 		                      __Item[3], __Item[4], __Item[5], __Item[6], __Item[7], __Item[8], __Item[9], __Item[10],
-		                      __Item[11], __Item[12]))
+		                      __Item[11], __Item[12], __Item[13]))
 		self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr.format(__Item[0], __Item[1], __Item[2],
 		                     __Item[3], __Item[4], __Item[5], __Item[6], __Item[7], __Item[8], __Item[9], __Item[10],
-		                     __Item[11], __Item[12]))
+		                     __Item[11], __Item[12], __Item[13]))
 
 	def __GetBoxList(self):
 		__sqlstr = r"SELECT SC001 FROM SCHEDULE WHERE 1=1 AND SC038 = 'y' ORDER BY KEY_ID "
@@ -111,7 +113,7 @@ class GetInfo:
 			return None
 
 	def __GetBoxSizeCode(self, __Size):
-		__sqlstr = r"SELECT Code FROM BoxSizeCode WHERE Size = '{0}'"
+		__sqlstr = r"SELECT BoxCode FROM BoxSizeCode WHERE BoxSize = '{0}'"
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr.format(__Size))
 		if __get[0] != 'None':
 			__Code = __get[0][0]
@@ -145,3 +147,9 @@ class GetInfo:
 		__sqlstr = r"UPDATE SCHEDULE SET SC038 = 'Y', SC036 = '{1}' WHERE SC001 = '{0}'"
 		print(__sqlstr.format(__Item, __Code))
 		self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr.format(__Item, __Code))
+	
+	def __GetOrderType(self):
+		pass
+	
+	def __UptOrderType(self):
+		pass
