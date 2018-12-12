@@ -9,4 +9,4 @@ def WebClient(url, data):
 
 if __name__ == '__main__':
 	# WebClient()
-	WebClient(url='http://192.168.7.253:8099/Client/MaDuo/GetInfo', data=json.dumps({'Mode': 'Insert'}))
+	WebClient(url='http://192.168.7.180:8099/Client/MaDuo/GetInfo', data=json.dumps({'Mode': 'Insert'}))
