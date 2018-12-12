@@ -1,6 +1,0 @@
-2018-12-03 13:26:42,618 - INFO: http://192.168.7.180:8099/Client/MaDuo/GetInfo - 192.168.7.251 - get:{'Mode': 'Insert'}
-2018-12-03 13:36:39,280 - INFO: http://192.168.7.180:8099/Client/MaDuo/GetInfo - 192.168.7.251 - get:{'Mode': 'Insert'}
-2018-12-03 13:36:39,280 - INFO: http://192.168.7.180:8099/Client/MaDuo/GetInfo - 192.168.7.251 - get:{'Mode': 'Insert'}
-2018-12-03 14:18:56,539 - INFO: http://192.168.7.180:8099/Client/MaDuo/GetInfo - 192.168.7.251 - get:{'Mode': 'Insert'}
-2018-12-03 14:55:44,358 - INFO: http://192.168.7.180:8099/Client/MaDuo/GetInfo - 192.168.7.251 - get:{'Mode': 'Insert'}
-2018-12-03 14:55:44,358 - INFO: http://192.168.7.180:8099/Client/MaDuo/GetInfo - 192.168.7.251 - get:{'Mode': 'Insert'}

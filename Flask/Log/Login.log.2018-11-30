@@ -1,6 +1,0 @@
-2018-12-01 09:06:34,588 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.5.18 - get:{'Login_Uid': '000124', 'Login_Pwd': '7EB03D58F85B7160FD9D3CDDCF6EC76'}
-2018-12-01 09:06:34,592 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.5.18 - back:{'Login_Status': 'Y', 'Login_Uid': '000124', 'Login_Role': '文员', 'Login_Dpt': '生产四部', 'Login_Name': '张相坤'}
-2018-12-01 16:23:21,218 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.37 - get:{'Login_Uid': '000117', 'Login_Pwd': '67CFDF6FCB34F4C535E2303CA71E945E'}
-2018-12-01 16:23:21,219 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.37 - back:{'Login_Status': 'N', 'Login_Uid': None, 'Login_Role': None, 'Login_Dpt': None, 'Login_Name': None}
-2018-12-01 16:23:27,657 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.37 - get:{'Login_Uid': '000117', 'Login_Pwd': '9832EC13D8EBA4EEFF2FC3D37F64B44'}
-2018-12-01 16:23:27,658 - INFO: http://192.168.7.180:8099/Client/UserLogin - 192.168.1.37 - back:{'Login_Status': 'Y', 'Login_Uid': '000117', 'Login_Role': '文员', 'Login_Dpt': '生产一部', 'Login_Name': '王爱姣*#'}

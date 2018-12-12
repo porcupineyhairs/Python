@@ -1,2 +1,0 @@
-2018-12-11 09:32:15,262 - INFO: http://192.168.7.252:8099/Client/UserLogin - 192.168.7.251 - get:{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'}
-2018-12-11 09:32:15,267 - INFO: http://192.168.7.252:8099/Client/UserLogin - 192.168.7.251 - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
