@@ -1,6 +1,12 @@
-2018-12-12 11:15:48,515 - INFO: http://192.168.7.252:8099/Client/GetVersion-POST - 192.168.7.251 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.22'} - back:{'Mode': 'Yes', 'URL': None}
-2018-12-12 11:16:00,394 - INFO: http://192.168.7.252:8099/Client/GetVersion-POST - 192.168.7.251 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.22'} - back:{'Mode': 'Yes', 'URL': None}
-2018-12-12 11:18:05,496 - INFO: http://192.168.7.252:8099/Client/GetVersion - POST - 192.168.7.251 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.22'} - back:{'Mode': 'Yes', 'URL': None}
-2018-12-12 13:58:50,052 - INFO: http://192.168.7.252:8099/Client/GetVersion - POST - 192.168.7.251 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.22'} - back:{'Mode': 'Yes', 'URL': None}
-2018-12-12 13:59:49,886 - INFO: http://192.168.7.252:8099/Client/GetVersion - POST - 192.168.7.251 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.22'} - back:{'Mode': 'Yes', 'URL': None}
-2018-12-12 14:04:08,974 - INFO: http://192.168.7.252:8099/Client/GetVersion - POST - 192.168.7.251 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.22'} - back:{'Mode': 'Yes', 'URL': None}
+2018-12-13 09:32:26,065 - INFO: http://192.168.7.252:8099/Client/GetVersion - POST - 192.168.7.251 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.24'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-13 09:49:21,618 - INFO: http://192.168.7.252:8099/Client/GetVersion - POST - 192.168.7.251 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.24'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-13 10:00:52,081 - INFO: http://192.168.7.252:8099/Client/GetVersion - POST - 192.168.7.251 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.24'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-13 10:12:59,520 - INFO: http://192.168.7.252:8099/Client/GetVersion - POST - 192.168.7.251 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.24'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-13 10:21:11,857 - INFO: http://192.168.7.252:8099/Client/GetVersion - POST - 192.168.7.251 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.24'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-13 16:45:46,097 - INFO: http://192.168.7.252:8099/Client/GetVersion - POST - 192.168.7.251 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.24'} - back:{'Mode': 'Yes', 'URL': None}
+

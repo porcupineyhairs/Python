@@ -1,5 +1,6 @@
 from Module.SelfModule import MsSql
 from Module.ModuleDictionary import DataBase_Dict
+from Module import Num2Char
 
 
 class GetInfo:
@@ -15,6 +16,7 @@ class GetInfo:
 		self.__GetToday()
 		self.__GetOrderList()
 		self.__GetBoxList()
+		self.__GetOrderType()
 
 	def __GetToday(self):
 		__sqlstr = "SELECT CONVERT(VARCHAR(30), GETDATE(), 112) "
@@ -149,7 +151,7 @@ class GetInfo:
 		self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr.format(__Item, __Code))
 	
 	def __GetOrderType(self):
-		pass
+		print(Num2Char.changeNumToChar(5))
 	
 	def __UptOrderType(self):
 		pass
