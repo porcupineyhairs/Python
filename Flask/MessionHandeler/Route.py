@@ -58,7 +58,7 @@ def Route(app):
 	# 码垛系统订单基本信息获取
 	@app.route('/Client/MaDuo/GetInfo', methods=['POST'])
 	def MD_GetInfo_C():
-		__log = Logger('Log/Maduo/MaDuoInfo.log', level='info')
+		__log = Logger('Log/MaDuo/MaDuoInfo.log', level='info')
 		__get = request.get_json(force=True)
 		__back = {'Return': 'OK'}
 		__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - '
@@ -75,6 +75,8 @@ def Route(app):
 	def LL_LYXA_C():
 		__log = Logger('Log/PDA/PDA_LL.log', level='info')
 		__get = request.get_json(force=True)
+		# __pda_LL = PDA_LL()
+		# __back = __pda_LL.MianWork(__get)
 		__back = {'Return': 'OK'}
 		__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - '
 						  + 'get:' + str(__get) + ' - ' + 'back:' + str(__back) + '\n')
@@ -85,7 +87,8 @@ def Route(app):
 	def JH_LYXA_C():
 		__log = Logger('Log/PDA/PDA_JH.log', level='info')
 		__get = request.get_json(force=True)
-		__back = {'Return': 'OK'}
+		__pda_JH = PDA_JH()
+		__back = __pda_JH.MianWork(__get)
 		__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - '
 						  + 'get:' + str(__get) + ' - ' + 'back:' + str(__back) + '\n')
 		return Response(json.dumps(__back))

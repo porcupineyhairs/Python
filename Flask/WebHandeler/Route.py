@@ -23,3 +23,10 @@ def Route(app):
 	def conn_ip():
 		return ('<title>获取IP地址</title>' +
 		        '<h1>您的IP地址为：' + request.remote_addr + '</h1>')
+	
+	@app.route('/PDA')
+	def PDA():
+		return ('<title>PDA</title>' +
+		        '<h1>PDA_URL</h1>'
+		        '<br/>'
+		        '<h2>内容待添加</h2>')

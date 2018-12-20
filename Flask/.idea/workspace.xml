@@ -2,30 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd6bbc7e-3182-436c-9ff5-f01f19a5884d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MessionHandeler/Route.py" beforeDir="false" afterPath="$PROJECT_DIR$/MessionHandeler/Route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module/MaDuoSystem/MD_GetInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module/MaDuoSystem/MD_GetInfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module/PDA/JH_LYXA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module/PDA/JH_LYXA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module/PDA/LL_LYXA.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module/PDA/LL_LYXA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module/PDA/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module/PDA/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Module/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebHandeler/Route.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebHandeler/Route.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/startup.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MASTER1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/BOM2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MASTER1/BOM2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/BOMCOPTR.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MASTER1/BOMCOPTR.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MASTER1/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python学习笔记（第二版）_思维导图/元类.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python学习笔记（第二版）_思维导图/内置类型.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python学习笔记（第二版）_思维导图/函数.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python学习笔记（第二版）_思维导图/基本环境.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python学习笔记（第二版）_思维导图/异常.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python学习笔记（第二版）_思维导图/扩展库.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python学习笔记（第二版）_思维导图/描述符.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python学习笔记（第二版）_思维导图/标准库.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python学习笔记（第二版）_思维导图/模块.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python学习笔记（第二版）_思维导图/类.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python学习笔记（第二版）_思维导图/表达式 .mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python学习笔记（第二版）_思维导图/装饰器.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python学习笔记（第二版）_思维导图/迭代器.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python学习笔记（第二版）_思维导图/附录.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebClient/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../WebClient/Main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +24,7 @@
     <SUITE FILE_PATH="coverage/Flask$Flask_win.coverage" NAME="Flask-win Coverage Results" MODIFIED="1533172151925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Flask$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1541138891975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Flask_win$Flask_win.coverage" NAME="Flask-win Coverage Results" MODIFIED="1533132055442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Flask$test.coverage" NAME="test Coverage Results" MODIFIED="1544936854369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Flask$test.coverage" NAME="test Coverage Results" MODIFIED="1545206453414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -56,22 +43,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MessionHandeler/Route.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="195">
+              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -80,31 +55,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Module/MaDuoSystem/MD_GetInfo.py">
+        <entry file="file://$PROJECT_DIR$/Module/PDA/JH_LYXA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="645">
+              <caret line="52" column="62" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="62" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <element signature="e#154#317#0" />
-                <element signature="e#503#741#0" />
-                <element signature="e#772#1091#0" />
-                <element signature="e#1130#2630#0" />
-                <element signature="e#2669#3639#0" />
-                <element signature="e#3668#4086#0" />
-                <element signature="e#4123#4662#0" />
-                <element signature="e#4703#4950#0" />
-                <element signature="e#5002#5233#0" />
-                <element signature="e#5273#5681#0" />
-                <element signature="e#5726#5938#0" />
-                <element signature="e#5981#6292#0" />
-                <element signature="e#6232#6533#0" />
-                <element signature="e#6291#6617#0" />
-                <element signature="e#6236#6610#0" />
-                <element signature="e#6663#7224#0" />
-                <element signature="e#7259#7478#0" />
-                <element signature="e#7537#7817#0" />
-                <element signature="e#7864#8077#0" />
+                <element signature="e#168#443#0" />
+                <element signature="e#1226#1696#0" />
+                <element signature="e#1095#1475#0" />
+                <element signature="e#1502#1821#0" />
+                <element signature="e#1854#2104#0" />
+                <element signature="e#2922#3235#0" />
+                <element signature="e#1067#1080#0" />
+                <element signature="e#1204#1242#0" />
+                <element signature="e#1283#1311#0" />
               </folding>
             </state>
           </provider>
@@ -150,30 +115,30 @@
         <option value="$PROJECT_DIR$/Module/ModuleDictionary.py" />
         <option value="$PROJECT_DIR$/MessionHandeler/__init__.py" />
         <option value="$PROJECT_DIR$/Module/UserManage.py" />
-        <option value="$PROJECT_DIR$/WebHandeler/Route.py" />
         <option value="$PROJECT_DIR$/Module/MaDuoSystem/__init__.py" />
         <option value="$PROJECT_DIR$/Module/MaDuoSystem/GetInfo.py" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/Module/SelfModule.py" />
         <option value="$PROJECT_DIR$/Module/log-test.py" />
         <option value="$PROJECT_DIR$/Module/Log.py" />
-        <option value="$PROJECT_DIR$/Module/PDA/__init__.py" />
-        <option value="$PROJECT_DIR$/Module/PDA/JH_LYXA.py" />
-        <option value="$PROJECT_DIR$/Module/PDA/LL_LYXA.py" />
         <option value="$PROJECT_DIR$/Module/GetDbSvrTime.py" />
-        <option value="$PROJECT_DIR$/MessionHandeler/Route.py" />
-        <option value="$PROJECT_DIR$/Module/__init__.py" />
         <option value="$PROJECT_DIR$/Module/Num2Char.py" />
-        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/WebHandeler/Route.py" />
+        <option value="$PROJECT_DIR$/Module/__init__.py" />
+        <option value="$PROJECT_DIR$/Module/PDA/__init__.py" />
+        <option value="$PROJECT_DIR$/Module/PDA/LL_LYXA.py" />
+        <option value="$PROJECT_DIR$/MessionHandeler/Route.py" />
         <option value="$PROJECT_DIR$/Module/MaDuoSystem/MD_GetInfo.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/Module/PDA/JH_LYXA.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
     <option name="y" value="23" />
-    <option name="width" value="1202" />
-    <option name="height" value="733" />
+    <option name="width" value="1175" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -200,7 +165,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,12 +175,35 @@
             <path>
               <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
               <item name="Flask" type="462c0819:PsiDirectoryNode" />
+              <item name="MessionHandeler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Flask" type="462c0819:PsiDirectoryNode" />
               <item name="Module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Flask" type="462c0819:PsiDirectoryNode" />
+              <item name="Module" type="462c0819:PsiDirectoryNode" />
+              <item name="MaDuoSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Flask" type="462c0819:PsiDirectoryNode" />
+              <item name="Module" type="462c0819:PsiDirectoryNode" />
+              <item name="PDA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Flask" type="462c0819:PsiDirectoryNode" />
+              <item name="WebHandeler" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,11 +270,14 @@
       <updated>1533111020797</updated>
       <workItem from="1544779204019" duration="43000" />
       <workItem from="1544779265638" duration="6177000" />
+      <workItem from="1545018410941" duration="185000" />
+      <workItem from="1545022119576" duration="1348000" />
+      <workItem from="1545180904650" duration="14036000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6220000" />
+    <option name="totallyTimeSpent" value="21789000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -299,14 +289,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="23" width="1202" height="733" extended-state="0" />
+    <frame x="57" y="23" width="1175" height="1417" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18799648" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32761312" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32754716" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -315,7 +305,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5017241" side_tool="true" weight="0.19396226" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49827588" visible="true" weight="0.40093604" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49827588" visible="true" weight="0.19396226" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329718" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -353,32 +343,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Module/UserManage.py</url>
-          <line>157</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Module/UserManage.py</url>
-          <line>158</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Module/UserManage.py</url>
-          <line>138</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Module/UserManage.py</url>
-          <line>115</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Module/Module.GlobalVar.app" />
@@ -427,38 +391,10 @@
     <entry file="file://$PROJECT_DIR$/MessionHandeler/Main.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="322" selection-start-line="322" selection-end-line="322" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebHandeler/Route.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module/ModuleDictionary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module/SelfModule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1051">
-          <caret line="414" lean-forward="true" selection-start-line="414" selection-end-line="414" />
         </state>
       </provider>
     </entry>
@@ -484,10 +420,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Module/Num2Char.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebHandeler/Route.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module/SelfModule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="822">
+          <caret line="414" lean-forward="true" selection-start-line="414" selection-end-line="414" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module/ModuleDictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Module/MaDuoSystem/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MessionHandeler/Route.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="90" column="41" lean-forward="true" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+            <element signature="e#251#633#0" />
+            <element signature="e#746#831#0" />
+            <element signature="e#920#1057#0" />
+            <element signature="e#1155#1518#0" />
+            <element signature="e#1601#1965#0" />
+            <element signature="e#2061#2559#0" />
+            <element signature="e#2646#2966#0" />
+            <element signature="e#3494#3923#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module/GetDbSvrTime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module/PDA/LL_LYXA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="310" selection-start-line="310" selection-end-line="310" />
         </state>
       </provider>
     </entry>
@@ -498,88 +511,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Module/PDA/LL_LYXA.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module/PDA/JH_LYXA.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module/GetDbSvrTime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module/Num2Char.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Module/UserManage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="575">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MessionHandeler/Route.py">
+    <entry file="file://$PROJECT_DIR$/Module/MaDuoSystem/MD_GetInfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+        <state relative-caret-position="-276">
+          <caret line="127" column="24" lean-forward="true" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="24" />
           <folding>
-            <element signature="e#0#82#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#154#317#0" />
+            <element signature="e#519#757#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="195">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Module/MaDuoSystem/MD_GetInfo.py">
+    <entry file="file://$PROJECT_DIR$/Module/PDA/JH_LYXA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="645">
+          <caret line="52" column="62" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="62" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#154#317#0" />
-            <element signature="e#503#741#0" />
-            <element signature="e#772#1091#0" />
-            <element signature="e#1130#2630#0" />
-            <element signature="e#2669#3639#0" />
-            <element signature="e#3668#4086#0" />
-            <element signature="e#4123#4662#0" />
-            <element signature="e#4703#4950#0" />
-            <element signature="e#5002#5233#0" />
-            <element signature="e#5273#5681#0" />
-            <element signature="e#5726#5938#0" />
-            <element signature="e#5981#6292#0" />
-            <element signature="e#6232#6533#0" />
-            <element signature="e#6291#6617#0" />
-            <element signature="e#6236#6610#0" />
-            <element signature="e#6663#7224#0" />
-            <element signature="e#7259#7478#0" />
-            <element signature="e#7537#7817#0" />
-            <element signature="e#7864#8077#0" />
+            <element signature="e#168#443#0" />
+            <element signature="e#1226#1696#0" />
+            <element signature="e#1095#1475#0" />
+            <element signature="e#1502#1821#0" />
+            <element signature="e#1854#2104#0" />
+            <element signature="e#2922#3235#0" />
+            <element signature="e#1067#1080#0" />
+            <element signature="e#1204#1242#0" />
+            <element signature="e#1283#1311#0" />
           </folding>
         </state>
       </provider>

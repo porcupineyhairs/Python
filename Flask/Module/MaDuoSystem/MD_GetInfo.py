@@ -28,7 +28,9 @@ class GetInfo:
 			self.__LastDay = str(int(self.__Today) + 3)
 
 	def __GetOrderList(self):
-		__sqlstr = (r"SELECT SC001 FROM SCHEDULE WHERE SC038 = 'N' /*AND SC003 BETWEEN '{0}' AND '{1}'*/ ORDER BY KEY_ID")
+		__sqlstr = (r"SELECT SC001 FROM SCHEDULE "
+		            r"WHERE SC038 = 'N' /*AND SC003 BETWEEN '{0}' AND '{1}'*/ "
+		            r"ORDER BY KEY_ID")
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr.format(self.__Today, self.__LastDay))
 		if __get[0] != 'None':
 			for __get_Item in __get:
@@ -114,7 +116,7 @@ class GetInfo:
 			return None
 
 	def __GetBoxSizeCode(self, __Size):
-		__sqlstr = r"SELECT BoxCode FROM BoxSizeCode WHERE BoxSize = '{0}'"
+		__sqlstr = r"SELECT BoxCode FROM BoxSizeCode WHERE BoxSize = '{0}' AND Valid = 'Y'"
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr.format(__Size))
 		if __get[0] != 'None':
 			__Code = __get[0][0]
