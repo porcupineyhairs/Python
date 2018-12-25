@@ -16,7 +16,7 @@ class WG_APP_INF(Base):
 	__tablename__ = 'WG_APP_INF'
 	ProgName = Column('ProgName', primary_key=True)
 	Version = Column('Version')
-	Vaild = Column('Vaild')
+	Valid = Column('Valid')
 
 
 class GetVersion:
@@ -42,7 +42,7 @@ class GetVersion:
 		
 		session = self.DbSession()
 		
-		__get = session.query(WG_APP_INF.Version).filter_by(ProgName=ConvertStr('联友生产辅助工具'), Vaild='Y').all()
+		__get = session.query(WG_APP_INF.Version).filter_by(ProgName=ConvertStr('联友生产辅助工具'), Valid='Y').all()
 		
 		if len(__get) == 0:
 			self.__back['Mode'] = 'False'

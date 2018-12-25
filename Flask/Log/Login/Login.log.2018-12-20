@@ -1,0 +1,74 @@
+2018-12-20 14:39:35,550 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 14:48:33,179 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 14:50:37,499 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 14:52:56,968 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 14:58:05,513 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 15:00:23,226 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 15:02:08,989 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 15:30:32,946 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 15:34:25,849 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 15:37:34,416 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 15:41:52,762 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 15:50:12,498 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 15:53:13,819 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 16:14:04,159 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 16:15:44,313 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 16:25:44,822 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 16:26:16,611 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 16:44:15,211 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 16:47:48,911 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 16:49:35,344 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 17:01:01,151 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 17:02:34,960 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 17:09:55,431 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 17:11:24,896 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 17:18:56,955 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 17:21:36,973 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 22:20:30,117 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 22:24:00,529 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 22:26:23,290 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 22:41:34,424 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 22:48:56,172 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 22:52:11,162 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 22:58:41,470 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 23:20:50,118 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 23:23:09,624 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 23:26:31,207 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-20 23:31:18,360 - INFO: http://192.168.1.60:8099/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+

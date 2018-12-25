@@ -87,8 +87,8 @@ def Route(app):
 	def JH_LYXA_C():
 		__log = Logger('Log/PDA/PDA_JH.log', level='info')
 		__get = request.get_json(force=True)
-		__pda_JH = PDA_JH()
-		__back = __pda_JH.MianWork(__get)
+		__pda_JH = PDA_JH_GetInfo()
+		__back = __pda_JH.MainWork(__get)
 		__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - '
 						  + 'get:' + str(__get) + ' - ' + 'back:' + str(__back) + '\n')
 		return Response(json.dumps(__back))

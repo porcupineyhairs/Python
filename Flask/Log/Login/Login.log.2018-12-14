@@ -1,0 +1,8 @@
+2018-12-14 09:15:54,582 - INFO: http://192.168.7.252:8099/Client/UserLogin - POST - 192.168.7.251 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-14 09:19:52,638 - INFO: http://192.168.7.252:8099/Client/UserLogin - POST - 192.168.7.251 - get:{'Login_Uid': '000769', 'Login_Pwd': 'CFCD208495D565EF66E7DFF9F98764DA'} - back:{'Login_Status': 'Y', 'Login_Uid': '000769', 'Login_Role': None, 'Login_Dpt': '工程部', 'Login_Name': '刘洪梅'}
+
+2018-12-14 09:50:15,609 - INFO: http://192.168.7.252:8099/Client/UserLogin - POST - 192.168.7.251 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+
+2018-12-14 10:11:05,902 - INFO: http://192.168.7.252:8099/Client/UserLogin - POST - 192.168.7.251 - get:{'Login_Uid': '001114', 'Login_Pwd': '8581BAB128DBBDD6BBF1D6FA833B675D'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+

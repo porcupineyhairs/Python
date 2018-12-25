@@ -4,7 +4,7 @@ import json
 
 def WebClient():
 	info = {'Mode': 'Insert'}
-	r = requests.post("http://192.168.7.180:8099/Client/MaDuo/GetInfo", data=json.dumps(info))
+	r = requests.post("http://192.168.1.60:8099/Client/PDA/JH_LYXA", data=json.dumps(info))
 	print(r.json())
 	
 	
@@ -15,10 +15,9 @@ def MD():
 	
 	
 def JHXA():
-	from Module.PDA.JH_LYXA import PDA_JH
-	pda_JH = PDA_JH()
-	__get = pda_JH.MianWork({'Mode': 'Select', 'Parameter': None, 'Data': None})
-	print(__get)
+	from Module.PDA.JH_LYXA import PDA_JH_Handle
+	pda_JH = PDA_JH_Handle()
+	pda_JH.MainWork('JH201812250956060001')
 	
 	
 def sql():

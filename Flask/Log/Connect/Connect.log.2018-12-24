@@ -1,0 +1,48 @@
+2018-12-24 08:21:07,573 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 08:22:44,575 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 08:33:29,846 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 08:35:25,015 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 08:41:34,317 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 08:44:56,460 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 08:46:40,575 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 08:51:27,396 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 08:53:53,757 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 09:04:02,275 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 09:06:01,862 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 09:08:57,120 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 09:10:18,050 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 09:11:41,599 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 09:13:19,395 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 09:28:48,231 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.2.3 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 11:13:50,035 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 11:15:19,638 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 13:25:04,761 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 13:28:11,014 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 13:29:49,191 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 13:33:51,409 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 13:39:40,321 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
+2018-12-24 13:42:30,241 - INFO: http://192.168.1.60:8099/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.26'} - back:{'Mode': 'Yes', 'URL': None}
+
