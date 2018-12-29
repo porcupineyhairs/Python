@@ -7,6 +7,7 @@ DataBase_Dict = {
 	'WG_DB': ['192.168.0.198', 'sa', 'COMfort123456', 'WG_DB'],
 
 	'TEST2018': ['192.168.0.99', 'sa', 'comfortgroup2016{', 'TEST2018'],
-	'COMFORT': ['192.168.1.61', 'sa', 'comfortgroup2016{', 'COMFORT']
+	'COMFORT': ['192.168.0.99', 'sa', 'comfortgroup2016{', 'COMFORT'],
+	'COMFORT_TEST': ['192.168.1.61', 'sa', 'comfortgroup2016{', 'COMFORT'],
 	
 }

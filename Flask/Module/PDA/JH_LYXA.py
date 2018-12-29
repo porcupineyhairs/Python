@@ -6,7 +6,7 @@ import json
 
 class PDA_JH_GetInfo:
 	def __init__(self):
-		self.__Conn_ERP = DataBase_Dict['COMFORT']
+		self.__Conn_ERP = DataBase_Dict['COMFORT_TEST']
 		self.__Conn_WG = DataBase_Dict['WG_DB']
 		self.__mssql = MsSql()
 		self.__getSvrTime = GetSvrTime()
@@ -19,29 +19,32 @@ class PDA_JH_GetInfo:
 	
 	def MainWork(self, __json=None):
 		self.__init__()
-		try:
-			self.__Mode = __json['Mode']
-			self.__Parameter = __json['Parameter']
-			self.__Data = __json['Data']
-			
-			if self.__Mode == 'GetConfig':
-				self.__ModeGetConfig()
-			elif self.__Mode == 'Select':
-				self.__ModeSelect()
-			elif self.__Mode == 'Insert':
-				self.__ModeInsert()
-			elif self.__Mode == 'Complete':
-				self.__ModeComplete()
-			else:
-				print('Mode Out Of Index :', self.__Mode)
-				self.__Mode = 'Error'
-			self.__SetReturnMode(self.__Mode)
-			self.__SetReturnParameter(self.__Parameter)
-		except Exception as e:
-			print('Json Input Error\n', 'Input Json: ' + str(__json))
-			print(e)
-		finally:
-			return self.__back
+		if __json is None:
+			print('test')
+		else:
+			try:
+				self.__Mode = __json['Mode']
+				self.__Parameter = __json['Parameter']
+				self.__Data = __json['Data']
+				
+				if self.__Mode == 'GetConfig':
+					self.__ModeGetConfig()
+				elif self.__Mode == 'Select':
+					self.__ModeSelect()
+				elif self.__Mode == 'Insert':
+					self.__ModeInsert()
+				elif self.__Mode == 'Complete':
+					self.__ModeComplete()
+				else:
+					print('Mode Out Of Index :', self.__Mode)
+					self.__Mode = 'Error'
+				self.__SetReturnMode(self.__Mode)
+				self.__SetReturnParameter(self.__Parameter)
+			except Exception as e:
+				print('Json Input Error\n', 'Input Json: ' + str(__json))
+				print(e)
+			finally:
+				return self.__back
 		
 	def __ModeGetConfig(self):
 		__sqlstr = (r"SELECT RTRIM(Type) FROM WG_DB..WG_CONFIG "
@@ -166,7 +169,7 @@ class PDA_JH_GetInfo:
 
 class PDA_JH_Handle:
 	def __init__(self):
-		self.__Conn_ERP = DataBase_Dict['COMFORT']
+		self.__Conn_ERP = DataBase_Dict['COMFORT_TEST']
 		self.__mssql = MsSql()
 		self.__getSvrTime = GetSvrTime()
 		self.__FlowId = None
@@ -184,15 +187,15 @@ class PDA_JH_Handle:
 		self.__TG003 = None  # 进货日期
 		self.__TG004 = '01'  # 工厂编号
 		self.__TG005 = None  # 供应商编号
-		self.__TG006 = None  # 供应商单号
+		self.__TG006 = None  # 送货单号
 		self.__TG007 = None  # 币种
-		self.__TG008 = '1'  # 汇率
+		self.__TG008 = None  # 汇率
 		self.__TG009 = None  # 发票种类
 		self.__TG010 = None  # 税种
 		self.__TG013 = 'N'  # 审核码
 		self.__TG014 = None  # 单据日期=进货日期
 		self.__TG015 = 'N'  # 更新码
-		self.__TG021 = None  # 供应商全程
+		self.__TG021 = None  # 供应商全称
 		self.__TG030 = None  # 增值税率
 		self.__TG033 = None  # 付款条件编号
 		
@@ -229,29 +232,29 @@ class PDA_JH_Handle:
 		self.__GetHeadTG002()
 		self.__SetHeadInfo()
 		self.__GetMaterielInfo()
-		print(self.__TG001 + '-' + self.__TG002)
+		self.__SetDetailMoney()
 		self.__SetSumMoney()
 		self.__UpdJHXAInfo()
 		
-		return self.__TG001 + self.__TG002
+		return self.__TG001 + '-' + self.__TG002
 		
 	def __GetHeadTG001(self):
-		__sqlstr = (r"SELECT DISTINCT RTRIM(JHXA.COMPANY), RTRIM(JHXA.CREATOR), RTRIM(JHXA.USR_GROUP), "
-		            r"RTRIM(JHXA001) 进货单别, RTRIM(JHXA002) 供应商编号, RTRIM(JHXA004) 进货日期, "
-		            r"RTRIM(JHXA013) 送货单号, "
-		            r"RTRIM(MA003) 公司全称, RTRIM(MA030) 发票种类, "
-		            r"RTRIM(CASE WHEN TC005 = '' OR TC005 IS NULL THEN 'RMB' ELSE TC005 END) AS TC005C, "
-		            r"RTRIM(CASE WHEN NOT (TC018 = '' OR TC018 IS NULL) THEN TC018 "
+		__sqlstr = (r"SELECT DISTINCT RTRIM(JHXA.COMPANY) 公司别, RTRIM(JHXA.CREATOR) 创建人, RTRIM(JHXA.USR_GROUP) 用户组, "
+		            r"RTRIM(JHXA001) 进货单别, RTRIM(JHXA004) 进货日期, RTRIM(JHXA002) 供应商编号, RTRIM(JHXA013) 送货单号, "
+		            r"RTRIM(MA021) 交易币种, MG2.MG003 汇率, "
+		            r"RTRIM(MA030) 发票种类, "
+		            r"(CASE WHEN NOT (TC018 = '' OR TC018 IS NULL) THEN TC018 "
 		            r"ELSE (CASE WHEN MA044 ='' OR MA044 IS NULL THEN '1' ELSE MA044 END ) END) AS TC018C, "
-		            r"RTRIM(CASE WHEN TC026 IS NULL THEN MA064 ELSE TC026 END) AS TC026C, "
-		            r"RTRIM(CASE WHEN TC027 = '' OR TC027 IS NULL THEN MA055 ELSE TC027 END) AS TC027C "
+		            r"RTRIM(MA003) 供应商全称, "
+		            r"(CASE WHEN TC026 IS NULL THEN MA064 ELSE TC026 END) AS TC026C, "
+		            r"(CASE WHEN TC027 = '' OR TC027 IS NULL THEN MA055 ELSE TC027 END) AS TC027C "
 		            r"FROM COMFORT.dbo.JH_LYXA AS JHXA "
-		            r"LEFT JOIN COMFORT.dbo.PURTC AS PURTC ON 1=2 LEFT JOIN COMFORT.dbo.PURTD AS PURTD ON 1=2 "
-		            r"LEFT JOIN COMFORT.dbo.PURMD AS PURMD ON MD001=TC004 AND MD002=TD004 AND MD006='****' "
+		            r"LEFT JOIN COMFORT.dbo.PURTC AS PURTC ON 1=2 "
 		            r"LEFT JOIN COMFORT.dbo.INVMB AS INVMB ON MB001=JHXA007 "
 		            r"LEFT JOIN COMFORT.dbo.PURMA AS PURMA ON MA001=JHXA002 "
-		            r"LEFT JOIN COMFORT.dbo.CMSMF AS CMSMF ON CMSMF.MF001=TC005 "
-		            r"LEFT JOIN COMFORT.dbo.CMSMF AS CMSMF1 ON CMSMF1.MF001 ='RMB' "
+		            r"LEFT JOIN (SELECT CMSMG.MG003, CMSMG.MG001 FROM COMFORT.dbo.CMSMG "
+		            r"INNER JOIN (SELECT MAX(MG002) MAXMG02, MG001 MAXMG01 FROM CMSMG GROUP BY MG001) AS MG "
+		            r"ON MG.MAXMG01 = CMSMG.MG001 AND MG.MAXMG02 = CMSMG.MG002) AS MG2 ON MG2.MG001 = MA021 "
 		            r"WHERE JHXA005 IN ('{0}') AND JHXA011 = 'N' ")
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ERP, SqlStr=__sqlstr.format(self.__FlowId))
 		if __get[0] != 'None':
@@ -260,16 +263,17 @@ class PDA_JH_Handle:
 			self.__Uid = __get[1]
 			self.__Ugroup = __get[2]
 			self.__TG001 = __get[3]
-			self.__TG003 = __get[5]
-			self.__TG005 = __get[4]
+			self.__TG003 = __get[4]
+			self.__TG005 = __get[5]
 			self.__TG006 = __get[6]
-			self.__TG007 = __get[9]
-			self.__TG009 = __get[8]
+			self.__TG007 = __get[7]
+			self.__TG008 = __get[8]
+			self.__TG009 = __get[9]
 			self.__TG010 = __get[10]
 			self.__TG014 = self.__TG003
-			self.__TG021 = __get[7]
-			self.__TG030 = __get[11]
-			self.__TG033 = __get[12]
+			self.__TG021 = __get[11]
+			self.__TG030 = __get[12]
+			self.__TG033 = __get[13]
 	
 	def __GetHeadTG002(self):
 		__sqlstr = (r"SELECT (CASE WHEN A1 IS NULL THEN A2 + '0001' ELSE A1 END ) B FROM "
@@ -351,11 +355,7 @@ class PDA_JH_Handle:
 		                               self.__TG003, self.__TG004, self.__TG005, self.__TG006, self.__TG007,
 		                               self.__TG008, self.__TG009, self.__TG010, self.__TG013, self.__TG014,
 		                               self.__TG015, self.__TG021, self.__TG030, self.__TG033))
-		print(__sqlstr.format(self.__Company, self.__Uid, self.__Ugroup, self.__Time, self.__TG001, self.__TG002,
-		                      self.__TG003, self.__TG004, self.__TG005, self.__TG006, self.__TG007,
-		                      self.__TG008, self.__TG009, self.__TG010, self.__TG013, self.__TG014,
-		                      self.__TG015, self.__TG021, self.__TG030, self.__TG033))
-	
+		
 	def __SetDetailInfo(self):
 		self.__TH015 = self.__TH007
 		self.__TH016 = self.__TH007
@@ -375,18 +375,24 @@ class PDA_JH_Handle:
 		            r"'{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}','{15}','{16}','{17}',"
 		            r"'{18}','{19}','{20}','{21}','N','{22}','N','N','N','N','{23}',"
 		            r"'{24}','{25}','{26}','N','N','0','{27}','{28}','1','##########','{29}')")
-		print(__sqlstr.format(self.__Company, self.__Uid, self.__Ugroup, self.__Time, self.__TG001, self.__TG002,
-		                      self.__TH003, self.__TH004, self.__TH005, self.__TH006, self.__TH007,
-		                      self.__TH008, self.__TH009, self.__TH010, self.__TH011, self.__TH012,
-		                      self.__TH013, self.__TH014, self.__TH015, self.__TH016,
-		                      self.__TH018, self.__TH019, self.__TH027, self.__TH033, self.__TH034, self.__TH035,
-		                      self.__TH042, self.__TH064, self.__TH065, self.__THC02))
 		self.__SqlWork(__sqlstr.format(self.__Company, self.__Uid, self.__Ugroup, self.__Time, self.__TG001, self.__TG002,
 		                               self.__TH003, self.__TH004, self.__TH005, self.__TH006, self.__TH007,
 		                               self.__TH008, self.__TH009, self.__TH010, self.__TH011, self.__TH012,
 		                               self.__TH013, self.__TH014, self.__TH015, self.__TH016,
 		                               self.__TH018, self.__TH019, self.__TH027, self.__TH033, self.__TH034, self.__TH035,
 		                               self.__TH042, self.__TH064, self.__TH065, self.__THC02))
+		
+	def __SetDetailMoney(self):
+		__sqlstr = (r"UPDATE COMFORT.dbo.PURTH  SET "
+		            r"TH045 = CAST(ROUND(TH019/(1+CONVERT(FLOAT, TG030)),2) AS  NUMERIC(10,2)), "
+		            r"TH046 = CAST(ROUND(TH019 - (TH019/(1+CONVERT(FLOAT, TG030))),2) AS  NUMERIC(10,2)), "
+		            r"TH047 = CAST(ROUND((TH019 * CONVERT(FLOAT, TG008)/(1+CONVERT(FLOAT, TG030))),2) "
+		            r"AS  NUMERIC(10,2)), "
+		            r"TH048 = CAST(ROUND((TH019 * CONVERT(FLOAT, TG008)) - "
+		            r"(TH019 * CONVERT(FLOAT, TG008)/(1+CONVERT(FLOAT, TG030))),2) AS  NUMERIC(10,2)) "
+		            r"FROM PURTH INNER JOIN COMFORT.dbo.PURTG AS PURTG ON TG001 = TH001 AND TG002 = TH002 "
+		            r"WHERE TG001= '{0}' AND TG002= '{1}' ")
+		self.__SqlWork(__sqlstr.format(self.__TG001, self.__TG002))
 	
 	def __SetSumMoney(self):
 		__sqlstr = (r"UPDATE A SET TG017=SUMTH019,TG019=SUMTH046,TG026=SUMTH015,TG028=SUMTH045,TG031=SUMTH047,"
@@ -401,17 +407,16 @@ class PDA_JH_Handle:
 		            r"INNER JOIN COMFORT.dbo.CMSMA ON 1=1 "
 		            r"GROUP BY TH001,TH002)  AS B ON A.TG001=B.TH001 AND A.TG002=B.TH002 "
 		            r"WHERE TG001= '{0}' AND TG002= '{1}' ")
-		self.__mssql.Sqlwork(self.__Conn_ERP, __sqlstr.format(self.__TG001, self.__TG002))
+		self.__SqlWork(__sqlstr.format(self.__TG001, self.__TG002))
 		
 	def __UpdJHXAInfo(self):
 		__Time = self.__getSvrTime.GetTime({'Mode': 'Long'})['Time']
 		__sqlstr = (r"UPDATE COMFORT.dbo.JH_LYXA SET COMPANY='{1}', MODIFIER='{2}', MODI_DATE='{3}', "
-		            r"FLAG=(convert(int,COMFORT.dbo.JH_LYXA.FLAG))%999+1, JHXA011 = 'Y' "
+		            r"FLAG=(convert(int,COMFORT.dbo.JH_LYXA.FLAG))%999+1, JHXA011 = 'Y', "
+		            r"UDF01 = '{4}' "
 		            r"WHERE  JHXA005 = '{0}' ")
-		print(__sqlstr.format(self.__FlowId, self.__Company,
-		                                                                      self.__Uid, str(__Time)))
-		self.__mssql.Sqlwork(DataBase=self.__Conn_ERP, SqlStr=__sqlstr.format(self.__FlowId, self.__Company,
-		                                                                      self.__Uid, str(__Time)))
+		self.__SqlWork(__sqlstr.format(self.__FlowId, self.__Company, self.__Uid,
+		                               str(__Time), self.__TG001 + '-' + self.__TG002))
 		
 	def __SqlWork(self, __sqlstr):
 		self.__mssql.Sqlwork(DataBase=self.__Conn_ERP, SqlStr=__sqlstr)

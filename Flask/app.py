@@ -3,12 +3,13 @@ import MessionHandeler
 import WebHandeler
 import os
 
-
 from flask import Flask
 from flask_bootstrap import Bootstrap
+from flask_apscheduler import APScheduler
 
 
 app = Flask(__name__)
+scheduler = APScheduler()
 
 app.secret_key = '1234567'
 
