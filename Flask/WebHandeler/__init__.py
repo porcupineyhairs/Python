@@ -1,4 +1,4 @@
-from WebHandeler import Route
-from WebHandeler import Main
-from WebHandeler import Error
+from .Route import *
+from .Main import *
+from .Error import *
 

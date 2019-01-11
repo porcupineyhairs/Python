@@ -52,7 +52,7 @@ def Select(pinhao, level=0):
 			r"ELSE SUBSTRING(RTRIM(CB013),1,4) + '-' + SUBSTRING(RTRIM(CB013),5,2) + '-' +SUBSTRING(RTRIM(CB013),7,2) END ), "
 			r"(CASE WHEN RTRIM(CB014) IS NULL THEN '' WHEN RTRIM(CB014) = '' THEN '' "
 			r"ELSE SUBSTRING(RTRIM(CB014),1,4) + '-' + SUBSTRING(RTRIM(CB014),5,2) + '-' +SUBSTRING(RTRIM(CB014),7,2) END ), "
-			r"RTRIM(PURMA.MA002) "  # 供应商名称
+			r"RTRIM(PURMA.MA002), RTRIM(CB015) "  # 供应商名称
 			# r"RTRIM(INVMA.MA003) "        # 会计类别
 			r"FROM BOMCB  "
 			r"LEFT JOIN CMSMW ON MW001 = CB011 "
@@ -73,9 +73,11 @@ def Select(pinhao, level=0):
 			xuhao = get[row][3]
 			shuxing = get[row][4]
 			# hezhun = get[row][5]
-			gongyi = get[row][6]
-			shengxiao = get[row][7]
-			shixiao = get[row][8]
+			gongyi = get[row][5]
+			shengxiao = get[row][6]
+			shixiao = get[row][7]
+			moren = get[row][9]
+			
 			# gongyinshang = get[row][9]
 			# kuaiji = get[row][10]
 
@@ -86,7 +88,7 @@ def Select(pinhao, level=0):
 			shuxing2 = shuxingLib[str(shuxing)]
 
 			PrintStr = ('\t' * int(level) + str(level) + '|-' + '\t' + pinhao2 + '\t' + pinming + '\t' + guige + '\t'
-						+ xuhao + '\t' + shuxing2 + '\t' + gongyi )
+						+ xuhao + '\t' + shuxing2 + '\t' + gongyi + '\t' + shengxiao + '\t' + shixiao + '\t' + moren)
 
 			STR.append(PrintStr + '\n')
 			print(PrintStr)

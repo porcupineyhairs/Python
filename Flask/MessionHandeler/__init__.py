@@ -1,3 +1,3 @@
-from MessionHandeler import Route
-from MessionHandeler import Main
+from .Route import *
+from .Main import *
 from Module import UserManage

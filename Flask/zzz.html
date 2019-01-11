@@ -5,50 +5,50 @@
 <title>通过按钮实现隐藏和显示</title>
 <style type="text/css">
 .body{
-margin: 0 auto;
+	margin: 0 auto;
 }
 #show{
-width: 600px;
-height: auto;
-font-size: 14px;
-background-color: #E4C392;
-display: block;
-padding: 10px;
-margin: 0 auto;
-border-radius: 10px;
+	width: 600px;
+	height: auto;
+	font-size: 14px;
+	background-color: #E4C392;
+	display: block;
+	padding: 10px;
+	margin: 0 auto;
+	border-radius: 10px;
 }
 #show h2{
-color: #11C2EE;
-margin: 0 auto;
+	color: #11C2EE;
+	margin: 0 auto;
 }
 .slide{
-margin: 0 auto;
-padding: 0;
-width: 600px;
-border-top: solid 4px #D6A55C;
+	margin: 0 auto;
+	padding: 0;
+	width: 600px;
+	border-top: solid 4px #D6A55C;
 }
 .btn-slide{
-background-color: bisque;
-width: 80px;
-height:30px;
-text-align: center;
-margin: 0 auto;
-border-radius: 8px;
-margin: 0 auto;
-display: block;
+	background-color: bisque;
+	width: 80px;
+	height:30px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 8px;
+	margin: 0 auto;
+	display: block;
 }
 </style>
-<script type="text/javascript">
-function divShow(){
-document.getElementById("tr1").style.display="block";
-document.getElementById("btnhref").innerHTML ="关闭";
-document.getElementById("btnhref").href ="javascript:divhidden()";
-}
-function divhidden(){
-document.getElementById("tr1").style.display="none";
-document.getElementById("btnhref").innerHTML ="了解";
-document.getElementById("btnhref").href ="javascript:divShow()";
-}
+	<script type="text/javascript">
+	function divShow(){
+		document.getElementById("tr1").style.display="block";
+		document.getElementById("btnhref").innerHTML ="关闭";
+		document.getElementById("btnhref").href ="javascript:divhidden()";
+	}
+	function divhidden(){
+		document.getElementById("tr1").style.display="none";
+		document.getElementById("btnhref").innerHTML ="了解";
+		document.getElementById("btnhref").href ="javascript:divShow()";
+	}
 </script>
 </head>
 <body>
@@ -75,12 +75,12 @@ GoF所描述的23种设计模式，总共可以分为三种类型：创建型模
 <a href="javascript:divShow();" id="btnhref" class="btn-slide">了解</a>
 </p>
 
-<table align="center" data-sort="sortDisabled" id="test" style="display: block;">
+<table align="center" data-sort="sortDisabled" width="-314">
     <tbody>
         <tr class="firstRow">
-            <td style="border-width: 1px; border-style: solid; word-break: break-all;" valign="middle" rowspan="1" width="843" colspan="6" align="center">
+            <td style="border-width: 1px; border-style: solid; word-break: break-all;" valign="middle" rowspan="1" width="843" colspan="4" align="center">
                 <p style="text-align: center;">
-                    <span style="font-size: 36px;"><strong><span style="font-family: 宋体;">IT作业申请表</span></strong></span>
+                    <span style="font-family:宋体"><span style="font-size: 36px;"><strong>高级OA外挂系统测试-请勿动</strong></span></span>
                 </p>
             </td>
         </tr>
@@ -91,12 +91,6 @@ GoF所描述的23种设计模式，总共可以分为三种类型：创建型模
             <td style="border-width: 1px; border-style: solid;" height="25" valign="top" rowspan="1" width="172" colspan="1">
                 <input class="AUTO" datafld="SYS_USERNAME" id="DATA_29" style="height: 20px; width: 150px; font-family: Arial; font-size: 13.3333px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" title="申请人" type="text" value="{宏控件}">
             </td>
-            <td style="border-width: 1px; border-style: solid; word-break: break-all;" height="25" valign="middle" rowspan="1" width="96" colspan="1" align="right">
-                部门：
-            </td>
-            <td style="border-width: 1px; border-style: solid;" height="25" valign="top" rowspan="1" width="170" colspan="1">
-                <input class="AUTO" datafld="SYS_DEPTNAME_S" id="DATA_31" style="height: 20px; width: 150px; font-family: Arial; font-size: 13.3333px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" title="部门" type="text" value="{宏控件}">
-            </td>
             <td style="border-width: 1px; border-style: solid; word-break: break-all;" height="25" valign="middle" rowspan="1" width="94" colspan="1" align="right">
                 日期：
             </td>
@@ -104,78 +98,17 @@ GoF所描述的23种设计模式，总共可以分为三种类型：创建型模
                 <input class="AUTO" datafld="SYS_DATE" id="DATA_32" style="height: 20px; width: 150px; font-family: Arial; font-size: 13.3333px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" title="日期" type="text" value="{宏控件}">
             </td>
         </tr>
-        <tr id="tr1" style="display: none;">
-            <td style="word-break: break-all;" valign="middle" rowspan="1" colspan="1" align="right" height="24" width="100">
-                <p>
-                    作业内容：
+        <tr>
+            <td valign="middle" rowspan="1" colspan="4" align="right" style="border-left-width: 1px; border-top-width: 1px;">
+                <p style="text-align:left;alignment: center; font-size: 24px">
+                    <a href="http://192.168.1.60:8099/Comand/Maduo" title="Emily&#39;s Blog" target="_blank" style="alignment: center;">码垛系统临时更新数据</a>
                 </p>
-            </td>
-            <td style="word-break: break-all;" valign="middle" rowspan="1" colspan="5" height="24" align="left">
-                <input type="checkbox" id="DATA_36" name="DATA_36" title="复选框_ERP/OA" class="">&nbsp;ERP/OA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input type="checkbox" id="DATA_37" name="DATA_37" title="复选框_网络/特殊权限" class="">&nbsp;网络/特殊权限 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="checkbox" id="DATA_60" name="DATA_60" title="复选框_维修" class="">&nbsp;维修 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input type="checkbox" id="DATA_53" name="DATA_53" title="复选框_人力资源系统" class="">&nbsp;人力资源系统
-            </td>
-        </tr>
-        <tr>
-            <td valign="middle" rowspan="1" colspan="1" align="right" style="word-break: break-all;">
-                作业时效：
-            </td>
-            <td valign="middle" rowspan="1" colspan="5" align="left" style="word-break: break-all;">
-                <input type="checkbox" id="DATA_38" name="DATA_38" title="复选框_永久" class="">&nbsp;永久 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input type="checkbox" id="DATA_39" name="DATA_39" title="复选框_短期" class="">&nbsp;短期 &nbsp;<img class="DATE" src="/images/form/calendar.png" title="日期控件：日期开始" value="日期开始"/>&nbsp;<input id="DATA_49" name="DATA_49" title="日期开始" class="" style="height: 15px; width: 90px;">&nbsp; &nbsp; &nbsp;<img class="DATE" src="/images/form/calendar.png" title="日期控件：日期结束" value="日期结束"/>&nbsp;<input id="DATA_50" name="DATA_50" title="日期结束" class="" style="width: 90px; height: 15px;">
-            </td>
-        </tr>
-        <tr>
-            <td valign="middle" rowspan="1" colspan="1" align="right" height="74" style="word-break: break-all;">
-                申请原因：<br/>
-            </td>
-            <td valign="top" rowspan="1" colspan="5" align="left" height="74">
-                <textarea id="DATA_43" name="DATA_43" title="申请原因" class="" style="height: 75px; width: 725px;"></textarea>
-            </td>
-        </tr>
-        <tr>
-            <td valign="middle" rowspan="1" colspan="1" align="right" style="word-break: break-all;" height="185">
-                预期效果：
-            </td>
-            <td valign="top" rowspan="1" colspan="5" align="left" height="185">
-                <textarea id="DATA_44" name="DATA_44" title="预期效果" class="" style="height: 180px; width: 725px;"></textarea>
-            </td>
-        </tr>
-        <tr>
-            <td valign="middle" rowspan="1" colspan="6" align="center" height="54" style="word-break: break-all;">
-                <span style="font-size: 36px;"><strong><span style="font-family: 宋体, SimSun;">以下由资讯部填写</span></strong><span style="font-family: 宋体, SimSun;"></span></span><br/>
-            </td>
-        </tr>
-        <tr>
-            <td valign="middle" rowspan="1" colspan="1" align="right" style="word-break: break-all;" height="123">
-                咨询部意见：<br/>
-            </td>
-            <td valign="top" rowspan="1" colspan="5" align="left" height="123">
-                <textarea id="DATA_45" name="DATA_45" title="资讯课意见" class="" style="height: 130px; width: 725px;"></textarea>
-            </td>
-        </tr>
-        <tr>
-            <td valign="middle" rowspan="2" colspan="1" align="right" style="word-break: break-all;">
-                作业结果：
-            </td>
-            <td valign="top" rowspan="2" colspan="5" align="left" style="word-break: break-all;">
-                <textarea id="DATA_55" name="DATA_55" title="作业结果" class="" style="height: 90px; width: 725px;"></textarea>
-            </td>
-        </tr>
-        <tr></tr>
-        <tr>
-            <td valign="top" rowspan="1" colspan="2" align="left"></td>
-            <td valign="middle" rowspan="1" colspan="1" align="right" style="word-break: break-all;">
-                <span style="font-family: 微软雅黑; text-align: -webkit-right;">完成日期：</span>
-            </td>
-            <td valign="middle" rowspan="1" colspan="1" align="left" style="word-break: break-all;">
-                <input class="AUTO" datafld="SYS_DATE" id="DATA_58" style="height: 20px; width: 150px; font-family: Arial; font-size: 13.3333px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" title="完成时间" type="text" value="{宏控件}">
-            </td>
-            <td valign="middle" rowspan="1" colspan="1" align="right" style="word-break: break-all;">
-                <span style="font-family: 微软雅黑; font-size: 13px; text-align: -webkit-right;">作业负责人：</span>
-            </td>
-            <td valign="middle" rowspan="1" colspan="1" align="left" style="word-break: break-all;">
-                <input class="AUTO" datafld="SYS_USERNAME" id="DATA_59" style="height: 20px; width: 150px; font-family: Arial; font-size: 13.3333px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" title="作业负责人" type="text" value="{宏控件}">
             </td>
         </tr>
     </tbody>
 </table>
+<p>
+    &nbsp;
+</p><style>.view table td {    border-top: 1px solid #999999;    border-left: 1px solid #999999;    border-right: 1px solid #999999;    border-bottom: 1px solid #999999;    font-size: 13px;    padding: 5px}.view table input {    border-right: #333333 0px solid;    border-top: #333333 0px solid;    border-left: #333333 0px solid;    border-bottom: #666666 1px solid}.view table textarea {    border-right: #333333 0px solid;    border-top: #333333 0px solid;    border-left: #333333 0px solid;    border-bottom: #666666 1px solid}</style><script></script>
 </body>
 </html>

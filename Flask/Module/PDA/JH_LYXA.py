@@ -6,7 +6,7 @@ import json
 
 class PDA_JH_GetInfo:
 	def __init__(self):
-		self.__Conn_ERP = DataBase_Dict['COMFORT_TEST']
+		self.__Conn_ERP = DataBase_Dict['COMFORT']
 		self.__Conn_WG = DataBase_Dict['WG_DB']
 		self.__mssql = MsSql()
 		self.__getSvrTime = GetSvrTime()
@@ -42,7 +42,7 @@ class PDA_JH_GetInfo:
 				self.__SetReturnParameter(self.__Parameter)
 			except Exception as e:
 				print('Json Input Error\n', 'Input Json: ' + str(__json))
-				print(e)
+				self.__back.update({'Error': str(e)})
 			finally:
 				return self.__back
 		
@@ -169,7 +169,7 @@ class PDA_JH_GetInfo:
 
 class PDA_JH_Handle:
 	def __init__(self):
-		self.__Conn_ERP = DataBase_Dict['COMFORT_TEST']
+		self.__Conn_ERP = DataBase_Dict['COMFORT']
 		self.__mssql = MsSql()
 		self.__getSvrTime = GetSvrTime()
 		self.__FlowId = None
@@ -239,6 +239,7 @@ class PDA_JH_Handle:
 		return self.__TG001 + '-' + self.__TG002
 		
 	def __GetHeadTG001(self):
+		print('GetHeadInfo')
 		__sqlstr = (r"SELECT DISTINCT RTRIM(JHXA.COMPANY) 公司别, RTRIM(JHXA.CREATOR) 创建人, RTRIM(JHXA.USR_GROUP) 用户组, "
 		            r"RTRIM(JHXA001) 进货单别, RTRIM(JHXA004) 进货日期, RTRIM(JHXA002) 供应商编号, RTRIM(JHXA013) 送货单号, "
 		            r"RTRIM(MA021) 交易币种, MG2.MG003 汇率, "
@@ -284,8 +285,10 @@ class PDA_JH_Handle:
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ERP, SqlStr=__sqlstr.format(self.__TG001))
 		if __get[0] != 'None':
 			self.__TG002 = str(__get[0][0])
+			print(self.__TG001 + '-' + self.__TG002)
 			
 	def __GetMaterielInfo(self):
+		print('GetMaterielInfo')
 		__sqlstr = (r"SELECT RTRIM(MB001), RTRIM(MB002), RTRIM(MB003), RTRIM(MB004), "
 		            r"RTRIM(JHXA003), RTRIM(JHXA009) FROM INVMB "
 		            r"INNER JOIN JH_LYXA ON JHXA007 = MB001 WHERE 1=1 AND JHXA005 = '{0}' ORDER BY ID")
@@ -305,7 +308,8 @@ class PDA_JH_Handle:
 				self.__GetDetailInfo()
 			
 	def __GetDetailInfo(self):
-		__sqlstr = (r"SELECT DISTINCT TOP 10 TD008 - TD015 - ( SELECT isnull( SUM ( TH007 ), 0 ) "
+		print('GetDetailInfo')
+		__sqlstr = (r"SELECT DISTINCT TOP 200 TD008 - TD015 - ( SELECT isnull( SUM ( TH007 ), 0 ) "
 		            r"FROM COMFORT.dbo.PURTH PURTH WHERE TH011 = TD001 AND TH012 = TD002 AND TH013 = TD003 "
 		            r"AND TH030 = 'N' ) AS WJL, "
 		            r"TD001, RTRIM(TD002), TD003, TD010, TD014, RTRIM(TD020), RTRIM(TD022), RTRIM(TDC03), TD012 "
@@ -326,6 +330,7 @@ class PDA_JH_Handle:
 			self.__GetNumber(__get)
 			
 	def __GetNumber(self, __get):
+		print('GetNumber')
 		__Item = __get[0]
 		self.__TH011 = __Item[1]
 		self.__TH012 = __Item[2]
@@ -347,6 +352,7 @@ class PDA_JH_Handle:
 			self.__GetNumber(__get)
 	
 	def __SetHeadInfo(self):
+		print('SetHeadInfo')
 		__sqlstr = (r"INSERT INTO PURTG (COMPANY, CREATOR, USR_GROUP, CREATE_DATE, FLAG, TG001, TG002, TG003, TG004, TG005, "
 		            r"TG006, TG007, TG008, TG009, TG010, TG013, TG014, TG015, TG021, TG030, TG033, TG016, TG043, TG052) "
 		            r"VALUES('{0}', '{1}', '{2}', '{3}', '1', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', "
@@ -357,6 +363,7 @@ class PDA_JH_Handle:
 		                               self.__TG015, self.__TG021, self.__TG030, self.__TG033))
 		
 	def __SetDetailInfo(self):
+		print('DetDetailInfo')
 		self.__TH015 = self.__TH007
 		self.__TH016 = self.__TH007
 		self.__TH034 = self.__TH007
@@ -383,6 +390,7 @@ class PDA_JH_Handle:
 		                               self.__TH042, self.__TH064, self.__TH065, self.__THC02))
 		
 	def __SetDetailMoney(self):
+		print('SetDetailMoney')
 		__sqlstr = (r"UPDATE COMFORT.dbo.PURTH  SET "
 		            r"TH045 = CAST(ROUND(TH019/(1+CONVERT(FLOAT, TG030)),2) AS  NUMERIC(10,2)), "
 		            r"TH046 = CAST(ROUND(TH019 - (TH019/(1+CONVERT(FLOAT, TG030))),2) AS  NUMERIC(10,2)), "
@@ -395,6 +403,7 @@ class PDA_JH_Handle:
 		self.__SqlWork(__sqlstr.format(self.__TG001, self.__TG002))
 	
 	def __SetSumMoney(self):
+		print('SetSumMoney')
 		__sqlstr = (r"UPDATE A SET TG017=SUMTH019,TG019=SUMTH046,TG026=SUMTH015,TG028=SUMTH045,TG031=SUMTH047,"
 		            r"TG032=SUMTH048,TG040=SUMTH050,TG041=SUMTH052,TG053=SUMTH007,TG054=SUMTH049 "
 		            r"FROM COMFORT.dbo.PURTG A "
@@ -410,6 +419,7 @@ class PDA_JH_Handle:
 		self.__SqlWork(__sqlstr.format(self.__TG001, self.__TG002))
 		
 	def __UpdJHXAInfo(self):
+		print('UpdJHXA')
 		__Time = self.__getSvrTime.GetTime({'Mode': 'Long'})['Time']
 		__sqlstr = (r"UPDATE COMFORT.dbo.JH_LYXA SET COMPANY='{1}', MODIFIER='{2}', MODI_DATE='{3}', "
 		            r"FLAG=(convert(int,COMFORT.dbo.JH_LYXA.FLAG))%999+1, JHXA011 = 'Y', "
