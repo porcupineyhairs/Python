@@ -82,19 +82,37 @@ def GetBomSupplier(bomList=None, supplierId=None):
 			bomList.append(item)
 			
 			
-def GetMaterialSum(bomList):
+def GetMaterialSum(get=None):
 	get = [['3080107017', 2.0, '0302', '平头内六角', '1/4*19/32牙长/头12.5 /煲黑+耐落', 'A0066', 'A0066'],
-			['3080107017', 4.0, '0302', '平头内六角', '1/4*19/32牙长/头12.5 /煲黑+耐落', 'A0066', 'A0066'],
 			['3080301002', 1.0, '0306', '弹性调整螺杆', 'SN-501/M10*297/本色', 'A0066', 'A0031'],
 			['3080107017', 4.0, '0306', '平头内六角', '1/4*19/32牙长/头12.5 /煲黑+耐落', 'A0066', 'A0066'],
 			['3080107015', 6.0, '0304', '平头内六角', '1/4*19/32牙长/头11厚3/煲黑+耐落', 'A0007', 'A0066'],
+			['3080107017', 4.0, '0302', '平头内六角', '1/4*19/32牙长/头12.5 /煲黑+耐落', 'A0066', 'A0066'],
 			['3080401031', 1.0, '0304', '插销', '￠4.5*28.5/镀锌', 'A0066', 'A0066']]
+
+	get_bck = get[:]
+	get_bck = sorted(get_bck, key=(lambda x: [x[0], x[2]]))
+	get.clear()
+	for get_bck_tmp in get_bck:
+		print(get_bck_tmp)
+		if len(get) == 0:
+			get.append(get_bck_tmp)
+		else:
+			if get[-1][0] == get_bck_tmp[0] and get[-1][2] == get_bck_tmp[2]:
+				get[-1][1] += get_bck_tmp[1]
+			else:
+				get.append(get_bck_tmp)
+	print()
+	for k in get:
+		print(k)
+
 
 
 if __name__ == '__main__':
-	get = GetBom(10710101)
-	if get is not None:
-		GetBomSupplier(bomList=get, supplierId='A0066')
-		for get_tmp in get:
-			print(get_tmp)
-		print(len(get))
+	# get = GetBom(10710101)
+	# if get is not None:
+	# 	GetBomSupplier(bomList=get, supplierId='A0066')
+	# 	for get_tmp in get:
+	# 		print(get_tmp)
+	# 	print(len(get))
+	GetMaterialSum()
