@@ -105,7 +105,7 @@ class GetInfo:
 		__sqlstr = (r"SELECT TB013 FROM MOCTB "
 		            r"INNER JOIN MOCTA ON TA001 = TB001 AND TA002 = TB002 "
 		            r"WHERE TB006 LIKE '%0801%' "
-		            r"AND TB012 LIKE '%纸箱%' "
+		            r"AND ( TB012 LIKE '%纸箱%' OR TB012 LIKE '%彩盒%' ) "
 		            r"AND RTRIM(TA076) + '-' + RTRIM(TA077) + '-' + RTRIM(TA078) = '{0}'")
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ERP, SqlStr=__sqlstr.format(__Item))
 		if __get[0] != 'None':

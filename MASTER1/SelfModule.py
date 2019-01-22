@@ -21,6 +21,7 @@ class MsSql:
 		self.__DataBase = []
 		self.__Mode = ''
 		self.__GetRowCount = False
+		self.__GetColName = False
 
 		# 数据返回前对其处理的临时变量
 		self.__GetBackTmp1 = []
@@ -29,6 +30,7 @@ class MsSql:
 		# 数据库查询返回变量
 		self.__GetBack = []
 		self.__RowCount = 0
+		self.__ColName = []
 
 		# 是否继续流程的Flag
 		self.__Flag = True
@@ -89,14 +91,15 @@ class MsSql:
 				self.__GetBack.append(list(self.__GetBackTmp2))
 
 	# 主工作方法
-	def Sqlwork(self, DataBase=None, SqlStr=None, GetRowCount=False):
+	def Sqlwork(self, database=None, sqlstr=None, getrowcount=False, getcolname=False):
 		# 清空历史数据，以防递归出错
 		self.__init__()
 
 		# 传入变量转换
-		self.__SqlStr = SqlStr
-		self.__DataBase = DataBase
-		self.__GetRowCount = GetRowCount
+		self.__SqlStr = sqlstr
+		self.__DataBase = database
+		self.__GetRowCount = getrowcount
+		self.__GetColName = getcolname
 
 		# 处理逻辑
 		self.__SetConnStr()
@@ -111,17 +114,30 @@ class MsSql:
 			# self.__DefClean()
 
 		# 判断是否需要返回查询出的行数
-		if self.__GetRowCount:
-			if self.__Flag:
-				self.__RowCount = self.__Cur.rowcount
+		self.__RowCount = self.__Cur.rowcount
+		for i in range(len(self.__Cur.description)):
+			self.__ColName.append(self.__Cur.description[i][0])
+		
+		if self.__GetColName:
+			if self.__GetRowCount:
+				if self.__Flag:
+					self.__SetClean()
+				return self.__GetBack, self.__RowCount, self.__ColName
+			else:
 				self.__SetClean()
-			return self.__GetBack, self.__RowCount
+				return self.__GetBack, self.__ColName
 		else:
-			self.__SetClean()
-			return self.__GetBack
+			if self.__GetRowCount:
+				if self.__Flag:
+					self.__SetClean()
+				return self.__GetBack, self.__RowCount
+			else:
+				self.__SetClean()
+				return self.__GetBack
 
 	# 数据库查询方法
 	def __SqlExecute(self):
+		import pandas as pd
 		self.__Cur.execute(self.__SqlStr)
 		self.__GetBackTmp1 = self.__Cur.fetchall()
 

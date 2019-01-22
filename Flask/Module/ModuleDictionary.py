@@ -8,6 +8,9 @@ DataBase_Dict = {
 
 	'TEST2018': ['192.168.0.99', 'sa', 'comfortgroup2016{', 'TEST2018'],
 	'COMFORT': ['192.168.0.99', 'sa', 'comfortgroup2016{', 'COMFORT'],
+	
+	'COMFROTSEATING': ['192.168.0.239', 'sa', 'comfortsjl2013{', 'Comfortseating'],
+	
 	'COMFORT_TEST': ['192.168.1.61', 'sa', 'comfortgroup2016{', 'COMFORT'],
 	
 }

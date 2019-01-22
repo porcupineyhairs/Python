@@ -30,3 +30,21 @@ def Route(app):
 		        '<h1>PDA_URL</h1>'
 		        '<br/>'
 		        '<h2>内容待添加</h2>')
+	
+	# @app.route('/gongshi/201811')
+	# def gs201811():
+	# 	from WebHandeler import gongshi
+	# 	get = gongshi.gongshi('201811')
+	# 	return ('<title>收集工单工时</title>' +
+	# 	        '<h1>201811工单工时已收集</h1>'
+	# 	        '<br/>'
+	# 	        '<h2>其他内容待添加</h2>')
+	
+	@app.route('/gongshi/201812')
+	def gs201812():
+		from WebHandeler import gongshi
+		get = gongshi.gongshi('201812')
+		return ('<title>收集工单工时</title>' +
+		        '<h1>201812工单工时已收集</h1>'
+		        '<br/>'
+		        '<h2>其他内容待添加</h2>')
