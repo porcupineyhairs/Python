@@ -2,6 +2,7 @@ from SelfModule import MsSql
 from LIB.ModuleDictionary import DataBase_Dict
 
 
+# 单阶BOM明细的SQL查询
 def GetBomListSelect(materials=None, typeC=False):
 	mssql = MsSql()
 	Conn_ERP = DataBase_Dict['COMFORT']
@@ -18,101 +19,164 @@ def GetBomListSelect(materials=None, typeC=False):
 		sqlstr += r"AND CB015 = 'Y' "
 	sqlstr += r"ORDER BY CB004"
 	
-	get = mssql.Sqlwork(database=Conn_ERP, sqlstr=sqlstr.format(materials))
-	if get[0] == 'None':
-		get = []
-	return get
+	getList = mssql.Sqlwork(database=Conn_ERP, sqlstr=sqlstr.format(materials))
+	if getList[0] == 'None':
+		getList = []
+	return getList
 
 
-def GetBomList(materials, list_tmp=None, coefficient=1.0, typeC=False, getAll=True):
-	if list_tmp is None:
-		list_tmp = []
+# BOM品号用量明细的递归循环逻辑
+def GetBomList(materials, listTmp=None, coefficient=1.0, typeC=False, getAll=True):
+	if listTmp is None:
+		listTmp = []
+		
+	getList = GetBomListSelect(materials=materials, typeC=typeC)
 	
-	get = GetBomListSelect(materials=materials, typeC=typeC)
-	
-	for get_tmp in get:
-		row_tmp = []
-		if get_tmp[2] == 'P':
-			row_tmp.append(get_tmp[0])
-			row_tmp.append(coefficient * get_tmp[1])
-			row_tmp.append(get_tmp[3])
-			list_tmp.append(row_tmp)
-		elif get_tmp[2] == 'C' and not getAll:
-			GetBomList(get_tmp[0], list_tmp=list_tmp, coefficient=get_tmp[1], typeC=True, getAll=getAll)
+	for getListTmp in getList:
+		rowTmp = []
+		if getListTmp[2] == 'P':
+			rowTmp.append(getListTmp[0])
+			rowTmp.append(coefficient * getListTmp[1])
+			rowTmp.append(getListTmp[3])
+			listTmp.append(rowTmp)
+		elif getListTmp[2] == 'C' and not getAll:
+			GetBomList(getListTmp[0], listTmp=listTmp, coefficient=getListTmp[1], typeC=True, getAll=getAll)
 		else:
-			GetBomList(get_tmp[0], list_tmp=list_tmp, coefficient=get_tmp[1], getAll=getAll)
-	back = list_tmp
+			GetBomList(getListTmp[0], listTmp=listTmp, coefficient=getListTmp[1], getAll=getAll)
+	back = listTmp
 	return back
 
 
+# BOM根据品号补全品号其他信息
 def GetMaterialInfo(materials):
 	mssql = MsSql()
 	Conn_ERP = DataBase_Dict['COMFORT']
-	sqlstr = (r"SELECT RTRIM(MB002), RTRIM(MB003), RTRIM(MB032), RTRIM(MB200) "
+	sqlstr = (r"SELECT RTRIM(MB004), RTRIM(MB002), RTRIM(MB003), RTRIM(MB032), RTRIM(MB200) "
 				r"FROM INVMB "
 				r"WHERE MB001 = '{0}' ")
 	
-	get = mssql.Sqlwork(database=Conn_ERP, sqlstr=sqlstr.format(materials))
-	if get[0] == 'None':
-		get = []
-	return get[0]
+	getList = mssql.Sqlwork(database=Conn_ERP, sqlstr=sqlstr.format(materials))
+	if getList[0] == 'None':
+		getList = []
+	return getList[0]
 		
 
-
+# 获取BOM明细的主入口
 def GetBom(materials=None):
 	if materials is None:
 		return []
 	else:
-		get_bom = GetBomList(materials, getAll=False)
-		if len(get_bom) == 0:
+		getBom = GetBomList(materials, getAll=False)
+		if len(getBom) == 0:
 			return None
 		else:
-			for get_bom_tmp in get_bom:
-				get_material = GetMaterialInfo(get_bom_tmp[0])
-				for get_material_tmp in get_material:
-					get_bom_tmp.append(get_material_tmp)
-			return get_bom
+			for getBomTmp in getBom:
+				getMaterial = GetMaterialInfo(getBomTmp[0])
+				getBomTmp.extend(getMaterial)
+			return getBom
+		
+		
+# 根据订单号获取成品品号以及订单数量
+def GetOrderNumber(orderId=None):
+	mssql = MsSql()
+	Conn_ERP = DataBase_Dict['COMFORT']
+	sqlstr = (r"SELECT TD004, TD008 FROM COPTD "
+				r"INNER JOIN COPTC ON TC001 = TD001 AND TC002 = TD002 "
+				r"WHERE 1=1 "
+				r"AND TC027 = 'Y' "
+				r"AND TD016 = 'N'"
+				r"AND RTRIM(TD001) + '-' + RTRIM(TD002) + '-' + RTRIM(TD003) = '{0}' ")
+	
+	getList = mssql.Sqlwork(database=Conn_ERP, sqlstr=sqlstr.format(orderId))
+	
+	if getList[0] != 'None':
+		print(orderId, '  ', float(getList[0][1]))
+		return getList[0][0], float(getList[0][1])
+
+
+# 根据订单数量乘以BOM数量
+def GetOrderSum(getList=None, coefficient=1.0):
+	for index in range(len(getList)):
+		getList[index][1] = getList[index][1] * coefficient
 		
 
 def GetBomSupplier(bomList=None, supplierId=None):
-	bomList_bck = bomList[:]
+	bomListBck = bomList[:]
 	bomList.clear()
-	for item in bomList_bck:
-		if item[5] == supplierId or item[6] == supplierId:
+	for item in bomListBck:
+		if item[6] == supplierId or item[7] == supplierId:
 			bomList.append(item)
-			
-			
-def GetMaterialSum(get=None):
-	get = [['3080107017', 2.0, '0302', '平头内六角', '1/4*19/32牙长/头12.5 /煲黑+耐落', 'A0066', 'A0066'],
-			['3080301002', 1.0, '0306', '弹性调整螺杆', 'SN-501/M10*297/本色', 'A0066', 'A0031'],
-			['3080107017', 4.0, '0306', '平头内六角', '1/4*19/32牙长/头12.5 /煲黑+耐落', 'A0066', 'A0066'],
-			['3080107015', 6.0, '0304', '平头内六角', '1/4*19/32牙长/头11厚3/煲黑+耐落', 'A0007', 'A0066'],
-			['3080107017', 4.0, '0302', '平头内六角', '1/4*19/32牙长/头12.5 /煲黑+耐落', 'A0066', 'A0066'],
-			['3080401031', 1.0, '0304', '插销', '￠4.5*28.5/镀锌', 'A0066', 'A0066']]
 
-	get_bck = get[:]
-	get_bck = sorted(get_bck, key=(lambda x: [x[0], x[2]]))
-	get.clear()
-	for get_bck_tmp in get_bck:
-		print(get_bck_tmp)
-		if len(get) == 0:
-			get.append(get_bck_tmp)
+
+# 二维列表列筛选、复制，可复用
+def GetNewList(getList=None, colList=None):
+	import numpy as np
+	if len(np.array(getList).shape) == 2:
+		if colList is not None:
+			getListBck = getList[:]
+			getList.clear()
+			for getListBckTmp in getListBck:
+				rowTmp = []
+				for colListTmp in colList:
+					rowTmp.append(getListBckTmp[colListTmp])
+				getList.append(rowTmp)
+
+
+# 二维列表的排序，可复用
+def GetListSort(getList=None, key=None):
+	getListBck = getList[:]
+	getList.clear()
+	getList.extend(sorted(getListBck, key=key))
+
+
+# 二维列表根据特定列汇总，可复用
+def GetMaterialSum(getList=None, cmpList=None, sumList=None):
+	getListBck = getList[:]
+	getList.clear()
+	rowTmp2 = []
+	rowTmp1 = []
+	for getListBckTmp in getListBck:
+		if len(getList) == 0:
+			getList.append(getListBckTmp)
 		else:
-			if get[-1][0] == get_bck_tmp[0] and get[-1][2] == get_bck_tmp[2]:
-				get[-1][1] += get_bck_tmp[1]
+			rowTmp1.clear()
+			rowTmp2.clear()
+			for cmpListTmp in cmpList:
+				rowTmp1.append(getList[-1][cmpListTmp])
+				rowTmp2.append(getListBckTmp[cmpListTmp])
+			if rowTmp1 == rowTmp2:
+				for sumListTmp in sumList:
+					getList[-1][sumListTmp] += getListBckTmp[sumListTmp]
 			else:
-				get.append(get_bck_tmp)
-	print()
-	for k in get:
-		print(k)
+				getList.append(getListBckTmp)
 
+
+# 根据订单号获取BOM列表并且筛选出对应供应商，且根据品号汇总
+def GetOrderBomListBySupplier(orderList=None):
+	if orderList is not None:
+		getList = []
+		for orderListTmp in orderList:
+			materials, number = GetOrderNumber(orderId=orderListTmp)
+			getListTmp = GetBom(materials=materials)
+			GetOrderSum(getList=getListTmp, coefficient=number)
+			getList.extend(getListTmp)
+		
+		if getList is not None:
+			GetBomSupplier(bomList=getList, supplierId='A0066')
+			GetNewList(getList=getList, colList=[0, 1, 2, 3, 4, 5])
+			GetListSort(getList=getList, key=(lambda x: x[0]))
+			GetMaterialSum(getList=getList, cmpList=[0, 2], sumList=[1])
+			return getList
+		else:
+			return None
+	else:
+		return None
 
 
 if __name__ == '__main__':
-	# get = GetBom(10710101)
-	# if get is not None:
-	# 	GetBomSupplier(bomList=get, supplierId='A0066')
-	# 	for get_tmp in get:
-	# 		print(get_tmp)
-	# 	print(len(get))
-	GetMaterialSum()
+	# orderList = ['2210-064706-0001', '2205-064904-0001', '2214-0161-0001', '2205-064946-0001']
+	orderList = ['2204-001104-0001']
+	getList = GetOrderBomListBySupplier(orderList=orderList)
+	for getListTmp in getList:
+		print(getListTmp)
+	print(len(getList))
