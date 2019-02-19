@@ -7,6 +7,7 @@ import threading
 
 
 def Route(app):
+	# app文件的绝对路径
 	workDir = sys.path[0] + '/'
 	
 	# webservice功能测试
@@ -41,8 +42,8 @@ def Route(app):
 		__log = Logger(workDir + 'Log/Connect/Connect.log', level='info')
 		__get = request.get_json(force=True)
 		__back = __getVersion.Main(__get)
-		__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - '
-						  + 'get:' + str(__get) + ' - ' + 'back:' + str(__back) + '\n')
+		__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
+		                  str(__get) + ' - ' + 'back:' + str(__back) + '\n')
 		return Response(json.dumps(__back))
 
 	# 登录认证
@@ -52,8 +53,8 @@ def Route(app):
 		__log = Logger(workDir + 'Log/Login/Login.log', level='info')
 		__get = request.get_json(force=True)
 		__back = __userManage.UserLogin(__get)
-		__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - '
-						  + 'get:' + str(__get) + ' - ' + 'back:' + str(__back) + '\n')
+		__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
+		                  str(__get) + ' - ' + 'back:' + str(__back) + '\n')
 		return Response(json.dumps(__back))
 
 	# 码垛系统订单基本信息获取
@@ -62,8 +63,8 @@ def Route(app):
 		__log = Logger(workDir + 'Log/MaDuo/MaDuoInfo.log', level='info')
 		__get = request.get_json(force=True)
 		__back = {'Return': 'OK'}
-		__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - '
-						  + 'get:' + str(__get) + ' - ' + 'back:' + str(__back) + '\n')
+		__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
+		                  str(__get) + ' - ' + 'back:' + str(__back) + '\n')
 		from Module.MaDuoSystem.MD_GetInfo import GetInfo
 		if __get['Mode'] == 'Insert':
 			__getInfo = GetInfo()
@@ -79,20 +80,27 @@ def Route(app):
 		# __pda_LL = PDA_LL()
 		# __back = __pda_LL.MianWork(__get)
 		__back = {'Return': 'OK'}
-		__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - '
-						  + 'get:' + str(__get) + ' - ' + 'back:' + str(__back) + '\n')
+		__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
+		                  str(__get) + ' - ' + 'back:' + str(__back) + '\n')
 		return Response(json.dumps(__back))
 
 	# PDA扫描进货单
 	@app.route('/Client/PDA/JH_LYXA', methods=['POST'])
 	def JH_LYXA_C():
-		__log = Logger(workDir + 'Log/PDA/PDA_JH.log', level='info')
+		__back = None
 		__get = request.get_json(force=True)
-		__pda_JH = PDA_JH_GetInfo()
-		__back = __pda_JH.MainWork(__get)
-		__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - '
-						  + 'get:' + str(__get) + ' - ' + 'back:' + str(__back) + '\n')
-		return Response(json.dumps(__back))
+		try:
+			__log = Logger(workDir + 'Log/PDA/PDA_JH.log', level='info')
+			__pda_JH = PDA_JH_GetInfo()
+			__back = __pda_JH.MainWork(__get)
+			__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
+			                  str(__get) + ' - ' + 'back:' + str(__back) + '\n')
+		except Exception as e:
+			__log_E = Logger(workDir + 'Log/Error.log', level='info')
+			__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
+			                    str(__get) + ' - ' + 'back:' + str(__back) + '-' + 'Error:' + str(e) + '\n')
+		finally:
+			return Response(json.dumps(__back))
 
 	# 下载文件，联友生产辅助工具的更新下载
 	@app.route("/Client/WG/Download/<filename>", methods=['GET'])
