@@ -7,7 +7,6 @@ from flask import Flask
 from flask_bootstrap import Bootstrap
 from flask_apscheduler import APScheduler
 
-
 app = Flask(__name__)
 scheduler = APScheduler()
 
@@ -29,4 +28,4 @@ Comand.Route(app=app)
 
 
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', port=8099, debug=False, threaded=True)
+	app.run(host='0.0.0.0', port=80, debug=False, threaded=True)

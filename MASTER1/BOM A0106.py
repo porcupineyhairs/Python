@@ -171,10 +171,12 @@ def GetOrderBomListBySupplier(orderList=None, supplierId=None):
 			getList.extend(getListTmp)
 		
 		if getList is not None:
+			print('所有订单物料项数：', len(getList))
 			GetBomSupplier(bomList=getList, supplierId=supplierId)
 			GetNewList(getList=getList, colList=[0, 1, 3, 4, 5, 6, 7])
 			GetListSort(getList=getList, key=(lambda x: x[0]))
 			GetMaterialSum(getList=getList, cmpList=[0, 2], sumList=[1])
+			print('供应商过滤汇总后物料项数：', len(getList))
 			return getList
 		else:
 			return None
