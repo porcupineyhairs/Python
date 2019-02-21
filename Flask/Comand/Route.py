@@ -4,5 +4,8 @@ import os
 import json
 
 
-def Route(app):
-	pass
+def Route(app=None, hostInfo=None, workDir=None):
+	if app is None:
+		pass
+	else:
+		pass

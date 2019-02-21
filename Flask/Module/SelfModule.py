@@ -46,7 +46,7 @@ class MsSql:
 	def __SetConn(self):
 		import pymssql
 		self.__Conn = pymssql.connect(host=self.__ConnStr[0], user=self.__ConnStr[1], password=self.__ConnStr[2],
-										database=self.__ConnStr[3], charset='GBK')
+		                              database=self.__ConnStr[3], charset='GBK')
 		self.__Cur = self.__Conn.cursor()
 
 	# 判断SqlStr是否为空
