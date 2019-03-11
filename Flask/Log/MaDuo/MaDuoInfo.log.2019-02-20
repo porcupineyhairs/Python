@@ -1,0 +1,2 @@
+2018-12-16 13:07:34,561 - INFO: http://192.168.1.60:8099/Client/MaDuo/GetInfo - POST - 192.168.1.60 - get:{'Mode': 'Insert'} - back:{'Return': 'OK'}
+

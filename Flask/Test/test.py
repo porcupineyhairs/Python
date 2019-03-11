@@ -1,10 +1,11 @@
-import requests
 import json
+from Module import MsSql
+import requests
 
 
 def WebClient():
 	info = {'Mode': 'Insert'}
-	r = requests.post("http://192.168.1.60:8099/Client/PDA/JH_LYXA", data=json.dumps(info))
+	r = requests.post("http://192.168.0.197/Client/MaDuo/GetInfo", data=json.dumps(info))
 	print(r.json())
 	
 	
@@ -25,9 +26,21 @@ def DbTime():
 	info = {'Mode': 'Sort'}
 	r = requests.post("http://192.168.1.60:8099/Client/GetTime", data=json.dumps(info))
 	print(r.json())
+	
+	
+def sqltest():
+	conn = ['40.73.246.171', 'sa', 'DGlsdnkj168', 'test']
+	mssql = MsSql()
+	get = mssql.Sqlwork(conn, 'select * from test0')
+	
+	print(get)
+	
+
 
 
 if __name__ == '__main__':
+	# WebClient()
 	# JHXA()
-	# MD()
-	DbTime()
+	MD()
+	# DbTime()
+	# sqltest()
