@@ -173,7 +173,6 @@ class UserManege:
 			self.__WG_Pwd = self.__Login_Pwd
 
 	def __Set_UserInf(self):
-
 		self.__back['Login_Status'] = self.__Login_Status
 		self.__back['Login_Uid'] = self.__Login_Uid
 		self.__back['Login_Role'] = self.__Login_Role
