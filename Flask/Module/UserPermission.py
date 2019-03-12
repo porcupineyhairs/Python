@@ -34,7 +34,6 @@ class UserPerm:
 
         self.__GetWGPerm()
 
-        #根据部门提取对应权限（if...if...）
         perm_list = []
 
         self.SetPermission(perm_list)
@@ -111,13 +110,3 @@ class UserPerm:
         self.__Permission_ID = perm
         self.__Group_ID = self.__GetGroupID(perm)
         self.__back.append(self.__Permission_ID)
-
-
-
-
-
-
-
-
-
-
