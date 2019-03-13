@@ -36,11 +36,18 @@ def sqltest():
 	print(get)
 	
 
-
+def Perm():
+	from Module import Permission
+	userPerm = Permission.UserPerm()
+	# __get = userPerm.getUserPermission(userId='000068')
+	# print(__get)
+	userPerm.setUserPermission(userId='000068', permList=['码垛线_订单类别编码管理', '玖友_查询物料需求量'])
+	
 
 if __name__ == '__main__':
 	# WebClient()
 	# JHXA()
-	MD()
+	# MD()
 	# DbTime()
 	# sqltest()
+	Perm()
