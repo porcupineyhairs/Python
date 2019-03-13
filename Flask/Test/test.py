@@ -19,7 +19,8 @@ def JHXA():
 	from Module.PDA.JH_LYXA import PDA_JH_Handle, PDA_JH_GetInfo
 	pda_JH = PDA_JH_GetInfo()
 	get_json = {'Uid': '001114', 'Mode': 'Complete', 'Parameter': 'JH201812281329460001', 'Data': '', 'RowCount': '4'}
-	pda_JH.MainWork(get_json)
+	# pda_JH.MainWork(get_json)
+	print(json.dumps(get_json))
 	
 
 def DbTime():
@@ -46,8 +47,8 @@ def Perm():
 
 if __name__ == '__main__':
 	# WebClient()
-	# JHXA()
+	JHXA()
 	# MD()
 	# DbTime()
 	# sqltest()
-	Perm()
+	# Perm()

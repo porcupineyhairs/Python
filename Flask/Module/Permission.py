@@ -68,4 +68,14 @@ class BasePerm:
 		self.__setPerm_Work()
 		
 	def __setPerm_Work(self):
-		pass
+		__sqlstrReset = r" UPDATE WG_PERM_BASE SET Valid = 'N' "
+		__sqlstrFind = r" SELECT K_ID FROM WG_PERM_BASE WHERE Name = '{0}' "
+		__sqlstrSet = r" UPDATE WG_PERM_BASE SET Valid = 'Y' WHERE Name = '{0}' "
+		__sqlstrNew = r" INSERT INTO WG_PERM_BASE (Name) VALUES ('{0}')"
+		self.__mssql.Sqlwork(self.__WG_Conn, __sqlstrReset)
+		for __permList_tmp in self.__setPermList:
+			__sqlget = self.__mssql.Sqlwork(self.__WG_Conn, __sqlstrFind.format(__permList_tmp))
+			if __sqlget[0] != 'None':
+				self.__mssql.Sqlwork(self.__WG_Conn, __sqlstrSet.format(__permList_tmp))
+			else:
+				self.__mssql.Sqlwork(self.__WG_Conn, __sqlstrNew.format(__permList_tmp))
