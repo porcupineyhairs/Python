@@ -7,6 +7,10 @@ from Crypto.Cipher import AES
 采用AES对称加密算法
 '''
 
+key = 'HarveyZYH00Flask'
+before = r'"Uid": "001114", "Mode": "Complete", "Parameter": "JH201812281329460001", "Data": "", "RowCount": "4"'
+after = ''
+
 
 # str不是16的倍数那就补足为16的倍数
 def add_to_16(value):
@@ -16,26 +20,31 @@ def add_to_16(value):
 
 
 # 加密方法
-def encrypt_oracle():
+def AES16Encrypt():
 	# 秘钥
-	key = 'Venushui'
+	# key = '1234567890abcdef'
 	# 待加密文本
-	text = r'"Uid": "001114", "Mode": "Complete", "Parameter": "JH201812281329460001", "Data": "", "RowCount": "4"'
+	# text = r'"Uid": "001114", "Mode": "Complete", "Parameter": "JH201812281329460001", "Data": "", "RowCount": "4"'
+	text = before
 	# 初始化加密器
 	aes = AES.new(add_to_16(key), AES.MODE_ECB)
 	# 先进行aes加密
 	encrypt_aes = aes.encrypt(add_to_16(text))
 	# 用base64转成字符串形式
 	encrypted_text = str(base64.encodebytes(encrypt_aes), encoding='utf-8')  # 执行加密并转码返回bytes
+	global after
+	after = encrypted_text
 	print(encrypted_text)
 	
 	
 # 解密方法
-def decrypt_oralce():
+def AES16Decrypt():
 	# 秘钥
-	key = 'Venushui'
-	# 密文
-	text = 'ZUFr9BXuaB/GDz04XOXFrpKfMW4Smn8YVF8EXEHB2p9eREX1WcBhi/lOsggdsk9WWXEyygbp/S7EjYMj3dkxhKTIlM26zVt4CvPKPdutc5GpNnZtShQWLbuMNcgBbREWUT7IVHteA4LwLgMU34EFIw=='
+	# key = '1234567890abcdef'
+	# # 密文
+	# text = (r'L3tDvmVacjU5ifBeW0rGO43Qrcwt6ID5OMZyxxvpp6vYbyX90jDcBCHLnzPNF2aiVWmIrQEiuDbe'
+	#         r'hjDImJ/JgZjAk6f/joYnITSnijmmT0lt5vFb483Ai/w+D35J/prHWxCX+L0kbJjI4UFh4WU9+w==')
+	text = after
 	# 初始化加密器
 	aes = AES.new(add_to_16(key), AES.MODE_ECB)
 	# 优先逆向解密base64成bytes
@@ -46,5 +55,7 @@ def decrypt_oralce():
 
 
 if __name__ == '__main__':
-	# encrypt_oracle()
-	decrypt_oralce()
+	print(before)
+	print()
+	AES16Encrypt()
+	AES16Decrypt()

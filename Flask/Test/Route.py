@@ -24,6 +24,16 @@ def Route(app=None, hostInfo=None):
 				__back = {'name': 'me', 'password': 'you'}
 				return Response(json.dumps(__back))
 			
+		@app.route('/Test/Test3', methods=['POST'])
+		def Test3_T():
+			aes16 = AES16()
+			strin = request.data.decode()
+			strin = aes16.Decrypt(strin)
+			strin = json.loads(strin)
+			strout = json.dumps({'name': 'me', 'password': 'you'})
+			strout = aes16.Encrypt(strout)
+			return Response(strout)
+			
 	@app.route('/Test/BasePower', methods=['POST'])
 	def BasePower_T():
 		__get = request.get_json(force=True)

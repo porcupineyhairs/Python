@@ -4,3 +4,5 @@
 
 2019-02-25 11:19:36,305 - INFO: http://192.168.1.60/Client/UserLogin - POST - 192.168.1.5 - get:{'Login_Uid': '000117', 'Login_Pwd': '9832EC13D8EBA4EEFF2FC3D37F64B44'} - back:{'Login_Status': 'Y', 'Login_Uid': '000117', 'Login_Role': '文员', 'Login_Dpt': '生产一部', 'Login_Name': '王爱姣*#'}
 
+2019-03-14 15:45:31,951 - INFO: http://192.168.1.60/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'} - back:{'Login_Status': 'Y', 'Login_Uid': '001114', 'Login_Role': 'Super', 'Login_Dpt': '资讯管理课', 'Login_Name': '钟耀辉'}
+

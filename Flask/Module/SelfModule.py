@@ -302,12 +302,12 @@ class Mdns:
 
 			self.__judge()
 			if self.__GoOnFlag:
-				self.__name_server = self.name + '.' + self.server
+				self.__name_server = self.__name + '.' + self.__server
 				self.__creator_work()
 			return self.__GetBack
 
 		def __judge(self):
-			if None in (self.addr, self.port, self.name, self.server, self.details):
+			if None in (self.__addr, self.__port, self.__name, self.__server, self.__details):
 				self.__GoOnFlag = False
 				self.__GetBack = 'Lack of parameter!'
 
@@ -316,7 +316,8 @@ class Mdns:
 			from zeroconf import ServiceInfo, Zeroconf
 
 			self.__r = Zeroconf()
-			self.__info = ServiceInfo(self.__server, self.__name_server, socket.inet_aton(self.__addr), self.__port, 0, 0, self.__details)
+			self.__info = ServiceInfo(self.__server, self.__name_server, socket.inet_aton(self.__addr), self.__port,
+			                          0, 0, self.__details)
 			self.__r.register_service(self.__info)
 			self.__GetBack = 'Create success'
 			del self.__r
@@ -389,34 +390,6 @@ class Socket:
 		self.__s.send(bytes(str(self.__send_str).encode(encoding='utf-8')))
 		self.__s.close()
 		del socket
-
-
-class SocketServer:
-	pass
-
-
-class Logging:
-	def __str__(self):
-		pass
-
-	def __init__(self):
-		pass
-
-
-class XML2Class:
-	pass
-
-
-class Class2XML:
-	pass
-
-
-class Json2Class:
-	pass
-
-
-class Class2Json:
-	pass
 
 
 class Normal:

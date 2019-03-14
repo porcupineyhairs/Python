@@ -1,4 +1,4 @@
-from flask import request, Response, make_response, send_from_directory, send_file
+from flask import request, Response, make_response, send_from_directory, send_file, render_template
 from Module import *
 import os
 import sys
@@ -10,6 +10,8 @@ def Route(app=None, hostInfo=None):
 	if app is None:
 		pass
 	else:
+		__encryptDict = EncryptDict()
+		
 		# webservice功能测试
 		@app.route('/Client/Test', methods=['POST', 'GET'])
 		def Client_C():
@@ -18,14 +20,15 @@ def Route(app=None, hostInfo=None):
 				__get = request.get_json(force=True)
 				return Response(json.dumps(__back))
 			elif request.method == 'GET':
-				__back = {'name': 'me', 'password': 'you'}
-				return Response(json.dumps(__back))
+				return render_template('json table.html')
 	
 		# 连接测试，是否能连接成功，测试webservice是否正常
-		@app.route('/Client/LinkTest', methods=['POST', 'GET'])
+		@app.route('/Client/LinkTest', methods=['POST'])
 		def LinkTest_C():
-			__get = request.get_json(force=True)
-			return Response(json.dumps({'Return': 'Yes'}))
+			__get = __encryptDict.Decrypt(request.data.decode())
+			__backDict = {'Return': 'Yes'}
+			__back = __encryptDict.Encrypt(__backDict)
+			return Response(__back)
 	
 		# 获取198数据库服务器的时间
 		@app.route('/Client/GetTime', methods=['POST'])
