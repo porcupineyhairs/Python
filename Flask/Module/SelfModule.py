@@ -6,7 +6,171 @@ class SelfModule:
 
 	def __init__(self):
 		pass
+	
 
+class Sql:
+	def __init__(self, sqlType='mysql', connDict=None):
+		# 类初始化参数
+		self.__sqlType = sqlType
+		self.__connDict = connDict
+		
+		self.__Conn = None
+		self.__Cur = None
+		
+		# SqlWork方法传入参数
+		self.__SqlStr = ''
+		self.__Mode = ''
+		self.__GetRowCount = False
+		self.__GetTitle = False
+
+		# 数据返回前对其处理的临时变量
+		self.__GetBackTmp1 = []
+		self.__GetBackTmp2 = None
+
+		# 数据库查询返回变量
+		self.__GetBack = []
+		self.__RowCount = 0
+		self.__Title = []
+
+		# 是否继续流程的Flag
+		self.__Flag = True
+		self.__Error = None
+
+	# 重初始化运行参数
+	def __InitParam(self):
+		# SqlWork方法传入参数
+		self.__SqlStr = ''
+		self.__DataBase = []
+		self.__Mode = ''
+		self.__GetRowCount = False
+		self.__GetTitle = False
+		
+		# 数据返回前对其处理的临时变量
+		self.__GetBackTmp1 = []
+		self.__GetBackTmp2 = None
+		
+		# 数据库查询返回变量
+		self.__GetBack = []
+		self.__RowCount = 0
+		self.__Title = []
+		
+		# 是否继续流程的Flag
+		self.__Flag = True
+		self.__Error = None
+		
+	# 判断传入数据库参数是否为空
+	def __JudgeConnDict(self):
+		if self.__connDict is None:
+			self.__GetBack.append('Error')
+			self.__GetBack.append('DataBaseNotFound')
+			self.__Flag = False
+
+	# 使用list数据来创建连接字及游标
+	def __SetConn(self):
+		import pymssql
+		import pymysql
+		if self.__sqlType == 'mysql':
+			self.__Conn = pymysql.connect(host=self.__connDict[0], user=self.__connDict[1], password=self.__connDict[2],
+			                              database=self.__connDict[3], charset=self.__connDict[4])
+			self.__Cur = self.__Conn.cursor()
+		elif self.__sqlType == 'mssql':
+			self.__Conn = pymssql.connect(host=self.__connDict[0], user=self.__connDict[1], password=self.__connDict[2],
+			                              database=self.__connDict[3], charset=self.__connDict[4])
+			self.__Cur = self.__Conn.cursor()
+		else:
+			self.__Flag = False
+
+	# 判断SqlStr是否为空
+	def __JudgeSqlStrNull(self):
+		if self.__SqlStr is None:
+			self.__GetBack.append('Error')
+			self.__GetBack.append('SqlStrIsNone')
+			self.__Flag = False
+		elif self.__SqlStr == '':
+			self.__GetBack.append('Error')
+			self.__GetBack.append('SqlStrIsNull')
+			self.__Flag = False
+
+	# 获取查询模式：select还是commit，并处理
+	def __JudgeWorkMode(self):
+		# 根据SQL第一个关键字获取模式
+		self.__Mode = self.__SqlStr.lstrip().split(' ')[0].upper()
+		# 根据不同SQL关键字执行不同命令
+		if self.__Mode == 'SELECT':
+			self.__SqlExecute()
+		elif self.__Mode in ('UPDATE', 'INSERT', 'DELETE'):
+			self.__SqlCommit()
+		else:
+			self.__GetBack.append('Error')
+			self.__GetBack.append('SqlStrNotFoundKeyWord')
+
+	# 清除数据
+	def __SetClean(self):
+		# 清除连接字及游标
+		self.__Cur.close()
+		del self.__Cur
+		del self.__Conn
+
+	# 查询回来的数据整理成list，并且判断是否为空
+	def __SetFormat(self):
+		if len(self.__GetBackTmp1) == 0:
+			self.__GetBack = None
+		else:
+			for self.__GetBackTmp2 in self.__GetBackTmp1:
+				self.__GetBack.append(list(self.__GetBackTmp2))
+
+	# 主工作方法
+	def SqlWork(self, SqlStr=None, getTitle=False, getRowCount=False):
+		# 重新初始化参数信息，清空历史数据，以防递归出错
+		self.__InitParam()
+
+		# 传入变量转换
+		self.__SqlStr = SqlStr
+		self.__GetRowCount = getRowCount
+		self.__GetTitle = getTitle
+
+		# 处理逻辑
+		self.__JudgeConnDict()
+
+		if self.__Flag:
+			self.__JudgeSqlStrNull()
+
+		if self.__Flag:
+			self.__SetConn()
+			self.__JudgeWorkMode()
+		
+		# 设置返回的二维列表
+		self.__SetFormat()
+		
+		# 获取需要返回的所有信息
+		self.__RowCount = self.__Cur.rowcount
+		for __TitleTmp in self.__Cur.description:
+			self.__Title.append(__TitleTmp[0])
+		
+		# 清理数据， 关闭连接
+		self.__SetClean()
+		
+		# 整理需要返回的数据
+		# 判断是否需要返回字段名
+		if self.__GetTitle and self.__Flag and self.__GetBack is not None:
+			self.__GetBack.insert(0, self.__Title)
+		# 判断是否需要返回查询出的行数
+		if self.__GetRowCount:
+			return self.__GetBack, self.__RowCount
+		else:
+			return self.__GetBack
+
+	# 数据库查询方法
+	def __SqlExecute(self):
+		self.__Cur.execute(self.__SqlStr)
+		self.__GetBackTmp1 = self.__Cur.fetchall()
+
+	# 数据库任务提交方法
+	def __SqlCommit(self):
+		self.__Cur.execute(self.__SqlStr)
+		self.__Conn.commit()
+		self.__GetBackTmp1.append('Succeed')
+		
 
 class MsSql:
 	def __str__(self):
@@ -137,25 +301,7 @@ class MySql:
 		pass
 
 	def __init__(self):
-		pass
-	pass
-
-
-class Oracle:
-	def __str__(self):
-		pass
-
-	def __init__(self):
-		pass
-	pass
-
-
-class Sqlite:
-	def __str__(self):
-		pass
-
-	def __init__(self):
-				# 数据库连接字转换
+		# 数据库连接字转换
 		self.__ConnStr = ''
 
 		# Sqlwork方法传入参数
@@ -186,9 +332,9 @@ class Sqlite:
 
 	# 使用list数据来创建连接字及游标
 	def __SetConn(self):
-		import pymssql
-		self.__Conn = pymssql.connect(host=self.__ConnStr[0], user=self.__ConnStr[1], password=self.__ConnStr[2],
-										database=self.__ConnStr[3], charset='GBK')
+		import pymysql
+		self.__Conn = pymysql.connect(host=self.__ConnStr[0], user=self.__ConnStr[1], password=self.__ConnStr[2],
+										database=self.__ConnStr[3], charset='utf8')
 		self.__Cur = self.__Conn.cursor()
 
 	# 判断SqlStr是否为空
@@ -231,14 +377,14 @@ class Sqlite:
 				self.__GetBack.append(list(self.__GetBackTmp2))
 
 	# 主工作方法
-	def Sqlwork(self, DataBase=None, SqlStr=None, GetRowCount=False):
+	def Sqlwork(self, dataBase=None, sqlStr=None, getRowCount=False):
 		# 清空历史数据，以防递归出错
 		self.__init__()
 
 		# 传入变量转换
-		self.__SqlStr = SqlStr
-		self.__DataBase = DataBase
-		self.__GetRowCount = GetRowCount
+		self.__SqlStr = sqlStr
+		self.__DataBase = dataBase
+		self.__GetRowCount = getRowCount
 
 		# 处理逻辑
 		self.__SetConnStr()
@@ -272,6 +418,23 @@ class Sqlite:
 		self.__Cur.execute(self.__SqlStr)
 		self.__Conn.commit()
 		self.__GetBackTmp1.append('Succeed')
+
+
+class Oracle:
+	def __str__(self):
+		pass
+
+	def __init__(self):
+		pass
+	pass
+
+
+class Sqlite:
+	def __str__(self):
+		pass
+
+	def __init__(self):
+		pass
 
 
 class Mdns:

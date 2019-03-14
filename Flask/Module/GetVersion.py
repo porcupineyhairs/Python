@@ -10,6 +10,7 @@ Base = declarative_base()
 
 def ConvertStr(_str):
 	return _str.encode('GBK')
+	# return _str.encode('utf8')
 
 
 class WG_APP_INF(Base):
@@ -28,6 +29,7 @@ class GetVersion:
 		self.__back = {'Mode': 'Yes',  'URL': None}
 		
 		engine = create_engine(r"mssql+pymssql://sa:COMfort123456@192.168.0.198/WG_DB?charset=GBK")
+		# engine = create_engine(r"mysql+pymysql://root:Tiamohui@127.0.0.1/WG_DB?charset=utf8")
 		
 		self.DbSession = sessionmaker(bind=engine, autoflush=True, autocommit=False)
 	
