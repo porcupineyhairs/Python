@@ -20,3 +20,39 @@
 
 2019-03-14 21:24:30,843 - INFO: http://192.168.31.29/Client/GetVersion - POST - 192.168.31.132 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.35'} - back:{'Mode': 'Yes', 'URL': None}
 
+2019-03-15 10:24:49,027 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.34'} - back:{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+
+2019-03-15 10:31:00,366 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.34'} - back:{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+
+2019-03-15 10:31:42,022 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.34'} - back:{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+
+2019-03-15 10:43:22,419 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.7.1'} - back:{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+
+2019-03-15 10:43:54,067 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.7.1'} - back:{'Mode': 'New', 'URL': '/Client/WG/Download/联友生产辅助工具.exe'}
+
+2019-03-15 10:46:43,355 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.37'} - back:{'Mode': 'Yes', 'URL': None}
+
+2019-03-15 10:54:02,625 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.7.1'} - back:{'Mode': 'Yes', 'URL': None}
+
+2019-03-15 11:16:41,408 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.7.1'} - back:{'Mode': 'Yes', 'URL': None}
+
+2019-03-15 11:18:21,671 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.7.1'} - back:{'Mode': 'Yes', 'URL': None}
+
+2019-03-15 12:33:20,672 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.7.1'} - back:{'Mode': 'Yes', 'URL': None}
+
+2019-03-15 13:15:18,074 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.7.1'} - back:{'Mode': 'Yes', 'URL': None}
+
+2019-03-15 13:23:14,787 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.7.1'} - back:{'Mode': 'Yes', 'URL': None}
+
+2019-03-15 13:23:44,811 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.7.1'} - back:{'Mode': 'Yes', 'URL': None}
+
+2019-03-15 15:35:32,295 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.7.1'} - back:{'Mode': 'Yes', 'URL': None}
+
+2019-03-15 15:40:55,219 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.7.1'} - back:{'Mode': 'Yes', 'URL': None}
+
+2019-03-15 15:47:34,863 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.7.1'} - back:{'Mode': 'Yes', 'URL': None}
+
+2019-03-15 15:52:54,406 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.7.1'} - back:{'Mode': 'Yes', 'URL': None}
+
+2019-03-15 15:54:07,610 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.60 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.7.1'} - back:{'Mode': 'Yes', 'URL': None}
+

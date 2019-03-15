@@ -64,3 +64,5 @@ class GetVersion:
 		for i in range(4):
 			if int(__NewVersion_list[i]) > int(__FileVersion_List[i]):
 				self.__NewVersionFlag = True
+			if int(__NewVersion_list[i]) < int(__FileVersion_List[i]):
+				return

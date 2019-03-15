@@ -12,6 +12,30 @@ def Route(app=None, hostInfo=None):
 	else:
 		__encryptDict = EncryptDict()
 		
+		# 模板
+		@app.route('/Client/Default', methods=['POST'])
+		def Default_C():
+		# 	__back = None
+		# 	__backDict = None
+		# 	__get = __encryptDict.Decrypt(request.data.decode())
+		# 	__back = __encryptDict.Encrypt(__backDict)
+		# 	try:
+		# 		__userManage = UserManege()
+		# 		__log = Logger(app.root_path + '/Log/Login/Login.log', level='info')
+		# 		__backDict = __userManage.UserLogin(__get)
+		# 		__back = __encryptDict.Encrypt(__backDict)
+		# 		__log.logger.info(
+		# 			request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
+		# 			str(__get) + ' - ' + 'back:' + str(__backDict) + '\n')
+		# 	except Exception as e:
+		# 		__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
+		# 		__log_E.logger.info(
+		# 			request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
+		# 			str(__get) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
+		# 	finally:
+		# 		return Response(__back)
+			pass
+		
 		# webservice功能测试
 		@app.route('/Client/Test', methods=['POST', 'GET'])
 		def Client_C():
@@ -34,63 +58,74 @@ def Route(app=None, hostInfo=None):
 		@app.route('/Client/GetTime', methods=['POST'])
 		def GetTime_C():
 			__back = None
-			__get = request.get_json(force=True)
+			__backDict = None
+			# __get = request.get_json(force=True)
+			__get = __encryptDict.Decrypt(request.data.decode())
 			try:
 				__getTime = GetSvrTime()
-				__back = __getTime.GetTime(__get)
+				__backDict = __getTime.GetTime(__get)
+				__back = __encryptDict.Encrypt(__backDict)
 			except Exception as e:
 				__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
-				__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                    str(__get) + ' - ' + 'back:' + str(__back) + ' - ' + 'Error:' + str(e) + '\n')
+				__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' +
+				                    'get:' + str(__get) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' +
+				                    str(e) + '\n')
 			finally:
-				return Response(json.dumps(__back))
+				return Response(__back)
 	
 		# 外挂程序版本验证，是否返回更新链接
 		@app.route('/Client/GetVersion', methods=['POST'])
 		def GetVersion_C():
 			__back = None
-			__get = request.get_json(force=True)
+			__backDict = None
+			__get = __encryptDict.Decrypt(request.data.decode())
 			try:
 				__getVersion = GetVersion()
 				__log = Logger(app.root_path + '/Log/Connect/Connect.log', level='info')
-				__back = __getVersion.Main(__get)
+				__backDict = __getVersion.Main(__get)
+				__back = __encryptDict.Encrypt(__backDict)
 				__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                  str(__get) + ' - ' + 'back:' + str(__back) + '\n')
+				                  str(__get) + ' - ' + 'back:' + str(__backDict) + '\n')
 			except Exception as e:
 				__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
 				__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                    str(__get) + ' - ' + 'back:' + str(__back) + ' - ' + 'Error:' + str(e) + '\n')
+				                    str(__get) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
 			finally:
-				return Response(json.dumps(__back))
+				return Response(__back)
 	
 		# 登录认证
 		@app.route('/Client/UserLogin', methods=['POST'])
 		def UserLogin_C():
 			__back = None
-			__get = request.get_json(force=True)
+			__backDict = None
+			__get = __encryptDict.Decrypt(request.data.decode())
+			__back = __encryptDict.Encrypt(__backDict)
 			try:
 				__userManage = UserManege()
 				__log = Logger(app.root_path + '/Log/Login/Login.log', level='info')
-				__back = __userManage.UserLogin(__get)
+				__backDict = __userManage.UserLogin(__get)
+				__back = __encryptDict.Encrypt(__backDict)
 				__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                  str(__get) + ' - ' + 'back:' + str(__back) + '\n')
+				                  str(__get) + ' - ' + 'back:' + str(__backDict) + '\n')
 			except Exception as e:
 				__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
 				__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                    str(__get) + ' - ' + 'back:' + str(__back) + ' - ' + 'Error:' + str(e) + '\n')
+				                    str(__get) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
 			finally:
-				return Response(json.dumps(__back))
+				return Response(__back)
 	
 		# 码垛系统订单基本信息获取
 		@app.route('/Client/MaDuo/GetInfo', methods=['POST'])
 		def MD_GetInfo_C():
 			__back = None
-			__get = request.get_json(force=True)
+			__backDict = None
+			__get = __encryptDict.Decrypt(request.data.decode())
 			try:
 				__log = Logger(app.root_path + '/Log/MaDuo/MaDuoInfo.log', level='info')
-				__back = {'Return': 'OK'}
+				__backDict = {'Return': 'OK'}
+				__back = __encryptDict.Encrypt(__backDict)
 				__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                  str(__get) + ' - ' + 'back:' + str(__back) + '\n')
+				                  str(__get) + ' - ' + 'back:' + str(__backDict) + '\n')
 				from Module.MaDuoSystem.MD_GetInfo import GetInfo
 				if __get['Mode'] == 'Insert':
 					__getInfo = GetInfo()
@@ -99,53 +134,63 @@ def Route(app=None, hostInfo=None):
 			except Exception as e:
 				__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
 				__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                    str(__get) + ' - ' + 'back:' + str(__back) + ' - ' + 'Error:' + str(e) + '\n')
+				                    str(__get) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
 			finally:
-				return Response(json.dumps(__back))
+				return Response(__back)
 	
 		# PDA扫描领料单
 		@app.route('/Client/PDA/LL_LYXA', methods=['POST'])
 		def LL_LYXA_C():
 			__back = None
-			__get = request.get_json(force=True)
+			__backDict = None
+			__get = __encryptDict.Decrypt(request.data.decode())
 			try:
 				__log = Logger(app.root_path + '/Log/PDA/PDA_LL.log', level='info')
 				# __pda_LL = PDA_LL()
 				# __back = __pda_LL.MianWork(__get)
-				__back = {'Return': 'OK'}
+				__backDict = {'Return': 'OK'}
+				__back = __encryptDict.Encrypt(__backDict)
 				__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                  str(__get) + ' - ' + 'back:' + str(__back) + '\n')
+				                  str(__get) + ' - ' + 'back:' + str(__backDict) + '\n')
 			except Exception as e:
 				__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
 				__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                    str(__get) + ' - ' + 'back:' + str(__back) + ' - ' + 'Error:' + str(e) + '\n')
+				                    str(__get) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
 			finally:
-				return Response(json.dumps(__back))
+				return Response(__back)
 	
 		# PDA扫描进货单
 		@app.route('/Client/PDA/JH_LYXA', methods=['POST'])
 		def JH_LYXA_C():
 			__back = None
-			__get = request.get_json(force=True)
+			__backDict = None
+			__get = __encryptDict.Decrypt(request.data.decode())
 			try:
 				__log = Logger(app.root_path + '/Log/PDA/PDA_JH.log', level='info')
 				__pda_JH = PDA_JH_GetInfo()
-				__back = __pda_JH.MainWork(__get)
+				__backDict = __pda_JH.MainWork(__get)
+				__back = __encryptDict.Encrypt(__backDict)
 				__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                  str(__get) + ' - ' + 'back:' + str(__back) + '\n')
+				                  str(__get) + ' - ' + 'back:' + str(__backDict) + '\n')
 			except Exception as e:
 				__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
 				__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                    str(__get) + ' - ' + 'back:' + str(__back) + ' - ' + 'Error:' + str(e) + '\n')
+				                    str(__get) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
 			finally:
-				return Response(json.dumps(__back))
+				return Response(__back)
 	
 		# 下载文件，联友生产辅助工具的更新下载
 		@app.route("/Client/WG/Download/<filename>", methods=['GET'])
 		def WG_DownloadFile(filename):
 			__log = Logger(app.root_path + '/Log/Download/Download.log', level='info')
-			__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + '\n')
+			__log.logger.info('/Client/WG/Download/' + filename + ' - ' + request.method + ' - '
+			                  + request.remote_addr + '\n')
 			directory = app.root_path + '/File/WG/'  # 文件目录
-			response = make_response(send_from_directory(directory, filename, as_attachment=True))
-			response.headers["Content-Disposition"] = "attachment; filename={}".format(filename.encode().decode('latin-1'))
-			return response
+			# 判断所需文件是否存在
+			if os.path.exists(directory + filename):
+				response = make_response(send_from_directory(directory, filename, as_attachment=True))
+				response.headers["Content-Disposition"] = "attachment; filename={}".\
+					format(filename.encode().decode('latin-1'))
+				return response
+			else:
+				return None

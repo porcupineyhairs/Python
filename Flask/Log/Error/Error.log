@@ -1,2 +1,16 @@
-2019-02-20 13:16:41,413 - INFO: http://192.168.1.60:8099/Client/GetTime - POST - 192.168.1.60 - get:{'Mode': 'Sort'} - back:None-Error:(195, b"'VARCHAR' is not a recognized built-in function name.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2019-03-15 13:15:24,604 - INFO: http://192.168.1.60/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'} - back:None - Error:(208, b"Invalid object name 'DSCSYS.DBO.DSCMA'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+
+2019-03-15 13:16:51,589 - INFO: http://192.168.1.60/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'} - back:None - Error:(208, b"Invalid object name 'WG_DB.DBO.WG_USER'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+
+2019-03-15 13:18:01,577 - INFO: http://192.168.1.60/Client/UserLogin - POST - 192.168.1.60 - get:{'Login_Uid': '001114', 'Login_Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'} - back:None - Error:(208, b"Invalid object name 'WG_DB.DBO.WG_USER'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+
+2019-03-15 15:35:38,577 - INFO: http://192.168.1.60/Client/UserLogin - POST - 192.168.1.60 - get:{'LoginUid': '666889', 'LoginPwd': 'CFCD208495D565EF66E7DFF9F98764DA'} - back:None - Error:'NoneType' object is not iterable
+
+2019-03-15 15:41:01,247 - INFO: http://192.168.1.60/Client/UserLogin - POST - 192.168.1.60 - get:{'LoginUid': '666889', 'LoginPwd': 'CFCD208495D565EF66E7DFF9F98764DA'} - back:None - Error:'NoneType' object is not iterable
+
+2019-03-15 15:49:04,296 - INFO: http://192.168.1.60/Client/UserLogin - POST - 192.168.1.60 - get:{'LoginUid': '666889', 'LoginPwd': 'CFCD208495D565EF66E7DFF9F98764DA'} - back:None - Error:'UserManege' object has no attribute '_UserManege__get_WG'
+
+2019-03-15 15:49:44,047 - INFO: http://192.168.1.60/Client/UserLogin - POST - 192.168.1.60 - get:{'LoginUid': '666889', 'LoginPwd': 'CFCD208495D565EF66E7DFF9F98764DA'} - back:None - Error:'UserManege' object has no attribute '_UserManege__ERP_Pwd'
+
+2019-03-15 15:50:55,524 - INFO: http://192.168.1.60/Client/UserLogin - POST - 192.168.1.60 - get:{'LoginUid': '666889', 'LoginPwd': 'CFCD208495D565EF66E7DFF9F98764DA'} - back:None - Error:'NoneType' object is not iterable
 

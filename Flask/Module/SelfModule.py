@@ -9,7 +9,7 @@ class SelfModule:
 	
 
 class Sql:
-	def __init__(self, sqlType='mysql', connDict=None):
+	def __init__(self, sqlType=None, connDict=None):
 		# 类初始化参数
 		self.__sqlType = sqlType
 		self.__connDict = connDict
@@ -22,6 +22,7 @@ class Sql:
 		self.__Mode = ''
 		self.__GetRowCount = False
 		self.__GetTitle = False
+		self.__GetNoNone = False
 
 		# 数据返回前对其处理的临时变量
 		self.__GetBackTmp1 = []
@@ -44,6 +45,7 @@ class Sql:
 		self.__Mode = ''
 		self.__GetRowCount = False
 		self.__GetTitle = False
+		self.__GetNoNone = False
 		
 		# 数据返回前对其处理的临时变量
 		self.__GetBackTmp1 = []
@@ -69,14 +71,17 @@ class Sql:
 	def __SetConn(self):
 		import pymssql
 		import pymysql
-		if self.__sqlType == 'mysql':
-			self.__Conn = pymysql.connect(host=self.__connDict[0], user=self.__connDict[1], password=self.__connDict[2],
-			                              database=self.__connDict[3], charset=self.__connDict[4])
-			self.__Cur = self.__Conn.cursor()
-		elif self.__sqlType == 'mssql':
-			self.__Conn = pymssql.connect(host=self.__connDict[0], user=self.__connDict[1], password=self.__connDict[2],
-			                              database=self.__connDict[3], charset=self.__connDict[4])
-			self.__Cur = self.__Conn.cursor()
+		if self.__sqlType is not None and self.__connDict is not None:
+			if self.__sqlType == 'mysql':
+				self.__Conn = pymysql.connect(host=self.__connDict[0], user=self.__connDict[1], password=self.__connDict[2],
+				                              database=self.__connDict[3], charset=self.__connDict[4])
+				self.__Cur = self.__Conn.cursor()
+			elif self.__sqlType == 'mssql':
+				self.__Conn = pymssql.connect(host=self.__connDict[0], user=self.__connDict[1], password=self.__connDict[2],
+				                              database=self.__connDict[3], charset=self.__connDict[4])
+				self.__Cur = self.__Conn.cursor()
+			else:
+				self.__Flag = False
 		else:
 			self.__Flag = False
 
@@ -120,14 +125,15 @@ class Sql:
 				self.__GetBack.append(list(self.__GetBackTmp2))
 
 	# 主工作方法
-	def SqlWork(self, SqlStr=None, getTitle=False, getRowCount=False):
+	def SqlWork(self, sqlStr=None, getTitle=False, getRowCount=False, getNoNone=True):
 		# 重新初始化参数信息，清空历史数据，以防递归出错
 		self.__InitParam()
 
 		# 传入变量转换
-		self.__SqlStr = SqlStr
+		self.__SqlStr = sqlStr
 		self.__GetRowCount = getRowCount
 		self.__GetTitle = getTitle
+		self.__GetNoNone = getNoNone
 
 		# 处理逻辑
 		self.__JudgeConnDict()
@@ -151,9 +157,20 @@ class Sql:
 		self.__SetClean()
 		
 		# 整理需要返回的数据
+		
+		# 判断是否需要把返回结果中的None变更为''
+		if self.__GetNoNone and self.__Flag and self.__GetBack is not None:
+			__rowIndex = len(self.__GetBack)
+			__colIndex = len(self.__GetBack[0])
+			for __romIndexTmp in range(__rowIndex):
+				for __colIndexTmp in range(__colIndex):
+					if self.__GetBack[__romIndexTmp][__colIndexTmp] is None:
+						self.__GetBack[__romIndexTmp][__colIndexTmp] = ''
+						
 		# 判断是否需要返回字段名
 		if self.__GetTitle and self.__Flag and self.__GetBack is not None:
 			self.__GetBack.insert(0, self.__Title)
+			
 		# 判断是否需要返回查询出的行数
 		if self.__GetRowCount:
 			return self.__GetBack, self.__RowCount
@@ -253,7 +270,7 @@ class MsSql:
 				self.__GetBack.append(list(self.__GetBackTmp2))
 
 	# 主工作方法
-	def Sqlwork(self, DataBase=None, SqlStr=None, GetRowCount=False):
+	def Sqlwork(self, DataBase=None, SqlStr=None, GetRowCount=False, ):
 		# 清空历史数据，以防递归出错
 		self.__init__()
 

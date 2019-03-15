@@ -1,0 +1,2 @@
+2019-02-20 13:16:41,413 - INFO: http://192.168.1.60:8099/Client/GetTime - POST - 192.168.1.60 - get:{'Mode': 'Sort'} - back:None-Error:(195, b"'VARCHAR' is not a recognized built-in function name.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+
