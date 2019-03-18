@@ -1,5 +1,5 @@
-from Module import Sql
 from Module import DataBase_Dict
+from Module import Sql
 
 
 # 用户权限信息类

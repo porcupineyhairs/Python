@@ -74,18 +74,15 @@ def Route(app=None, hostInfo=None):
 				return Response(__back)
 	
 		# 外挂程序版本验证，是否返回更新链接
-		@app.route('/Client/GetVersion', methods=['POST'])
-		def GetVersion_C():
+		@app.route('/Client/VersionManager', methods=['POST'])
+		def VersionManager_C():
 			__back = None
 			__backDict = None
 			__get = __encryptDict.Decrypt(request.data.decode())
 			try:
 				__getVersion = GetVersion()
-				__log = Logger(app.root_path + '/Log/Connect/Connect.log', level='info')
 				__backDict = __getVersion.Main(__get)
 				__back = __encryptDict.Encrypt(__backDict)
-				__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                  str(__get) + ' - ' + 'back:' + str(__backDict) + '\n')
 			except Exception as e:
 				__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
 				__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
@@ -94,15 +91,15 @@ def Route(app=None, hostInfo=None):
 				return Response(__back)
 	
 		# 登录认证
-		@app.route('/Client/UserLogin', methods=['POST'])
-		def UserLogin_C():
+		@app.route('/Client/UserManager', methods=['POST'])
+		def UserManager_C():
 			__back = None
 			__backDict = None
 			__get = __encryptDict.Decrypt(request.data.decode())
 			__back = __encryptDict.Encrypt(__backDict)
 			try:
 				__userManage = UserManege()
-				__log = Logger(app.root_path + '/Log/Login/Login.log', level='info')
+				__log = Logger(app.root_path + '/Log/UserManager/UserManager.log', level='info')
 				__backDict = __userManage.UserLogin(__get)
 				__back = __encryptDict.Encrypt(__backDict)
 				__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
@@ -182,9 +179,6 @@ def Route(app=None, hostInfo=None):
 		# 下载文件，联友生产辅助工具的更新下载
 		@app.route("/Client/WG/Download/<filename>", methods=['GET'])
 		def WG_DownloadFile(filename):
-			__log = Logger(app.root_path + '/Log/Download/Download.log', level='info')
-			__log.logger.info('/Client/WG/Download/' + filename + ' - ' + request.method + ' - '
-			                  + request.remote_addr + '\n')
 			directory = app.root_path + '/File/WG/'  # 文件目录
 			# 判断所需文件是否存在
 			if os.path.exists(directory + filename):

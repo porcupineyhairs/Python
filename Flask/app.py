@@ -14,8 +14,8 @@ from flask_apscheduler import APScheduler
 
 # Web配置的IP与端口，IP采取自动获取方式，只适用于单IP系统
 # hostIp = socket.gethostbyname(socket.getfqdn(socket.gethostname()))
-# hostIp = '192.168.31.29'
-hostIp = '192.168.1.60'
+hostIp = '192.168.31.29'
+# hostIp = '192.168.1.60'
 hostPort = 80
 hostInfo = hostIp + str(hostPort)
 

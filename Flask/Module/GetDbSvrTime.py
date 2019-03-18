@@ -1,11 +1,10 @@
-from Module import MsSql
+from Module import Sql
 from Module.ModuleDictionary import DataBase_Dict
 
 
 class GetSvrTime:
     def __init__(self):
-        self.__mssql = MsSql()
-        self.__WG_Conn = DataBase_Dict['WG_DB']
+        self.__sqlWg = Sql(sqlType='mssql', connDict=DataBase_Dict['WG_DB'])
         self.__Mode = None
         self.__Time = None
         self.__back = {
@@ -20,7 +19,7 @@ class GetSvrTime:
         else:
             __sqlstr = (r"SELECT (CONVERT(VARCHAR(20), GETDATE(), 112) + "
                         r"REPLACE(CONVERT(VARCHAR(20), GETDATE(), 24), ':', ''))")
-        self.__Time = self.__mssql.Sqlwork(self.__WG_Conn, __sqlstr)
-        if self.__Time[0] != 'None':
+        self.__Time = self.__sqlWg.SqlWork(sqlStr=__sqlstr)
+        if self.__Time[0] is not None:
             self.__back['Time'] = self.__Time[0][0]
         return self.__back

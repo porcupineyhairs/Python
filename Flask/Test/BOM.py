@@ -1,4 +1,4 @@
-from Module import Sql
+from Module import *
 import time
 import sqlite3
 
