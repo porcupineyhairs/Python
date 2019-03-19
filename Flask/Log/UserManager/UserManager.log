@@ -1,0 +1,4 @@
+2019-03-19 16:06:13,680 - INFO: http://192.168.1.60/Client/UserManager - POST - 192.168.1.60 - get:{'Module': 'UserManager', 'Mode': 'UserLogin', 'Uid': '001114', 'Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'} - back:{'Mode': 'UserLogin', 'Status': 'Y', 'Uid': '001114', 'Role': None, 'Dpt': '资讯管理课', 'Name': '钟耀辉', 'Permission': None, 'Message': None}
+
+2019-03-19 16:09:52,717 - INFO: http://192.168.1.60/Client/UserManager - POST - 192.168.1.60 - get:{'Module': 'UserManager', 'Mode': 'UserLogin', 'Uid': '001114', 'Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'} - back:{'Module': 'UserManager', 'Mode': 'UserLogin', 'Status': 'Y', 'Uid': '001114', 'Role': None, 'Dpt': '资讯管理课', 'Name': '钟耀辉', 'Permission': None, 'Message': None}
+

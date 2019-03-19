@@ -10,14 +10,15 @@ class UserManege:
 		self.__userPerm = UserPermission()
 		self.__basePerm = BasePermission()
 		self.__getDict = None
-		self.__backDict = {'Mode': str(None),
+		self.__backDict = {'Module': None,
+		                   'Mode': str(None),
 		                   'Status': None,
 		                   'Uid': None,
 		                   'Role': None,
 		                   'Dpt': None,
 		                   'Name': None,
 		                   'Permission': None,
-		                   'Message': '',
+		                   'Message': None,
 		                   }
 
 		self.__Uid = None
@@ -42,14 +43,15 @@ class UserManege:
 		
 	def __InitParameter(self):
 		self.__getDict = None
-		self.__backDict = {'Mode': str(None),
+		self.__backDict = {'Module': None,
+		                   'Mode': str(None),
 		                   'Status': None,
 		                   'Uid': None,
 		                   'Role': None,
 		                   'Dpt': None,
 		                   'Name': None,
 		                   'Permission': None,
-		                   'Message': '',
+		                   'Message': None,
 		                   }
 		
 		self.__Uid = None
@@ -75,7 +77,7 @@ class UserManege:
 	def MainWork(self, getDict):
 		self.__InitParameter()
 		self.__getDict = getDict
-		
+		self.__backDict['Module'] = self.__getDict['Module']
 		if self.__getDict['Mode'] in ('UserLogin', 'SetUserPerm', 'SetBasePerm'):
 			self.__backDict['Mode'] = self.__getDict['Mode']
 			if self.__getDict['Mode'] == 'UserLogin':
@@ -85,10 +87,12 @@ class UserManege:
 			elif self.__getDict['Mode'] == 'SetBasePerm':
 				self.__SetBasePerm()
 		else:
-			self.__backDict['Mode'] = 'Error'
+			self.__backDict['Status'] = 'Error'
 			self.__backDict['Message'] = '传入模式数据错误'
 		
-		self.__backDict['Permission'].rtrim('|')
+		if self.__Permission is not None:
+			self.__backDict['Permission'].rsplit('|')
+			
 		return self.__backDict
 
 	# UserLogin部分
@@ -112,6 +116,7 @@ class UserManege:
 								self.__Status = 'Y'
 								self.__Set_UserInf()
 								self.__Update_WGInf()
+								self.__GetUserPerm()
 					else:
 						self.__Status = 'Y'
 						self.__Set_UserInf()
@@ -133,7 +138,7 @@ class UserManege:
 		            r" FROM DSCSYS.dbo.DSCMA AS DSCMA "
 		            r" LEFT JOIN CMSMV ON MV001 = MA001 "
 		            r" LEFT JOIN CMSME ON ME001 = MV004 "
-		            r" WHERE MA001 = '" + self.__LoginUid + r"'")
+		            r" WHERE MA001 = '" + self.__Uid + r"'")
 		self.__getErp = self.__sqlErp.SqlWork(sqlStr=__sqlstr)
 		print(self.__getErp)
 

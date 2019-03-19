@@ -14,3 +14,11 @@
 
 2019-03-15 15:50:55,524 - INFO: http://192.168.1.60/Client/UserLogin - POST - 192.168.1.60 - get:{'LoginUid': '666889', 'LoginPwd': 'CFCD208495D565EF66E7DFF9F98764DA'} - back:None - Error:'NoneType' object is not iterable
 
+2019-03-19 16:01:39,124 - INFO: http://192.168.1.60/Client/UserManager - POST - 192.168.1.60 - get:{'Module': 'UserManager', 'Mode': 'UserLogin', 'Uid': '001114', 'Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'} - back:None - Error:[Errno 2] No such file or directory: '/Users/harvey/Documents/GitHub/Python/Flask/Log/UserManager/UserManager.log'
+
+2019-03-19 16:02:10,982 - INFO: http://192.168.1.60/Client/UserManager - POST - 192.168.1.60 - get:{'Module': 'UserManager', 'Mode': 'UserLogin', 'Uid': '001114', 'Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'} - back:None - Error:'UserManege' object has no attribute '_UserManege__LoginUid'
+
+2019-03-19 16:02:58,002 - INFO: http://192.168.1.60/Client/UserManager - POST - 192.168.1.60 - get:{'Module': 'UserManager', 'Mode': 'UserLogin', 'Uid': '001114', 'Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'} - back:None - Error:'NoneType' object has no attribute 'rtrim'
+
+2019-03-19 16:04:03,848 - INFO: http://192.168.1.60/Client/UserManager - POST - 192.168.1.60 - get:{'Module': 'UserManager', 'Mode': 'UserLogin', 'Uid': '001114', 'Pwd': 'A748CAED1C4E7DCF8AFF2AFA7878F5'} - back:None - Error:'NoneType' object has no attribute 'rsplit'
+

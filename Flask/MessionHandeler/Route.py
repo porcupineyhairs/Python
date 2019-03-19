@@ -40,16 +40,16 @@ def Route(app=None, hostInfo=None):
 		@app.route('/Client/Test', methods=['POST', 'GET'])
 		def Client_C():
 			if request.method == 'POST':
-				__back = {'name': 'me', 'password': 'you'}
-				__get = request.get_json(force=True)
-				return Response(json.dumps(__back))
+				__backDict = {'name': 'me', 'password': 'you'}
+				__getDict = request.get_json(force=True)
+				return Response(json.dumps(__backDict))
 			elif request.method == 'GET':
 				return render_template('json table.html')
 	
 		# 连接测试，是否能连接成功，测试webservice是否正常
 		@app.route('/Client/LinkTest', methods=['POST'])
 		def LinkTest_C():
-			__get = __encryptDict.Decrypt(request.data.decode())
+			__getDict = __encryptDict.Decrypt(request.data.decode())
 			__backDict = {'Return': 'Yes'}
 			__back = __encryptDict.Encrypt(__backDict)
 			return Response(__back)
@@ -59,16 +59,15 @@ def Route(app=None, hostInfo=None):
 		def GetTime_C():
 			__back = None
 			__backDict = None
-			# __get = request.get_json(force=True)
-			__get = __encryptDict.Decrypt(request.data.decode())
+			__getDict = __encryptDict.Decrypt(request.data.decode())
 			try:
 				__getTime = GetSvrTime()
-				__backDict = __getTime.GetTime(__get)
+				__backDict = __getTime.GetTime(__getDict)
 				__back = __encryptDict.Encrypt(__backDict)
 			except Exception as e:
 				__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
 				__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' +
-				                    'get:' + str(__get) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' +
+				                    'get:' + str(__getDict) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' +
 				                    str(e) + '\n')
 			finally:
 				return Response(__back)
@@ -78,15 +77,15 @@ def Route(app=None, hostInfo=None):
 		def VersionManager_C():
 			__back = None
 			__backDict = None
-			__get = __encryptDict.Decrypt(request.data.decode())
+			__getDict = __encryptDict.Decrypt(request.data.decode())
 			try:
 				__getVersion = GetVersion()
-				__backDict = __getVersion.Main(__get)
+				__backDict = __getVersion.Main(__getDict)
 				__back = __encryptDict.Encrypt(__backDict)
 			except Exception as e:
 				__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
 				__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                    str(__get) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
+				                    str(__getDict) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
 			finally:
 				return Response(__back)
 	
@@ -95,19 +94,19 @@ def Route(app=None, hostInfo=None):
 		def UserManager_C():
 			__back = None
 			__backDict = None
-			__get = __encryptDict.Decrypt(request.data.decode())
+			__getDict = __encryptDict.Decrypt(request.data.decode())
 			__back = __encryptDict.Encrypt(__backDict)
 			try:
 				__userManage = UserManege()
 				__log = Logger(app.root_path + '/Log/UserManager/UserManager.log', level='info')
-				__backDict = __userManage.UserLogin(__get)
+				__backDict = __userManage.MainWork(__getDict)
 				__back = __encryptDict.Encrypt(__backDict)
 				__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                  str(__get) + ' - ' + 'back:' + str(__backDict) + '\n')
+				                  str(__getDict) + ' - ' + 'back:' + str(__backDict) + '\n')
 			except Exception as e:
 				__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
 				__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                    str(__get) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
+				                    str(__getDict) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
 			finally:
 				return Response(__back)
 	
@@ -116,22 +115,22 @@ def Route(app=None, hostInfo=None):
 		def MD_GetInfo_C():
 			__back = None
 			__backDict = None
-			__get = __encryptDict.Decrypt(request.data.decode())
+			__getDict = __encryptDict.Decrypt(request.data.decode())
 			try:
 				__log = Logger(app.root_path + '/Log/MaDuo/MaDuoInfo.log', level='info')
 				__backDict = {'Return': 'OK'}
 				__back = __encryptDict.Encrypt(__backDict)
 				__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                  str(__get) + ' - ' + 'back:' + str(__backDict) + '\n')
+				                  str(__getDict) + ' - ' + 'back:' + str(__backDict) + '\n')
 				from Module.MaDuoSystem.MD_GetInfo import GetInfo
-				if __get['Mode'] == 'Insert':
+				if __getDict['Mode'] == 'Insert':
 					__getInfo = GetInfo()
 					t = threading.Thread(target=__getInfo.MainWork)
 					t.start()
 			except Exception as e:
 				__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
 				__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                    str(__get) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
+				                    str(__getDict) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
 			finally:
 				return Response(__back)
 	
@@ -140,7 +139,7 @@ def Route(app=None, hostInfo=None):
 		def LL_LYXA_C():
 			__back = None
 			__backDict = None
-			__get = __encryptDict.Decrypt(request.data.decode())
+			__getDict = __encryptDict.Decrypt(request.data.decode())
 			try:
 				__log = Logger(app.root_path + '/Log/PDA/PDA_LL.log', level='info')
 				# __pda_LL = PDA_LL()
@@ -148,11 +147,11 @@ def Route(app=None, hostInfo=None):
 				__backDict = {'Return': 'OK'}
 				__back = __encryptDict.Encrypt(__backDict)
 				__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                  str(__get) + ' - ' + 'back:' + str(__backDict) + '\n')
+				                  str(__getDict) + ' - ' + 'back:' + str(__backDict) + '\n')
 			except Exception as e:
 				__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
 				__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                    str(__get) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
+				                    str(__getDict) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
 			finally:
 				return Response(__back)
 	
@@ -161,18 +160,18 @@ def Route(app=None, hostInfo=None):
 		def JH_LYXA_C():
 			__back = None
 			__backDict = None
-			__get = __encryptDict.Decrypt(request.data.decode())
+			__getDict = __encryptDict.Decrypt(request.data.decode())
 			try:
 				__log = Logger(app.root_path + '/Log/PDA/PDA_JH.log', level='info')
 				__pda_JH = PDA_JH_GetInfo()
-				__backDict = __pda_JH.MainWork(__get)
+				__backDict = __pda_JH.MainWork(__getDict)
 				__back = __encryptDict.Encrypt(__backDict)
 				__log.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                  str(__get) + ' - ' + 'back:' + str(__backDict) + '\n')
+				                  str(__getDict) + ' - ' + 'back:' + str(__backDict) + '\n')
 			except Exception as e:
 				__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
 				__log_E.logger.info(request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
-				                    str(__get) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
+				                    str(__getDict) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
 			finally:
 				return Response(__back)
 	
