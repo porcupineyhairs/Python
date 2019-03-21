@@ -44,7 +44,7 @@ class UserPermission:
 		            r"INNER JOIN WG_PERM_USER ON WG_PERM_USER.Permission_ID = WG_PERM_BASE.K_ID "
 		            r"WHERE WG_PERM_USER.U_ID = '{0}' ")
 		__get = self.__sqlWg.SqlWork(sqlStr=__sqlStr.format(self.__userId))
-		if __get[0] != 'None':
+		if __get is not None:
 			for __get_tmp in __get:
 				self.__getPermList.append(str(__get_tmp[0]))
 		else:
@@ -72,7 +72,7 @@ class BasePermission:
 		
 		for __permListTmp in self.__setPermList:
 			__sqlGet = self.__sqlWg.SqlWork(sqlStr=__sqlStrFind.format(__permListTmp))
-			if __sqlGet[0] != 'None':
+			if __sqlGet is not None:
 				self.__sqlWg.SqlWork(sqlStr=__sqlStrSet.format(__permListTmp))
 			else:
 				self.__sqlWg.SqlWork(sqlStr=__sqlStrNew.format(__permListTmp))

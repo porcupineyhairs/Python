@@ -78,7 +78,7 @@ class UserManege:
 		self.__InitParameter()
 		self.__getDict = getDict
 		self.__backDict['Module'] = self.__getDict['Module']
-		if self.__getDict['Mode'] in ('UserLogin', 'SetUserPerm', 'SetBasePerm'):
+		if self.__getDict['Mode'] in ('UserLogin', 'SetUserPerm', 'SetBasePerm', 'AddUser'):
 			self.__backDict['Mode'] = self.__getDict['Mode']
 			if self.__getDict['Mode'] == 'UserLogin':
 				self.__UserLogin()
@@ -89,9 +89,6 @@ class UserManege:
 		else:
 			self.__backDict['Status'] = 'Error'
 			self.__backDict['Message'] = '传入模式数据错误'
-		
-		if self.__Permission is not None:
-			self.__backDict['Permission'].rsplit('|')
 			
 		return self.__backDict
 
@@ -111,6 +108,7 @@ class UserManege:
 						if self.__Judge_WG_PwdSame():
 							self.__Status = 'Y'
 							self.__Set_UserInf()
+							self.__GetUserPerm()
 						else:
 							if not self.__Judge_ERP_PwdSame():
 								self.__Status = 'Y'
@@ -121,26 +119,30 @@ class UserManege:
 						self.__Status = 'Y'
 						self.__Set_UserInf()
 						self.__Update_WGInf()
+						self.__GetUserPerm()
 				else:
 					self.__Status = 'Y'
 					self.__Set_UserInf()
 					self.__Insert_WGInf()
+					self.__GetUserPerm()
 			else:
 				self.__backDict['Status'] = 'y'
+		
+		if self.__Permission is not None:
+			self.__backDict['Permission'].rsplit('|')
 
 	def __Get_WGInf(self):
 		__sqlstr = (r" SELECT U_ID, U_NAME, U_PWD, ERP_PWD, DPT, ROLE, FLAG, TYPE FROM WG_DB.dbo.WG_USER "
-		            r" WHERE U_ID = '" + self.__Uid + "'")
-		self.__getWg = self.__sqlWg.SqlWork(sqlStr=__sqlstr)
+		            r" WHERE U_ID = '{0}'")
+		self.__getWg = self.__sqlWg.SqlWork(sqlStr=__sqlstr.format(self.__Uid))
 
 	def __Get_ERPInf(self):
 		__sqlstr = (r" SELECT RTRIM(MA001), RTRIM(MA002), RTRIM(ME002), RTRIM(MA003), RTRIM(MA005) "
 		            r" FROM DSCSYS.dbo.DSCMA AS DSCMA "
 		            r" LEFT JOIN CMSMV ON MV001 = MA001 "
 		            r" LEFT JOIN CMSME ON ME001 = MV004 "
-		            r" WHERE MA001 = '" + self.__Uid + r"'")
-		self.__getErp = self.__sqlErp.SqlWork(sqlStr=__sqlstr)
-		print(self.__getErp)
+		            r" WHERE MA001 = '{0}'")
+		self.__getErp = self.__sqlErp.SqlWork(sqlStr=__sqlstr.format(self.__Uid))
 
 	def __Judge_ERP_PwdSame(self):
 		if self.__ErpPwd == self.__WgErpPwd:
@@ -169,15 +171,8 @@ class UserManege:
 	def __Insert_WGInf(self):
 		self.__ErpPwd = self.__ErpPwd.replace("'", "''")
 		__sqlstr = (r" INSERT INTO WG_DB.dbo.WG_USER (U_ID, U_NAME, U_PWD, ERP_PWD, DPT, ROLE, FLAG, TYPE) "
-		            r" VALUES("
-		            r"'" + self.__Uid + "', "
-                    r"'" + self.__Name + "', "
-                    r"'" + self.__WgPwd + "', "
-                    r"'" + self.__ErpPwd + "', "
-                    r"'" + self.__Dpt + "', "
-                    r"'', 'Y', 'ERP'"
-		            r")")
-		self.__sqlWg.SqlWork(sqlStr=__sqlstr)
+		            r" VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '', 'Y', 'ERP') ")
+		self.__sqlWg.SqlWork(sqlStr=__sqlstr.format(self.__Uid, self.__Name, self.__Pwd, self.__ErpPwd, self.__Dpt))
 
 	def __Update_WGInf(self):
 		self.__ErpPwd = self.__ErpPwd.replace("'", "''")
@@ -215,9 +210,11 @@ class UserManege:
 		
 	def __GetUserPerm(self):
 		__permList = self.__userPerm.getUserPermission(self.__Uid)
-		self.__Permission = ''
-		for __PermListTmp in __permList:
-			self.__Permission += __PermListTmp + '|'
+		if __permList is not None:
+			self.__Permission = ''
+			for __PermListTmp in __permList:
+				self.__Permission += __PermListTmp + '|'
+			self.__backDict['Permission'] = self.__Permission
 
 	# SetUserPerm部分
 	def __SetUserPerm(self):
