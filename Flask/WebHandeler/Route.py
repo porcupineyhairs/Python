@@ -34,20 +34,11 @@ def Route(app=None, hostInfo=None):
 			        '<br/>'
 			        '<h2>内容待添加</h2>')
 		
-		# @app.route('/gongshi/201811')
-		# def gs201811():
-		# 	from WebHandeler import gongshi
-		# 	get = gongshi.gongshi('201811')
-		# 	return ('<title>收集工单工时</title>' +
-		# 	        '<h1>201811工单工时已收集</h1>'
-		# 	        '<br/>'
-		# 	        '<h2>其他内容待添加</h2>')
-		
-		# @app.route('/gongshi/201812')
-		# def gs201812():
-		# 	from WebHandeler import gongshi
-		# 	get = gongshi.gongshi('201812')
-		# 	return ('<title>收集工单工时</title>' +
-		# 	        '<h1>201812工单工时已收集</h1>'
-		# 	        '<br/>'
-		# 	        '<h2>其他内容待添加</h2>')
+		@app.route('/Test/0')
+		def Test_W_0():
+			__json = [{"BrandName":"ACES","Modul":"91906-0227P","Quantity":"3057","Datecode":"W2Y","Remark":"stock"},
+            {"BrandName":"ADI","Modul":"ADM706TARZ-REEL","Quantity":"2145","Datecode":"W2Y","Remark":"stock"},
+            {"BrandName":"ADI","Modul":"ADR02AUJZ-REEL7","Quantity":"2131","Datecode":"W2Y","Remark":"stock"}]
+			
+			__dict = {'Name': 'Me', 'Back': 'You'}
+			return render_template('json table.html', data=__dict, Title='Welcome')

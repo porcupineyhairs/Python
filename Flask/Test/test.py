@@ -39,10 +39,14 @@ def sqltest():
 
 def Perm():
 	from Module import Permission
-	userPerm = Permission.UserPerm()
+	userPerm = Permission.UserPermission()
 	# __get = userPerm.getUserPermission(userId='000068')
 	# print(__get)
 	userPerm.setUserPermission(userId='000068', permList=['码垛线_订单类别编码管理', '玖友_查询物料需求量'])
+	
+
+def _Json():
+	pass
 	
 
 if __name__ == '__main__':

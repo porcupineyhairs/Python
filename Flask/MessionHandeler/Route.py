@@ -187,3 +187,12 @@ def Route(app=None, hostInfo=None):
 				return response
 			else:
 				return None
+			
+		@app.route('/Client/Test/0', methods=['POST'])
+		def Test0():
+			__getDict = None
+			__backDict = None
+			__backDict = [{'id': '1', 'mac': '20:f1:7c:c5:cd:80'}, {'id': 'sdfsfsdfsdf4', 'mac': '20:f1:7c:c5:cd:85'}]
+			print(json.dumps(__backDict))
+			__back = __encryptDict.Encrypt(__backDict)
+			return Response(__back)
