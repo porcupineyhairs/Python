@@ -192,7 +192,6 @@ def Route(app=None, hostInfo=None):
 		def Test0():
 			__getDict = None
 			__backDict = None
-			__backDict = [{'ascdsf': '1', 'mac': '20:f1:7c:c5:cd:80'}, {'ascdsf': 'sdfsdfsdf', 'mac': 'sdfsdf'}]
 			
 			sqlWg = Sql(sqlType='mssql', connDict=DataBase_Dict['ROBOT_TEST'])
 			get = sqlWg.SqlWork(sqlStr=("SELECT PO_Class 订单属性, PO_Type 订单类别, TypeCode 类别编码, Valid 有效码 "
@@ -204,11 +203,6 @@ def Route(app=None, hostInfo=None):
 				detail = get
 				for index in range(len(detail)):
 					detail[index][3] = True if detail[index][3] == 'Y' else False
-			
-			# detail = [['99', '98'],
-			#           ['97', '96'],
-			#           ['95', '84']]
-			# title = ['first', 'second']
 			listBack = None
 			
 			if detail is not None and title is not None:

@@ -46,9 +46,9 @@ def Perm():
 	
 
 def _Json():
-	detail = [['99', '98'],
-	          ['97', '96'],
-	          ['95', '84']]
+	detail = [['99', True],
+	          ['97', False],
+	          ['95', True]]
 	title = ['first', 'second']
 	dict = None
 	
