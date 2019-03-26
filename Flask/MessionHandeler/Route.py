@@ -192,7 +192,38 @@ def Route(app=None, hostInfo=None):
 		def Test0():
 			__getDict = None
 			__backDict = None
-			__backDict = [{'id': '1', 'mac': '20:f1:7c:c5:cd:80'}, {'id': 'sdfsfsdfsdf4', 'mac': '20:f1:7c:c5:cd:85'}]
-			print(json.dumps(__backDict))
-			__back = __encryptDict.Encrypt(__backDict)
+			__backDict = [{'ascdsf': '1', 'mac': '20:f1:7c:c5:cd:80'}, {'ascdsf': 'sdfsdfsdf', 'mac': 'sdfsdf'}]
+			
+			sqlWg = Sql(sqlType='mssql', connDict=DataBase_Dict['ROBOT_TEST'])
+			get = sqlWg.SqlWork(sqlStr=("SELECT PO_Class 订单属性, PO_Type 订单类别, TypeCode 类别编码, Valid 有效码 "
+			                            "FROM SplitTypeCode ORDER BY TypeCode "), getTitle=True)
+			title = None
+			detail = None
+			if get is not None:
+				title = get.pop(0)
+				detail = get
+				for index in range(len(detail)):
+					detail[index][3] = True if detail[index][3] == 'Y' else False
+			
+			# detail = [['99', '98'],
+			#           ['97', '96'],
+			#           ['95', '84']]
+			# title = ['first', 'second']
+			listBack = None
+			
+			if detail is not None and title is not None:
+				listBack = []
+				if len(title) == len(detail[0]):
+					for rowIndex in range(len(detail)):
+						dictBack = {}
+						for colIndex in range(len(title)):
+							dictTmp = {title[colIndex]: detail[rowIndex][colIndex]}
+							dictBack.update(dictTmp)
+						listBack.append(dictBack)
+					
+			
+			# print(json.dumps(listBack))
+			
+			# print(json.dumps(__backDict))
+			__back = __encryptDict.Encrypt(listBack)
 			return Response(__back)

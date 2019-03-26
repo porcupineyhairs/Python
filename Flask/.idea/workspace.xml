@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd6bbc7e-3182-436c-9ff5-f01f19a5884d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Log/PDA/PDA_JH.log" beforeDir="false" afterPath="$PROJECT_DIR$/Log/PDA/PDA_JH.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Log/UserManager/UserManager.log" beforeDir="false" afterPath="$PROJECT_DIR$/Log/UserManager/UserManager.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MessionHandeler/Route.py" beforeDir="false" afterPath="$PROJECT_DIR$/MessionHandeler/Route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Route.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Route.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebHandeler/Route.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebHandeler/Route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/json table.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/json table.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +19,7 @@
     <SUITE FILE_PATH="coverage/Flask$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1541138891975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Flask_win$Flask_win.coverage" NAME="Flask-win Coverage Results" MODIFIED="1533132055442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Flask$sqlsvrwork.coverage" NAME="sqlsvrwork Coverage Results" MODIFIED="1552466035794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
-    <SUITE FILE_PATH="coverage/Flask$test.coverage" NAME="test Coverage Results" MODIFIED="1552487950255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/Flask$test.coverage" NAME="test Coverage Results" MODIFIED="1553396075041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/Flask$test_mysql.coverage" NAME="test_mysql Coverage Results" MODIFIED="1552613996020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/Flask$scrapy.coverage" NAME="scrapy Coverage Results" MODIFIED="1551917682477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
   </component>
@@ -46,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Module/UserManage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-554">
-              <caret line="105" column="42" selection-start-line="105" selection-start-column="42" selection-end-line="105" selection-end-column="42" />
+            <state relative-caret-position="-317">
+              <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
                 <element signature="e#1133#1861#0" />
@@ -56,27 +52,50 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="32" column="57" lean-forward="true" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MessionHandeler/Route.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1027">
-              <caret line="194" column="35" selection-start-line="194" selection-start-column="35" selection-end-line="194" selection-end-column="35" />
+            <state relative-caret-position="564">
+              <caret line="205" column="81" selection-start-line="205" selection-start-column="81" selection-end-line="205" selection-end-column="81" />
               <folding>
                 <element signature="e#0#99#0" expanded="true" />
                 <element signature="e#353#1262#0" />
                 <element signature="e#1975#2585#0" />
+                <element signature="e#2696#3285#0" />
+                <element signature="e#3377#4290#0" />
                 <element signature="e#4391#5389#0" />
                 <element signature="e#5481#6353#0" />
                 <element signature="e#6445#7295#0" />
+                <element signature="e#7421#7787#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Module/ModuleDictionary.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Module/SelfModule.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2012">
+              <caret line="170" column="61" selection-start-line="170" selection-start-column="52" selection-end-line="170" selection-end-column="61" />
+              <folding>
+                <element signature="e#43#122#0" />
+                <element signature="e#1299#2011#0" />
+                <element signature="e#4579#7331#0" />
+                <element signature="e#7348#10075#0" />
+                <element signature="e#10093#10153#0" />
+                <element signature="e#10171#10225#0" />
+                <element signature="e#10241#12352#0" />
+                <element signature="e#12370#13052#0" />
+                <element signature="e#13070#14127#0" />
               </folding>
             </state>
           </provider>
@@ -160,10 +179,10 @@
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/Module/UserManage.py" />
         <option value="$PROJECT_DIR$/Module/Permission.py" />
-        <option value="$PROJECT_DIR$/Test/test.py" />
         <option value="$PROJECT_DIR$/WebHandeler/Route.py" />
         <option value="$PROJECT_DIR$/templates/json table.html" />
         <option value="$PROJECT_DIR$/Test/Route.py" />
+        <option value="$PROJECT_DIR$/Test/test.py" />
         <option value="$PROJECT_DIR$/MessionHandeler/Route.py" />
       </list>
     </option>
@@ -171,7 +190,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
     <option name="y" value="23" />
-    <option name="width" value="1178" />
+    <option name="width" value="1215" />
     <option name="height" value="1417" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -225,23 +244,8 @@
             <path>
               <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
               <item name="Flask" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="error" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask" type="462c0819:PsiDirectoryNode" />
-              <item name="WebHandeler" type="462c0819:PsiDirectoryNode" />
+              <item name="Module" type="462c0819:PsiDirectoryNode" />
+              <item name="MaDuoSystem" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -471,11 +475,12 @@
       <workItem from="1553039844531" duration="650000" />
       <workItem from="1553132958254" duration="5535000" />
       <workItem from="1553213857918" duration="4689000" />
+      <workItem from="1553387445935" duration="7781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175004000" />
+    <option name="totallyTimeSpent" value="182785000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -487,14 +492,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="23" width="1178" height="1417" extended-state="0" />
+    <frame x="57" y="23" width="1215" height="1417" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21214789" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20886615" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32877752" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32746115" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32679245" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -503,7 +508,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32981133" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5017241" side_tool="true" weight="0.19396226" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49827588" visible="true" weight="0.13735849" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49827588" visible="true" weight="0.19924529" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32830188" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -666,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Module/MaDuoSystem/MD_GetInfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3225">
-          <caret line="217" column="42" selection-start-line="217" selection-start-column="42" selection-end-line="217" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/scrapy_tmp2.py" />
     <entry file="file://$PROJECT_DIR$/Comand/Route.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -718,13 +716,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Module/UserManage3.py" />
-    <entry file="file://$PROJECT_DIR$/Module/ModuleDictionary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Module/Num2Char.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -739,41 +730,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Module/AES.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Module/GetDbSvrTime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module/SelfModule.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#43#122#0" />
-            <element signature="e#138#4560#0" />
-            <element signature="e#1299#2011#0" />
-            <element signature="e#4579#7331#0" />
-            <element signature="e#7348#10075#0" />
-            <element signature="e#10093#10153#0" />
-            <element signature="e#10171#10225#0" />
-            <element signature="e#10241#12352#0" />
-            <element signature="e#12370#13052#0" />
-            <element signature="e#13070#14127#0" />
           </folding>
         </state>
       </provider>
@@ -826,24 +788,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" column="57" lean-forward="true" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebHandeler/Route.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="43" column="81" lean-forward="true" selection-start-line="43" selection-start-column="81" selection-end-line="43" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -868,10 +816,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Module/AES.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Module/UserManage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-554">
-          <caret line="105" column="42" selection-start-line="105" selection-start-column="42" selection-end-line="105" selection-end-column="42" />
+        <state relative-caret-position="-317">
+          <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
             <element signature="e#1133#1861#0" />
@@ -879,17 +851,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Module/SelfModule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2012">
+          <caret line="170" column="61" selection-start-line="170" selection-start-column="52" selection-end-line="170" selection-end-column="61" />
+          <folding>
+            <element signature="e#43#122#0" />
+            <element signature="e#1299#2011#0" />
+            <element signature="e#4579#7331#0" />
+            <element signature="e#7348#10075#0" />
+            <element signature="e#10093#10153#0" />
+            <element signature="e#10171#10225#0" />
+            <element signature="e#10241#12352#0" />
+            <element signature="e#12370#13052#0" />
+            <element signature="e#13070#14127#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module/MaDuoSystem/MD_GetInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module/ModuleDictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MessionHandeler/Route.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1027">
-          <caret line="194" column="35" selection-start-line="194" selection-start-column="35" selection-end-line="194" selection-end-column="35" />
+        <state relative-caret-position="564">
+          <caret line="205" column="81" selection-start-line="205" selection-start-column="81" selection-end-line="205" selection-end-column="81" />
           <folding>
             <element signature="e#0#99#0" expanded="true" />
             <element signature="e#353#1262#0" />
             <element signature="e#1975#2585#0" />
+            <element signature="e#2696#3285#0" />
+            <element signature="e#3377#4290#0" />
             <element signature="e#4391#5389#0" />
             <element signature="e#5481#6353#0" />
             <element signature="e#6445#7295#0" />
+            <element signature="e#7421#7787#0" />
           </folding>
         </state>
       </provider>

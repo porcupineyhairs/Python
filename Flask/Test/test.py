@@ -42,17 +42,32 @@ def Perm():
 	userPerm = Permission.UserPermission()
 	# __get = userPerm.getUserPermission(userId='000068')
 	# print(__get)
-	userPerm.setUserPermission(userId='000068', permList=['码垛线_订单类别编码管理', '玖友_查询物料需求量'])
+	# userPerm.setUserPermission(userId='000068', permList=['码垛线_订单类别编码管理', '玖友_查询物料需求量'])
 	
 
 def _Json():
-	pass
+	detail = [['99', '98'],
+	          ['97', '96'],
+	          ['95', '84']]
+	title = ['first', 'second']
+	dict = None
+	
+	if detail is not None and title is not None:
+		dict = []
+		if len(title) == len(detail[0]):
+			for rowIndex in range(len(detail)):
+				for colIndex in range(len(title)):
+					dictTmp = {title[colIndex]: detail[rowIndex][colIndex]}
+					dict.append(dictTmp)
+	
+	print(json.dumps(dict))
 	
 
 if __name__ == '__main__':
 	# WebClient()
-	JHXA()
+	# JHXA()
 	# MD()
 	# DbTime()
 	# sqltest()
 	# Perm()
+	_Json()
