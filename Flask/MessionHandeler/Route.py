@@ -194,15 +194,19 @@ def Route(app=None, hostInfo=None):
 			__backDict = None
 			
 			sqlWg = Sql(sqlType='mssql', connDict=DataBase_Dict['ROBOT_TEST'])
-			get = sqlWg.SqlWork(sqlStr=("SELECT PO_Class 订单属性, PO_Type 订单类别, TypeCode 类别编码, Valid 有效码 "
-			                            "FROM SplitTypeCode ORDER BY TypeCode "), getTitle=True)
+			# get = sqlWg.SqlWork(sqlStr=("SELECT Valid 有效码, PO_Class 订单属性, PO_Type 订单类别, TypeCode 类别编码 "
+			#                             "FROM SplitTypeCode ORDER BY TypeCode "), getTitle=True)
+			
+			get = sqlWg.SqlWork(sqlStr=(r"SELECT K_ID 序号, BoxSize 纸箱尺寸, BoxCode 纸箱编码, "
+			                            r"BoxSet 纸箱码放方式, Valid 有效码 "
+			                            r"FROM BoxSizeCode ORDER BY K_ID "), getTitle=True)
 			title = None
 			detail = None
 			if get is not None:
 				title = get.pop(0)
 				detail = get
 				for index in range(len(detail)):
-					detail[index][3] = True if detail[index][3] == 'Y' else False
+					detail[index][4] = True if detail[index][4] == 'Y' else False
 			listBack = None
 			
 			if detail is not None and title is not None:
@@ -215,8 +219,7 @@ def Route(app=None, hostInfo=None):
 							dictBack.update(dictTmp)
 						listBack.append(dictBack)
 					
-			
-			# print(json.dumps(listBack))
+			print(json.dumps(listBack).replace(r'"', r'\"'))
 			
 			# print(json.dumps(__backDict))
 			__back = __encryptDict.Encrypt(listBack)
