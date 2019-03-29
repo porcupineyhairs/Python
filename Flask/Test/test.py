@@ -1,9 +1,11 @@
 import json
 from Module import MsSql
 import requests
+from Module import AES16
 
 
 def WebClient():
+	aes16 = AES16()
 	info = {'Mode': 'Insert'}
 	r = requests.post("http://192.168.0.197/Client/MaDuo/GetInfo", data=json.dumps(info))
 	print(r.json())
@@ -64,10 +66,10 @@ def _Json():
 	
 
 if __name__ == '__main__':
-	# WebClient()
+	WebClient()
 	# JHXA()
 	# MD()
 	# DbTime()
 	# sqltest()
 	# Perm()
-	_Json()
+	# _Json()

@@ -1,0 +1,4 @@
+2019-03-22 16:05:59,465 - INFO: http://192.168.1.60/Client/PDA/JH_LYXA - POST - 192.168.1.65 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201903221605580001'}
+
+2019-03-22 16:05:59,775 - INFO: http://192.168.1.60/Client/PDA/JH_LYXA - POST - 192.168.1.65 - get:{'Uid': '001114', 'Mode': 'Complete', 'Parameter': 'JH201903221605580001', 'Data': '', 'RowCount': '1'} - back:{'Return': 'Complete', 'Parameter': 'JH201903221605580001', 'Data': '3401-19033869'}
+

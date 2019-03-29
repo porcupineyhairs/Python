@@ -30,7 +30,7 @@ class GetInfo:
 	def __GetOrderList(self):
 		__sqlstr = (r"SELECT SC001 FROM SCHEDULE "
 		            r"WHERE SC038 = 'N' /*AND SC003 BETWEEN '{0}' AND '{1}'*/ "
-		            r"ORDER BY KEY_ID")
+		            r"ORDER BY K_ID")
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr.format(self.__Today, self.__LastDay))
 		if __get[0] != 'None':
 			for __get_Item in __get:
@@ -89,7 +89,7 @@ class GetInfo:
 		                     __Item[11], __Item[12]))
 
 	def __GetBoxList(self):
-		__sqlstr = r"SELECT SC001 FROM SCHEDULE WHERE 1=1 AND SC038 = 'y' ORDER BY KEY_ID "
+		__sqlstr = r"SELECT SC001 FROM SCHEDULE WHERE 1=1 AND SC038 = 'y' ORDER BY K_ID "
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr)
 		if __get[0] != 'None':
 			for __get_Item in __get:
@@ -116,7 +116,7 @@ class GetInfo:
 			return None
 
 	def __GetBoxSizeCode(self, __Size):
-		__sqlstr = r"SELECT BoxCode FROM BoxSizeCode WHERE BoxSize = '{0}' AND Valid = 'Y'"
+		__sqlstr = r"SELECT BoxCode FROM BoxSizeCode WHERE BoxSize = '{0}' AND Valid = 1"
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr.format(__Size))
 		if __get[0] != 'None':
 			__Code = __get[0][0]
@@ -154,7 +154,7 @@ class GetInfo:
 	def __GetOrderTypeIn(self):
 		__listStr = self.__GetTypeStr()
 		__sqlstr = (r"SELECT SC001, {0} FROM SCHEDULE "
-		            r"WHERE SC002 = '内销' AND SC038 = 'n' ORDER BY KEY_ID").format(__listStr)
+		            r"WHERE SC002 = '内销' AND SC038 = 'n' ORDER BY K_ID").format(__listStr)
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr)
 		if __get[0] != 'None':
 			for __Item_List in __get:
@@ -176,7 +176,7 @@ class GetInfo:
 	
 	def __GetTypeList(self):
 		__sqlstr = (r"SELECT PO_Type, TypeCode FROM SplitTypeCode "
-		            r"WHERE Valid = 'Y' AND PO_Class = '内销' AND PO_Type != '内销' "
+		            r"WHERE Valid = 1 AND PO_Class = '内销' AND PO_Type != '内销' "
 		            r"ORDER BY K_ID")
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr)
 		if __get[0] != 'None':
@@ -187,7 +187,7 @@ class GetInfo:
 	
 	def __GetOrderTypeOut(self):
 		__sqlstr = (r"SELECT SC001, SUBSTRING(SC001, 1, 4) FROM SCHEDULE "
-		            r"WHERE SC002 = '外销' AND SC038 = 'n'  ORDER BY KEY_ID")
+		            r"WHERE SC002 = '外销' AND SC038 = 'n'  ORDER BY K_ID")
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr)
 		if __get[0] != 'None':
 			for __Item_List in __get:
@@ -224,7 +224,7 @@ class GetInfo:
 			
 	def __AddOrderType(self, __Class, __Type, __Code):
 		__sqlstr = (r"INSERT INTO  SplitTypeCode(PO_Class, PO_Type, TypeCode, Valid) "
-		            r"VALUES ('{0}', '{1}', '{2}', 'Y')")
+		            r"VALUES ('{0}', '{1}', '{2}', 1)")
 		print(__sqlstr.format(__Class, __Type, __Code))
 		self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr.format(__Class, __Type, __Code))
 

@@ -49,10 +49,11 @@ def Route(app=None, hostInfo=None):
 		# 连接测试，是否能连接成功，测试webservice是否正常
 		@app.route('/Client/LinkTest', methods=['POST'])
 		def LinkTest_C():
-			__getDict = __encryptDict.Decrypt(request.data.decode())
+			# __getDict = __encryptDict.Decrypt(request.data.decode())
 			__backDict = {'Return': 'Yes'}
-			__back = __encryptDict.Encrypt(__backDict)
-			return Response(__back)
+			# __back = __encryptDict.Encrypt(__backDict)
+			# return Response(__back)
+			return Response(json.dumps(__backDict))
 	
 		# 获取198数据库服务器的时间
 		@app.route('/Client/GetTime', methods=['POST'])
@@ -88,6 +89,24 @@ def Route(app=None, hostInfo=None):
 				                    str(__getDict) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
 			finally:
 				return Response(__back)
+		
+		@app.route('/Client/GetVersion', methods=['POST'])
+		def VersionManager_C2():
+			__back = None
+			__backDict = None
+			__getDict = request.get_json(force=True)
+			try:
+				print(__getDict)
+				__getVersion = GetVersion()
+				__backDict = __getVersion.Main(__getDict)
+				print(__backDict)
+			except Exception as e:
+				__log_E = Logger(app.root_path + '/Log/Error/Error.log', level='info')
+				__log_E.logger.info(
+					request.url + ' - ' + request.method + ' - ' + request.remote_addr + ' - ' + 'get:' +
+					str(__getDict) + ' - ' + 'back:' + str(__backDict) + ' - ' + 'Error:' + str(e) + '\n')
+			finally:
+				return Response(json.dumps(__backDict))
 	
 		# 登录认证
 		@app.route('/Client/UserManager', methods=['POST'])
@@ -194,8 +213,6 @@ def Route(app=None, hostInfo=None):
 			__backDict = None
 			
 			sqlWg = Sql(sqlType='mssql', connDict=DataBase_Dict['ROBOT_TEST'])
-			# get = sqlWg.SqlWork(sqlStr=("SELECT Valid 有效码, PO_Class 订单属性, PO_Type 订单类别, TypeCode 类别编码 "
-			#                             "FROM SplitTypeCode ORDER BY TypeCode "), getTitle=True)
 			
 			get = sqlWg.SqlWork(sqlStr=(r"SELECT K_ID 序号, BoxSize 纸箱尺寸, BoxCode 纸箱编码, "
 			                            r"BoxSet 纸箱码放方式, Valid 有效码 "
@@ -218,9 +235,7 @@ def Route(app=None, hostInfo=None):
 							dictTmp = {title[colIndex]: detail[rowIndex][colIndex]}
 							dictBack.update(dictTmp)
 						listBack.append(dictBack)
-					
-			print(json.dumps(listBack).replace(r'"', r'\"'))
 			
-			# print(json.dumps(__backDict))
 			__back = __encryptDict.Encrypt(listBack)
+			print(__back)
 			return Response(__back)
