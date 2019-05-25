@@ -44,7 +44,7 @@ class GetVersion:
 		
 		session = self.DbSession()
 		
-		__get = session.query(WG_APP_INF.Version).filter_by(ProgName=ConvertStr('联友生产辅助工具'), Valid='Y').all()
+		__get = session.query(WG_APP_INF.Version).filter_by(ProgName=ConvertStr('联友生产辅助工具'), Valid=1).all()
 		
 		if len(__get) == 0:
 			self.__back['Mode'] = 'False'

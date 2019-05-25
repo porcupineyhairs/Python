@@ -1,14 +1,14 @@
 import json
 from Module import MsSql
 import requests
-from Module import AES16
+from Module import EncryptDict
 
 
 def WebClient():
-	aes16 = AES16()
+	aes16 = EncryptDict()
 	info = {'Mode': 'Insert'}
-	r = requests.post("http://192.168.0.197/Client/MaDuo/GetInfo", data=json.dumps(info))
-	print(r.json())
+	r = requests.post("http://192.168.0.197:8099/Client/MaDuo/GetInfo", data=aes16.Encrypt(info))
+	print(r)
 	
 	
 def MD():
@@ -19,11 +19,14 @@ def MD():
 	
 def JHXA():
 	from Module.PDA.JH_LYXA import PDA_JH_Handle, PDA_JH_GetInfo
-	pda_JH = PDA_JH_GetInfo()
-	get_json = {'Uid': '001114', 'Mode': 'Complete', 'Parameter': 'JH201812281329460001', 'Data': '', 'RowCount': '4'}
+	# pda_JH = PDA_JH_GetInfo()
+	# get_json = {'Uid': '001114', 'Mode': 'Complete', 'Parameter': 'JH201812281329460001', 'Data': '', 'RowCount': '4'}
 	# pda_JH.MainWork(get_json)
-	print(json.dumps(get_json))
+	# print(json.dumps(get_json))
 	
+	jh_handel = PDA_JH_Handle()
+	get = jh_handel.MainWork('JH201905201049460001')
+	print(get)
 
 def DbTime():
 	info = {'Mode': 'Sort'}
@@ -32,9 +35,10 @@ def DbTime():
 	
 	
 def sqltest():
-	conn = ['40.73.246.171', 'sa', 'DGlsdnkj168', 'test']
+	conn = ['40.73.246.171', 'sa', 'DGlsdnkj168', 'WG_DB']
 	mssql = MsSql()
-	get = mssql.Sqlwork(conn, 'select * from test0')
+	sqlstrLs_T = r" INSERT INTO LY_MaterialList_T (CreateDate, Status) VALUES ('{0}', 'Process')"
+	get = mssql.Sqlwork(conn, sqlstrLs_T.format('20190101'))
 	
 	print(get)
 	
@@ -66,8 +70,8 @@ def _Json():
 	
 
 if __name__ == '__main__':
-	WebClient()
-	# JHXA()
+	# WebClient()
+	JHXA()
 	# MD()
 	# DbTime()
 	# sqltest()

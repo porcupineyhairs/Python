@@ -1,0 +1,4 @@
+2019-04-01 08:54:29,709 - INFO: http://192.168.1.60/Client/MaDuo/GetInfo - POST - 192.168.1.60 - get:{'Mode': 'Insert'} - back:{'Return': 'OK'}
+
+2019-04-01 08:54:46,303 - INFO: http://192.168.1.60/Client/MaDuo/GetInfo - POST - 192.168.1.60 - get:{'Mode': 'Insert'} - back:{'Return': 'OK'}
+

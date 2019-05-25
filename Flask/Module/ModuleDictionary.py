@@ -6,11 +6,9 @@ DataBase_Dict = {
 	'ROBOT_TEST': ['192.168.0.198', 'sa', 'COMfort123456', 'ROBOT_TEST', 'GBK'],
 	'WG_DB': ['192.168.0.198', 'sa', 'COMfort123456', 'WG_DB', 'GBK'],
 
-	'TEST2018': ['192.168.0.99', 'sa', 'comfortgroup2016{', 'TEST2018', 'GBK'],
 	'COMFORT': ['192.168.0.99', 'sa', 'comfortgroup2016{', 'COMFORT', 'GBK'],
 	
-	'COMFROTSEATING': ['192.168.0.239', 'sa', 'comfortsjl2013{', 'Comfortseating', 'GBK'],
+	'LS_WG_DB': ['40.73.246.171', 'sa', 'DGlsdnkj168', 'WG_DB', 'GBK'],
 	
-	'COMFORT_TEST': ['192.168.1.64', 'sa', 'comfortgroup2016{', 'COMFORT', 'GBK'],
-	
+	'Ls': ['40.73.246.171', 'sa', 'DGlsdnkj168', 'lserp-LY', 'GBK']
 }

@@ -30,7 +30,7 @@ class GetInfo:
 	def __GetOrderList(self):
 		__sqlstr = (r"SELECT SC001 FROM SCHEDULE "
 		            r"WHERE SC038 = 'N' /*AND SC003 BETWEEN '{0}' AND '{1}'*/ "
-		            r"ORDER BY K_ID")
+		            r"ORDER BY KEY_ID")
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr.format(self.__Today, self.__LastDay))
 		if __get[0] != 'None':
 			for __get_Item in __get:
@@ -40,7 +40,7 @@ class GetInfo:
 		__sqlstr = (r"SELECT "
 		            r"(RTRIM(COPTD.TD001) + '-' + RTRIM(COPTD.TD002) + '-' + RTRIM(COPTD.TD003)) 订单号, "
 		            r"(CASE WHEN TC004='0118' THEN '内销' ELSE '外销' END) 订单类型, "
-		            r"CONVERT(INT, COPTD.TD008) 订单数量, "
+		            r"CONVERT(FLOAT, COPTD.TD008) 订单数量, "
 		            r"RTRIM(COPTD.TD005) 品名, "
 		            r"RTRIM(COPTD.UDF08) 保友品名, "
 		            r"RTRIM(COPTD.TD006) 规格, "
@@ -89,7 +89,7 @@ class GetInfo:
 		                     __Item[11], __Item[12]))
 
 	def __GetBoxList(self):
-		__sqlstr = r"SELECT SC001 FROM SCHEDULE WHERE 1=1 AND SC038 = 'y' ORDER BY K_ID "
+		__sqlstr = r"SELECT SC001 FROM SCHEDULE WHERE 1=1 AND SC038 = 'y' ORDER BY KEY_ID "
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr)
 		if __get[0] != 'None':
 			for __get_Item in __get:
@@ -154,7 +154,7 @@ class GetInfo:
 	def __GetOrderTypeIn(self):
 		__listStr = self.__GetTypeStr()
 		__sqlstr = (r"SELECT SC001, {0} FROM SCHEDULE "
-		            r"WHERE SC002 = '内销' AND SC038 = 'n' ORDER BY K_ID").format(__listStr)
+		            r"WHERE SC002 = '内销' AND SC038 = 'n' ORDER BY KEY_ID").format(__listStr)
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr)
 		if __get[0] != 'None':
 			for __Item_List in __get:
@@ -187,7 +187,7 @@ class GetInfo:
 	
 	def __GetOrderTypeOut(self):
 		__sqlstr = (r"SELECT SC001, SUBSTRING(SC001, 1, 4) FROM SCHEDULE "
-		            r"WHERE SC002 = '外销' AND SC038 = 'n'  ORDER BY K_ID")
+		            r"WHERE SC002 = '外销' AND SC038 = 'n'  ORDER BY KEY_ID")
 		__get = self.__mssql.Sqlwork(DataBase=self.__Conn_ROBOT, SqlStr=__sqlstr)
 		if __get[0] != 'None':
 			for __Item_List in __get:

@@ -312,7 +312,8 @@ class PDA_JH_Handle:
 		__sqlstr = (r"SELECT DISTINCT TOP 200 TD008 - TD015 - ( SELECT isnull( SUM ( TH007 ), 0 ) "
 		            r"FROM COMFORT.dbo.PURTH PURTH WHERE TH011 = TD001 AND TH012 = TD002 AND TH013 = TD003 "
 		            r"AND TH030 = 'N' ) AS WJL, "
-		            r"TD001, RTRIM(TD002), TD003, TD010, TD014, RTRIM(TD020), RTRIM(TD022), RTRIM(TDC03), TD012 "
+		            r"TD001, RTRIM(TD002), TD003, (CASE WHEN TD010 IS NULL THEN 0 ELSE TD010 END), TD014, RTRIM(TD020), "
+		            r"RTRIM(TD022), RTRIM(TDC03) AS TD010, TD012 "
 		            r"FROM COMFORT.dbo.PURTD AS PURTD "
 		            r"LEFT JOIN COMFORT.dbo.PURTC AS PURTC ON TC001 = TD001 AND TC002 = TD002 "
 		            r"LEFT JOIN (SELECT XB005,XB006,XB007,MIN(XB003) XB003,XA001 FROM COMFORT.dbo.MPSXB MPSXB "
@@ -363,7 +364,7 @@ class PDA_JH_Handle:
 		                               self.__TG015, self.__TG021, self.__TG030, self.__TG033))
 		
 	def __SetDetailInfo(self):
-		print('DetDetailInfo')
+		print('SetDetailInfo')
 		self.__TH015 = self.__TH007
 		self.__TH016 = self.__TH007
 		self.__TH034 = self.__TH007

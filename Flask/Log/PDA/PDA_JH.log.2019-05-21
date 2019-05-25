@@ -1,0 +1,212 @@
+2019-05-21 08:48:15,265 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905210848070001'}
+
+2019-05-21 08:48:17,298 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905210848070001', 'Data': '', 'RowCount': '1'} - back:{'Return': 'Complete', 'Parameter': 'JH201905210848070001', 'Data': '3401-19053092'}
+
+2019-05-21 08:48:55,635 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905210848470001'}
+
+2019-05-21 08:48:56,200 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905210848470001', 'Data': '', 'RowCount': '2'} - back:{'Return': 'Complete', 'Parameter': 'JH201905210848470001', 'Data': '3401-19053093'}
+
+2019-05-21 08:49:29,754 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905210849210001'}
+
+2019-05-21 08:49:30,249 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905210849210001', 'Data': '', 'RowCount': '2'} - back:{'Return': 'Complete', 'Parameter': 'JH201905210849210001', 'Data': '3401-19053094'}
+
+2019-05-21 08:55:03,383 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905210854550001'}
+
+2019-05-21 08:55:04,812 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905210854550001', 'Data': '', 'RowCount': '9'} - back:{'Return': 'Complete', 'Parameter': 'JH201905210854550001', 'Data': '3401-19053095'}
+
+2019-05-21 08:55:35,871 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905210855280001'}
+
+2019-05-21 08:55:36,346 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905210855280001', 'Data': '', 'RowCount': '2'} - back:{'Return': 'Complete', 'Parameter': 'JH201905210855280001', 'Data': '3401-19053096'}
+
+2019-05-21 08:56:33,090 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905210856250001'}
+
+2019-05-21 08:56:33,696 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905210856250001', 'Data': '', 'RowCount': '3'} - back:{'Return': 'Complete', 'Parameter': 'JH201905210856250001', 'Data': '3401-19053098'}
+
+2019-05-21 08:56:53,742 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905210856450001'}
+
+2019-05-21 08:56:54,095 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905210856450001', 'Data': '', 'RowCount': '1'} - back:{'Return': 'Complete', 'Parameter': 'JH201905210856450001', 'Data': '3401-19053099'}
+
+2019-05-21 08:57:32,766 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905210857240001'}
+
+2019-05-21 08:57:33,302 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905210857240001', 'Data': '', 'RowCount': '1'} - back:{'Return': 'Complete', 'Parameter': 'JH201905210857240001', 'Data': '3401-19053101'}
+
+2019-05-21 08:58:44,130 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905210858360001'}
+
+2019-05-21 08:58:44,518 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905210858360001', 'Data': '', 'RowCount': '1'} - back:{'Return': 'Complete', 'Parameter': 'JH201905210858360001', 'Data': '3401-19053103'}
+
+2019-05-21 09:01:15,236 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905210901070001'}
+
+2019-05-21 09:01:16,336 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905210901070001', 'Data': '', 'RowCount': '4'} - back:{'Return': 'Complete', 'Parameter': 'JH201905210901070001', 'Data': '3401-19053105'}
+
+2019-05-21 13:08:06,882 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211307590001'}
+
+2019-05-21 13:08:14,789 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211307590001', 'Data': '', 'RowCount': '6'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211307590001', 'Data': '3401-19053131'}
+
+2019-05-21 13:42:26,438 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211342180001'}
+
+2019-05-21 13:42:28,405 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211342180001', 'Data': '', 'RowCount': '6'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211342180001', 'Data': '3401-19053138'}
+
+2019-05-21 13:43:19,137 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211343110001'}
+
+2019-05-21 13:43:19,954 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211343110001', 'Data': '', 'RowCount': '3'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211343110001', 'Data': '3401-19053140'}
+
+2019-05-21 13:58:57,821 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211358500001'}
+
+2019-05-21 13:58:58,897 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211358500001', 'Data': '', 'RowCount': '6'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211358500001', 'Data': '3401-19053154'}
+
+2019-05-21 13:59:44,085 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211359360001'}
+
+2019-05-21 13:59:44,872 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211359360001', 'Data': '', 'RowCount': '4'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211359360001', 'Data': '3401-19053155'}
+
+2019-05-21 14:00:24,926 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211400170001'}
+
+2019-05-21 14:00:25,393 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211400170001', 'Data': '', 'RowCount': '2'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211400170001', 'Data': '3401-19053157'}
+
+2019-05-21 14:44:37,777 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211444290001'}
+
+2019-05-21 14:44:38,139 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211444290001', 'Data': '', 'RowCount': '1'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211444290001', 'Data': '3401-19053191'}
+
+2019-05-21 14:48:12,055 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211448040001'}
+
+2019-05-21 14:48:16,207 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211448040001', 'Data': '', 'RowCount': '10'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211448040001', 'Data': '3401-19053192'}
+
+2019-05-21 14:49:24,433 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211449160001'}
+
+2019-05-21 14:49:26,959 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211449160001', 'Data': '', 'RowCount': '4'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211449160001', 'Data': '3401-19053193'}
+
+2019-05-21 14:51:06,424 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211450580001'}
+
+2019-05-21 14:51:11,394 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211450580001', 'Data': '', 'RowCount': '10'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211450580001', 'Data': '3401-19053194'}
+
+2019-05-21 14:52:40,528 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211452320001'}
+
+2019-05-21 14:52:43,986 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211452320001', 'Data': '', 'RowCount': '10'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211452320001', 'Data': '3401-19053195'}
+
+2019-05-21 14:54:10,613 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211454020001'}
+
+2019-05-21 14:54:14,532 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211454020001', 'Data': '', 'RowCount': '6'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211454020001', 'Data': '3401-19053196'}
+
+2019-05-21 14:56:07,841 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211456000001'}
+
+2019-05-21 14:56:11,540 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211456000001', 'Data': '', 'RowCount': '10'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211456000001', 'Data': '3401-19053197'}
+
+2019-05-21 14:59:14,588 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211459060001'}
+
+2019-05-21 15:00:58,564 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211459060001', 'Data': '', 'RowCount': '10'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211459060001', 'Data': '3401-19053198'}
+
+2019-05-21 15:01:40,450 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211501320001'}
+
+2019-05-21 15:01:42,838 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211501320001', 'Data': '', 'RowCount': '3'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211501320001', 'Data': '3401-19053199'}
+
+2019-05-21 15:02:06,189 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211501580001'}
+
+2019-05-21 15:02:06,920 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211501580001', 'Data': '', 'RowCount': '2'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211501580001', 'Data': '3401-19053200'}
+
+2019-05-21 15:03:25,766 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211503170001'}
+
+2019-05-21 15:03:38,343 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211503170001', 'Data': '', 'RowCount': '10'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211503170001', 'Data': '3401-19053201'}
+
+2019-05-21 15:04:41,760 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211504330001'}
+
+2019-05-21 15:04:44,635 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211504330001', 'Data': '', 'RowCount': '3'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211504330001', 'Data': '3401-19053202'}
+
+2019-05-21 15:06:57,139 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211506490001'}
+
+2019-05-21 15:06:59,747 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211506490001', 'Data': '', 'RowCount': '10'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211506490001', 'Data': '3401-19053203'}
+
+2019-05-21 15:07:43,757 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211507350001'}
+
+2019-05-21 15:07:44,800 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211507350001', 'Data': '', 'RowCount': '6'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211507350001', 'Data': '3401-19053204'}
+
+2019-05-21 15:10:47,475 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211510390001'}
+
+2019-05-21 15:10:49,089 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211510390001', 'Data': '', 'RowCount': '8'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211510390001', 'Data': '3401-19053209'}
+
+2019-05-21 15:12:25,062 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211512170001'}
+
+2019-05-21 15:12:25,526 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211512170001', 'Data': '', 'RowCount': '2'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211512170001', 'Data': '3401-19053214'}
+
+2019-05-21 15:13:39,411 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211513310001'}
+
+2019-05-21 15:13:40,574 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211513310001', 'Data': '', 'RowCount': '5'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211513310001', 'Data': '3401-19053216'}
+
+2019-05-21 15:14:06,125 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211513580001'}
+
+2019-05-21 15:14:06,584 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211513580001', 'Data': '', 'RowCount': '1'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211513580001', 'Data': '3401-19053217'}
+
+2019-05-21 15:14:44,427 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211514360001'}
+
+2019-05-21 15:14:45,016 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211514360001', 'Data': '', 'RowCount': '3'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211514360001', 'Data': '3401-19053218'}
+
+2019-05-21 15:15:07,469 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211514590001'}
+
+2019-05-21 15:15:08,087 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211514590001', 'Data': '', 'RowCount': '2'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211514590001', 'Data': '3401-19053219'}
+
+2019-05-21 15:17:11,928 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211517040001'}
+
+2019-05-21 15:17:13,684 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211517040001', 'Data': '', 'RowCount': '8'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211517040001', 'Data': '3401-19053221'}
+
+2019-05-21 15:17:37,464 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211517290001'}
+
+2019-05-21 15:17:37,810 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211517290001', 'Data': '', 'RowCount': '2'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211517290001', 'Data': '3401-19053222'}
+
+2019-05-21 15:17:54,641 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211517460001'}
+
+2019-05-21 15:17:54,973 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211517460001', 'Data': '', 'RowCount': '1'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211517460001', 'Data': '3401-19053223'}
+
+2019-05-21 15:19:18,328 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211519100001'}
+
+2019-05-21 15:19:18,666 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211519100001', 'Data': '', 'RowCount': '1'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211519100001', 'Data': '3401-19053225'}
+
+2019-05-21 15:19:31,763 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211519230001'}
+
+2019-05-21 15:19:32,099 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211519230001', 'Data': '', 'RowCount': '1'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211519230001', 'Data': '3401-19053226'}
+
+2019-05-21 15:56:54,719 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211556460001'}
+
+2019-05-21 15:56:55,167 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211556460001', 'Data': '', 'RowCount': '1'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211556460001', 'Data': '3401-19053234'}
+
+2019-05-21 15:57:19,005 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211557110001'}
+
+2019-05-21 15:57:19,542 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211557110001', 'Data': '', 'RowCount': '2'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211557110001', 'Data': '3401-19053235'}
+
+2019-05-21 15:57:40,784 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211557320001'}
+
+2019-05-21 15:57:41,119 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211557320001', 'Data': '', 'RowCount': '1'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211557320001', 'Data': '3401-19053236'}
+
+2019-05-21 15:58:29,339 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211558210001'}
+
+2019-05-21 15:58:30,722 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211558210001', 'Data': '', 'RowCount': '6'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211558210001', 'Data': '3401-19053237'}
+
+2019-05-21 15:58:52,235 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211558440001'}
+
+2019-05-21 15:58:52,935 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211558440001', 'Data': '', 'RowCount': '3'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211558440001', 'Data': '3401-19053238'}
+
+2019-05-21 15:59:09,252 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211559010001'}
+
+2019-05-21 15:59:09,818 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211559010001', 'Data': '', 'RowCount': '1'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211559010001', 'Data': '3401-19053239'}
+
+2019-05-21 16:48:08,495 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211648000001'}
+
+2019-05-21 16:48:09,924 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211648000001', 'Data': '', 'RowCount': '5'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211648000001', 'Data': '3401-19053264'}
+
+2019-05-21 18:02:21,222 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211802130001'}
+
+2019-05-21 18:02:21,595 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211802130001', 'Data': '', 'RowCount': '1'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211802130001', 'Data': '3401-19053267'}
+
+2019-05-21 18:13:08,547 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211813000001'}
+
+2019-05-21 18:13:10,261 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211813000001', 'Data': '', 'RowCount': '8'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211813000001', 'Data': '3401-19053268'}
+
+2019-05-21 18:14:33,585 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211814250001'}
+
+2019-05-21 18:14:35,833 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211814250001', 'Data': '', 'RowCount': '7'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211814250001', 'Data': '3401-19053269'}
+
+2019-05-21 19:10:43,002 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211910350001'}
+
+2019-05-21 19:10:43,867 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211910350001', 'Data': '', 'RowCount': '2'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211910350001', 'Data': '3401-19053273'}
+
+2019-05-21 19:12:37,553 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Mode': 'Select', 'Parameter': 'FlowID', 'Data': None} - back:{'Return': 'Select', 'Parameter': 'FlowID', 'Data': 'JH201905211912290001'}
+
+2019-05-21 19:12:38,397 - INFO: http://192.168.1.60:8099/Client/PDA/JH_LYXA - POST - 192.168.4.21 - get:{'Uid': '001161', 'Mode': 'Complete', 'Parameter': 'JH201905211912290001', 'Data': '', 'RowCount': '2'} - back:{'Return': 'Complete', 'Parameter': 'JH201905211912290001', 'Data': '3401-19053274'}
+

@@ -29,7 +29,7 @@ class UserPermission:
 		self.__sqlWg.SqlWork(sqlStr=__sqlStr.format(self.__userId))
 		
 	def __setPerm_Work(self):
-		__sqlStr = (r"INSERT INTO WG_PERM_USER (U_ID, U_NAME, Permission_ID) "
+		__sqlStr = (r"INSERT INTO WG_PERM_USER (U_ID, U_NAME, Perm_ID) "
 		            r"SELECT WG_USER.U_ID, WG_USER.U_NAME, WG_PERM_BASE.K_ID "
 		            r"FROM WG_PERM_BASE "
 		            r"INNER JOIN WG_USER ON 1=1 "
@@ -41,7 +41,7 @@ class UserPermission:
 	
 	def __getPerm_Work(self):
 		__sqlStr = (r"SELECT Name FROM WG_PERM_BASE "
-		            r"INNER JOIN WG_PERM_USER ON WG_PERM_USER.Permission_ID = WG_PERM_BASE.K_ID "
+		            r"INNER JOIN WG_PERM_USER ON WG_PERM_USER.Perm_ID = WG_PERM_BASE.K_ID "
 		            r"WHERE WG_PERM_USER.U_ID = '{0}' ")
 		__get = self.__sqlWg.SqlWork(sqlStr=__sqlStr.format(self.__userId))
 		if __get is not None:
