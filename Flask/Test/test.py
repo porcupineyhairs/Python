@@ -71,8 +71,8 @@ def _Json():
 
 if __name__ == '__main__':
 	# WebClient()
-	JHXA()
-	# MD()
+	# JHXA()
+	MD()
 	# DbTime()
 	# sqltest()
 	# Perm()
