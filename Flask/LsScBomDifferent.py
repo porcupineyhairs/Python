@@ -8,7 +8,8 @@ sql = Sql(connDict=DataBase_Dict['Ls'], sqlType='mssql')
 
 sqlstr_scd = (r"select scdh, wlno, name, spec, convert(varchar(20), sl), bz, "
               r"convert(varchar(20), scrq, 23), convert(varchar(20), scjq, 23) "
-              r"from mf_wwd where shbz = 1 and convert(varchar(20), scrq, 112) < '20190501' "
+              r"from mf_wwd where shbz = 1 and convert(varchar(20), scrq, 112) >= '20190501' "
+              r"and convert(varchar(20), scrq, 112) < '20190701' "
               r"order by scrq, scdh")
 
 sqlstr_wlno = r"select wlno, name, spec, convert(varchar(20), bomsl) from tf_scd where scd_no = '{0}' order by seq"
@@ -34,8 +35,9 @@ def Main():
 					getTmp.extend(get_bomTmp)
 					get_bom.remove(get_bomTmp)
 				
-				else:
-					getTmp.extend(['', '', '', ''])
+				if len(get_bom) != 0:
+					if get_bomTmp == get_bom[-1]:
+						getTmp.extend(['', '', '', ''])
 			
 			get.append(getTmp)
 		
@@ -45,8 +47,9 @@ def Main():
 			getTmp.extend(get_bomTmp)
 			get.append(getTmp)
 	
-	for a in get:
-		print(a)
+	kk = ['生产单号', '主件品号', '主件品号', '主件规格', '生产数量', '生产单备注', '生产日期', '生产交期', '材料品号',
+	      '生产单材料品名', '生产单材料对各', '生产单用量', 'BOM材料品号', 'BOM材料品名', 'BOM材料规格', 'BOM用量']
+	get.insert(0, kk)
 	
 	# WriteFileExcel(fileName='aaa', getList=get)
 	WriteFileTxt(Name='aa', getList=get)

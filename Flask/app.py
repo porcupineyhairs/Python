@@ -11,7 +11,6 @@ hostPort = 8099
 hostInfo = hostIp + str(hostPort)
 
 jobBom = False
-	
 
 ########################################
 app = Flask(__name__)
@@ -28,6 +27,5 @@ bootstrap = Bootstrap(app)
 
 SetRoute(app=app, hostInfo=hostInfo)
 
-
 if __name__ == '__main__':
-	app.run(host=hostIp, port=hostPort, debug=False, threaded=False)
+	app.run(host=hostIp, port=hostPort, debug=True, threaded=False)

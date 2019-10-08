@@ -2,6 +2,7 @@ import json
 from Module import MsSql
 import requests
 from Module import EncryptDict
+import Module
 
 
 def WebClient():
@@ -72,8 +73,9 @@ def _Json():
 if __name__ == '__main__':
 	# WebClient()
 	# JHXA()
-	MD()
+	# MD()
 	# DbTime()
 	# sqltest()
 	# Perm()
 	# _Json()
+	pass

@@ -320,10 +320,13 @@ def MainFunc():
 
 
 if __name__ == '__main__':
-	print('Program Inited')
-	scheduler = BlockingScheduler()
-	scheduler.add_job(MainFunc, 'cron', second=1, minute=1, hour=1)
-	try:
-		scheduler.start()
-	except(KeyboardInterrupt, SystemExit):
-		scheduler.shutdown()
+	# print('Program Inited')
+	# scheduler = BlockingScheduler()
+	# scheduler.add_job(MainFunc, 'cron', second=1, minute=1, hour=1)
+	# try:
+	# 	scheduler.start()
+	# except(KeyboardInterrupt, SystemExit):
+	# 	scheduler.shutdown()
+	aa = GetBom('10920202')
+	for k in aa:
+		print(k)

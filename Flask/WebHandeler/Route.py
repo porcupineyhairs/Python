@@ -1,6 +1,7 @@
 from flask import redirect, render_template, send_from_directory, request
 import os
 import Module
+import WebHandeler.gongshi as Gongshi
 
 
 def Route(app=None, hostInfo=None):
@@ -42,3 +43,10 @@ def Route(app=None, hostInfo=None):
 			
 			__dict = {'Name': 'Me', 'Back': 'You'}
 			return render_template('json table.html', data=__dict, Title='Welcome')
+		
+		@app.route('/GongShi/201905')
+		def GongShi():
+			Gongshi.gongshi('201905')
+			return ('<title>税务收集工单工时</title>' +
+			        '<h1>您的IP地址为：' + request.remote_addr + '</h1>' +
+			        '<h1>税务收集工单工时201905已收集</h1>')
