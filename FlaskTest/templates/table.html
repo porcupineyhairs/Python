@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table align="center" data-sort="sortDisabled">
+    <tbody>
+        <tr class="firstRow">
+            <td style="border-width: 1px; border-style: solid; word-break: break-all;" valign="middle" rowspan="1" colspan="6" align="center" width="859">
+                <p style="text-align: center;">
+                    <span style="font-size: 36px;"><strong><span style="font-family: 宋体;">用餐申请表</span></strong></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-width: 1px; border-style: solid; word-break: break-all;" height="25" valign="middle" rowspan="1" width="118" colspan="1" align="right">
+                日期：
+            </td>
+            <td style="border-width: 1px; border-style: solid;" height="25" valign="middle" rowspan="1" width="165" colspan="1" align="left">
+                <input class="AUTO" datafld="SYS_DATE" id="DATA_32" style="height: 20px; width: 150px; font-family: Arial; font-size: 13.3333px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" title="日期" type="text" value="{宏控件}">
+            </td>
+            <td style="border-width: 1px; border-style: solid; word-break: break-all;" height="25" valign="middle" rowspan="1" width="110" colspan="1" align="right">
+                申请人：
+            </td>
+            <td style="border-width: 1px; border-style: solid; word-break: break-all;" height="25" valign="middle" rowspan="1" width="184" colspan="1" align="left">
+                <input class="AUTO" datafld="SYS_USERNAME" id="DATA_2" style="height: 20px; width: 150px; font-family: Arial; font-size: 13.3333px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" title="申请人" type="text" value="{宏控件}">
+            </td>
+            <td style="border-width: 1px; border-style: solid; word-break: break-all;" height="25" valign="middle" rowspan="1" width="119" colspan="1" align="right">
+                申请人联系电话：
+            </td>
+            <td style="border-width: 1px; border-style: solid; word-break: break-all;" height="25" valign="middle" rowspan="1" width="136" colspan="1" align="left">
+                <input id="DATA_3" name="DATA_3" title="申请人联系电话" class="" style="height: 20px; width: 150px;">
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" rowspan="1" colspan="1" align="right" style="word-break: break-all;" width="20">
+                部门：
+            </td>
+            <td valign="middle" rowspan="1" colspan="1" align="left" width="159">
+                <input class="AUTO" datafld="SYS_DEPTNAME_S" id="DATA_14" style="height: 20px; width: 150px; font-family: Arial; font-size: 13.3333px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" title="部门" type="text" value="{宏控件}">
+            </td>
+            <td valign="middle" rowspan="1" colspan="1" align="right" style="word-break: break-all;" width="110">
+                消费方式：
+            </td>
+            <td valign="middle" rowspan="1" colspan="3" align="left" style="word-break: break-all;" width="445">
+                <input type="checkbox" id="DATA_29" name="DATA_29" title="打包" class="" onclick="showTr29()">&nbsp;打包 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="checkbox" id="DATA_30" name="DATA_30" title="刷卡" class="" onclick="showTr30()">&nbsp;刷卡
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" rowspan="1" colspan="6" align="left" height="36"></td>
+        </tr>
+        <tr>
+            <td style="word-break: break-all;" valign="middle" rowspan="1" colspan="1" align="right" height="24" width="118">
+                <p>
+                    申请就餐日期：
+                </p>
+            </td>
+            <td style="word-break: break-all;" valign="middle" rowspan="1" colspan="5" height="24" align="left" width="736">
+                <input id="DATA_10" name="DATA_10" title="就餐日期始" class="" style="height: 20px; width: 120px;"><img class="DATE" src="/images/form/calendar.png" title="日期控件：就餐日期始" value="就餐日期始"/>&nbsp;-------&nbsp;<input id="DATA_34" name="DATA_34" title="就餐日期末" class="" style="height: 20px; width: 120px;"><img class="DATE" src="/images/form/calendar.png" title="日期控件：就餐日期末" value="就餐日期末"/>
+            </td>
+        </tr>
+        <tr id="tr1" style="display: ">
+            <td rowspan="3" valign="middle" align="right" colspan="1" width="20">
+                申请用餐人数：
+            </td>
+            <td rowspan="3" valign="middle" align="left" colspan="1" width="159">
+                <input id="DATA_16" name="DATA_16" title="申请用餐人数" class="" style="height: 20px; width: 150px;">
+            </td>
+            <td rowspan="3" valign="middle" align="right" colspan="1" width="110">
+                申请用餐时段：<br/>
+            </td>
+            <td rowspan="1" valign="middle" align="left" colspan="1" style="word-break: break-all;" width="175">
+                <input type="checkbox" id="DATA_28" name="DATA_28" title="早餐时段" class="">&nbsp;早餐&nbsp;<input id="DATA_27" name="DATA_27" title="早餐人数" class="" style="height: 20px; width: 50px;">&nbsp;人/次
+            </td>
+            <td rowspan="3" valign="middle" align="right" colspan="1" style="word-break: break-all;" width="119">
+                申请餐标：<br/>
+            </td>
+            <td rowspan="3" valign="middle" align="left" width="136" style="word-break: break-all;" colspan="1">
+                <p>
+                    <input type="checkbox" id="DATA_8" name="DATA_8" title="打包_15元" class="">&nbsp;15元
+                </p>
+                <p>
+                    <br/>
+                </p>
+                <p>
+                    <br/>
+                </p>
+                <p>
+                    <input type="checkbox" id="DATA_9" name="DATA_9" title="打包_6元" class="">&nbsp;6元
+                </p>
+            </td>
+        </tr>
+        <tr id="tr2" style="display: none; ">
+            <td rowspan="1" valign="middle" align="left" width="149" style="word-break: break-all;">
+                <input type="checkbox" id="DATA_4" name="DATA_4" title="中餐时段人次" class="">&nbsp;中餐&nbsp;<input id="DATA_5" name="DATA_5" title="中餐人数" class="" style="height: 20px; width: 50px;">&nbsp;人/次
+            </td>
+        </tr>
+        <tr id="tr3" style="display: none; ">
+            <td valign="middle" rowspan="1" colspan="1" align="left" style="word-break: break-all;" width="169">
+                <input type="checkbox" id="DATA_6" name="DATA_6" title="晚餐时段人次" class="">&nbsp;晚餐&nbsp;<input id="DATA_7" name="DATA_7" title="晚餐人数" class="" style="height: 20px; width: 50px;">&nbsp;人/次
+            </td>
+        </tr>
+        <tr id="tr7" style="display: none; ">
+            <td valign="middle" rowspan="1" colspan="1" align="right" style="word-break: break-all;" height="77" width="118">
+                申请就餐原因：
+            </td>
+            <td valign="top" rowspan="1" colspan="5" align="left" height="77" width="736">
+                <textarea id="DATA_44" name="DATA_44" title="申请就餐原因" class="" style="height: 150px; width: 725px; margin-top: 0px; margin-bottom: 0px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" rowspan="1" colspan="6" align="right" width="859" height="37"></td>
+        </tr>
+        <tr id="tr4" style="display: none; ">
+            <td valign="middle" rowspan="3" colspan="1" align="right" style="word-break: break-all;" width="20">
+                用卡人姓名：
+            </td>
+            <td valign="middle" rowspan="3" colspan="1" align="left" width="159">
+                <input id="DATA_31" name="DATA_31" title="用卡人姓名" class="" style="height: 20px; width: 150px;">
+            </td>
+            <td valign="middle" rowspan="3" colspan="1" align="right" width="110" style="word-break: break-all;">
+                预计用餐次数：
+            </td>
+            <td valign="middle" rowspan="1" colspan="1" align="left" width="175" style="word-break: break-all;">
+                <input type="checkbox" id="DATA_11" name="DATA_11" title="刷卡_一次" class="">&nbsp;一次性
+            </td>
+            <td valign="middle" rowspan="3" colspan="1" align="right" width="119" style="word-break: break-all;">
+                用卡人来源：
+            </td>
+            <td valign="middle" rowspan="3" colspan="1" align="left" width="136" style="word-break: break-all;">
+                <p>
+                    <input type="checkbox" id="DATA_15" name="DATA_15" title="用卡人_保友" class="">&nbsp;保友
+                </p>
+                <p>
+                    <br/>
+                </p>
+                <p>
+                    <input type="checkbox" id="DATA_17" name="DATA_17" title="用卡人_供应商" class="">&nbsp;供应商 ：<input id="DATA_22" name="DATA_22" title="用卡人_供应商名称" class="" style="height: 20px; width: 150px;">
+                </p>
+            </td>
+        </tr>
+        <tr id="tr5" style="display: none; ">
+            <td valign="middle" rowspan="1" colspan="1" align="left" style="word-break: break-all;" width="20">
+                <input type="checkbox" id="DATA_12" name="DATA_12" title="刷卡_多次" class="">&nbsp;临时多次
+            </td>
+        </tr>
+        <tr id="tr6" style="display: none; ">
+            <td valign="middle" rowspan="1" colspan="1" align="left" style="word-break: break-all;" width="20">
+                <input type="checkbox" id="DATA_13" name="DATA_13" title="刷卡_长期" class="">&nbsp;长期
+            </td>
+        </tr>
+        <tr id="tr8" style="display: none; ">
+            <td valign="middle" rowspan="1" colspan="6" align="center" width="859" style="word-break: break-all;" height="37">
+                以下由总务填写
+            </td>
+        </tr>
+        <tr id="tr9" style="display: none; ">
+            <td valign="middle" rowspan="1" colspan="1" align="right" style="word-break: break-all;" width="20">
+                是否新开卡：
+            </td>
+            <td valign="middle" rowspan="1" colspan="1" align="left" width="159" style="word-break: break-all;">
+                <p>
+                    <input type="checkbox" id="DATA_18" name="DATA_18" title="新开卡" class="">&nbsp;是 &nbsp;&nbsp;
+                </p>
+                <p>
+                    <br/>
+                </p>
+                <p>
+                    <input type="checkbox" id="DATA_19" name="DATA_19" title="不新开卡" class="">&nbsp;否
+                </p>
+            </td>
+            <td valign="middle" rowspan="1" colspan="1" align="right" width="110" style="word-break: break-all;">
+                开卡日期：
+            </td>
+            <td valign="middle" rowspan="1" colspan="1" align="left" width="175">
+                <input id="DATA_20" name="DATA_20" title="开卡日期" class="" style="height: 20px; width: 150px;"><img class="DATE" src="/images/form/calendar.png" title="日期控件：开卡日期" value="开卡日期"/>
+            </td>
+            <td valign="middle" rowspan="1" colspan="1" align="right" width="119" style="word-break: break-all;">
+                归属部门：
+            </td>
+            <td valign="middle" rowspan="1" colspan="1" align="left" width="136" style="word-break: break-all;">
+                <p>
+                    <input type="checkbox" id="DATA_23" name="DATA_23" title="归属部门_保友临时" class="">&nbsp;保友（临时）
+                </p>
+                <p>
+                    <br/>
+                </p>
+                <p>
+                    <input type="checkbox" id="DATA_24" name="DATA_24" title="归属部门_保友" class="">&nbsp;保友
+                </p>
+                <p>
+                    <br/>
+                </p>
+                <p>
+                    <input type="checkbox" id="DATA_25" name="DATA_25" title="归属部门_供应商" class="">&nbsp;供应商：
+                </p>
+                <p>
+                    <input id="DATA_26" name="DATA_26" title="归属部门_供应商名称" class="" style="height: 20px; width: 150px;">
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" rowspan="1" colspan="1" align="right" style="word-break: break-all;" width="118">
+                备注：
+            </td>
+            <td valign="top" rowspan="1" colspan="5" align="left" style="word-break: break-all;" width="736">
+                <ol class=" list-paddingleft-2" style="list-style-type: decimal;">
+                    <li>
+                        <p>
+                            申请表经部门经理审核后，于用餐4小时前提交至总务文员何柳萌处，由总务通知饭堂准备。
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            各部门如实填写申请表，如中途有变化请立即通知总务部取消，避免不必要的浪费。<br/>
+                        </p>
+                    </li>
+                </ol>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    &nbsp;
+</p>
+<style>
+    .view table td {
+    border-top: 1px solid #999999;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    font-size: 13px;    padding: 5px}
+    .view table input {
+        border-right: #333333 0px solid;
+        border-top: #333333 0px solid;
+        border-left: #333333 0px solid;
+        border-bottom: #666666 1px solid}
+    .view table textarea {
+        border-right: #333333 0px solid;
+        border-top: #333333 0px solid;
+        border-left: #333333 0px solid;
+        border-bottom: #666666 1px solid}
+</style>
+<script>
+    window.onload=function(){
+    document.getElementById("tr1").style.display='none';
+    document.getElementById("tr2").style.display='none';
+    document.getElementById("tr3").style.display='none';
+    document.getElementById("tr4").style.display='none';
+    document.getElementById("tr5").style.display='none';
+    document.getElementById("tr6").style.display='none';
+    document.getElementById("tr7").style.display='none';
+    document.getElementById("tr8").style.display='none';
+    document.getElementById("tr9").style.display='none';
+  }
+
+  function showTr30(){
+    if(document.getElementById("DATA_30").checked){
+        document.getElementById("DATA_29").checked=false;
+    }
+    showTrWork();
+  }
+
+  function showTr29(){
+    if(document.getElementById("DATA_29").checked) {
+        document.getElementById("DATA_30").checked = false;
+    }
+    showTrWork();
+  }
+
+  function showTrWork(){
+      if(!document.getElementById("DATA_30").checked){
+        document.getElementById("tr1").style.display='none';
+        document.getElementById("tr2").style.display='none';
+        document.getElementById("tr3").style.display='none';
+        document.getElementById("tr7").style.display='none';
+      }
+      else{
+        document.getElementById("tr1").style.display='';
+        document.getElementById("tr2").style.display='';
+        document.getElementById("tr3").style.display='';
+        document.getElementById("tr7").style.display='';
+      }
+      if(!document.getElementById("DATA_29").checked){
+        document.getElementById("tr4").style.display='none';
+        document.getElementById("tr5").style.display='none';
+        document.getElementById("tr6").style.display='none';
+        document.getElementById("tr8").style.display='none';
+        document.getElementById("tr9").style.display='none';
+      }
+      else{
+        document.getElementById("tr4").style.display='';
+        document.getElementById("tr5").style.display='';
+        document.getElementById("tr6").style.display='';
+        document.getElementById("tr8").style.display='';
+        document.getElementById("tr9").style.display='';
+      }
+  }
+</script>
+</body>
+</html>

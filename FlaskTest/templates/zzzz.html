@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table align="center" data-sort="sortDisabled" width="-314">
+        <tbody>
+            <tr class="firstRow">
+                <td style="border-width: 1px; border-style: solid; word-break: break-all;" valign="middle" rowspan="1" width="843" colspan="4" align="center">
+                    <p style="text-align: center;">
+                        <span style="font-family:宋体"><span style="font-size: 36px;"><strong>高级OA外挂系统测试-请勿动</strong></span></span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-width: 1px; border-style: solid; word-break: break-all;" height="25" valign="middle" rowspan="1" width="100" colspan="1" align="right">
+                    申请人：
+                </td>
+                <td style="border-width: 1px; border-style: solid;" height="25" valign="top" rowspan="1" width="172" colspan="1">
+                    <input class="AUTO" datafld="SYS_USERNAME" id="DATA_29" style="height: 20px; width: 150px; font-family: Arial; font-size: 13.3333px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" title="申请人" type="text" value="{宏控件}">
+                </td>
+                <td style="border-width: 1px; border-style: solid; word-break: break-all;" height="25" valign="middle" rowspan="1" width="94" colspan="1" align="right">
+                    日期：
+                </td>
+                <td style="border-width: 1px; border-style: solid; word-break: break-all;" height="25" valign="top" rowspan="1" width="170" colspan="1">
+                    <input class="AUTO" datafld="SYS_DATE" id="DATA_32" style="height: 20px; width: 150px; font-family: Arial; font-size: 13.3333px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" title="日期" type="text" value="{宏控件}">
+                </td>
+            </tr>
+            <tr>
+                <td valign="middle" rowspan="1" colspan="4" align="left" style="border-left-width: 1px; border-top-width: 1px;">
+                    <button class="Input Order" id="DATA_61" onclick="show()" type="submit" title="234" name="DATA_61">获取可操作队列</button>
+                </td>
+            </tr>
+            <tr id="send_list" href="javascript:divHidden()" style="display: none;">
+                <td valign="middle" rowspan="1" colspan="4" align="right" style="border-left-width: 1px; border-top-width: 1px;">
+                    <p style="text-align:left;alignment: center; font-size: 24px">
+                        <a href="http://192.168.1.60:8099/Comand/Maduo" target="_blank" style="alignment: center;">码垛系统临时更新</a>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        function divShow(){
+            document.getElementById("send_list").style.display="block";
+            document.getElementById("send_list").href ="javascript:divHidden()";
+        }
+        function divHidden(){
+            document.getElementById("send_list").style.display="none";
+            document.getElementById("send_list").href ="javascript:divShow()";
+        }
+        function show(){
+          var Uname = document.getElementById("DATA_29").value;
+          if(Uname == "钟耀辉"){
+              divShow();
+          }
+          else if(Uname == "系统管理员"){
+              alert("系统管理员没有此权限");
+          }
+          else if(Uname == "{宏控件}"){
+              divShow();
+          }
+        }
+    </script>
+    <style>.view table td {border-top: 1px solid #999999;border-left: 1px solid #999999;border-right: 1px solid #999999;    border-bottom: 1px solid #999999;    font-size: 13px;    padding: 5px}.view table input {    border-right: #333333 0px solid;    border-top: #333333 0px solid;    border-left: #333333 0px solid;    border-bottom: #666666 1px solid}.view table textarea {    border-right: #333333 0px solid;    border-top: #333333 0px solid;    border-left: #333333 0px solid;    border-bottom: #666666 1px solid}
+    </style>
+    <script>
+
+    </script>
+</body>
+</html>
