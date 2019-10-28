@@ -9,9 +9,11 @@
     <form method="post">
         {# 设置scrf_token #}
         {{ form.csrf_token() }}
+        {{ form.monthSelect.label }}{{ form.monthSelect }}<br>
         {{ form.username.label }}{{ form.username }}<br>
         {{ form.password.label }}{{ form.password }}<br>
         {{ form.password2.label }}{{ form.password2 }}<br>
+
         {{ form.submit }}
     </form>
 

@@ -1,6 +1,6 @@
 from flask import redirect, render_template, send_from_directory, request
 import os
-import WebHandeler.gongshi as Gongshi
+import WebTest.gongshi as Gongshi
 
 
 def Route(app=None, hostInfo=None):
