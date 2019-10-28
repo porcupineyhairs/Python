@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa0e8604-a2f8-4708-b4c0-9b42461f988b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/WebHandeler/Route.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask/WebHandeler/Route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python学习思维导图/元类.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python学习思维导图/内置类型.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python学习思维导图/函数.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python学习思维导图/基本环境.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python学习思维导图/异常.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python学习思维导图/扩展库.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python学习思维导图/描述符.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python学习思维导图/标准库.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python学习思维导图/模块.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python学习思维导图/类.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python学习思维导图/表达式 .mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python学习思维导图/装饰器.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python学习思维导图/迭代器.mmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python学习思维导图/附录.mmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flask/Test/BOM.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask/Test/BOM.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flask/WebHandeler/Route.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
+            <state relative-caret-position="752">
               <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
               <folding>
                 <element signature="e#0#73#0" expanded="true" />
@@ -54,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flask/WebTest/test1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1166">
@@ -67,10 +49,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flask/app.py">
+        <entry file="file://$PROJECT_DIR$/Flask/BOMA0106.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flask/BOM.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1040">
+              <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#507#1185#0" />
+                <element signature="e#1292#1867#0" />
+                <element signature="e#1921#2188#0" />
+                <element signature="e#2236#2496#0" />
+                <element signature="e#2558#3084#0" />
+                <element signature="e#3152#3266#0" />
+                <element signature="e#3323#3465#0" />
+                <element signature="e#3530#3798#0" />
+                <element signature="e#3857#3942#0" />
+                <element signature="e#4026#4509#0" />
+                <element signature="e#4610#5470#0" />
+                <element signature="e#5528#6456#0" />
+                <element signature="e#8921#9302#0" />
+                <element signature="e#9356#9890#0" />
+                <element signature="e#9940#10093#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Flask/Test/BOM.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
-              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+              <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flask/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -114,6 +146,8 @@
         <option value="$PROJECT_DIR$/Flask/WebHandeler/Route.py" />
         <option value="$PROJECT_DIR$/Flask/WebTest/test1.html" />
         <option value="$PROJECT_DIR$/Flask/WebTest/test1.py" />
+        <option value="$PROJECT_DIR$/Flask/BOM.py" />
+        <option value="$PROJECT_DIR$/Flask/Test/BOM.py" />
       </list>
     </option>
   </component>
@@ -131,6 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,25 +188,27 @@
               <item name="Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python" type="462c0819:PsiDirectoryNode" />
               <item name="Flask" type="462c0819:PsiDirectoryNode" />
-              <item name="WebTest" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Flask" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Flask" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Flask/templates" />
     </key>
@@ -202,17 +239,18 @@
       <workItem from="1571293789418" duration="908000" />
       <workItem from="1571648128701" duration="468000" />
       <workItem from="1571799042426" duration="408000" />
+      <workItem from="1572249602963" duration="837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2025000" />
+    <option name="totallyTimeSpent" value="2862000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="23" width="1411" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18188459" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18407597" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -226,7 +264,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.30490565" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.30490565" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -307,10 +345,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Flask/WebHandeler/Route.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
+        <state relative-caret-position="752">
           <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
           <folding>
             <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -322,22 +370,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Flask/WebTest/test1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1166">
           <caret line="76" column="65" selection-start-line="76" selection-start-column="65" selection-end-line="76" selection-end-column="65" />
           <folding>
             <element signature="e#37#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask/BOMA0106.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask/BOM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#507#1185#0" />
+            <element signature="e#1292#1867#0" />
+            <element signature="e#1921#2188#0" />
+            <element signature="e#2236#2496#0" />
+            <element signature="e#2558#3084#0" />
+            <element signature="e#3152#3266#0" />
+            <element signature="e#3323#3465#0" />
+            <element signature="e#3530#3798#0" />
+            <element signature="e#3857#3942#0" />
+            <element signature="e#4026#4509#0" />
+            <element signature="e#4610#5470#0" />
+            <element signature="e#5528#6456#0" />
+            <element signature="e#8921#9302#0" />
+            <element signature="e#9356#9890#0" />
+            <element signature="e#9940#10093#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flask/Test/BOM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
