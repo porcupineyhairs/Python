@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IT作业申请单</title>
+</head>
+<body>
+<table align="center" data-sort="sortDisabled">
+    <tbody>
+        <tr class="firstRow">
+            <td width="843" align="center" valign="middle" style="border-width: 1px; border-style: solid; -ms-word-break: break-all;" rowspan="1" colspan="6">
+                <p style="text-align: center;">
+                    <span style="font-size: 36px;"><strong><span style="font-family: 宋体;">IT作业申请表</span></strong></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="100" height="25" align="right" valign="middle" style="border-width: 1px; border-style: solid; -ms-word-break: break-all;" rowspan="1" colspan="1">
+                申请人：
+            </td>
+            <td width="172" height="25" valign="top" style="border-width: 1px; border-style: solid;" rowspan="1" colspan="1">
+                <input class="AUTO" datafld="SYS_USERNAME" id="DATA_29" style="width: 150px; height: 20px; color: rgb(0, 0, 0); font-family: Arial; font-size: 13.33px; background-color: rgb(255, 255, 255);" title="申请人" type="text" value="{宏控件}">
+            </td>
+            <td width="96" height="25" align="right" valign="middle" style="border-width: 1px; border-style: solid; -ms-word-break: break-all;" rowspan="1" colspan="1">
+                部门：
+            </td>
+            <td width="170" height="25" valign="top" style="border-width: 1px; border-style: solid;" rowspan="1" colspan="1">
+                <input class="AUTO" datafld="SYS_DEPTNAME_S" id="DATA_31" style="width: 150px; height: 20px; color: rgb(0, 0, 0); font-family: Arial; font-size: 13.33px; background-color: rgb(255, 255, 255);" title="部门" type="text" value="{宏控件}">
+            </td>
+            <td width="94" height="25" align="right" valign="middle" style="border-width: 1px; border-style: solid; -ms-word-break: break-all;" rowspan="1" colspan="1">
+                日期：
+            </td>
+            <td width="170" height="25" valign="top" style="border-width: 1px; border-style: solid; -ms-word-break: break-all;" rowspan="1" colspan="1">
+                <input class="AUTO" datafld="SYS_DATE" id="DATA_32" style="width: 150px; height: 20px; color: rgb(0, 0, 0); font-family: Arial; font-size: 13.33px; background-color: rgb(255, 255, 255);" title="日期" type="text" value="{宏控件}">
+            </td>
+        </tr>
+        <tr>
+            <td width="100" height="24" align="right" valign="middle" style="-ms-word-break: break-all;" rowspan="1" colspan="1">
+                <p>
+                    作业内容：
+                </p>
+            </td>
+            <td height="24" align="left" valign="middle" style="-ms-word-break: break-all;" rowspan="1" colspan="5">
+                <input name="DATA_36" title="复选框_ERP/OA" id="DATA_36" onclick="checkboxOnclick(this.name)" type="checkbox">&nbsp;ERP/OA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input name="DATA_37" title="复选框_网络/特殊权限" id="DATA_37" onclick="checkboxOnclick(this.name)" type="checkbox">&nbsp;网络/特殊权限 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input name="DATA_60" title="复选框_维修" id="DATA_60" onclick="checkboxOnclick(this.name)" type="checkbox">&nbsp;维修 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input name="DATA_53" title="复选框_人力资源系统" id="DATA_53" type="checkbox" hidden="hidden" disabled="disabled" class="">&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td align="right" valign="middle" style="-ms-word-break: break-all;" rowspan="1" colspan="1">
+                作业时效：
+            </td>
+            <td align="left" valign="middle" style="word-break: break-all;" rowspan="1" colspan="5">
+                <p>
+                    <input name="DATA_38" title="复选框_永久" id="DATA_38" onclick="checkboxOnclick(this.name)" type="checkbox">&nbsp;永久 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input name="DATA_39" title="复选框_短期" id="DATA_39" onclick="checkboxOnclick(this.name)" type="checkbox">&nbsp;短期 &nbsp;<img title="日期控件：日期开始" class="DATE" src="/images/form/calendar.png" value="日期开始"/>&nbsp;<input name="DATA_49" title="日期开始" id="DATA_49" disabled = "disabled" onchange="inputOnchange(this.name)" style="width: 90px; height: 18px;">&nbsp; &nbsp; &nbsp;<img title="日期控件：日期结束" class="DATE" src="/images/form/calendar.png" value="日期结束"/>&nbsp;<input name="DATA_50" title="日期结束" id="DATA_50" disabled = "disabled" onchange="inputOnchange(this.name)" style="width: 90px; height: 18px;">&nbsp;
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td height="74" align="right" valign="middle" style="-ms-word-break: break-all;" rowspan="1" colspan="1">
+                申请原因：<br/>
+            </td>
+            <td height="74" align="left" valign="top" rowspan="1" colspan="5">
+                <textarea name="DATA_43" title="申请原因" id="DATA_43" style="width: 725px; height: 75px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td height="185" align="right" valign="middle" style="-ms-word-break: break-all;" rowspan="1" colspan="1">
+                预期效果：
+            </td>
+            <td height="185" align="left" valign="top" rowspan="1" colspan="5">
+                <textarea name="DATA_44" title="预期效果" id="DATA_44" style="width: 725px; height: 180px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" valign="middle" rowspan="1" colspan="1" style="word-break: break-all;" height="53">
+                注意：
+            </td>
+            <td align="left" valign="middle" rowspan="1" colspan="5" style="word-break: break-all;" height="53">
+                <strong style="caret-color: rgb(255, 0, 0); color: rgb(255, 0, 0); font-family: 微软雅黑; font-size: 16px; white-space: normal;">如涉及ERP重大权限修改如单据审核权限等的需要OA导出表单打印给部门领导签字确认</strong>
+            </td>
+        </tr>
+        <tr>
+            <td height="54" align="center" valign="middle" style="-ms-word-break: break-all;" rowspan="1" colspan="6">
+                <span style="font-size: 36px;"><strong><span style="font-family: 宋体, SimSun;">以下由资讯部填写</span></strong><span style="font-family: 宋体, SimSun;"></span></span><br/>
+            </td>
+        </tr>
+        <tr>
+            <td height="123" align="right" valign="middle" style="-ms-word-break: break-all;" rowspan="1" colspan="1">
+                咨询部意见：<br/>
+            </td>
+            <td height="123" align="left" valign="top" rowspan="1" colspan="5">
+                <textarea name="DATA_45" title="资讯课意见" id="DATA_45" style="width: 725px; height: 130px;" class=""></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" valign="middle" style="-ms-word-break: break-all;" rowspan="2" colspan="1">
+                作业结果：
+            </td>
+            <td align="left" valign="top" style="-ms-word-break: break-all;" rowspan="2" colspan="5">
+                <textarea name="DATA_55" title="作业结果" id="DATA_55" style="width: 725px; height: 90px;"></textarea>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td align="left" valign="top" rowspan="1" colspan="2"></td>
+            <td align="right" valign="middle" style="-ms-word-break: break-all;" rowspan="1" colspan="1">
+                <span style="font-family: 微软雅黑;">完成日期：</span>
+            </td>
+            <td align="left" valign="middle" style="-ms-word-break: break-all;" rowspan="1" colspan="1">
+                <input class="AUTO" datafld="SYS_DATE" id="DATA_58" style="width: 150px; height: 20px; color: rgb(0, 0, 0); font-family: Arial; font-size: 13.33px; background-color: rgb(255, 255, 255);" title="完成时间" type="text" value="{宏控件}">
+            </td>
+            <td align="right" valign="middle" style="-ms-word-break: break-all;" rowspan="1" colspan="1">
+                <span style="font-family: 微软雅黑; font-size: 13px;">作业负责人：</span>
+            </td>
+            <td align="left" valign="middle" style="-ms-word-break: break-all;" rowspan="1" colspan="1">
+                <input class="AUTO" datafld="SYS_USERNAME" id="DATA_59" style="width: 150px; height: 20px; color: rgb(0, 0, 0); font-family: Arial; font-size: 13.33px; background-color: rgb(255, 255, 255);" title="作业负责人" type="text" value="{宏控件}">
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    &nbsp;
+</p>
+<style>.view table td {    border-top: 1px solid #999999;    border-left: 1px solid #999999;    border-right: 1px solid #999999;    border-bottom: 1px solid #999999;    font-size: 13px;    padding: 5px}.view table input {    border-right: #333333 0px solid;    border-top: #333333 0px solid;    border-left: #333333 0px solid;    border-bottom: #666666 1px solid}.view table textarea {    border-right: #333333 0px solid;    border-top: #333333 0px solid;    border-left: #333333 0px solid;    border-bottom: #666666 1px solid}</style>
+<script>
+    function checkboxOnclick(checkboxId){
+        if (checkboxId == "DATA_36") {
+            document.getElementById("DATA_37").checked = "";
+            document.getElementById("DATA_60").checked = "";
+        } else if(checkboxId == "DATA_37" || checkboxId == "DATA_60"){
+            document.getElementById("DATA_36").checked = "";
+        }else if(checkboxId == "DATA_38"){
+            document.getElementById("DATA_39").checked = "";
+            document.getElementById("DATA_49").disabled = "disabled";
+            document.getElementById("DATA_50").disabled = "disabled";
+            document.getElementById("DATA_49").value = "";
+            document.getElementById("DATA_50").value = "";
+        }else if(checkboxId == "DATA_39"){
+
+            if(document.getElementById(checkboxId).checked == true){
+                document.getElementById("DATA_38").checked = "";
+                document.getElementById("DATA_49").disabled = "";
+                document.getElementById("DATA_50").disabled = "";
+            }
+            if(document.getElementById(checkboxId).checked == false){
+                document.getElementById("DATA_49").disabled = "disabled";
+                document.getElementById("DATA_50").disabled = "disabled";
+                document.getElementById("DATA_49").value = "";
+                document.getElementById("DATA_50").value = "";
+            }
+        }
+    }
+
+    function inputOnchange(inputId){
+        if(inputId == "DATA_49" || inputId =="DATA_50"){
+            if(document.getElementById("DATA_39").checked == false){
+                document.getElementById("DATA_49").value = "";
+                document.getElementById("DATA_50").value = "";
+            }
+        }
+    }
+</script>
+</body>
+</html>
+
