@@ -10,5 +10,6 @@ def test0(index=0):
 
 	return ret
 
-kk = test0(30)
+kk = test0(15)
 print(kk)
+					
