@@ -1,0 +1,108 @@
+2020-03-23 12:32:26,944 - INFO: GeneratePlan: Situation1 Found Data:['2215', '0001', '0001']
+2020-03-23 12:32:40,160 - INFO: GeneratePlan: Situation1 Found Data:['2215', '0001', '0001']
+2020-03-23 12:32:40,204 - INFO: GeneratePlan: Situation1 Found Data:['2215', '0002', '0001']
+2020-03-23 12:32:40,244 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 12:32:40,295 - INFO: GeneratePlan: Situation2 Found Data:[['2215', '0002', '0002', '202003191611']]
+2020-03-23 13:11:07,741 - INFO: GeneratePlan: Situation1 Found Data:['2215', '0001', '0001']
+2020-03-23 13:11:07,775 - INFO: GeneratePlan: InsLog: 221500010001
+2020-03-23 13:12:02,425 - INFO: GeneratePlan: Situation1 Found Data:['2215', '0001', '0001']
+2020-03-23 13:12:02,456 - INFO: GeneratePlan: InsLog: 221500010001
+2020-03-23 13:12:02,483 - INFO: GeneratePlan: InsLog: 221500010001
+2020-03-23 13:12:02,485 - INFO: GeneratePlan: Situation1 Found Data:['2215', '0002', '0001']
+2020-03-23 13:12:02,513 - INFO: GeneratePlan: InsLog: 221500020001
+2020-03-23 13:12:02,553 - INFO: GeneratePlan: InsLog: 221500020001
+2020-03-23 13:12:02,555 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 13:12:02,621 - INFO: GeneratePlan: Situation2 Found Data:[['2215', '0002', '0002', '202003191611']]
+2020-03-23 13:29:34,739 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 13:29:34,794 - INFO: GeneratePlan: Situation2 Found Data:['2215', '0002', '0002']
+2020-03-23 13:30:01,915 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 13:30:01,918 - INFO: GeneratePlan: Situation2 Found Data:['2215', '0002', '0002']
+2020-03-23 13:30:01,956 - INFO: GeneratePlan: SC: InsLog: Auto221500020002-BgVer0002
+2020-03-23 13:30:01,996 - INFO: GeneratePlan: CG: InsLog: Auto221500020002-BgVer0002
+2020-03-23 13:30:02,001 - INFO: GeneratePlan: Situation2 Found Data:['2215', '0002', '0002']
+2020-03-23 13:30:59,088 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 13:30:59,091 - INFO: GeneratePlan: Situation2 Found Data:['2215', '0002', '0002']
+2020-03-23 13:30:59,127 - INFO: GeneratePlan: SC: InsLog: Auto221500020002-BgVer0002
+2020-03-23 13:30:59,162 - INFO: GeneratePlan: CG: InsLog: Auto221500020002-BgVer0002
+2020-03-23 13:30:59,164 - INFO: GeneratePlan: Situation2 Found Data:['2215', '0002', '0002']
+2020-03-23 13:40:22,736 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 13:40:22,786 - INFO: GeneratePlan: Situation2 Found Data:['2215', '0002', '0002']
+2020-03-23 13:40:22,817 - INFO: GeneratePlan: SC: InsLog: Auto221500020002-BgVer0002
+2020-03-23 13:40:22,844 - INFO: GeneratePlan: CG: InsLog: Auto221500020002-BgVer0002
+2020-03-23 13:43:15,268 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 13:43:15,270 - INFO: GeneratePlan: Situation2 Found Data:['2215', '0002', '0002']
+2020-03-23 13:43:15,302 - INFO: GeneratePlan: SC: InsLog: Auto221500020002-BgVer0002
+2020-03-23 13:43:15,344 - INFO: GeneratePlan: CG: InsLog: Auto221500020002-BgVer0002
+2020-03-23 13:43:15,347 - WARNING: GeneratePlan: Situation2 Not Found Data!
+2020-03-23 13:44:58,007 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 13:44:58,010 - INFO: GeneratePlan: Situation2 Not Found Data!
+2020-03-23 13:45:43,531 - INFO: GeneratePlan: Situation1 Found Data:['2215', '0001', '0001']
+2020-03-23 13:45:43,560 - INFO: GeneratePlan: SC: InsLog: Auto221500010001
+2020-03-23 13:45:43,587 - INFO: GeneratePlan: CG: InsLog: Auto221500010001
+2020-03-23 13:45:43,591 - INFO: GeneratePlan: Situation1 Found Data:['2215', '0002', '0001']
+2020-03-23 13:45:43,630 - INFO: GeneratePlan: SC: InsLog: Auto221500020001
+2020-03-23 13:45:43,666 - INFO: GeneratePlan: CG: InsLog: Auto221500020001
+2020-03-23 13:45:43,669 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 13:45:43,672 - INFO: GeneratePlan: Situation2 Found Data:['2215', '0002', '0002']
+2020-03-23 13:45:43,715 - INFO: GeneratePlan: SC: InsLog: Auto221500020002-BgVer0002
+2020-03-23 13:45:43,750 - INFO: GeneratePlan: CG: InsLog: Auto221500020002-BgVer0002
+2020-03-23 13:45:43,752 - INFO: GeneratePlan: Situation2 Not Found Data!
+2020-03-23 13:46:31,071 - INFO: GeneratePlan: 
+2020-03-23 13:46:31,146 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 13:46:31,151 - INFO: GeneratePlan: Situation2 Not Found Data!
+2020-03-23 13:47:38,965 - INFO: GeneratePlan: Work Start
+2020-03-23 13:47:39,010 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 13:47:39,015 - INFO: GeneratePlan: Situation2 Not Found Data!
+2020-03-23 13:47:39,017 - INFO: GeneratePlan: Work Finished
+2020-03-23 13:54:26,974 - INFO: GeneratePlan: Work Start
+2020-03-23 13:54:27,026 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 13:54:27,029 - INFO: GeneratePlan: Situation2 Not Found Data!
+2020-03-23 13:54:27,076 - INFO: GeneratePlan: Situation3 Found Data:['2215', '0002', '0003']
+2020-03-23 13:54:27,076 - INFO: GeneratePlan: Work Finished
+2020-03-23 13:54:51,545 - INFO: GeneratePlan: Work Start
+2020-03-23 13:54:51,600 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 13:54:51,603 - INFO: GeneratePlan: Situation2 Not Found Data!
+2020-03-23 13:54:51,606 - INFO: GeneratePlan: Situation3 Found Data:['2215', '0002', '0003']
+2020-03-23 13:54:51,606 - INFO: GeneratePlan: Work Finished
+2020-03-23 14:02:18,863 - INFO: GeneratePlan: Work Start
+2020-03-23 14:02:18,919 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 14:02:18,922 - INFO: GeneratePlan: Situation2 Not Found Data!
+2020-03-23 14:02:18,924 - INFO: GeneratePlan: Situation3 Found Data:['2215', '0002', '0003']
+2020-03-23 14:02:18,974 - INFO: GeneratePlan: CG: InsLog: Auto221500020003-CP
+2020-03-23 14:02:18,979 - INFO: GeneratePlan: Situation3 Found Data:['2215', '0002', '0003']
+2020-03-23 14:03:50,124 - INFO: GeneratePlan: Work Start
+2020-03-23 14:03:50,175 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 14:03:50,178 - INFO: GeneratePlan: Situation2 Not Found Data!
+2020-03-23 14:03:50,180 - INFO: GeneratePlan: Situation3 Found Data:['2215', '0002', '0003']
+2020-03-23 14:03:50,216 - INFO: GeneratePlan: CG: InsLog: Auto221500020003-CP
+2020-03-23 14:03:50,218 - INFO: GeneratePlan: Situation3 Found Data:['2215', '0002', '0003']
+2020-03-23 14:04:53,960 - INFO: GeneratePlan: Work Start
+2020-03-23 14:04:54,006 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 14:04:54,008 - INFO: GeneratePlan: Situation2 Not Found Data!
+2020-03-23 14:04:54,010 - INFO: GeneratePlan: Situation3 Found Data:['2215', '0002', '0003']
+2020-03-23 14:04:54,038 - INFO: GeneratePlan: CP: InsLog: Auto221500020003-CP
+2020-03-23 14:04:54,040 - INFO: GeneratePlan: Situation3 Not Found Data!
+2020-03-23 15:14:14,098 - INFO: GeneratePlan: Work Start
+2020-03-23 15:14:14,199 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 15:14:14,237 - INFO: GeneratePlan: Situation2 Found Data:['2215', '0002', '0002']
+2020-03-23 15:22:53,855 - INFO: GeneratePlan: Work Start
+2020-03-23 15:22:53,925 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 15:22:53,927 - INFO: GeneratePlan: Situation2 Found Data:['2215', '0002', '0002']
+2020-03-23 15:22:53,977 - INFO: GeneratePlan: SC: InsLog: Auto221500020002-BgVer0003
+2020-03-23 15:22:54,022 - INFO: GeneratePlan: CG: InsLog: Auto221500020002-BgVer0003
+2020-03-23 15:22:54,024 - INFO: GeneratePlan: Situation2 Not Found Data!
+2020-03-23 15:22:54,072 - INFO: GeneratePlan: Situation3 Found Data:['2215', '0002']
+2020-03-23 15:22:54,106 - INFO: GeneratePlan: CP: InsLog: Auto22150002-CP
+2020-03-23 15:24:12,496 - INFO: GeneratePlan: Work Start
+2020-03-23 15:24:12,547 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 15:24:12,550 - INFO: GeneratePlan: Situation2 Not Found Data!
+2020-03-23 15:24:12,552 - INFO: GeneratePlan: Situation3 Not Found Data!
+2020-03-23 15:24:12,554 - INFO: GeneratePlan: Situation4 Found Data:['2215', '0002']
+2020-03-23 15:24:12,596 - INFO: GeneratePlan: CP: InsLog: Auto22150002-CP-BgVer0002
+2020-03-23 15:24:12,598 - INFO: GeneratePlan: Situation4 Found Data:['2215', '0002']
+2020-03-23 15:40:12,613 - INFO: GeneratePlan: Work Start
+2020-03-23 15:40:12,677 - INFO: GeneratePlan: Situation1 Not Found Data!
+2020-03-23 15:40:12,680 - INFO: GeneratePlan: Situation2 Not Found Data!
+2020-03-23 15:40:12,683 - INFO: GeneratePlan: Situation3 Not Found Data!
+2020-03-23 15:40:12,730 - INFO: GeneratePlan: Situation4 Not Found Data!
+2020-03-23 15:40:12,731 - INFO: GeneratePlan: Work Finished

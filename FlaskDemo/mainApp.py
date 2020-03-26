@@ -1,29 +1,33 @@
 import os
-from flask import Flask, send_from_directory, current_app, redirect
+from datetime import datetime, timedelta
+from flask import Flask, session
+from flask_admin import Admin
 from flask_bootstrap import Bootstrap
 from config import Config
-from router import urls_1
+from views import urlRoot, urlClient, urlTest, urlDownload, urlReport, urlMain, urlUser
 
 
 app = Flask(__name__)
+
+# Admin 管理页面
+# admin = Admin(app, name='管理后台', template_mode='bootstrap3')
+
+# app.config['SERVER_NAME'] ='harveykkk.com'
+
 Bootstrap(app)
+
 # 注册配置文件
 app.config.from_object(Config)
 
 # 注册其他网页url
-app.register_blueprint(urls_1, url_prefix='/u1')
-
-
-# 收藏图标
-@app.route('/favicon.ico')
-def get_favicon_ico():
-	return app.send_static_file('img/favicon.ico')
-
-
-@app.route('/', methods=['GET'])
-def hello_world():
-	return 'Hello World!2'
+app.register_blueprint(urlRoot, url_prefix='/')
+app.register_blueprint(urlTest, url_prefix='/test')
+app.register_blueprint(urlClient, url_prefix='/Client')
+app.register_blueprint(urlMain, url_prefix='/main')
+app.register_blueprint(urlDownload, url_prefix='/download')
+app.register_blueprint(urlReport, url_prefix='/report')
+app.register_blueprint(urlUser, url_prefix='/user')
 
 
 if __name__ == '__main__':
-	app.run(debug=True, host=app.config['APP_HOST'], port=app.config['APP_PORT'])
+	app.run(debug=app.config['DEBUG'], host=app.config['APP_HOST'], port=app.config['APP_PORT'])

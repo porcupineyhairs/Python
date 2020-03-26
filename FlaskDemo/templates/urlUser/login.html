@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+    <form action="" method="post">
+        <br>
+        <label for="">用户名</label><input type="text" name="user" placeholder="请输入用户名">
+        <br>
+        <label>密码：</label><input type="password" name="pwd" placeholder="请输入密码">
+        <br>
+        {% for message in get_flashed_messages() %}
+            {{ message }}
+            <br>
+        {% endfor %}
+        <button type="submit">登录</button>
+    </form>
+</body>
+</html>

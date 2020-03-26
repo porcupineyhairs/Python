@@ -6,8 +6,8 @@ class MOCTC2YHelper:
 	def __init__(self, debug=False):
 		self.__debugMode = debug
 
-		self.__mssql = MsSqlHelper(host='192.168.0.99', user='sa', passwd='comfortgroup2016{', database='COMFORT')
-		self.__erpMsg = MsgHelper(debug=self.__debugMode)
+		self.__mssql = None
+		self.__erpMsg = None
 		self.__getData = None
 		self.__sendReceiver = None
 		self.__sendMsgStr = None
@@ -15,6 +15,9 @@ class MOCTC2YHelper:
 		self.__returnStr = None
 
 	def work(self):
+		self.__mssql = MsSqlHelper(host='192.168.0.99', user='sa', passwd='comfortgroup2016{', database='COMFORT')
+		self.__erpMsg = MsgHelper(debug=self.__debugMode)
+
 		self.__clean()
 		self.__getDd()
 		if self.__getData is not None:
@@ -28,6 +31,8 @@ class MOCTC2YHelper:
 		if not self.__debugMode:
 			self.__setFinishFlag()
 
+		del self.__mssql
+		self.__mssql = None
 		return str(self.__returnStr)
 
 	def __clean(self):
@@ -85,5 +90,5 @@ class MOCTC2YHelper:
 		                      msgText=self.__sendMsgStr)
 
 	def __setFinishFlag(self):
-		sqlStr = "UPDATE MOCTC SET UDF08 = 'Y' WHERE UDF08 = 'n' "
+		sqlStr = "UPDATE COMFORT.dbo.MOCTC SET UDF08 = 'Y' WHERE UDF08 = 'n' "
 		self.__mssql.sqlWork(sqlStr)

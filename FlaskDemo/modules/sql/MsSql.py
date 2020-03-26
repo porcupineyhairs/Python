@@ -94,9 +94,9 @@ class MsSqlHelper:
 		# 根据SQL第一个关键字获取模式
 		self.__sqlMode = self.__sqlStr.lstrip().split(' ')[0].upper()
 		# 根据不同SQL关键字执行不同命令
-		if self.__sqlMode in ('SELECT', 'EXEC', 'IF'):
+		if self.__sqlMode in ('SELECT', 'EXEC'):
 			self.__sqlExecute()
-		elif self.__sqlMode in ('UPDATE', 'INSERT', 'DELETE', 'TRUNCATE'):
+		elif self.__sqlMode in ('UPDATE', 'INSERT', 'DELETE'):
 			self.__sqlCommit()
 		else:
 			raise MsSqlHelperException('Can Not Get Sql Mode, Please Check Sql Sentence. Sql: ' + self.__sqlStr)

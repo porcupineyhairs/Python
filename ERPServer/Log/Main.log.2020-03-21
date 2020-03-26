@@ -1,0 +1,8 @@
+2020-03-22 10:52:25,275 - WARNING: Main_定时任务开始
+2020-03-22 10:52:25,275 - WARNING: Main_现有任务:[<Job (id=GeneratePlan name=generatePlan)>]
+2020-03-22 10:52:47,410 - WARNING: Main_定时任务关闭
+2020-03-21 10:57:55,598 - WARNING: Main_定时任务开始
+2020-03-21 10:57:55,598 - WARNING: Main_现有任务:[<Job (id=GeneratePlan name=generatePlan)>]
+2020-03-21 10:58:00,009 - INFO: GeneratePlan: Situation1 Found Data:[['2215', '0001', '0001'], ['2215', '0002', '0001']]
+2020-03-21 10:58:00,011 - INFO: GeneratePlan: Situation2 Found Data:[['2215', '0002', '0002', '202003191611']]
+2020-03-21 10:58:05,788 - WARNING: Main_定时任务关闭
