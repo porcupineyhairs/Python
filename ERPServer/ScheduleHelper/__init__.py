@@ -1,2 +1,2 @@
 from .MOCTC2Y import *
-from .GeneratePlan import *
+from .AutoErpPlan import *

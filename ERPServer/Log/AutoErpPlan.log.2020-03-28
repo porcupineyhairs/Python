@@ -1,0 +1,29 @@
+2020-03-28 11:32:49,471 - INFO: AutoErpPlan: Work Start
+2020-03-28 11:32:49,517 - ERROR: AutoErpPlan: (207, b"Invalid column name 'TD001'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2020-03-28 11:32:49,517 - INFO: AutoErpPlan: Work Finished
+2020-03-28 11:33:19,765 - INFO: AutoErpPlan: Work Start
+2020-03-28 11:33:19,858 - INFO: AutoErpPlan: Found Data!
+2020-03-28 11:33:19,883 - INFO: AutoErpPlan: Insert Jobqueue: 2215-0001
+2020-03-28 11:33:19,915 - INFO: AutoErpPlan: Work Finished
+2020-03-28 11:33:43,942 - INFO: AutoErpPlan: Work Start
+2020-03-28 11:33:43,980 - INFO: AutoErpPlan: Found Data!
+2020-03-28 11:33:43,993 - INFO: AutoErpPlan: Insert Jobqueue: 2215-0002
+2020-03-28 11:33:44,007 - INFO: AutoErpPlan: Work Finished
+2020-03-28 11:34:03,230 - INFO: AutoErpPlan: Work Start
+2020-03-28 11:34:03,266 - INFO: AutoErpPlan: Found Data!
+2020-03-28 11:34:03,279 - INFO: AutoErpPlan: Insert Jobqueue: 2201-000001
+2020-03-28 11:34:03,293 - INFO: AutoErpPlan: Work Finished
+2020-03-28 11:34:18,373 - INFO: AutoErpPlan: Work Start
+2020-03-28 11:34:18,430 - INFO: AutoErpPlan: Found Data!
+2020-03-28 11:34:18,443 - INFO: AutoErpPlan: Insert Jobqueue: 2201-000002
+2020-03-28 11:34:18,471 - INFO: AutoErpPlan: Insert Jobqueue: 2201-0000003
+2020-03-28 11:34:18,485 - INFO: AutoErpPlan: Work Finished
+2020-03-28 11:44:36,266 - INFO: AutoErpPlan: Work Start
+2020-03-28 11:44:36,306 - INFO: AutoErpPlan: Not Found Data!
+2020-03-28 11:44:36,307 - INFO: AutoErpPlan: Work Finished
+2020-03-28 11:47:43,829 - INFO: AutoErpPlan: Work Start
+2020-03-28 11:47:43,874 - INFO: AutoErpPlan: Not Found Data!
+2020-03-28 11:47:43,875 - INFO: AutoErpPlan: Work Finished
+2020-03-28 15:41:30,831 - INFO: AutoErpPlan: Work Start
+2020-03-28 15:41:30,866 - INFO: AutoErpPlan: Not Found Data!
+2020-03-28 15:41:30,866 - INFO: AutoErpPlan: Work Finished

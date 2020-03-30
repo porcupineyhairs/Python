@@ -1,0 +1,48 @@
+2020-03-27 16:28:59,390 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:28:59,432 - INFO: AutoErpPlan: Found Data!
+2020-03-27 16:28:59,444 - INFO: AutoErpPlan: Insert Jobqueue: 32003200310035002D003000300030003100200020002000200020002000200030003000300031
+2020-03-27 16:29:48,948 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:29:48,986 - INFO: AutoErpPlan: Found Data!
+2020-03-27 16:29:48,998 - INFO: AutoErpPlan: Insert Jobqueue: 2215-0001       0001
+2020-03-27 16:30:24,448 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:30:24,498 - INFO: AutoErpPlan: Found Data!
+2020-03-27 16:30:24,510 - INFO: AutoErpPlan: Insert Jobqueue: 2215-0001       0001
+2020-03-27 16:33:31,289 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:33:31,328 - INFO: AutoErpPlan: Found Data!
+2020-03-27 16:33:31,338 - INFO: AutoErpPlan: Insert Jobqueue: 2215-0001       0001
+2020-03-27 16:33:34,052 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:33:34,083 - INFO: AutoErpPlan: Found Data!
+2020-03-27 16:33:34,093 - INFO: AutoErpPlan: Insert Jobqueue: 2215-0002       0001
+2020-03-27 16:33:35,475 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:33:35,513 - INFO: AutoErpPlan: Found Data!
+2020-03-27 16:33:35,525 - INFO: AutoErpPlan: Insert Jobqueue: 2215-0002       0003
+2020-03-27 16:33:36,803 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:33:36,845 - INFO: AutoErpPlan: Found Data!
+2020-03-27 16:33:36,856 - INFO: AutoErpPlan: Insert Jobqueue: 2215-0002       0002
+2020-03-27 16:33:37,825 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:33:37,866 - INFO: AutoErpPlan: Found Data!
+2020-03-27 16:33:37,879 - INFO: AutoErpPlan: Insert Jobqueue: 2201-000001     0001
+2020-03-27 16:33:38,863 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:33:38,902 - INFO: AutoErpPlan: Found Data!
+2020-03-27 16:33:38,913 - INFO: AutoErpPlan: Insert Jobqueue: 2201-000002     0001
+2020-03-27 16:33:40,306 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:33:40,343 - INFO: AutoErpPlan: Found Data!
+2020-03-27 16:33:40,355 - INFO: AutoErpPlan: Insert Jobqueue: 2201-0000003    0001
+2020-03-27 16:33:41,447 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:33:41,475 - INFO: AutoErpPlan: Not Found Data!
+2020-03-27 16:34:30,830 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:34:30,895 - INFO: AutoErpPlan: Not Found Data!
+2020-03-27 16:40:55,445 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:40:55,519 - INFO: AutoErpPlan: Found Data!
+2020-03-27 16:40:55,527 - INFO: AutoErpPlan: Insert Jobqueue: 2215-0001       0001
+2020-03-27 16:40:55,538 - ERROR: AutoErpPlan: (2627, b"Violation of PRIMARY KEY constraint 'PK_JOBQUEUE'. Cannot insert duplicate key in object 'dbo.JOBQUEUE'. The duplicate key value is (20200327000001, 202003270001).DB-Lib error message 20018, severity 14:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2020-03-27 16:41:51,654 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:41:51,687 - INFO: AutoErpPlan: Found Data!
+2020-03-27 16:41:51,698 - INFO: AutoErpPlan: Insert Jobqueue: 2215-0002       0001
+2020-03-27 16:41:51,730 - INFO: AutoErpPlan: Insert Jobqueue: 2215-0002       0002
+2020-03-27 16:41:51,749 - INFO: AutoErpPlan: Insert Jobqueue: 2201-000001     0001
+2020-03-27 16:41:51,768 - INFO: AutoErpPlan: Insert Jobqueue: 2201-000002     0001
+2020-03-27 16:41:51,788 - INFO: AutoErpPlan: Insert Jobqueue: 2201-0000003    0001
+2020-03-27 16:42:39,658 - INFO: AutoErpPlan: Work Start
+2020-03-27 16:42:39,690 - INFO: AutoErpPlan: Not Found Data!
+2020-03-27 16:42:39,690 - INFO: AutoErpPlan: Work Finished

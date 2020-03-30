@@ -1,4 +1,31 @@
-2020-03-23 13:49:01,744 - INFO: GeneratePlan: Work Start
-2020-03-23 13:49:01,801 - INFO: GeneratePlan: Situation1 Not Found Data!
-2020-03-23 13:49:01,803 - INFO: GeneratePlan: Situation2 Not Found Data!
-2020-03-23 13:49:01,804 - INFO: GeneratePlan: Work Finished
+2020-03-30 15:13:36,884 - WARNING: Main_定时任务开始
+2020-03-30 15:13:36,886 - WARNING: Main_现有任务:[<Job (id=MocMsgWork name=MocMsgWork)>, <Job (id=AutoErpPlan name=AutoErpPlan)>]
+2020-03-30 15:13:39,653 - WARNING: Main_定时任务关闭
+2020-03-30 15:14:23,627 - WARNING: Main_定时任务开始
+2020-03-30 15:14:23,627 - WARNING: Main_现有任务:[<Job (id=MocMsgWork name=MocMsgWork)>, <Job (id=AutoErpPlan name=AutoErpPlan)>]
+2020-03-30 15:20:00,403 - INFO: MOCTC2Y: ['没有获取到订单']
+2020-03-30 15:30:00,009 - INFO: AutoErpPlan: Work Start
+2020-03-30 15:30:00,185 - INFO: AutoErpPlan: Not Found Order List!
+2020-03-30 15:30:00,186 - INFO: AutoErpPlan: Work Finished
+2020-03-30 15:36:34,598 - WARNING: Main_定时任务关闭
+2020-03-30 15:51:22,980 - WARNING: Main_定时任务开始
+2020-03-30 15:51:22,980 - WARNING: Main_现有任务:[<Job (id=MocMsgWork name=MocMsgWork)>, <Job (id=AutoErpPlan name=AutoErpPlan)>]
+2020-03-30 16:00:00,005 - INFO: AutoErpPlan: Work Start
+2020-03-30 16:00:00,312 - INFO: MOCTC2Y: 没有获取到数据
+2020-03-30 16:00:03,306 - INFO: AutoErpPlan: Work With PlanDd:2202-20030064  PlanId:A220220030064
+2020-03-30 16:00:03,460 - INFO: AutoErpPlan: Work With PlanDd:2202-20030065  PlanId:A220220030065
+2020-03-30 16:00:03,590 - INFO: AutoErpPlan: Work With PlanDd:2202-20030066  PlanId:A220220030066
+2020-03-30 16:00:03,709 - INFO: AutoErpPlan: Work With PlanDd:2205-070374  PlanId:A2205070374
+2020-03-30 16:00:03,873 - INFO: AutoErpPlan: Work With PlanDd:2205-070375  PlanId:A2205070375
+2020-03-30 16:00:04,043 - INFO: AutoErpPlan: Work With PlanDd:2205-070376  PlanId:A2205070376
+2020-03-30 16:00:04,209 - INFO: AutoErpPlan: Work With PlanDd:2205-070379  PlanId:A2205070379
+2020-03-30 16:00:04,364 - INFO: AutoErpPlan: Work With PlanDd:2211-016469-1  PlanId:A2211016469-1
+2020-03-30 16:00:04,492 - INFO: AutoErpPlan: Work With PlanDd:2212-9000903  PlanId:A22129000903
+2020-03-30 16:00:04,607 - INFO: AutoErpPlan: Work With PlanDd:2212-9000904  PlanId:A22129000904
+2020-03-30 16:00:04,713 - INFO: AutoErpPlan: Work With PlanDd:2214-0695  PlanId:A22140695
+2020-03-30 16:00:04,809 - INFO: AutoErpPlan: Work With PlanDd:2214-0696  PlanId:A22140696
+2020-03-30 16:00:04,898 - INFO: AutoErpPlan: Work With PlanDd:2214-0697  PlanId:A22140697
+2020-03-30 16:00:04,988 - INFO: AutoErpPlan: Work With PlanDd:2214-0698  PlanId:A22140698
+2020-03-30 16:00:05,079 - INFO: AutoErpPlan: Work With PlanDd:2214-0699  PlanId:A22140699
+2020-03-30 16:00:05,170 - INFO: AutoErpPlan: Work Finished
+2020-03-30 16:00:32,982 - WARNING: Main_定时任务关闭

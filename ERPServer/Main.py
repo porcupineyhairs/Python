@@ -2,39 +2,38 @@ import sys
 from BaseHelper import Logger
 import datetime
 from apscheduler.schedulers.blocking import BlockingScheduler
-from ScheduleHelper.MOCTC2Y import MOCTC2YHelper
-from ScheduleHelper.GeneratePlan import GeneratePlanHelper
+from ScheduleHelper import MOCTC2YHelper, AutoErpPlanHelper
 
 loggerMain = Logger(sys.path[0] + '/Log/Main.log')
 scheduler = BlockingScheduler()
 
 # 领料完成发送信息
-moctc2y = MOCTC2YHelper(debug=False)
+moctc2y = MOCTC2YHelper(debug=False, host='192.168.0.99', logger=loggerMain)
 
 # 生成ERP计划
-generatePlan = GeneratePlanHelper(debug=True, logger=loggerMain, host='192.168.1.61')
+autoPlan = AutoErpPlanHelper(debug=False, host='192.168.0.99', logger=loggerMain)
 
 
-def mocMsgSend():
+def mocMsgWork():
 	try:
-		returnStr = moctc2y.work()
-		loggerMain.logger.info('MOCTC2Y: ' + str(returnStr))
+		moctc2y.work()
 	except Exception as e:
 		loggerMain.logger.error('MOCTC2Y: ' + str(e))
 
 
-def generatePlans():
+def autoPlanWork():
 	try:
-		generatePlan.work()
+		if not autoPlan.workingFlag:
+			autoPlan.work()
 	except Exception as e:
-		loggerMain.logger.error('GeneratePlan: ' + str(e))
+		loggerMain.logger.error('AutoErpPlan: ' + str(e))
 
 
 if __name__ == '__main__':
-	# scheduler.add_job(func=mocMsgSend, name='mocMsgSend', id='mocMsgSend', trigger='interval', minutes=20,
-	#                   start_date='2020-03-19 00:00:00')
-	scheduler.add_job(func=generatePlans, name='generatePlan', id='GeneratePlan', trigger='interval', minutes=1,
+	scheduler.add_job(func=mocMsgWork, name='MocMsgWork', id='MocMsgWork', trigger='interval', minutes=20,
 	                  start_date='2020-03-19 00:00:00')
+	scheduler.add_job(func=autoPlanWork, name='AutoErpPlan', id='AutoErpPlan', trigger='interval', minutes=30,
+	                  start_date='2020-03-30 00:00:00')
 
 	try:
 		loggerMain.logger.warning('Main_定时任务开始')
@@ -45,4 +44,3 @@ if __name__ == '__main__':
 		loggerMain.logger.warning('Main_定时任务关闭')
 	except Exception as e:
 		loggerMain.logger.error('Main:{}'.format(str(e)))
-

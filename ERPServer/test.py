@@ -1,21 +1,50 @@
-from ScheduleHelper.MOCTC2Y import MOCTC2YHelper
-from ScheduleHelper.GeneratePlan import GeneratePlanHelper, SCPlanHelper, CGPlanHelper, CPPlanHelper
+from ScheduleHelper import MOCTC2YHelper
+from ScheduleHelper import AutoErpPlan
+from SqlHelper import MsSqlHelper
 from BaseHelper import Logger
 import sys
 import os
 
 
-loggerMain = Logger(sys.path[0] + '/Log/Main.log')
+loggerTest = Logger(sys.path[0] + '/Log/test.log')
+
+
+def str_to_hex(s):
+	# return '00'.join([hex(ord(c)).replace('0x', '') for c in s]).upper()
+	returnStr = ''
+	for c in s:
+		strTmp = hex(ord(c)).replace('0x', '').upper()
+		print(strTmp)
+		print(len(strTmp))
+		if len(strTmp) == 2:
+			strTmp2 = strTmp + '00'
+		else:
+			print(str(strTmp[2:4]))
+			strTmp2 = strTmp[2:4] + strTmp[0:2]
+		returnStr += strTmp2
+	return returnStr
+
+
+def int_to_hex(i):
+	# return str(hex(i)).replace('0x', '').rjust(2, '0').upper()
+	returnStr = ''
+	strTmp = str(hex(i)).replace('0x', '').rjust(2, '0').upper()
+	if len(strTmp) == 2:
+		strTmp2 = strTmp + '00'
+	else:
+		print(str(strTmp[2:4]))
+		strTmp2 = strTmp[2:4] + strTmp[0:2]
+	returnStr += strTmp2
+	return returnStr
+
 
 if __name__ == '__main__':
 	# moctc2y = MOCTC2YHelper(debug=False)
 	# moctc2y.work()
 
-	# generatePlan = GeneratePlanHelper(debug=True, host='192.168.1.61')
-	# generatePlan.work()
-
-	scPlan = SCPlanHelper(debug=False, host='192.168.1.61')
-	cgPlan = CGPlanHelper(debug=False, host='192.168.1.61')
-	cpPlan = CPPlanHelper(debug=False, host='192.168.1.61')
-
-	cgPlan.work(td001='2201', td002='000001', td003='0001', planId='22010000010001', planVersion='0001')
+	mssql = MsSqlHelper(host='192.168.1.61', user='sa', passwd='comfortgroup2016{', database='COMFORT')
+	#
+	autoPlan = AutoErpPlan(host='192.168.1.61')
+	if not autoPlan.workingFlag:
+		autoPlan.work()
+	# autoPlan.test()

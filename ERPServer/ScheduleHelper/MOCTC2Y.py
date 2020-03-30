@@ -1,10 +1,14 @@
 from SqlHelper.MsSql import MsSqlHelper
 from BaseHelper.ErpMsg import MsgHelper
+from BaseHelper import Logger
+import sys
 
 
 class MOCTC2YHelper:
-	def __init__(self, debug=False):
+	def __init__(self, debug=False, host='192.168.0.99', logger=Logger(sys.path[0] + '/Log/MOCTC2Y.log')):
 		self.__debugMode = debug
+		self.__host = host
+		self.__logger = logger
 
 		self.__mssql = None
 		self.__erpMsg = None
@@ -14,8 +18,16 @@ class MOCTC2YHelper:
 		self.__creator = 'Robot'
 		self.__returnStr = None
 
+	def __log(self, string, mode='info'):
+		if mode == 'info':
+			self.__logger.logger.info('MOCTC2Y: {}'.format(string))
+		elif mode == 'error':
+			self.__logger.logger.error('MOCTC2Y: {}'.format(string))
+		elif mode == 'warning':
+			self.__logger.logger.warning('MOCTC2Y: {}'.format(string))
+
 	def work(self):
-		self.__mssql = MsSqlHelper(host='192.168.0.99', user='sa', passwd='comfortgroup2016{', database='COMFORT')
+		self.__mssql = MsSqlHelper(host=self.__host, user='sa', passwd='comfortgroup2016{', database='COMFORT')
 		self.__erpMsg = MsgHelper(debug=self.__debugMode)
 
 		self.__clean()
@@ -23,8 +35,9 @@ class MOCTC2YHelper:
 		if self.__getData is not None:
 			self.__returnStr = []
 			self.__setSendStr()
+			self.__log(str(self.__returnStr))
 		else:
-			self.__returnStr = ['没有获取到订单']
+			self.__log('没有获取到数据')
 			if self.__debugMode:
 				print('没有获取到数据')
 
@@ -33,7 +46,7 @@ class MOCTC2YHelper:
 
 		del self.__mssql
 		self.__mssql = None
-		return str(self.__returnStr)
+		# return str(self.__returnStr)
 
 	def __clean(self):
 		self.__getData = None
