@@ -5,3 +5,4 @@ from .urlMain import *
 from .urlDownload import *
 from .urlReport import *
 from .urlUser import *
+from .urlApi import *

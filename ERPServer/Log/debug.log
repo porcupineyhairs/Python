@@ -1,0 +1,76 @@
+2020-04-08 16:48:42,549 - INFO: AutoErpPlan: Work Start
+2020-04-08 16:48:42,794 - ERROR: AutoErpPlan: (102, b"Incorrect syntax near '1'.DB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20018, severity 15:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2020-04-08 16:48:42,795 - INFO: AutoErpPlan: Work Finished
+2020-04-08 16:50:29,524 - INFO: AutoErpPlan: Work Start
+2020-04-08 16:50:29,659 - INFO: AutoErpPlan: Work With PlanDd:2201-000001     0001  PlanId:A22010000010001
+2020-04-08 16:50:29,669 - INFO: AutoErpPlan: Update Work Flag - Title: 2201-000001     0001
+2020-04-08 16:50:29,683 - INFO: AutoErpPlan: Calculate PhList: [['10680101', 'TEST-ZYH']]
+2020-04-08 16:50:29,708 - INFO: AutoErpPlan: Insert Job BomCalculate: 品号 :10680101 - JobId: 20200408000003
+2020-04-08 16:51:36,250 - INFO: AutoErpPlan: Job Done: JobId:20200408000003
+2020-04-08 16:51:36,262 - INFO: AutoErpPlan: Insert Job PzCalculate: 品号: 10680101 - 配置: TEST-ZYH - JobId: 20200408000004
+2020-04-08 16:51:42,821 - INFO: AutoErpPlan: Job Done: JobId:20200408000004
+2020-04-08 16:51:42,830 - INFO: AutoErpPlan: Insert Job Generate Plan: 订单号: 2201-000001     0001
+2020-04-08 16:51:50,430 - INFO: AutoErpPlan: Job Done: JobId:20200408000005
+2020-04-08 16:51:50,443 - INFO: AutoErpPlan: Insert Job Layout Sc Plan: A22010000010001
+2020-04-08 16:51:55,001 - INFO: AutoErpPlan: Job Done: JobId:20200408000006
+2020-04-08 16:51:55,042 - INFO: AutoErpPlan: Insert Job Clean Plan: A22010000010001
+2020-04-08 16:51:59,096 - INFO: AutoErpPlan: Job Done: JobId:20200408000007
+2020-04-08 16:51:59,105 - INFO: AutoErpPlan: Update Done Flag - Title: 2201-000001     0001
+2020-04-08 16:51:59,109 - INFO: AutoErpPlan: Work With PlanDd:2201-000001     0002  PlanId:A22010000010002
+2020-04-08 16:51:59,118 - INFO: AutoErpPlan: Update Work Flag - Title: 2201-000001     0002
+2020-04-08 16:51:59,145 - INFO: AutoErpPlan: Calculate PhList: [['10710101', 'APR KMD黑 200S 新加坡日期标']]
+2020-04-08 16:51:59,156 - INFO: AutoErpPlan: Insert Job BomCalculate: 品号 :10710101 - JobId: 20200408000008
+2020-04-08 16:52:10,815 - INFO: AutoErpPlan: Job Done: JobId:20200408000008
+2020-04-08 16:52:10,827 - INFO: AutoErpPlan: Insert Job PzCalculate: 品号: 10710101 - 配置: APR KMD黑 200S 新加坡日期标 - JobId: 20200408000009
+2020-04-08 16:52:16,912 - INFO: AutoErpPlan: Job Done: JobId:20200408000009
+2020-04-08 16:52:16,926 - INFO: AutoErpPlan: Insert Job Generate Plan: 订单号: 2201-000001     0002
+2020-04-08 16:52:31,114 - INFO: AutoErpPlan: Job Done: JobId:20200408000010
+2020-04-08 16:52:31,127 - INFO: AutoErpPlan: Insert Job Layout Sc Plan: A22010000010002
+2020-04-08 16:52:36,188 - INFO: AutoErpPlan: Job Done: JobId:20200408000011
+2020-04-08 16:52:36,222 - INFO: AutoErpPlan: Insert Job Clean Plan: A22010000010002
+2020-04-08 16:52:40,777 - INFO: AutoErpPlan: Job Done: JobId:20200408000012
+2020-04-08 16:52:40,791 - INFO: AutoErpPlan: Update Done Flag - Title: 2201-000001     0002
+2020-04-08 16:52:40,795 - INFO: AutoErpPlan: Work With PlanDd:2201-000001     0003  PlanId:A22010000010003
+2020-04-08 16:52:40,806 - INFO: AutoErpPlan: Update Work Flag - Title: 2201-000001     0003
+2020-04-08 16:52:40,820 - INFO: AutoErpPlan: Calculate PhList: [['10690101', 'COM TKO KMD黑 120S 全黑扳手']]
+2020-04-08 16:52:40,831 - INFO: AutoErpPlan: Insert Job BomCalculate: 品号 :10690101 - JobId: 20200408000013
+2020-04-08 16:52:48,942 - INFO: AutoErpPlan: Job Done: JobId:20200408000013
+2020-04-08 16:52:48,955 - INFO: AutoErpPlan: Insert Job PzCalculate: 品号: 10690101 - 配置: COM TKO KMD黑 120S 全黑扳手 - JobId: 20200408000014
+2020-04-08 16:52:55,532 - INFO: AutoErpPlan: Job Done: JobId:20200408000014
+2020-04-08 16:52:55,577 - INFO: AutoErpPlan: Insert Job Generate Plan: 订单号: 2201-000001     0003
+2020-04-08 16:53:11,293 - INFO: AutoErpPlan: Job Done: JobId:20200408000015
+2020-04-08 16:53:11,305 - INFO: AutoErpPlan: Insert Job Layout Sc Plan: A22010000010003
+2020-04-08 16:53:16,379 - INFO: AutoErpPlan: Job Done: JobId:20200408000016
+2020-04-08 16:53:16,393 - INFO: AutoErpPlan: Insert Job Clean Plan: A22010000010003
+2020-04-08 16:53:20,453 - INFO: AutoErpPlan: Job Done: JobId:20200408000017
+2020-04-08 16:53:20,466 - INFO: AutoErpPlan: Update Done Flag - Title: 2201-000001     0003
+2020-04-08 16:53:20,469 - INFO: AutoErpPlan: Work With PlanDd:2201-000001     0004  PlanId:A22010000010004
+2020-04-08 16:53:20,477 - INFO: AutoErpPlan: Update Work Flag - Title: 2201-000001     0004
+2020-04-08 16:53:20,490 - INFO: AutoErpPlan: Calculate PhList: [['10710101', 'APR KMD黑 新加坡日期标']]
+2020-04-08 16:53:20,500 - INFO: AutoErpPlan: Insert Job BomCalculate: 品号 :10710101 - JobId: 20200408000018
+2020-04-08 16:53:26,075 - INFO: AutoErpPlan: Job Done: JobId:20200408000018
+2020-04-08 16:53:26,087 - INFO: AutoErpPlan: Insert Job PzCalculate: 品号: 10710101 - 配置: APR KMD黑 新加坡日期标 - JobId: 20200408000019
+2020-04-08 16:53:31,656 - INFO: AutoErpPlan: Job Done: JobId:20200408000019
+2020-04-08 16:53:31,671 - INFO: AutoErpPlan: Insert Job Generate Plan: 订单号: 2201-000001     0004
+2020-04-08 16:53:45,337 - INFO: AutoErpPlan: Job Done: JobId:20200408000020
+2020-04-08 16:53:45,349 - INFO: AutoErpPlan: Insert Job Layout Sc Plan: A22010000010004
+2020-04-08 16:53:50,418 - INFO: AutoErpPlan: Job Done: JobId:20200408000021
+2020-04-08 16:53:50,431 - INFO: AutoErpPlan: Insert Job Clean Plan: A22010000010004
+2020-04-08 16:53:54,491 - INFO: AutoErpPlan: Job Done: JobId:20200408000022
+2020-04-08 16:53:54,500 - INFO: AutoErpPlan: Update Done Flag - Title: 2201-000001     0004
+2020-04-08 16:53:54,503 - INFO: AutoErpPlan: Work With PlanDd:2201-000002     0001  PlanId:A22010000020001
+2020-04-08 16:53:54,515 - INFO: AutoErpPlan: Update Work Flag - Title: 2201-000002     0001
+2020-04-08 16:53:54,539 - INFO: AutoErpPlan: Calculate PhList: [['10680101', 'TEST-ZYH']]
+2020-04-08 16:53:54,552 - INFO: AutoErpPlan: Insert Job BomCalculate: 品号 :10680101 - JobId: 20200408000023
+2020-04-08 16:54:00,656 - INFO: AutoErpPlan: Job Done: JobId:20200408000023
+2020-04-08 16:54:00,666 - INFO: AutoErpPlan: Insert Job PzCalculate: 品号: 10680101 - 配置: TEST-ZYH - JobId: 20200408000024
+2020-04-08 16:54:07,252 - INFO: AutoErpPlan: Job Done: JobId:20200408000024
+2020-04-08 16:54:07,264 - INFO: AutoErpPlan: Insert Job Generate Plan: 订单号: 2201-000002     0001
+2020-04-08 16:54:25,491 - INFO: AutoErpPlan: Job Done: JobId:20200408000025
+2020-04-08 16:54:25,504 - INFO: AutoErpPlan: Insert Job Layout Sc Plan: A22010000020001
+2020-04-08 16:54:30,575 - INFO: AutoErpPlan: Job Done: JobId:20200408000026
+2020-04-08 16:54:30,589 - INFO: AutoErpPlan: Insert Job Clean Plan: A22010000020001
+2020-04-08 16:54:34,641 - INFO: AutoErpPlan: Job Done: JobId:20200408000027
+2020-04-08 16:54:34,652 - INFO: AutoErpPlan: Update Done Flag - Title: 2201-000002     0001
+2020-04-08 16:54:34,655 - INFO: AutoErpPlan: Not Found Order List!
+2020-04-08 16:54:34,656 - INFO: AutoErpPlan: Work Finished

@@ -32,7 +32,7 @@ def autoPlanWork():
 if __name__ == '__main__':
 	scheduler.add_job(func=mocMsgWork, name='MocMsgWork', id='MocMsgWork', trigger='interval', minutes=20,
 	                  start_date='2020-03-19 00:00:00')
-	scheduler.add_job(func=autoPlanWork, name='AutoErpPlan', id='AutoErpPlan', trigger='interval', minutes=30,
+	scheduler.add_job(func=autoPlanWork, name='AutoErpPlan', id='AutoErpPlan', trigger='interval', hours=1,
 	                  start_date='2020-03-30 00:00:00')
 
 	try:

@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>MainIndex</title>
-</head>
-<body>
-<h1> 测试中 </h1>
-<br>
-<h2><a href="download/222/你好.txt" target="_blank">下载文件</a></h2>
-<br>
-<h2><a href="redirect/user/login">用户登录</a></h2>
-<br>
-<h2><a href="redirect/main/table">表格</a></h2>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>MainIndex</title>
+        <script src="/static/js/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <img src="{{ imgFile }}"/>
+        <h1> 测试中 </h1>
+        <br>
+        <h2><a href="download/222/你好.txt" target="_blank">下载文件</a></h2>
+        <br>
+        <br>
+        <h2><a href="/main/table">表格</a></h2>
+        <br>
+        <h3>用户名：{{ user }}</h3>
+    </body>
 </html>
+<script type="text/javascript" src="/static/js/ajaxRefresh.js"></script>

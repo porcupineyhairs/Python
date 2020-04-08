@@ -13,7 +13,7 @@ def get_favicon_ico():
 # 主页
 @urlRoot.route('/', methods=['GET'])
 def webIp():
-	return render_template('index.html', ipAddr=str(request.remote_addr))
+	return render_template('urlRoot/index.html', ipAddr=str(request.remote_addr))
 
 
 @urlRoot.route('/redirect/<path:url>')

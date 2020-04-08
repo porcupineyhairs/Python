@@ -5,7 +5,7 @@ import sys
 
 
 class MOCTC2YHelper:
-	def __init__(self, debug=False, host='192.168.0.99', logger=Logger(sys.path[0] + '/Log/MOCTC2Y.log')):
+	def __init__(self, debug=False, host='192.168.0.99', logger=Logger(sys.path[0] + '/Log/debug.log')):
 		self.__debugMode = debug
 		self.__host = host
 		self.__logger = logger

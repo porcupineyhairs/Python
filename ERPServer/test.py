@@ -1,5 +1,5 @@
 from ScheduleHelper import MOCTC2YHelper
-from ScheduleHelper import AutoErpPlan
+from ScheduleHelper import AutoErpPlanHelper
 from SqlHelper import MsSqlHelper
 from BaseHelper import Logger
 import sys
@@ -42,9 +42,10 @@ if __name__ == '__main__':
 	# moctc2y = MOCTC2YHelper(debug=False)
 	# moctc2y.work()
 
-	mssql = MsSqlHelper(host='192.168.1.61', user='sa', passwd='comfortgroup2016{', database='COMFORT')
+	# mssql = MsSqlHelper(host='192.168.1.61', user='sa', passwd='comfortgroup2016{', database='COMFORT')
 	#
-	autoPlan = AutoErpPlan(host='192.168.1.61')
+	autoPlan = AutoErpPlanHelper(host='192.168.1.61')
 	if not autoPlan.workingFlag:
 		autoPlan.work()
 	# autoPlan.test()
+	# loggerTest.logger.info('aaaa')

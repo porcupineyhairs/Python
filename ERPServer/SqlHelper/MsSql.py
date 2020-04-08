@@ -48,6 +48,9 @@ class MsSqlHelper:
 		del self.__db
 		del self.__charset
 
+		self.__conn.close()
+		self.__cur.close()
+
 		del self.__conn
 		del self.__cur
 		del self.__sqlStr

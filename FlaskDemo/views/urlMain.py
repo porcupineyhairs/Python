@@ -1,5 +1,7 @@
 from flask import current_app, Blueprint, redirect, render_template, \
 	request, flash, session, url_for
+from modules.GlobalModules import CheckSession
+from modules.User.Login import getUserByToken
 
 
 urlMain = Blueprint('main', __name__)
@@ -12,7 +14,9 @@ def mainIndexRedirect():
 
 @urlMain.route('/index/', methods=['GET', 'POST'])
 def mainIndex():
-	return render_template('urlMain/index.html')
+	token = session.get('token')
+	user = getUserByToken(token)
+	return render_template('urlMain/index.html', imgFile='/static/img/error/head404.png', user=user)
 
 
 @urlMain.route('/table/', methods=['GET', 'POST'])
@@ -29,12 +33,15 @@ def mainTable():
 		pass
 
 
+@urlMain.route('/live/', methods=['GET'])
+def mainKeepLive():
+	token = session.get('token')
+	CheckSession.updateTokenTime(session=token)
+	return ''
+
+
 @urlMain.route('/index/download/<path:url>')
 def mainDownload(url):
 	url2 = url.replace('/', '-')
 	return redirect('/download/{}'.format(url2))
 
-
-@urlMain.route('/index/redirect/<path:url>')
-def mainRedirect(url):
-	return redirect('/' + url)

@@ -48,6 +48,9 @@ class MsSqlHelper:
 		del self.__db
 		del self.__charset
 
+		self.__conn.close()
+		self.__cur.close()
+
 		del self.__conn
 		del self.__cur
 		del self.__sqlStr
@@ -94,9 +97,9 @@ class MsSqlHelper:
 		# 根据SQL第一个关键字获取模式
 		self.__sqlMode = self.__sqlStr.lstrip().split(' ')[0].upper()
 		# 根据不同SQL关键字执行不同命令
-		if self.__sqlMode in ('SELECT', 'EXEC'):
+		if self.__sqlMode in ('SELECT', 'EXEC', 'IF'):
 			self.__sqlExecute()
-		elif self.__sqlMode in ('UPDATE', 'INSERT', 'DELETE'):
+		elif self.__sqlMode in ('UPDATE', 'INSERT', 'DELETE', 'TRUNCATE'):
 			self.__sqlCommit()
 		else:
 			raise MsSqlHelperException('Can Not Get Sql Mode, Please Check Sql Sentence. Sql: ' + self.__sqlStr)

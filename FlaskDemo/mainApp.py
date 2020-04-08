@@ -1,10 +1,9 @@
-import os
-from datetime import datetime, timedelta
+
 from flask import Flask, session
 from flask_admin import Admin
 from flask_bootstrap import Bootstrap
 from config import Config
-from views import urlRoot, urlClient, urlTest, urlDownload, urlReport, urlMain, urlUser
+from views import urlRoot, urlClient, urlTest, urlDownload, urlReport, urlMain, urlUser, urlApi
 
 
 app = Flask(__name__)
@@ -21,6 +20,7 @@ app.config.from_object(Config)
 
 # 注册其他网页url
 app.register_blueprint(urlRoot, url_prefix='/')
+app.register_blueprint(urlApi, url_prefix='/api')
 app.register_blueprint(urlTest, url_prefix='/test')
 app.register_blueprint(urlClient, url_prefix='/Client')
 app.register_blueprint(urlMain, url_prefix='/main')
@@ -30,4 +30,4 @@ app.register_blueprint(urlUser, url_prefix='/user')
 
 
 if __name__ == '__main__':
-	app.run(debug=app.config['DEBUG'], host=app.config['APP_HOST'], port=app.config['APP_PORT'])
+	app.run(debug=app.config['DEBUG'], host=app.config['APP_HOST'], port=app.config['APP_PORT'], threaded=True)
