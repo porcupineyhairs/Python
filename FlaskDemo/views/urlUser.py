@@ -1,6 +1,6 @@
 from flask import current_app, Blueprint, redirect, render_template, request, flash, session, url_for
 from datetime import timedelta
-from modules.User.Login import *
+from modules.User.UserLogin import *
 
 
 urlUser = Blueprint('user', __name__)

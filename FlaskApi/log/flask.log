@@ -1,0 +1,50 @@
+2020-04-10 11:01:30,954 - INFO - 127.0.0.1 - http://127.0.0.1:8901/ - DELETE - inData: {'key': '222', 'value': '111'} - outData: {'key': 'DELETE'}
+2020-04-10 11:10:26,800 - INFO - 127.0.0.1 - http://127.0.0.1:8901/ - DELETE - inData: {'key': '222', 'value': '111'} - outData: {'key': 'DELETE'}
+2020-04-10 11:11:30,506 - INFO - 127.0.0.1 - http://127.0.0.1:8901/ - DELETE - inData: {'key': '222', 'value': '111'} - outData: {'method': 'DELETE'}
+2020-04-10 11:14:26,775 - INFO - 127.0.0.1 - http://127.0.0.1:8901/ - LOCK - inData: {'key': '222', 'value': '111'} - outData: {'method': 'LOCK'}
+2020-04-10 11:14:32,832 - INFO - 127.0.0.1 - http://127.0.0.1:8901/ - UNLOCK - inData: {'key': '222', 'value': '111'} - outData: {'method': 'UNLOCK'}
+2020-04-10 11:16:10,050 - INFO - 127.0.0.1 - http://127.0.0.1:8901/ - UNLOCK - inData: {'key': '222', 'value': '111'} - outData: {'method': 'UNLOCK'}
+2020-04-10 11:23:40,611 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api/ - GET - inData: {'key': '222', 'value': '111'} - outData: {'book': '123'}
+2020-04-10 11:24:31,466 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api/ - GET - inData: {} - outData: {'book': '123'}
+2020-04-10 11:27:33,754 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api/ - GET - inData: {} - outData: {'book': '123'}
+2020-04-10 11:28:25,640 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api - POST - inData: {} - outData: {'book': '123'}
+2020-04-10 11:28:35,290 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api/ - POST - inData: {} - outData: {'book': '123'}
+2020-04-10 11:39:04,634 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api/ - POST - inData: {'test': 'yes'} - outData: {'book': '123'}
+2020-04-10 11:39:36,410 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api/ - POST - inData: {'test': 'yes'} - outData: {'book': '123'}
+2020-04-10 11:45:59,066 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api/ - POST - inData: {'test': 'yes'} - outData: {'book': '123'}
+2020-04-10 11:46:30,023 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api - POST - inData: {'test': 'yes'} - outData: {'book': '123', 'method': 'POST'}
+2020-04-10 11:46:59,915 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api/ - POST - inData: {'test': 'yes'} - outData: {'book': '123'}
+2020-04-10 11:47:04,863 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api - POST - inData: {'test': 'yes'} - outData: {'book': '123', 'method': 'POST'}
+2020-04-10 11:48:27,099 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api - POST - inData: {'test': 'yes'} - outData: {'book': '123', 'method': 'POST'}
+2020-04-10 11:49:01,026 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api - POST - inData: {'test': 'yes'} - outData: {'book': '123', 'method': 'POST', 'url': 'http://127.0.0.1:8901/api'}
+2020-04-10 11:49:05,057 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api/ - POST - inData: {'test': 'yes'} - outData: {'book': '123', 'url': 'http://127.0.0.1:8901/api/'}
+2020-04-10 11:49:10,424 - INFO - 127.0.0.1 - http://127.0.0.1:8901/api - POST - inData: {'test': 'yes'} - outData: {'book': '123', 'method': 'POST', 'url': 'http://127.0.0.1:8901/api'}
+2020-04-10 11:50:41,958 - INFO - 192.168.1.61 - http://192.168.1.60:8901/ - GET - inData: {'aa': 'bb'} - outData: {'method': 'GET'}
+2020-04-10 11:50:48,507 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api - GET - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'GET', 'url': 'http://192.168.1.60:8901/api'}
+2020-04-10 11:51:16,051 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api - GET - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'GET', 'url': 'http://192.168.1.60:8901/api'}
+2020-04-10 11:51:19,225 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api/ - GET - inData: {'aa': 'bb'} - outData: {'book': '123', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 11:51:22,780 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api - GET - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'GET', 'url': 'http://192.168.1.60:8901/api'}
+2020-04-10 11:51:58,895 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api/ - GET - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'GET', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 11:52:02,116 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api/ - GET - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'GET', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 11:52:08,341 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api/ - PATCH - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'PATCH', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 11:53:45,454 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api/ - VIEW - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 12:10:17,324 - ERROR - 192.168.1.61 - http://192.168.1.60:8901/api/ - VIEW - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 12:10:39,430 - ERROR - 192.168.1.61 - http://192.168.1.60:8901/api/ - VIEW - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 12:10:50,184 - ERROR - 192.168.1.61 - http://192.168.1.60:8901/api/ - VIEW - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 12:11:12,198 - ERROR - 192.168.1.61 - http://192.168.1.60:8901/api/ - VIEW - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 12:11:21,316 - WARNING - 192.168.1.61 - http://192.168.1.60:8901/api/ - VIEW - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 12:37:29,799 - WARNING - 192.168.1.61 - http://192.168.1.60:8901/api/ - VIEW - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 12:37:33,893 - WARNING - 192.168.1.61 - http://192.168.1.60:8901/api/ - VIEW - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 12:38:04,718 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api/ - VIEW - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 12:38:25,401 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api/ - VIEW - inData: None - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 12:39:36,466 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api/ - VIEW - inData: None - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 12:39:39,845 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api/ - VIEW - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 12:41:32,590 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api - VIEW - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api'}
+2020-04-10 13:05:00,935 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api/ - VIEW - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api/'}
+2020-04-10 13:05:06,746 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api - VIEW - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api'}
+2020-04-10 13:07:40,355 - INFO - 192.168.1.61 - http://192.168.1.60:8901/api - VIEW - inData: {'aa': 'bb'} - outData: {'book': '123', 'method': 'VIEW', 'url': 'http://192.168.1.60:8901/api'}
+2020-04-13 09:12:04,381 - INFO - 127.0.0.1 - http://127.0.0.1:8901/ - GET - inData: None - outData: {'method': 'GET'}
+2020-04-13 09:13:43,425 - INFO - 192.168.1.61 - https://192.168.1.60:8901/ - GET - inData: None - outData: {'method': 'GET'}
+2020-04-13 09:14:28,150 - INFO - 192.168.1.61 - https://192.168.1.60:8901/ - GET - inData: None - outData: {'method': 'GET'}
+2020-04-13 09:16:02,764 - INFO - 192.168.1.61 - https://192.168.1.60:8901/ - GET - inData: None - outData: {'method': 'GET'}
+2020-04-13 09:16:57,757 - INFO - 192.168.1.61 - https://192.168.1.60:8901/ - GET - inData: None - outData: {'method': 'GET'}

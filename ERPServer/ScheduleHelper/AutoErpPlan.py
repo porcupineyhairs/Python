@@ -74,6 +74,7 @@ class AutoErpPlanHelper:
 			self.__log(str(e), mode='error')
 
 		finally:
+			self.__resetWorkFlag()
 			self.workingFlag = False
 			self.__del()
 			self.__log('Work Finished')
@@ -83,41 +84,70 @@ class AutoErpPlanHelper:
 		# self.__lockPlan(planId='A2201000001')
 		print('Do Nothing')
 
+	def __resetWorkFlag(self):
+		__sqlStr = "UPDATE COMFORT.dbo.COPTD SET LRPFLAG='N' WHERE LRPFLAG='y' "
+		self.__mssql.sqlWork(__sqlStr)
+
 	def __work(self):
-		__sqlStrDd = "SELECT DISTINCT TOP 1 TD001+'-'+TD002+TD003 planDd, " \
-		             "'A'+TD001+RTRIM(TD002)+RTRIM(TD003) planId, COPTD.UDF12 " \
-		             "FROM COMFORT.dbo.COPTC " \
-		             "INNER JOIN COMFORT.dbo.COPTD ON TD001 = TC001 AND TD002 = TC002 " \
-		             "INNER JOIN COMFORT.dbo.INVMB ON MB001 = TD004 " \
-		             "WHERE 1=1 " \
-		             "AND COPTC.TC027 = 'Y' " \
-		             "AND NOT EXISTS(SELECT 1 FROM  COMFORT.dbo.MOCTA " \
-		             "    WHERE TA026 = TD001 AND TA027 = TD002 AND TA028 = TD003 ) " \
-		             "AND NOT EXISTS(SELECT 1 FROM  COMFORT.dbo.LRPLB " \
-		             "    WHERE LB002 = TD001 AND LB003 = TD002 AND LB004 = TD003 ) " \
-		             "AND COPTD.LRPFLAG = 'N' " \
-		             "AND COPTD.TD016 = 'N'" \
-		             "AND INVMB.MB025 NOT IN ('P')" \
-		             "AND COPTC.TC003 >= '20200401' " \
-		             "AND COPTC.TC001 NOT IN ('2215', '2216', '2217') " \
-		             "ORDER BY COPTD.UDF12, TD001+'-'+TD002+TD003 "
+		__sqlStrDd = "SELECT TOP 1 planDd, planId FROM V_GetAutoErpPlanOrderDetail ORDER BY UDF12, planDd "
 
 		__getDd = self.__mssql.sqlWork(__sqlStrDd)
 		if __getDd is not None:
 			for __getDdTmp in __getDd:
 				self.__log('Work With PlanDd:{planDd}  PlanId:{planId}'.format(planDd=__getDdTmp[0],
 				                                                               planId=__getDdTmp[1]))
-				self.__updateWorkFlagTitle(planDd=__getDdTmp[0])
+				self.__updateWorkFlagDetail(planDd=__getDdTmp[0])
 				__phList = self.__getPhList(__getDdTmp[0])
 				self.__calculate(__phList)
 				self.__generate(planDd=__getDdTmp[0], planId=__getDdTmp[1])
-				# self.__lockPlan(planId=__getDdTmp[1])
-				self.__layoutPlan(planId=__getDdTmp[1])
+				# self.__lockPlan(planId=__getDdTmp[1], planType=['sc'])
+				self.__layoutPlan(planId=__getDdTmp[1], planType=['sc'])
 				self.__cleanPlan(planId=__getDdTmp[1])
-				self.__updateDoneFlagTitle(planDd=__getDdTmp[0])
+				self.__updateDoneFlagDetail(planDd=__getDdTmp[0])
 		else:
 			self.workingFlag = False
 			self.__log('Not Found Order List!')
+
+	def __resetLrpFlag(self):
+		__sqlStr = "SELECT TD001+'-'+TD002+TD003, UDF12, LRPDATE FROM COMFORT.dbo.COPTD " \
+		           "WHERE LRPFALG='Y' AND UDF12>LRPDATE ORDER BY UDF12 "
+		__sqlStr2 = "UPDATE COMFORT.dbo.COPTD SET LRPFLAG='N' WHERE LRPFALG='Y' AND UDF12>LRPDATE ORDER BY UDF12 "
+		__get = self.__mssql.sqlWork(sqlStr=__sqlStr)
+		if __get is not None:
+			self.__log('Find reset list: {}'.format(str(__get)))
+			self.__mssql.sqlWork(__sqlStr2)
+
+	def __getJobId(self):
+		__sqlStr = "EXEC COMFORT.dbo.P_GETJOBID "
+		__getData = self.__mssql.sqlWork(__sqlStr)
+		if __getData is not None:
+			return __getData[0]
+		else:
+			raise AutoErpPlanHelperException('Can not get job Id, Please check the program!')
+
+	def __insertJob(self, jobName, jobOption, progName='', creator='Robot'):
+		__sqlStrIns = "INSERT INTO DSCSYS.dbo.JOBQUEUE ([JOBID], [SUBID], [COMPANYID], [USERID], [USEDALIAS], [JOBNAME], " \
+		              "[EXTNAME], [COMPROGID], [JOBOPTION], [GENTYPE], [GENSTATUS], [PRIORITY], [STATUS], [PROGRESS], " \
+		              "[DTREQUEST], [DTRECEIVE], [DTSCHEDULE], [DTSTART], [DTFINISH], [RESULT], [STYLE], [PROCESSER], " \
+		              "[FLAG], [NOTIFY]) " \
+		              "VALUES ('{jobId}', '{subId}', 'COMFORT', '{creator}', 'COMFORT', '{jobName}', '', " \
+		              "'{progName}', {hexStr}, 1, 1, 3, 'N', NULL, getdate(), getdate(), getdate(), " \
+		              "NULL, NULL, NULL, 'B', '', 1, '');"
+
+		progName = jobName + 'S.Class1' if progName == '' else progName
+
+		__jobId = []
+
+		try:
+			__jobId = self.__getJobId()
+			self.__mssql.sqlWork(__sqlStrIns.format(hexStr=jobOption, jobId=__jobId[0], subId=__jobId[1],
+			                                        creator=creator, jobName=jobName, progName=progName))
+		except:
+			__jobId = self.__getJobId()
+			self.__mssql.sqlWork(__sqlStrIns.format(hexStr=jobOption, jobId=__jobId[0], subId=__jobId[1],
+			                                        creator=creator, jobName=jobName, progName=progName))
+
+		return __jobId[0]
 
 	def __getPhList(self, dd):
 		__sqlStr = "SELECT DISTINCT RTRIM(TD004), RTRIM(TD053) FROM COMFORT.dbo.COPTD " \
@@ -148,45 +178,30 @@ class AutoErpPlanHelper:
 			raise AutoErpPlanHelperException('BOM Calculate: Type Of Parameter ph Not in Process List, Please Check It!')
 
 	def __bomSimpleCalculate(self, ph):
-		__sqlStrIns = "INSERT INTO DSCSYS.dbo.JOBQUEUE ([JOBID], [SUBID], [COMPANYID], [USERID], [USEDALIAS], [JOBNAME], " \
-		              "[EXTNAME], [COMPROGID], [JOBOPTION], [GENTYPE], [GENSTATUS], [PRIORITY], [STATUS], [PROGRESS], " \
-		              "[DTREQUEST], [DTRECEIVE], [DTSCHEDULE], [DTSTART], [DTFINISH], [RESULT], [STYLE], [PROCESSER], " \
-		              "[FLAG], [NOTIFY]) " \
-		              "VALUES ('{jobId}', '{subId}', 'COMFORT', 'Robot', 'COMFORT', 'BOMB05 ', '', " \
-		              "'BOMB05S.Class1', {hexStr}, 1, 1, 3, 'N', NULL, getdate(), getdate(), getdate(), " \
-		              "NULL, NULL, NULL, 'B', '', 1, '');"
+		hexStr = "0x44532056415249414E54202030313030380100000C2000000100000000000000010000000C2000000100000001000000" \
+		         "030000000C20000001000000000000000100000008000000060000000990E9623B4EF64EC154F753080000000400000073" \
+		         "007000300031000C20000001000000000000000100000008000000070000001F7510624C006F0067008765636808000000" \
+		         "06000000630068006B004C006F0067000C20000001000000000000000100000008000000040000005C4F1A4EE5651F6708" \
+		         "0000000B000000650064005000720069006E00740044006100740065000C2000000100000001000000030000000C200000" \
+		         "0100000000000000020000000800000001000000040008000000{phLen}0000{ph}08000000{phLen}0000{ph}08000000" \
+		         "010000004E000800000000000000"
 
-		__hexStr = "0x44532056415249414E54202030313030380100000C2000000100000000000000010000000C2000000100000001000000" \
-		           "030000000C20000001000000000000000100000008000000060000000990E9623B4EF64EC154F753080000000400000073" \
-		           "007000300031000C20000001000000000000000100000008000000070000001F7510624C006F0067008765636808000000" \
-		           "06000000630068006B004C006F0067000C20000001000000000000000100000008000000040000005C4F1A4EE5651F6708" \
-		           "0000000B000000650064005000720069006E00740044006100740065000C2000000100000001000000030000000C200000" \
-		           "0100000000000000020000000800000001000000040008000000{phLen}0000{ph}08000000{phLen}0000{ph}08000000" \
-		           "010000004E000800000000000000"
-		__jobId = self.__getJobId()
 		phStr = self.__str_to_hex(ph)
 		phLenStr = self.__int_to_hex(len(ph))
-		self.__mssql.sqlWork(__sqlStrIns.format(hexStr=__hexStr.format(ph=phStr, phLen=phLenStr),
-		                                        jobId=__jobId[0], subId=__jobId[1]))
-		self.__log('Insert Job BomCalculate: {}'.format('品号 :' + str(ph) + ' - JobId: ' + str(__jobId[0])))
-		return __jobId[0]
+
+		__jobId = self.__insertJob(jobName='BOMB05', jobOption=hexStr.format(ph=phStr, phLen=phLenStr))
+
+		self.__log('Insert Job BomCalculate: {}'.format('品号 :' + str(ph) + ' - JobId: ' + str(__jobId)))
+		return __jobId
 
 	def __bomMultiCalculate(self, ph):
-		__sqlStrIns = "INSERT INTO DSCSYS.dbo.JOBQUEUE ([JOBID], [SUBID], [COMPANYID], [USERID], [USEDALIAS], [JOBNAME], " \
-		              "[EXTNAME], [COMPROGID], [JOBOPTION], [GENTYPE], [GENSTATUS], [PRIORITY], [STATUS], [PROGRESS], " \
-		              "[DTREQUEST], [DTRECEIVE], [DTSCHEDULE], [DTSTART], [DTFINISH], [RESULT], [STYLE], [PROCESSER], " \
-		              "[FLAG], [NOTIFY]) " \
-		              "VALUES ('{jobId}', '{subId}', 'COMFORT', 'Robot', 'COMFORT', 'BOMB05 ', '', " \
-		              "'BOMB05S.Class1', {hexStr}, 1, 1, 3, 'N', NULL, getdate(), getdate(), getdate(), " \
-		              "NULL, NULL, NULL, 'B', '', 1, '');"
-
-		__hexStr = "0x44532056415249414E54202030313030380100000C2000000100000000000000010000000C2000000100000001000000" \
-		           "030000000C20000001000000000000000100000008000000060000000990E9623B4EF64EC154F753080000000400000073" \
-		           "007000300031000C20000001000000000000000100000008000000070000001F7510624C006F0067008765636808000000" \
-		           "06000000630068006B004C006F0067000C20000001000000000000000100000008000000040000005C4F1A4EE5651F6708" \
-		           "0000000B000000650064005000720069006E00740044006100740065000C2000000100000001000000030000000C200000" \
-		           "0100000000000000020000000800000001000000040008000000{phLen}0000{ph}08000000{phLen}0000{ph}08000000" \
-		           "010000004E000800000000000000"
+		hexStr = "0x44532056415249414E54202030313030380100000C2000000100000000000000010000000C2000000100000001000000" \
+		         "030000000C20000001000000000000000100000008000000060000000990E9623B4EF64EC154F753080000000400000073" \
+		         "007000300031000C20000001000000000000000100000008000000070000001F7510624C006F0067008765636808000000" \
+		         "06000000630068006B004C006F0067000C20000001000000000000000100000008000000040000005C4F1A4EE5651F6708" \
+		         "0000000B000000650064005000720069006E00740044006100740065000C2000000100000001000000030000000C200000" \
+		         "0100000000000000020000000800000001000000040008000000{phLen}0000{ph}08000000{phLen}0000{ph}08000000" \
+		         "010000004E000800000000000000"
 
 		while len(ph) > 0:
 			if len(ph) > 1:
@@ -194,13 +209,13 @@ class AutoErpPlanHelper:
 			else:
 				pass
 
-		__jobId = self.__getJobId()
 		phStr = self.__str_to_hex(ph)
 		phLenStr = self.__int_to_hex(len(ph))
-		self.__mssql.sqlWork(__sqlStrIns.format(hexStr=__hexStr.format(ph=phStr, phLen=phLenStr),
-		                                        jobId=__jobId[0], subId=__jobId[1]))
-		self.__log('Insert Job BomCalculate: {}'.format('品号:' + str(ph) + ' - JobId:' + str(__jobId[0])))
-		return __jobId[0]
+
+		__jobId = self.__insertJob(jobName='BOMB05', jobOption=hexStr.format(ph=phStr, phLen=phLenStr))
+
+		self.__log('Insert Job BomCalculate: {}'.format('品号:' + str(ph) + ' - JobId:' + str(__jobId)))
+		return __jobId
 
 	def __pzCalculate(self, ph):
 		if type(ph) == "":
@@ -211,48 +226,29 @@ class AutoErpPlanHelper:
 			raise AutoErpPlanHelperException('PZ Calculate: Type of parameter ph not in process list, Please check it!')
 
 	def __pzSimpleCalculate01(self, ph, pz):
-		__sqlStrIns = "INSERT INTO DSCSYS.dbo.JOBQUEUE ([JOBID], [SUBID], [COMPANYID], [USERID], [USEDALIAS], [JOBNAME], " \
-		              "[EXTNAME], [COMPROGID], [JOBOPTION], [GENTYPE], [GENSTATUS], [PRIORITY], [STATUS], [PROGRESS], " \
-		              "[DTREQUEST], [DTRECEIVE], [DTSCHEDULE], [DTSTART], [DTFINISH], [RESULT], [STYLE], [PROCESSER], " \
-		              "[FLAG], [NOTIFY]) " \
-		              "VALUES ('{jobId}', '{subId}', 'COMFORT', 'Robot', 'COMFORT', 'COPAB01 ', '', " \
-		              "'COPAB01S.Class1', {hexStr}, 1, 1, 3, 'N', NULL, getdate(), getdate(), getdate(), " \
-		              "NULL, NULL, NULL, 'B', '', 1, '');"
-
 		phStr = self.__str_to_hex(ph)
 		phLenStr = self.__int_to_hex(len(ph))
 		pzStr = self.__str_to_hex(pz)
 		pzLenStr = self.__int_to_hex(len(pz))
 
-		__hexStr = "0x44532056415249414E54202030313030740100000C2000000100000000000000010000000C2000000100000001000000" \
-		           "040000000C2000000100000000000000010000000800000002000000C154F753080000000400000065006400300031000C" \
-		           "20000001000000000000000100000008000000060000000990E9624D916E7FB96548680800000004000000730070003000" \
-		           "31000C20000001000000000000000100000008000000070000001F7510624C006F00670087656368080000000600000063" \
-		           "0068006B004C006F0067000C20000001000000000000000100000008000000040000005C4F1A4EE5651F67080000000B00" \
-		           "0000650064005000720069006E00740044006100740065000C20000001000000010000000400000008000000{phLen}000" \
-		           "0{ph}0C200000010000000000000001000000080000000100000005000C20000001000000000000000000000008000000" \
-		           "{pzLen}0000{pz}08000000010000004E000800000000000000"
+		hexStr = "0x44532056415249414E54202030313030740100000C2000000100000000000000010000000C2000000100000001000000" \
+		         "040000000C2000000100000000000000010000000800000002000000C154F753080000000400000065006400300031000C" \
+		         "20000001000000000000000100000008000000060000000990E9624D916E7FB96548680800000004000000730070003000" \
+		         "31000C20000001000000000000000100000008000000070000001F7510624C006F00670087656368080000000600000063" \
+		         "0068006B004C006F0067000C20000001000000000000000100000008000000040000005C4F1A4EE5651F67080000000B00" \
+		         "0000650064005000720069006E00740044006100740065000C20000001000000010000000400000008000000{phLen}000" \
+		         "0{ph}0C200000010000000000000001000000080000000100000005000C20000001000000000000000000000008000000" \
+		         "{pzLen}0000{pz}08000000010000004E000800000000000000"
 
-		__jobId = self.__getJobId()
-
-		self.__mssql.sqlWork(__sqlStrIns.format(hexStr=__hexStr.format(ph=phStr, phLen=phLenStr, pz=pzStr,
-		                                                               pzLen=pzLenStr),
-		                                        jobId=__jobId[0], subId=__jobId[1]))
+		__jobId = self.__insertJob(jobName='COPAB01', jobOption=hexStr.format(ph=phStr, phLen=phLenStr, pz=pzStr,
+		                                                                      pzLen=pzLenStr))
 
 		self.__log('Insert Job PzCalculate: {}'.format('品号: ' + str(ph) + ' - 配置: ' + str(pz) + ' - JobId: '
-		                                               + str(__jobId[0])))
+		                                               + str(__jobId)))
 
-		return __jobId[0]
+		return __jobId
 
 	def __pzSimpleCalculate02(self, ph0):
-		__sqlStrIns = "INSERT INTO DSCSYS.dbo.JOBQUEUE ([JOBID], [SUBID], [COMPANYID], [USERID], [USEDALIAS], [JOBNAME], " \
-		              "[EXTNAME], [COMPROGID], [JOBOPTION], [GENTYPE], [GENSTATUS], [PRIORITY], [STATUS], [PROGRESS], " \
-		              "[DTREQUEST], [DTRECEIVE], [DTSCHEDULE], [DTSTART], [DTFINISH], [RESULT], [STYLE], [PROCESSER], " \
-		              "[FLAG], [NOTIFY]) " \
-		              "VALUES ('{jobId}', '{subId}', 'COMFORT', 'Robot', 'COMFORT', 'COPAB02 ', '', " \
-		              "'COPAB02S.Class1', {hexStr}, 1, 1, 3, 'N', NULL, getdate(), getdate(), getdate(), " \
-		              "NULL, NULL, NULL, 'B', '', 1, '');"
-
 		__sqlStrFind = "SELECT RTRIM(MB001), RTRIM(MB002), RTRIM(MB003), RTRIM(MB004) " \
 		               "FROM COMFORT.dbo.INVMB WHERE MB001 = '{ph}' "
 
@@ -266,36 +262,25 @@ class AutoErpPlanHelper:
 		dwStr = self.__str_to_hex(dw)
 		dwLenStr = self.__int_to_hex(len(dw))
 
-		__hexStr = "0x44532056415249414E54202030313030CA0100000C2000000100000000000000010000000C2000000100000001000000" \
-		           "040000000C20000001000000000000000100000008000000040000000990E962C154F75308000000040000007300700030" \
-		           "0031000C20000001000000000000000100000008000000070000000990E96242004F004D00E5651F670800000004000000" \
-		           "73007000300032000C20000001000000000000000100000008000000070000001F7510624C006F00670087656368080000" \
-		           "0006000000630068006B004C006F0067000C20000001000000000000000100000008000000040000005C4F1A4EE5651F67" \
-		           "080000000B000000650064005000720069006E00740044006100740065000C2000000100000001000000040000000C2000" \
-		           "00010000000000000001000000080000000100000005000C20000001000000000000000300000008000000{phLen}0000" \
-		           "{ph}08000000{pmLen}0000{pm}08000000{ggLen}0000{gg}08000000{dwLen}0000{dw}0C20000001000000000000000" \
-		           "20000000800000001000000040008000000000000000800000000000000080000000100000059000800000000000000"
+		hexStr = "0x44532056415249414E54202030313030CA0100000C2000000100000000000000010000000C2000000100000001000000" \
+		         "040000000C20000001000000000000000100000008000000040000000990E962C154F75308000000040000007300700030" \
+		         "0031000C20000001000000000000000100000008000000070000000990E96242004F004D00E5651F670800000004000000" \
+		         "73007000300032000C20000001000000000000000100000008000000070000001F7510624C006F00670087656368080000" \
+		         "0006000000630068006B004C006F0067000C20000001000000000000000100000008000000040000005C4F1A4EE5651F67" \
+		         "080000000B000000650064005000720069006E00740044006100740065000C2000000100000001000000040000000C2000" \
+		         "00010000000000000001000000080000000100000005000C20000001000000000000000300000008000000{phLen}0000" \
+		         "{ph}08000000{pmLen}0000{pm}08000000{ggLen}0000{gg}08000000{dwLen}0000{dw}0C20000001000000000000000" \
+		         "20000000800000001000000040008000000000000000800000000000000080000000100000059000800000000000000"
 
-		__jobId = self.__getJobId()
+		__jobId = self.__insertJob(jobName='COPAB02', jobOption=hexStr.format(ph=phStr, phLen=phLenStr, pm=pmStr,
+		                                                                      pmLen=pmLenStr, gg=ggStr, ggLen=ggLenStr,
+		                                                                      dw=dwStr, dwLen=dwLenStr))
 
-		self.__mssql.sqlWork(__sqlStrIns.format(hexStr=__hexStr.format(ph=phStr, phLen=phLenStr, pm=pmStr,
-		                                                               pmLen=pmLenStr, gg=ggStr, ggLen=ggLenStr,
-		                                                               dw=dwStr, dwLen=dwLenStr),
-		                                        jobId=__jobId[0], subId=__jobId[1]))
+		self.__log('Insert Job PzCalculate: {}'.format('品号:' + str(ph) + ' - JobId:' + str(__jobId)))
 
-		self.__log('Insert Job PzCalculate: {}'.format('品号:' + str(ph) + ' - JobId:' + str(__jobId[0])))
-
-		return __jobId[0]
+		return __jobId
 
 	def __pzMultiCalculate02(self, ph0):
-		__sqlStrIns = "INSERT INTO DSCSYS.dbo.JOBQUEUE ([JOBID], [SUBID], [COMPANYID], [USERID], [USEDALIAS], [JOBNAME], " \
-		              "[EXTNAME], [COMPROGID], [JOBOPTION], [GENTYPE], [GENSTATUS], [PRIORITY], [STATUS], [PROGRESS], " \
-		              "[DTREQUEST], [DTRECEIVE], [DTSCHEDULE], [DTSTART], [DTFINISH], [RESULT], [STYLE], [PROCESSER], " \
-		              "[FLAG], [NOTIFY]) " \
-		              "VALUES ('{jobId}', '{subId}', 'COMFORT', 'Robot', 'COMFORT', 'COPAB02 ', '', " \
-		              "'COPAB02S.Class1', {hexStr}, 1, 1, 3, 'N', NULL, getdate(), getdate(), getdate(), " \
-		              "NULL, NULL, NULL, 'B', '', 1, '');"
-
 		__sqlStrFind = "SELECT RTRIM(MB001), RTRIM(MB002), RTRIM(MB003), RTRIM(MB004) " \
 		               "FROM COMFORT.dbo.INVMB WHERE MB001 = '{ph}' "
 
@@ -309,7 +294,7 @@ class AutoErpPlanHelper:
 		dwStr = self.__str_to_hex(dw)
 		dwLenStr = self.__int_to_hex(len(dw))
 
-		__hexStr = "0x44532056415249414E54202030313030CA0100000C2000000100000000000000010000000C2000000100000001000000" \
+		hexStr = "0x44532056415249414E54202030313030CA0100000C2000000100000000000000010000000C2000000100000001000000" \
 		           "040000000C20000001000000000000000100000008000000040000000990E962C154F75308000000040000007300700030" \
 		           "0031000C20000001000000000000000100000008000000070000000990E96242004F004D00E5651F670800000004000000" \
 		           "73007000300032000C20000001000000000000000100000008000000070000001F7510624C006F00670087656368080000" \
@@ -319,42 +304,13 @@ class AutoErpPlanHelper:
 		           "{ph}08000000{pmLen}0000{pm}08000000{ggLen}0000{gg}08000000{dwLen}0000{dw}0C20000001000000000000000" \
 		           "20000000800000001000000040008000000000000000800000000000000080000000100000059000800000000000000"
 
-		__jobId = self.__getJobId()
+		__jobId = self.__insertJob(jobName='COPAB02', jobOption=hexStr.format(ph=phStr, phLen=phLenStr, pm=pmStr,
+		                                                                      pmLen=pmLenStr, gg=ggStr, ggLen=ggLenStr,
+		                                                                      dw=dwStr, dwLen=dwLenStr))
 
-		self.__mssql.sqlWork(__sqlStrIns.format(hexStr=__hexStr.format(ph=phStr, phLen=phLenStr, pm=pmStr,
-		                                                               pmLen=pmLenStr, gg=ggStr, ggLen=ggLenStr,
-		                                                               dw=dwStr, dwLen=dwLenStr),
-		                                        jobId=__jobId[0], subId=__jobId[1]))
+		self.__log('Insert Job PzCalculate: {}'.format('品号:' + str(ph) + ' - JobId:' + str(__jobId)))
 
-		self.__log('Insert Job PzCalculate: {}'.format('品号:' + str(ph) + ' - JobId:' + str(__jobId[0])))
-
-		return __jobId[0]
-
-	def __getJobId(self):
-		__sqlStr = "EXEC COMFORT.dbo.P_GETJOBID "
-		__getData = self.__mssql.sqlWork(__sqlStr)
-		if __getData is not None:
-			return __getData[0]
-		else:
-			raise AutoErpPlanHelperException('Can not get job Id, Please check the program!')
-
-	def __insertJob(self, jobName, jobOption, progName='', creator='Robot'):
-		__sqlStrIns = "INSERT INTO DSCSYS.dbo.JOBQUEUE ([JOBID], [SUBID], [COMPANYID], [USERID], [USEDALIAS], [JOBNAME], " \
-		              "[EXTNAME], [COMPROGID], [JOBOPTION], [GENTYPE], [GENSTATUS], [PRIORITY], [STATUS], [PROGRESS], " \
-		              "[DTREQUEST], [DTRECEIVE], [DTSCHEDULE], [DTSTART], [DTFINISH], [RESULT], [STYLE], [PROCESSER], " \
-		              "[FLAG], [NOTIFY]) " \
-		              "VALUES ('{jobId}', '{subId}', 'COMFORT', '{creator}', 'COMFORT', '{jobName}', '', " \
-		              "'{progName}', {hexStr}, 1, 1, 3, 'N', NULL, getdate(), getdate(), getdate(), " \
-		              "NULL, NULL, NULL, 'B', '', 1, '');"
-
-		progName = jobName + 'S.Class1' if progName == '' else progName
-
-		__jobId = self.__getJobId()
-
-		self.__mssql.sqlWork(__sqlStrIns.format(hexStr=jobOption, jobId=__jobId[0], subId=__jobId[1],
-		                                        creator=creator, jobName=jobName, progName=progName))
-
-		return __jobId[0]
+		return __jobId
 
 	def __checkJobDone(self, jobId):
 		__sqlStr = "SELECT JOBID FROM DSCSYS.dbo.JOBQUEUE WHERE JOBID = '{jobId}' AND STATUS != 'D' "
@@ -424,23 +380,19 @@ class AutoErpPlanHelper:
 		self.__log('Insert Job Generate Plan: 订单号: {}'.format(str(planDd)))
 		return __jobId
 
-	def __lockPlan(self, planId, planVer='0001'):
-		planId2 = planId.ljust(20, ' ')
-		__jobId = self.__lockScPlan(planId=planId2, planVer=planVer)
-		self.__checkJobDone(__jobId)
-		# __jobId = self.__lockCgPlan(planId=planId2, planVer=planVer)
-		# self.__checkJobDone(__jobId)
-		self.__log('Lock Plan Job Done: PlanId: {}'.format(planId))
+	def __lockPlan(self, planId, planVer='0001', planType=None):
+		if planType is None:
+			self.__log(mode='error', string='Func lockPlan lack of param planType')
+		else:
+			planId2 = planId.ljust(20, ' ')
+			if 'sc' in planType:
+				__jobId = self.__lockScPlan(planId=planId2, planVer=planVer)
+				self.__checkJobDone(__jobId)
+			if 'cg' in planType:
+				__jobId = self.__lockCgPlan(planId=planId2, planVer=planVer)
+				self.__checkJobDone(__jobId)
 
 	def __lockScPlan(self, planId, planVer):
-		__sqlStrIns = "INSERT INTO DSCSYS.dbo.JOBQUEUE ([JOBID], [SUBID], [COMPANYID], [USERID], [USEDALIAS], [JOBNAME], " \
-		              "[EXTNAME], [COMPROGID], [JOBOPTION], [GENTYPE], [GENSTATUS], [PRIORITY], [STATUS], [PROGRESS], " \
-		              "[DTREQUEST], [DTRECEIVE], [DTSCHEDULE], [DTSTART], [DTFINISH], [RESULT], [STYLE], [PROCESSER], " \
-		              "[FLAG], [NOTIFY]) " \
-		              "VALUES ('{jobId}', '{subId}', 'COMFORT', 'Robot', 'COMFORT', 'LRPB02 ', '', " \
-		              "'LRPB02S.Class1', {hexStr}, 1, 1, 3, 'N', NULL, getdate(), getdate(), getdate(), " \
-		              "NULL, NULL, NULL, 'B', '', 1, '');"
-
 		hexStr = "0x44532056415249414E54202030313030AE0400000C2000000100000000000000010000000C20000001000000010000000E" \
 		         "0000000C20000001000000000000000100000008000000040000000990E962C154F753080000000400000073007000300031" \
 		         "000C20000001000000000000000100000008000000040000000990E962E55D8253080000000400000065006400300032000C" \
@@ -468,23 +420,12 @@ class AutoErpPlanHelper:
 		planIdStr = self.__str_to_hex(str(planId))
 		planVerStr = self.__str_to_hex(str(planVer))
 
-		__jobId = self.__getJobId()
-
-		self.__mssql.sqlWork(__sqlStrIns.format(hexStr=hexStr.format(planId=planIdStr, planVer=planVerStr),
-		                                        jobId=__jobId[0], subId=__jobId[1]))
+		__jobId = self.__insertJob(jobName='LRPB02', jobOption=hexStr.format(planId=planIdStr, planVer=planVerStr))
 
 		self.__log('Insert Job Lock SC Plan: {}'.format(str(planId)))
-		return __jobId[0]
+		return __jobId
 
 	def __lockCgPlan(self, planId, planVer):
-		__sqlStrIns = "INSERT INTO DSCSYS.dbo.JOBQUEUE ([JOBID], [SUBID], [COMPANYID], [USERID], [USEDALIAS], [JOBNAME], " \
-		              "[EXTNAME], [COMPROGID], [JOBOPTION], [GENTYPE], [GENSTATUS], [PRIORITY], [STATUS], [PROGRESS], " \
-		              "[DTREQUEST], [DTRECEIVE], [DTSCHEDULE], [DTSTART], [DTFINISH], [RESULT], [STYLE], [PROCESSER], " \
-		              "[FLAG], [NOTIFY]) " \
-		              "VALUES ('{jobId}', '{subId}', 'COMFORT', 'Robot', 'COMFORT', 'LRPB04 ', '', " \
-		              "'LRPB04S.Class1', {hexStr}, 1, 1, 3, 'N', NULL, getdate(), getdate(), getdate(), " \
-		              "NULL, NULL, NULL, 'B', '', 1, '');"
-
 		hexStr = "0x44532056415249414E54202030313030B00300000C2000000100000000000000010000000C20000001000000010000000A" \
 		         "0000000C20000001000000000000000100000008000000040000000990E962C154F753080000000400000073007000300031" \
 		         "000C20000001000000000000000100000008000000040000000990E962E55D8253080000000400000065006400300032000C" \
@@ -507,29 +448,23 @@ class AutoErpPlanHelper:
 		planIdStr = self.__str_to_hex(str(planId))
 		planVerStr = self.__str_to_hex(str(planVer))
 
-		__jobId = self.__getJobId()
-
-		self.__mssql.sqlWork(__sqlStrIns.format(hexStr=hexStr.format(planId=planIdStr, planVer=planVerStr),
-		                                        jobId=__jobId[0], subId=__jobId[1]))
+		__jobId = self.__insertJob(jobName='LRPB04', jobOption=hexStr.format(planId=planIdStr, planVer=planVerStr))
 
 		self.__log('Insert Job Lock CG Plan: {}'.format(str(planId)))
-		return __jobId[0]
+		return __jobId
 
-	def __layoutPlan(self, planId, planVer='0001'):
-		__jobId = self.__layoutScPlan(planId=planId, planVer=planVer)
-		self.__checkJobDone(__jobId)
-		# __jobId = self.__layoutCgPlan(planId=planId, planVer=planVer)
-		# self.__checkJobDone(__jobId)
+	def __layoutPlan(self, planId, planVer='0001', planType=None):
+		if planType is None:
+			self.__log(mode='error', string='Func layoutPlan lack of param planType')
+		else:
+			if 'sc' in planType:
+				__jobId = self.__layoutScPlan(planId=planId, planVer=planVer)
+				self.__checkJobDone(__jobId)
+			if 'cg' in planType:
+				__jobId = self.__layoutCgPlan(planId=planId, planVer=planVer)
+				self.__checkJobDone(__jobId)
 
 	def __layoutScPlan(self, planId, planVer):
-		__sqlStrIns = "INSERT INTO DSCSYS.dbo.JOBQUEUE ([JOBID], [SUBID], [COMPANYID], [USERID], [USEDALIAS], [JOBNAME], " \
-		              "[EXTNAME], [COMPROGID], [JOBOPTION], [GENTYPE], [GENSTATUS], [PRIORITY], [STATUS], [PROGRESS], " \
-		              "[DTREQUEST], [DTRECEIVE], [DTSCHEDULE], [DTSTART], [DTFINISH], [RESULT], [STYLE], [PROCESSER], " \
-		              "[FLAG], [NOTIFY]) " \
-		              "VALUES ('{jobId}', '{subId}', 'COMFORT', 'Robot', 'COMFORT', 'LRPMB03 ', '', " \
-		              "'LRPMB03S.Class1', {hexStr}, 1, 1, 3, 'N', NULL, getdate(), getdate(), getdate(), " \
-		              "NULL, NULL, NULL, 'B', '', 1, '');"
-
 		hexStr = "0x44532056415249414E54202030313030C20500000C2000000100000000000000010000000C200000010000000100000011" \
 		         "0000000C20000001000000000000000100000008000000040000000990E962C154F753080000000400000073007000300031" \
 		         "000C20000001000000000000000100000008000000050000000990E9628C5BE55DE565080000000400000073007000300032" \
@@ -565,13 +500,11 @@ class AutoErpPlanHelper:
 		planVerStr = self.__str_to_hex(str(planVer))
 		dateStr = self.__str_to_hex(str(dt.now().strftime('%Y%m%d')))
 
-		__jobId = self.__getJobId()
+		__jobId = self.__insertJob(jobName='LRPMB03', jobOption=hexStr.format(planId=planIdStr, planVer=planVerStr,
+		                                                                      dateStr=dateStr))
 
-		self.__mssql.sqlWork(sqlStr=__sqlStrIns.format(hexStr=hexStr.format(planId=planIdStr, planVer=planVerStr,
-		                                                                    dateStr=dateStr),
-		                                               jobId=__jobId[0], subId=__jobId[1]))
 		self.__log('Insert Job Layout Sc Plan: {}'.format(str(planId)))
-		return __jobId[0]
+		return __jobId
 
 	def __layoutCgPlan(self, planId, planVer):
 		pass
@@ -581,14 +514,6 @@ class AutoErpPlanHelper:
 		self.__checkJobDone(__jobId)
 
 	def __cleanAllPlan(self, planId, planVer):
-		__sqlStrIns = "INSERT INTO DSCSYS.dbo.JOBQUEUE ([JOBID], [SUBID], [COMPANYID], [USERID], [USEDALIAS], [JOBNAME], " \
-		              "[EXTNAME], [COMPROGID], [JOBOPTION], [GENTYPE], [GENSTATUS], [PRIORITY], [STATUS], [PROGRESS], " \
-		              "[DTREQUEST], [DTRECEIVE], [DTSCHEDULE], [DTSTART], [DTFINISH], [RESULT], [STYLE], [PROCESSER], " \
-		              "[FLAG], [NOTIFY]) " \
-		              "VALUES ('{jobId}', '{subId}', 'COMFORT', 'Robot', 'COMFORT', 'LRPB06 ', '', " \
-		              "'LRPB06S.Class1', {hexStr}, 1, 1, 3, 'N', NULL, getdate(), getdate(), getdate(), " \
-		              "NULL, NULL, NULL, 'B', '', 1, '');"
-
 		hexStr = "0x44532056415249414E54202030313030980500000C2000000100000000000000010000000C200000010000000100000011" \
 		         "0000000C20000001000000000000000100000008000000040000001F75A74EA18B1252080000000600000067006200300031" \
 		         "005F0031000C2000000100000000000000010000000800000004000000C7912D8DA18B125208000000060000006700620030" \
@@ -622,88 +547,27 @@ class AutoErpPlanHelper:
 		planIdStr = self.__str_to_hex(planId.ljust(20, ' '))
 		planVerStr = self.__str_to_hex(str(planVer))
 
-		__jobId = self.__getJobId()
-
-		self.__mssql.sqlWork(sqlStr=__sqlStrIns.format(hexStr=hexStr.format(planId=planIdStr, planVer=planVerStr),
-		                                               jobId=__jobId[0], subId=__jobId[1]))
+		__jobId = self.__insertJob(jobName='LRPB06', jobOption=hexStr.format(planId=planIdStr, planVer=planVerStr))
 		self.__log('Insert Job Clean Plan: {}'.format(str(planId)))
-		return __jobId[0]
+		return __jobId
 
 	def __updateWorkFlagTitle(self, planDd):
+		__sqlStr = "UPDATE COMFORT.dbo.COPTC SET LRPFLAG = 'y' WHERE TC001+'-'+RTRIM(TC002) = '{planDd}' "
+		self.__mssql.sqlWork(__sqlStr.format(planDd=planDd))
+		self.__log('Update Work Flag - Title: {}'.format(planDd))
+
+	def __updateWorkFlagDetail(self, planDd):
 		__sqlStr = "UPDATE COMFORT.dbo.COPTD SET LRPFLAG = 'y' WHERE TD001+'-'+TD002+TD003 = '{planDd}' "
 		self.__mssql.sqlWork(__sqlStr.format(planDd=planDd))
 		self.__log('Update Work Flag - Title: {}'.format(planDd))
 
 	def __updateDoneFlagTitle(self, planDd):
-		__sqlStr = "UPDATE COMFORT.dbo.COPTD SET LRPFLAG = 'Y' WHERE TD001+'-'+TD002+TD003 = '{planDd}' "
+		__sqlStr = "UPDATE COMFORT.dbo.COPTC SET LRPFLAG = 'Y' WHERE TC001+'-'+RTRIM(TD002) = '{planDd}' "
 		self.__mssql.sqlWork(__sqlStr.format(planDd=planDd))
 		self.__log('Update Done Flag - Title: {}'.format(planDd))
 
-
-class AutoPlanOtherHelper:
-	def __init__(self, debug=False, logger=Logger(sys.path[0] + '/Log/debug.log'), host='192.168.0.99'):
-		self.__host = host
-		self.__debugMode = debug
-		self.__logger = logger
-
-		self.__mssql = None
-		self.workingFlag = False
-		self.__workingFlag = False
-
-	def __log(self, string, mode='info'):
-		if mode == 'info':
-			self.__logger.logger.info('AutoPlanOther: {}'.format(string))
-		elif mode == 'error':
-			self.__logger.logger.error('AutoPlanOther: {}'.format(string))
-		elif mode == 'warning':
-			self.__logger.logger.warning('AutoPlanOther: {}'.format(string))
-
-	def __del__(self):
-		del self.__mssql
-		del self.__logger
-		del self.__host
-		del self.workingFlag
-		del self.__workingFlag
-
-	def __preWork(self):
-		del self.__mssql
-		self.__mssql = None
-
-	def work(self):
-		self.workingFlag = True
-		self.__preWork()
-
-		self.__mssql = MsSqlHelper(host=self.__host, user='sa', passwd='comfortgroup2016{', database='COMFORT')
-
-		while self.workingFlag:
-			self.__work()
-
-	def __work(self):
-		if not self.__workingFlag:
-			self.workingFlag = False
-		else:
-			self.__check1()
-
-	def __check1(self):
-		self.__workingFlag = True
-
-		__sqlStr = "SELECT RTRIM(TC001), RTRIM(TC002) " \
-		           "FROM COMFORT.dbo.COPTC " \
-		           "WHERE LRPFLAG='Y' AND UNFLAG='Y' " \
-		           "AND NOT EXISTS (SELECT 1 FROM COMFORT.dbo.MOCTA WHERE TA026=TC001 AND TA027=TC002 " \
-		           "    AND TC013 = 'Y' AND TA033 NOT LIEK 'A%')" \
-		           "AND NOT EXISTS (SELECT 1 FROM LRPLB WHERE LB002=TC001 AND LB003=TC002) "
-		__getData = self.__mssql.sqlWork(__sqlStr)
-		if __getData is None:
-			self.__workingFlag = False
-		else:
-			__sqlStr2 = "DELETE FROM COMFORT.dbo.MOCTB " \
-			            "FROM COMFORT.dbo.MOCTA ON TA001 = TB001 AND TA002 = TB002 " \
-			            "WHERE TA026 = '{tc001}' AND TA027 = '{tc002}' " \
-			            "DELETE FROM COMFORT.dbo.MOCTA WHERE TA026 = '{tc001}' AND TA027 = '{tc002}' "
-
-			__sqlStr3 = "UPDATE COMFORT.dbo.COPTC SET UNFLAG='N', LRPFLAG='N' WHERE TC001='{tc001}' AND TC002='{tc002}' "
-
-			for __getTmp in __getData:
-				self.__mssql.sqlWork(__sqlStr2.format(tc001=__getTmp[0], tc002=__getTmp[1]))
-				self.__log('Clean Other Msg: {}'.format(__getTmp[0] + '-' + __getTmp[1]))
+	def __updateDoneFlagDetail(self, planDd):
+		__sqlStr = "UPDATE COMFORT.dbo.COPTD SET LRPFLAG='Y', LRPDATE=LEFT(dbo.f_getTime(1), 12) " \
+		           "WHERE TD001+'-'+TD002+TD003 = '{planDd}' "
+		self.__mssql.sqlWork(__sqlStr.format(planDd=planDd))
+		self.__log('Update Done Flag - Title: {}'.format(planDd))

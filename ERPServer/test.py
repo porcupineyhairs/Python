@@ -44,7 +44,7 @@ if __name__ == '__main__':
 
 	# mssql = MsSqlHelper(host='192.168.1.61', user='sa', passwd='comfortgroup2016{', database='COMFORT')
 	#
-	autoPlan = AutoErpPlanHelper(host='192.168.1.61')
+	autoPlan = AutoErpPlanHelper(host='192.168.0.99')
 	if not autoPlan.workingFlag:
 		autoPlan.work()
 	# autoPlan.test()

@@ -1,7 +1,7 @@
 from flask import current_app, Blueprint, redirect, render_template, \
 	request, flash, session, url_for
 from modules.GlobalModules import CheckSession
-from modules.User.Login import getUserByToken
+from modules.User.UserLogin import getUserByToken
 
 
 urlMain = Blueprint('main', __name__)
@@ -33,6 +33,7 @@ def mainTable():
 		pass
 
 
+@urlMain.route('/live', methods=['GET'])
 @urlMain.route('/live/', methods=['GET'])
 def mainKeepLive():
 	token = session.get('token')
