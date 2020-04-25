@@ -5,23 +5,25 @@
     <title>用户登录</title>
 </head>
 <body>
-    <form action="" method="post" class="">
-        <br>
-        <label>用户名:</label><input type="text" name="user" placeholder="请输入用户名" value="{{ user }}" style="width: 100px"/>
-        <br>
-        <label>密  码:</label><input type="password" name="pwd" placeholder="请输入密码" value="{{ pwd }}" style="width: 100px"/>
-        <br>
-        <lebel>验证码:</lebel><input type="text" name="checkCode" style="width: 50px"/>  <a href="" onclick="windows_reload()" style="font-size: small">重取验证码</a>
-
-        <br>
-        <img src="{{ imgPath }}"/>
-        <br>
-        <label style="font-size: small">{% for message in get_flashed_messages() %}
-            {{ message }}
+    <div class="mainDiv" style="width: 80%;margin: 0 auto">
+        <form action="" method="post" class="">
             <br>
-        {% endfor %}</label>
-        <button type="submit">登录</button>
-    </form>
+            <label>用户名:</label><input type="text" name="user" placeholder="请输入用户名" value="{{ user }}" style="width: 100px"/>
+            <br>
+            <label>密  码:</label><input type="password" name="pwd" placeholder="请输入密码" value="{{ pwd }}" style="width: 100px"/>
+            <br>
+            <lebel>验证码:</lebel><input type="text" name="checkCode" style="width: 50px"/>  <a href="" onclick="windows_reload()" style="font-size: small">重取验证码</a>
+
+            <br>
+            <img src="{{ imgPath }}"/>
+            <br>
+            <label style="font-size: small">{% for message in get_flashed_messages() %}
+                {{ message }}
+                <br>
+            {% endfor %}</label>
+            <button type="submit">登录</button>
+        </form>
+    </div>
 </body>
 </html>
 <script>

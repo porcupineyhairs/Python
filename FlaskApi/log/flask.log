@@ -48,3 +48,15 @@
 2020-04-13 09:14:28,150 - INFO - 192.168.1.61 - https://192.168.1.60:8901/ - GET - inData: None - outData: {'method': 'GET'}
 2020-04-13 09:16:02,764 - INFO - 192.168.1.61 - https://192.168.1.60:8901/ - GET - inData: None - outData: {'method': 'GET'}
 2020-04-13 09:16:57,757 - INFO - 192.168.1.61 - https://192.168.1.60:8901/ - GET - inData: None - outData: {'method': 'GET'}
+2020-04-24 15:30:08,888 - INFO - 192.168.0.195 - http://192.168.1.60:8900/ - GET - inData: None - outData: {'method': 'GET'}
+2020-04-24 15:30:13,593 - INFO - 127.0.0.1 - http://127.0.0.1:8900/ - POST - inData: {'test': 'yes'} - outData: {'method': 'POST'}
+2020-04-24 15:30:26,084 - INFO - 192.168.0.195 - http://192.168.1.60:8900/ - POST - inData: {'test': 'yes'} - outData: {'method': 'POST'}
+2020-04-24 15:47:31,116 - INFO - 192.168.0.195 - http://192.168.1.60:8900/ - GET - inData: None - outData: {'method': 'GET'}
+2020-04-24 15:51:50,484 - INFO - 192.168.0.195 - http://192.168.1.60:8900/ - GET - inData: None - outData: {'method': 'GET'}
+2020-04-24 15:52:24,481 - INFO - 192.168.0.195 - http://192.168.1.60:8900/ - GET - inData: None - outData: {'method': 'GET'}
+2020-04-24 15:52:24,589 - INFO - 192.168.0.195 - http://192.168.1.60:8900/ - GET - inData: None - outData: {'method': 'GET'}
+2020-04-24 15:52:36,359 - INFO - 192.168.0.195 - http://192.168.1.60:8900/ - GET - inData: None - outData: {'method': 'GET'}
+2020-04-24 16:08:39,292 - INFO - 192.168.0.195 - http://192.168.1.60:8900/api - POST - inData: {'test': 'yes'} - outData: {'method': 'POST', 'url': 'http://192.168.1.60:8900/api'}
+2020-04-24 19:41:44,967 - ERROR - Logger Error : 400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)
+2020-04-24 19:49:29,233 - INFO - 10.211.55.4 - https://10.211.55.2:8900/api - POST - inData: {'username': 'aaaaaa', 'rsapwd': '111111'} - outData: {'method': 'POST', 'url': 'https://10.211.55.2:8900/api'}
+2020-04-24 19:49:58,754 - INFO - 10.211.55.4 - https://10.211.55.2:8900/api - POST - inData: {'username': 'aaaaaa', 'rsapwd': '111111'} - outData: {'method': 'POST', 'url': 'https://10.211.55.2:8900/api'}

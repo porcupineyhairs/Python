@@ -31,4 +31,5 @@ app.register_blueprint(urlApi, url_prefix='/api')
 
 if __name__ == '__main__':
 	app.run(debug=app.config['DEBUG'], host=app.config['APP_HOST'], port=app.config['APP_PORT'], threaded=True,
-	        ssl_context=('ssl/server.crt', 'ssl/server.key'))
+	        ssl_context=('ssl/server.crt', 'ssl/server.key')
+	        )

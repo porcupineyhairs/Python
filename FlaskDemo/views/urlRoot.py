@@ -13,9 +13,4 @@ def get_favicon_ico():
 # 主页
 @urlRoot.route('/', methods=['GET'])
 def webIp():
-	return render_template('urlRoot/index.html', ipAddr=str(request.remote_addr))
-
-
-@urlRoot.route('/redirect/<path:url>')
-def rootRedirect(url):
-	return redirect('/' + url)
+	return render_template('urlRoot/index.html')

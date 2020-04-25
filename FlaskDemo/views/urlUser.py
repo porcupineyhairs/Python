@@ -1,4 +1,5 @@
 from flask import current_app, Blueprint, redirect, render_template, request, flash, session, url_for
+# from flask_wtf import FlaskForm
 from datetime import timedelta
 from modules.User.UserLogin import *
 
@@ -9,12 +10,6 @@ urlUser = Blueprint('user', __name__)
 @urlUser.route('/', methods=['GET', 'POST'])
 def userIndexRedirect():
 	return redirect('/User/User')
-
-
-@urlUser.route('/download/<path:url>')
-def userDownload(url):
-	url2 = url.replace('/', '-')
-	return redirect('/download/{}'.format(url2))
 
 
 @urlUser.route('/login/', methods=['GET', 'POST'])

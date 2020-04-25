@@ -8,9 +8,3 @@ urlTest = Blueprint('test', __name__)
 def testIndex():
 	return 'test'
 
-
-@urlTest.route('/download/<path:url>')
-def testDownload(url):
-	url2 = url.replace('/', '-')
-	return redirect('/download/{}'.format(url2))
-

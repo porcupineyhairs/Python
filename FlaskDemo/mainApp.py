@@ -1,5 +1,5 @@
 
-from flask import Flask, session
+from flask import Flask
 from flask_admin import Admin
 from flask_bootstrap import Bootstrap
 from config import Config
@@ -11,12 +11,14 @@ app = Flask(__name__)
 # Admin 管理页面
 # admin = Admin(app, name='管理后台', template_mode='bootstrap3')
 
-# app.config['SERVER_NAME'] ='harveykkk.com'
+# app.config['SERVER_NAME'] ='192.168.1.60:8900'
 
 Bootstrap(app)
 
 # 注册配置文件
 app.config.from_object(Config)
+
+app.secret_key = 'XMVMDULVDCU555SQAA780KX7J7C9X4AYharvey'
 
 # 注册其他网页url
 app.register_blueprint(urlRoot, url_prefix='/')

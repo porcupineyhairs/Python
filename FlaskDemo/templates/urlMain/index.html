@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>MainIndex</title>
-        <script src="/static/js/jquery-3.4.1.min.js"></script>
+        <script src="/static/js/jquery/jquery-3.4.1.min.js"></script>
+        <script src="/static/js/barcode/JsBarcode.all.js"></script>
     </head>
     <body>
         <img src="{{ imgFile }}"/>
@@ -12,9 +13,25 @@
         <h2><a href="download/222/你好.txt" target="_blank">下载文件</a></h2>
         <br>
         <br>
-        <h2><a href="/main/table">表格</a></h2>
+        <h2><a href="/main/t2">表格</a></h2>
         <br>
         <h3>用户名：{{ user }}</h3>
+        <label id="barcode_text" hidden="hidden">{{ barcodeText }}</label>
+        <img id="barcode">
     </body>
 </html>
 <script type="text/javascript" src="/static/js/ajaxRefresh.js"></script>
+<script>
+    var barcode_text = document.getElementById('barcode_text').innerText;
+
+    var barcode = document.getElementById('barcode'),
+        text_str = barcode_text,
+        options = {
+            format:"CODE128",
+            displayValue:true,
+            fontSize:18,
+            height:100
+        };
+    //JsBarcode(barcode, text_str, options);//原生
+            $('#barcode').JsBarcode(text_str,options);//jQuery
+</script>
