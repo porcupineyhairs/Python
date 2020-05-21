@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<title>联友采购平台</title>
+		<!--@*1、Jquery组件引用*@-->
+		<script src="/static/js/jquery/jquery-3.4.1.min.js"></script>
+		<!--@*2、登录界面资源引用*@-->
+		<link rel="stylesheet" media="screen" href="/static/css/login/style.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/login/reset.css"/>
+	</head>
+	<body>
+		<div id="particles-js">
+				<div class="login">
+					<div class="login-top">
+						<lable id="platformName">联友采购平台<br><br>登录</lable>
+					</div>
+					<div class="login-center clearfix">
+						<div class="login-center-img"><img src="/static/img/login/name.png"/></div>
+						<div class="login-center-input">
+							<input id="user" type="text" name="" value="" placeholder="请输入您的用户名" onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的用户名'"/>
+							<div class="login-center-input-text">用户名</div>
+						</div>
+					</div>
+					<div class="login-center clearfix">
+						<div class="login-center-img"><img src="/static/img/login/password.png"/></div>
+						<div class="login-center-input">
+							<input id="pwd" type="password" name="" value="" placeholder="请输入您的密码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的密码'"/>
+							<div class="login-center-input-text">密码</div>
+						</div>
+					</div>
+					<div class="login-center clearfix">
+						<div class="login-center-img"><img src="/static/img/login/password.png"/></div>
+						<div class="login-center-input-verify">
+							<input id="checkCode" type="text" name="" value="" placeholder="请输入验证码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入验证码'"/>
+							<div class="login-center-input-text">验证码</div>
+						</div>
+						<div class="login-center-checkCode" style="float: right">
+							<img alt="点击重新获取验证码" title="点击重新获取验证码" id="checkCodeImg" src="" onclick="getCheckCodeImgSrc()"/>
+						</div>
+					</div>
+					<div class="login-button">
+						登陆
+					</div>
+				</div>
+				<div class="sk-rotating-plane"></div>
+		</div>
+
+		<!-- scripts -->
+		<script src="/static/js/login/particles.min.js"></script>
+		<!-- 线条动画 -->
+		<!--<script src="/static/js/login/app.js"></script>-->
+		<script type="text/javascript">
+			let isChrome =  navigator.userAgent.indexOf('Chrome') > -1;
+
+			// 加载完成后执行
+			$(document).ready(function () {
+				getCheckCodeImgSrc();
+				if(isChrome === false){
+					$(".login-center, .login-button ").remove();
+					document.getElementById('platformName').innerHTML = "该浏览器不支持，请使用谷歌浏览器";
+				}
+			})
+
+			// 获取验证码图片路径
+			function getCheckCodeImgSrc() {
+				if(isChrome === true){
+					$.ajax({
+						type: "GET",//使用get方法访问后台
+						dataType: "json",//返回json格式的数据
+						url: "/user/api/checkcode",//要访问的后台地址
+						cache : false,
+						error:function(){
+							alert("无法连接服务器");
+						},
+						success: function (get) {
+							var success = get["success"];
+							if(success === 'no'){
+								alert(get["msg"]);
+							}
+							else if(success === 'yes'){
+								$("#checkCodeImg").attr('src', get["checkCodePath"]);
+							}
+						}
+					});
+				}
+			}
+
+			// 登录按钮
+			document.querySelector(".login-button").onclick = function(){
+				if(isChrome === true){
+					$.ajax({
+						type: "POST",//使用get方法访问后台
+						dataType: "json",//返回json格式的数据
+						url: "/user/api/login",//要访问的后台地址
+						cache : false,
+						data: JSON.stringify({"user": document.getElementById("user").value,
+							"pwd": document.getElementById("pwd").value,
+							"checkCode": document.getElementById("checkCode").value}),//要发送的数据
+						error:function(){
+							alert("无法连接服务器");
+						},
+						success: function (get) {
+							var success = get["success"];
+							if(success === 'no'){
+								alert(get["msg"]);
+								getCheckCodeImgSrc();
+							}
+							else if(success === 'yes'){
+								location.href=get["url"]
+							}
+						}
+					});
+				}
+			}
+
+			function hasClass(elem, cls) {
+			  cls = cls || '';
+			  if (cls.replace(/\s/g, '').length == 0) return false; //当cls没有参数时，返回false
+			  return new RegExp(' ' + cls + ' ').test(' ' + elem.className + ' ');
+			}
+
+			function addClass(ele, cls) {
+			  if (!hasClass(ele, cls)) {
+				ele.className = ele.className == '' ? cls : ele.className + ' ' + cls;
+			  }
+			}
+
+			function removeClass(ele, cls) {
+			  if (hasClass(ele, cls)) {
+				var newClass = ' ' + ele.className.replace(/[\t\r\n]/g, '') + ' ';
+				while (newClass.indexOf(' ' + cls + ' ') >= 0) {
+				  newClass = newClass.replace(' ' + cls + ' ', ' ');
+				}
+				ele.className = newClass.replace(/^\s+|\s+$/g, '');
+			  }
+			}
+
+		</script>
+	</body>
+</html>
+<script type="text/javascript" src="/static/js/keepAlive.js"></script>

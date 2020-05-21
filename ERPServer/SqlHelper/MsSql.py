@@ -97,7 +97,7 @@ class MsSqlHelper:
 		# 根据SQL第一个关键字获取模式
 		self.__sqlMode = self.__sqlStr.lstrip().split(' ')[0].upper()
 		# 根据不同SQL关键字执行不同命令
-		if self.__sqlMode in ('SELECT', 'EXEC', 'IF'):
+		if self.__sqlMode in ('SELECT', 'EXEC', 'IF', 'DECLARE'):
 			self.__sqlExecute()
 		elif self.__sqlMode in ('UPDATE', 'INSERT', 'DELETE', 'TRUNCATE'):
 			self.__sqlCommit()
@@ -107,7 +107,13 @@ class MsSqlHelper:
 	# 数据库查询方法
 	def __sqlExecute(self):
 		self.__cur.execute(self.__sqlStr)
-		self.__getBackTmp = self.__cur.fetchall()
+		if self.__sqlMode in ('EXEC', 'IF', 'DECLARE'):
+			try:
+				self.__getBackTmp = self.__cur.fetchall()
+			except Exception as e:
+				self.__getBackTmp = None
+		else:
+			self.__getBackTmp = self.__cur.fetchall()
 
 	# 数据库任务提交方法
 	def __sqlCommit(self):
@@ -123,8 +129,8 @@ class MsSqlHelper:
 				self.__getBack = []
 				for __rowIndex in range(len(self.__getBackTmp)):
 					self.__getBack.append(list(self.__getBackTmp[__rowIndex]))
-		except:
-			pass
+		except Exception as e:
+			self.__getBack = None
 
 	def __setNoNone(self):
 		# 判断是否需要把返回结果中的None变更为''

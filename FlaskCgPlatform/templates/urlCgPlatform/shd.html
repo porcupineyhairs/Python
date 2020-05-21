@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>联友采购平台</title>
+        <!--@*1、Jquery组件引用*@-->
+        <script src="/static/js/jquery/jquery-3.4.1.min.js"></script>
+        <!--@*2、bootstrap组件引用*@-->
+        <script src="/static/js/bootstrap/js/bootstrap.js"></script>
+        <link href="/static/js/bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <!--@*3、bootstrap table组件以及中文包的引用*@-->
+        <script src="/static/js/bootstrap-table/bootstrap-table.js"></script>
+        <link href="/static/js/bootstrap-table/bootstrap-table.css" rel="stylesheet" />
+        <script src="/static/js/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+        <link rel="stylesheet" media="screen" href="/static/css/login/style.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/login/reset.css"/>
+        <script src="/static/js/mydate/mydate.js"></script>
+        <link rel="stylesheet" href="/static/js/mydate/mydate.css">
+        <script src="/static/js/cgPlatform.js"></script>
+        <script src="/static/js/barcode/JsBarcode.all.js"></script>
+    </head>
+    <body>
+        <div id="particles-js">
+            <div class="company-logo">
+                <img src="/static/img/logo/LY-logo.jpg">
+            </div>
+            <div class="user-info">
+                <label class="user-info-label">用户名称：</label><label class="user-info-label-value" id="user-name"></label>
+                <label class="user-info-label">公司编号：</label><label class="user-info-label-value" id="company-id"></label>
+                <label class="user-info-label">公司名称：</label><label class="user-info-label-value" id="company-name"></label>
+                <input class="user-info-logout" type="submit" value="退出登录" onclick="userLogout()">
+            </div>
+            <div class="menu">
+                <ul class="menu">
+                <li><a href="/main">首页</a></li>
+                <li><a href="/cg/shd/editshd">录入送货单</a></li>
+                </ul>
+            </div>
+            <div style="margin-top: 30px; ">
+                <div style="width: 89%; margin: 0 auto; ">
+                    <div class="main-show" style="background-color: white; margin: 0 auto">
+                        <div style="width: 98%; margin: 0 auto; ">
+                            <br>
+                            <div style="margin: 0 auto">
+                                <div class="DivTitleInfo" style="float: left; font-size: 15px; margin-left: 12px">
+                                    <label type="text">送货日期：<input id="sendDate" type="date"/></label>
+                                    <input class="btnGetData" id="getData" type="submit" value="获取数据" onclick="getDataClick()">
+                                </div>
+                                <div class="DivToolBar" style="float: right; font-size: 15px; margin-right: 12px">
+                                    <input type="submit" id="btnPrint" onclick="btnPagePrint()" value="打印" style="margin-right: 3px"/>
+                                    <input type="submit" id="btnSave" onclick="btnSaveData()" value="保存" style="margin-right: 3px"/>
+                                    <br><br>
+                                </div>
+                                <div class="DivBarCode" style="float: right; margin-right: 5px">
+                                    <img id="barcode">
+                                </div>
+                                <div style="margin: 0 auto; text-align: center;">
+                                    <label type="text" style="font-size: 22px; " >联友采购平台-送货单</label>
+                                    <br>
+                                    <label type="text" style="font-size: 22px; margin-left: 18%" id="company-name2"></label>
+                                </div>
+                                <br><br><br>
+                            </div>
+
+                            <div style="margin: 0 auto; font-size: small; height: min-content; ">
+                                <table id="mainTable" class="table table-striped table-bordered"></table>
+                            </div>
+
+                            <div class="DivFooter">
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            Date.prototype.Format = function (fmt) { //author: meizz
+        var o = {
+            "M+": this.getMonth() + 1, //月份
+            "d+": this.getDate(), //日
+            "h+": this.getHours(), //小时
+            "m+": this.getMinutes(), //分
+            "s+": this.getSeconds(), //秒
+            "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+            "S": this.getMilliseconds() //毫秒
+        };
+        if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)
+        if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
+    }
+
+            let $mainTable = $('#mainTable');
+            let $sendDate = $('#sendDate');
+            let $getData = $('#getData');
+            let tableWritable = false;
+            let tablePrintable = false;
+            let barCodeStr = '';
+
+            // 加载完成后执行
+            $(document).ready(function () {
+                getUserInfo();
+
+                let date = new Date().Format("yyyy-MM-dd");
+                document.getElementById('sendDate').value = date;
+
+                getDataClick();
+            })
+
+            function toolBtnShow(){
+                if(tableWritable === true){
+                    document.getElementById('btnSave').disabled = 'disabled';
+                }
+                else{
+                    document.getElementById('btnSave').disabled = '';
+                }
+                if(tablePrintable === true){
+                    document.getElementById('btnPrint').disabled = '';
+                }
+                else{
+                    document.getElementById('btnPrint').disabled = 'disabled';
+                }
+                let data = $("#mainTable").bootstrapTable('getData');
+                if(data.length === 0){
+                    document.getElementById('btnSave').disabled = 'disabled';
+                    document.getElementById('btnPrint').disabled = 'disabled';
+                }
+
+                $mainTable.bootstrapTable('hideColumn', '验收量');
+
+                if(barCodeStr !== ''){
+                    var barcode = document.getElementById('barcode'),
+                        options = {
+                            format:"CODE128",
+                            displayValue:true,
+                            fontSize:20,
+                            height:50,
+                        };
+                    JsBarcode(barcode, barCodeStr, options);//原生
+                }
+                else{
+                    document.getElementById('barcode').src="";
+                }
+            }
+
+            $sendDate.click(function () {
+                // MyDatePick();
+                showTable({});
+                barCodeStr = '';
+                toolBtnShow();
+            })
+
+            $sendDate.change(function(){
+                barCodeStr = '';
+                getVerClick();
+                toolBtnShow();
+            })
+
+            function getVerClick(){
+                $.ajax({
+                    type: "POST",
+                    dataType: "json",//返回json格式的数据
+                    url: "/cg/test",//要访问的后台地址
+                    cache : false,
+                    async: false,
+                    data:JSON.stringify({"supDate": document.getElementById("sendDate").value}),
+                    error:function(){
+                        alert("无法连接服务器");
+                    },
+                    success: function (get) {
+                        var success = get["success"];
+                        if(success === 'no'){
+                            alert(get["msg"]);
+                        }
+                        else if(success === 'yes'){
+
+                        }
+                    }
+                });
+            }
+
+            function getDataClick() {
+                tableWritable = false;
+                tablePrintable = false;
+                barCodeStr = '';
+
+                $.ajax({
+                    type: "POST",
+                    dataType: "json",//返回json格式的数据
+                    url: "/cg/shd/getdata",//要访问的后台地址
+                    cache : false,
+                    async: false,
+                    data:JSON.stringify({"supDate": document.getElementById("sendDate").value}),
+                    error:function(){
+                        alert("无法连接服务器");
+                    },
+                    success: function (get) {
+                        var success = get["success"];
+                        if(success === 'no'){
+                            alert(get["msg"]);
+                        }
+                        else if(success === 'yes'){
+                            tableWritable = get['scaned'];
+                            tablePrintable = get['exist'];
+                            barCodeStr = get['barCode'];
+                            showTable(get['data']);
+                        }
+                    }
+                });
+                toolBtnShow();
+            }
+
+            function showTable(tableData) {
+                $mainTable.bootstrapTable('destroy');
+                $mainTable.bootstrapTable({
+                    data: tableData,
+                    dataType: 'json',
+                    pagination: false, //前端处理分页
+                    //smartDisplay:false, //分页
+                    singleSelect: true, //是否只能单选
+                    search: true, //显示搜索框，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
+                    toolbar: '#toolbar', //工具按钮用哪个容器
+                    striped: true, //是否显示行间隔色
+                    cache: false, //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+                    pageNumber: 1, //初始化加载第10页，默认第一页
+                    //pageSize: 25, //每页的记录行数（*）
+                    //pageSizeList: [5, 10, 20], //可供选择的每页的行数（*）
+                    strictSearch: true, //设置为 true启用 全匹配搜索，false为模糊搜索
+                    showColumns: false, //显示内容列下拉框
+                    showRefresh: false, //显示刷新按钮
+                    //minimumCountColumns: 2, //当列数小于此值时，将隐藏内容列下拉框
+                    //clickToSelect: true, //设置true， 将在点击某行时，自动勾选rediobox 和 checkbox
+                    //height: 100, //表格高度，如果没有设置height属性，表格自动根据记录条数决定表格高度
+
+                    uniqueId: "序号", //每一行的唯一标识，一般为主键列
+                    showToggle: false, //是否显示详细视图和列表视图的切换按钮
+                    cardView: false, //是否显示详细视图
+                    detailView: false, //是否显示父子表，设置为 true 可以显示详细页面模式,在每行最前边显示+号
+                    sidePagination: "client", //分页方式：client客户端分页，server服务端分页（*）
+                    columns: [{  //定义表头,这个表头必须定义,下边field后边跟的字段名字必须与后端传递的字段名字相同.如:id、name、price跟后端的字段名id  name price是完全一样的.
+                        field: '序号',
+                        title: '序号',
+                        align: 'center',  //对齐方式，居中
+                        width: '15px'  // 可以写各种样式
+                    }, {
+                        field: '品号',
+                        title: '品号',
+                        align: 'center',
+                        width: '130px',
+                    }, {
+                        field: '品名',
+                        title: '品名',
+                        align: 'left',
+                        width: '200px'
+                    }, {
+                        field: '规格',
+                        title: '规格' + '    (' + barCodeStr + ')',
+                        align: 'left'
+                    }, {
+                        field: '当天可送量',
+                        title: '当天可送量',
+                        align: 'center',
+                        width: '80px'
+                    }, {
+                        field: '送货量',
+                        title: '送货量',
+                        align: 'center',
+                        width: '80px',
+                    },{
+                        field: '验收量',
+                        title: '验收量',
+                        align: 'center',
+                        width: '80px',
+                    }
+                    ],
+                    onClickCell: function (field, value, row, $element) {
+                        if(field==="送货量" && !tableWritable){
+                            $element.attr('contenteditable', true);
+                            $element.blur(function () {
+                                let index = $element.parent().data('index');
+                                let tdValue = $element.html().replace(/[^\d]/g,'');
+                                if(tdValue === '') tdValue = 0;
+                                bootstrapTableSaveData(index, field, tdValue);
+                            })
+                        }
+                    }
+                });
+            }
+
+            function bootstrapTableSaveData(index, field, value) {
+                document.getElementById('btnPrint').disabled = 'disabled';
+                $mainTable.bootstrapTable('updateCell', {
+                    index: index,       //行索引
+                    field: field,       //列名
+                    value: value        //cell值
+                })
+            }
+
+            function btnPagePrint() {
+                $mainTable.bootstrapTable("refreshOptions", {search: false, });
+                $mainTable.bootstrapTable('hideColumn', '当天可送量');
+                $mainTable.bootstrapTable('showColumn', '验收量');
+                $mainTable.bootstrapTable('remove', {field: '送货量', values: '0'})
+                $(".menu, .user-info-logout, .btnGetData, .company-logo, .DivToolBar, .DivHeaderLogin, .DivMenu, .DivFooter").remove();
+                window.print();
+                location.reload();
+            }
+
+            function btnSaveData() {
+                var data = $("#mainTable").bootstrapTable('getData');
+                $.ajax({
+                    type: "post",//使用get方法访问后台
+                    dataType: "json",//返回json格式的数据
+                    url: "/cg/shd/setdata",//要访问的后台地址
+                    cache : false,
+                    sync: false,
+                    data:JSON.stringify({"supDate": document.getElementById("sendDate").value, "data": JSON.stringify(data)}),
+                    error:function(){
+                        alert("无法连接服务器");
+                    },
+                    success: function (get) {
+                        var flag = get["success"];
+                        if(flag === 'yes'){
+                            alert("保存成功");
+                        }
+                        else{
+                            alert("保存失败");
+                        }
+                    }
+                });
+                // getDataClick();
+                tableWritable = false;
+                tablePrintable = false;
+                barCodeStr = '';
+                toolBtnShow();
+            }
+
+        </script>
+    </body>
+</html>
+<script type="text/javascript" src="/static/js/keepAlive.js"></script>

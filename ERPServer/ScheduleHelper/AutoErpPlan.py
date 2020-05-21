@@ -66,6 +66,12 @@ class AutoErpPlanHelper:
 
 			self.__mssql = MsSqlHelper(host=self.__host, user='sa', passwd='comfortgroup2016{', database='COMFORT')
 
+			# 先把有问题的单据清理 By Proc
+			self.__resetWorkFlag()
+
+			# 对变更过的订单，重置标志位
+			# self.__resetLrpFlag()
+
 			while self.workingFlag:
 				self.__work()
 
@@ -74,7 +80,6 @@ class AutoErpPlanHelper:
 			self.__log(str(e), mode='error')
 
 		finally:
-			self.__resetWorkFlag()
 			self.workingFlag = False
 			self.__del()
 			self.__log('Work Finished')
@@ -85,7 +90,8 @@ class AutoErpPlanHelper:
 		print('Do Nothing')
 
 	def __resetWorkFlag(self):
-		__sqlStr = "UPDATE COMFORT.dbo.COPTD SET LRPFLAG='N' WHERE LRPFLAG='y' "
+		self.__log('清除额外情况，见COMFORT.dbo.P_Auto_ErpPlan_CleanErr')
+		__sqlStr = "exec dbo.P_Auto_ErpPlan_CleanErr "
 		self.__mssql.sqlWork(__sqlStr)
 
 	def __work(self):
@@ -108,14 +114,15 @@ class AutoErpPlanHelper:
 			self.workingFlag = False
 			self.__log('Not Found Order List!')
 
-	def __resetLrpFlag(self):
-		__sqlStr = "SELECT TD001+'-'+TD002+TD003, UDF12, LRPDATE FROM COMFORT.dbo.COPTD " \
-		           "WHERE LRPFALG='Y' AND UDF12>LRPDATE ORDER BY UDF12 "
-		__sqlStr2 = "UPDATE COMFORT.dbo.COPTD SET LRPFLAG='N' WHERE LRPFALG='Y' AND UDF12>LRPDATE ORDER BY UDF12 "
-		__get = self.__mssql.sqlWork(sqlStr=__sqlStr)
-		if __get is not None:
-			self.__log('Find reset list: {}'.format(str(__get)))
-			self.__mssql.sqlWork(__sqlStr2)
+	# def __resetLrpFlag(self):
+	# 	__sqlStr = "SELECT TD001+'-'+TD002+TD003, UDF12, LRPDATE FROM COMFORT.dbo.COPTD " \
+	# 	           "WHERE LRPFLAG='Y' AND UDF12>LRPDATE ORDER BY UDF12 "
+	# 	__sqlStr2 = "UPDATE COMFORT.dbo.COPTD SET LRPFLAG='N', LRPCOUNT=0 " \
+	# 	            "WHERE LRPFLAG='Y' AND UDF12>LRPDATE "
+	# 	__get = self.__mssql.sqlWork(sqlStr=__sqlStr)
+	# 	if __get is not None:
+	# 		self.__log('Find reset list: {}'.format(str(__get)))
+	# 		self.__mssql.sqlWork(__sqlStr2)
 
 	def __getJobId(self):
 		__sqlStr = "EXEC COMFORT.dbo.P_GETJOBID "
@@ -295,14 +302,14 @@ class AutoErpPlanHelper:
 		dwLenStr = self.__int_to_hex(len(dw))
 
 		hexStr = "0x44532056415249414E54202030313030CA0100000C2000000100000000000000010000000C2000000100000001000000" \
-		           "040000000C20000001000000000000000100000008000000040000000990E962C154F75308000000040000007300700030" \
-		           "0031000C20000001000000000000000100000008000000070000000990E96242004F004D00E5651F670800000004000000" \
-		           "73007000300032000C20000001000000000000000100000008000000070000001F7510624C006F00670087656368080000" \
-		           "0006000000630068006B004C006F0067000C20000001000000000000000100000008000000040000005C4F1A4EE5651F67" \
-		           "080000000B000000650064005000720069006E00740044006100740065000C2000000100000001000000040000000C2000" \
-		           "00010000000000000001000000080000000100000005000C20000001000000000000000300000008000000{phLen}0000" \
-		           "{ph}08000000{pmLen}0000{pm}08000000{ggLen}0000{gg}08000000{dwLen}0000{dw}0C20000001000000000000000" \
-		           "20000000800000001000000040008000000000000000800000000000000080000000100000059000800000000000000"
+		         "040000000C20000001000000000000000100000008000000040000000990E962C154F75308000000040000007300700030" \
+		         "0031000C20000001000000000000000100000008000000070000000990E96242004F004D00E5651F670800000004000000" \
+		         "73007000300032000C20000001000000000000000100000008000000070000001F7510624C006F00670087656368080000" \
+		         "0006000000630068006B004C006F0067000C20000001000000000000000100000008000000040000005C4F1A4EE5651F67" \
+		         "080000000B000000650064005000720069006E00740044006100740065000C2000000100000001000000040000000C2000" \
+		         "00010000000000000001000000080000000100000005000C20000001000000000000000300000008000000{phLen}0000" \
+		         "{ph}08000000{pmLen}0000{pm}08000000{ggLen}0000{gg}08000000{dwLen}0000{dw}0C20000001000000000000000" \
+		         "20000000800000001000000040008000000000000000800000000000000080000000100000059000800000000000000"
 
 		__jobId = self.__insertJob(jobName='COPAB02', jobOption=hexStr.format(ph=phStr, phLen=phLenStr, pm=pmStr,
 		                                                                      pmLen=pmLenStr, gg=ggStr, ggLen=ggLenStr,
@@ -365,7 +372,7 @@ class AutoErpPlanHelper:
 		             "00004E0008000000010000004E0008000000010000004E000C2000000100000000000000020000000800000001000000" \
 		             "04000800000000000000080000000000000008000000010000004E0008000000010000004E0008000000010000004E00" \
 		             "08000000010000004E00080000000400000030003000300031000C200000010000000000000001000000030000000100" \
-		             "0000080000000400000031002E000967486508000000010000004E000800000000000000"
+		             "0000080000000400000031002E0009674865080000000100000059000800000000000000"
 
 		planDdStr = self.__str_to_hex(str(planDd))
 		planDdLenStr = self.__int_to_hex(len(str(planDd)))
@@ -507,7 +514,7 @@ class AutoErpPlanHelper:
 		return __jobId
 
 	def __layoutCgPlan(self, planId, planVer):
-		pass
+		return ''
 
 	def __cleanPlan(self, planId, planVer='0001'):
 		__jobId = self.__cleanAllPlan(planId=planId, planVer=planVer)
@@ -567,7 +574,7 @@ class AutoErpPlanHelper:
 		self.__log('Update Done Flag - Title: {}'.format(planDd))
 
 	def __updateDoneFlagDetail(self, planDd):
-		__sqlStr = "UPDATE COMFORT.dbo.COPTD SET LRPFLAG='Y', LRPDATE=LEFT(dbo.f_getTime(1), 12) " \
+		__sqlStr = "UPDATE COMFORT.dbo.COPTD SET LRPFLAG='Y', LRPDATE=LEFT(dbo.f_getTime(1), 12), LRPCOUNT=LRPCOUNT+1 " \
 		           "WHERE TD001+'-'+TD002+TD003 = '{planDd}' "
 		self.__mssql.sqlWork(__sqlStr.format(planDd=planDd))
 		self.__log('Update Done Flag - Title: {}'.format(planDd))

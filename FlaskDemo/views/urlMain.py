@@ -62,7 +62,7 @@ def uploadData():
 	return jsonify({"success": "yes"})
 
 
-@urlMain.route('/live', methods=['GET'])
+@urlMain.route('/keepAlive', methods=['GET'])
 def mainKeepLive():
 	token = session.get('token')
 	CheckSession.updateTokenTime(session=token)
