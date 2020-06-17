@@ -47,9 +47,9 @@ def replacePh(tr1, tr2, tr3, ph1, ph2):
 	sqlStr = r"UPDATE COPTR SET TR017='{4}' " \
 	         r"WHERE TR001='{0}' AND TR002='{1}' AND SUBSTRING(TR003, 1, LEN(TR003)-3)='{2}' AND TR009='{3}' "
 	print('replacePh: ' + sqlStr.format(tr1, tr2, tr3, ph2, 'Y'))
-	mssql.sqlWork(sqlStr.format(tr1, tr2, tr3, ph2, 'Y'))
+	# mssql.sqlWork(sqlStr.format(tr1, tr2, tr3, ph2, 'Y'))
 	print('replacePh: ' + sqlStr.format(tr1, tr2, tr3, ph1, 'N'))
-	mssql.sqlWork(sqlStr.format(tr1, tr2, tr3, ph1, 'N'))
+	# mssql.sqlWork(sqlStr.format(tr1, tr2, tr3, ph1, 'N'))
 
 
 def main():
