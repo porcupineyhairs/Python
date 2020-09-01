@@ -101,13 +101,9 @@ class MsgHelper:
 		         "[UDF03], [UDF04], [UDF05], [UDF06], [UDF51], [UDF52], [UDF53], [UDF54], [UDF55], [UDF56], [UDF07], " \
 		         "[UDF08], [UDF09], [UDF10], [UDF11], [UDF12], [UDF57], [UDF58], [UDF59], [UDF60], [UDF61], [UDF62]) " \
 		         "VALUES ('{company}', '{creator}', '', " \
-		         "REPLACE(REPLACE(REPLACE(REPLACE(CONVERT(varchar(100), GETDATE(), 25), '-', ''), ' ', ''), ':', ''), " \
-		         "'.', ''), " \
-		         "NULL, NULL, 0, " \
+		         "COMFORT.dbo.f_getTime(1), '.', ''), NULL, NULL, 0, " \
 		         "'{msgId}', '{creator}', '<?xml version=\"1.0\" encoding=\"GB2312\"?><Root>{receiverStr}</Root>', " \
-		         "REPLACE(REPLACE(REPLACE(REPLACE(CONVERT(varchar(100), GETDATE(), 25), '-', ''), ' ', ''), ':', ''), " \
-		         "'.', ''), " \
-		         "'N', '{title}', '{sortMsg}', " \
+		         "COMFORT.dbo.f_getTime(1), '.', ''), 'N', '{title}', '{sortMsg}', " \
 		         "'<FONT size=2>{msgTextStr}</FONT>', " \
 		         "'0', '', '', NULL, 0.000000, 0.000000, 0.000000, " \
 		         "'<?xml version=\"1.0\" encoding=\"GB2312\"?><Root><Dispatching Enable=\"False\"/></Root>', " \

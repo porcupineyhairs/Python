@@ -46,7 +46,8 @@ class GetBomList:
 
 	def __work(self):
 		sqlStr = "SELECT RTRIM(MB001) FROM INVMB(NOLOCK) INNER JOIN BOMCA(NOLOCK) ON CA003 = MB001 " \
-		         "WHERE MB025 = 'M' AND MB109 = 'Y' AND MB443 != '0'  ORDER BY MB001 "
+		         "WHERE MB025 = 'M' AND MB109 = 'Y' AND (MB001 LIKE '1%' OR MB001 LIKE '2%') " \
+		         "ORDER BY MB001 "
 		get = self.__mssql.sqlWork(sqlStr=sqlStr)
 		self.__log('成品号数量：' + str(len(get)))
 		if get is not None:
@@ -105,7 +106,7 @@ class GetBomList:
 
 		for getListTmp in getList:
 			rowTmp = []
-			if getListTmp[2] in ('P', 'M'):
+			if getListTmp[2] in ('P', 'S'):
 				rowTmp.append(getListTmp[0])
 				rowTmp.append(coefficient * getListTmp[1])
 				rowTmp.append(getListTmp[3])

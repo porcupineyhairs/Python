@@ -2,8 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd6bbc7e-3182-436c-9ff5-f01f19a5884d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Flask/LsScBomDifferent.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/AES.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ERPServer/.idea/ERPServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/.idea/ERPServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ERPServer/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ERPServer/Log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/Log/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/GetBomList.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/GetBomList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/BOM.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/BOMA0106.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/GetBomList.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/File/联友生产辅助工具.exe" beforeDir="false" afterPath="$PROJECT_DIR$/WgFile/联友生产辅助工具.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/FlaskDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/FlaskDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/MASTER.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/codeStyleSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/06c4715c-77f3-480e-bcb9-6e7e0867ae84/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/0eb82c08-edcc-4dac-8f44-11f1fd1aa153/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/1b016c6f-7c86-47ee-ae06-b99f2a7d8f4f/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/52e63a79-aef5-4d9b-97f8-9c39a05011fc/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/9c9da72c-a29f-45a4-aa30-6c56ca21a8e0/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/9fe564e8-90e9-4898-a514-99239e694026/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/a0240b75-7faf-4be4-a70c-61cc757046f0/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/aa615033-27ad-436c-a681-2ce1b2133734/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/b64b2c58-9a47-465e-ad16-0fc486fe7b02/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/f94dacaf-36c9-4adb-a744-2a79ee33f9d6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dictionaries/Administrator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dictionaries/harveyz.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/other.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/AES.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/BOM A0106.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/BOM.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/BOM2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/BOMCOPTR.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/LIB/ModuleDictionary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/LIB/ModuleStander.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/LIB/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/Main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/SelfModule.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/SelfModule2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/Src/Img/Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/sqlfrm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/test2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MASTER1/wl.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/TEST.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TEST/.idea/TEST.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TEST/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TEST/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/pyc-0.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,12 +143,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -169,6 +231,11 @@
       <workItem from="1589791347658" duration="644000" />
       <workItem from="1590549981565" duration="643000" />
       <workItem from="1590555808684" duration="209000" />
+      <workItem from="1592962302028" duration="845000" />
+      <workItem from="1592963153088" duration="478000" />
+      <workItem from="1592963974719" duration="27000" />
+      <workItem from="1593043566013" duration="26000" />
+      <workItem from="1594622150859" duration="16000" />
     </task>
     <servers />
   </component>
@@ -188,9 +255,10 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="327" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590555955675">
-      <screen x="41" y="23" width="1639" height="1027" />
+    <state x="326" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593043577092">
+      <screen x="40" y="23" width="1640" height="1027" />
     </state>
+    <state x="326" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/40.23.1640.1027@40.23.1640.1027" timestamp="1593043577092" />
     <state x="327" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/41.23.1639.1027@41.23.1639.1027" timestamp="1590555955675" />
     <state width="1592" height="257" key="GridCell.Tab.0.bottom" timestamp="1589792641850">
       <screen x="41" y="23" width="1639" height="1027" />
@@ -208,6 +276,10 @@
       <screen x="41" y="23" width="1639" height="1027" />
     </state>
     <state width="1592" height="257" key="GridCell.Tab.0.right/41.23.1639.1027@41.23.1639.1027" timestamp="1589792641849" />
+    <state x="362" y="175" key="SettingsEditor" timestamp="1593043586179">
+      <screen x="40" y="23" width="1640" height="1027" />
+    </state>
+    <state x="362" y="175" key="SettingsEditor/40.23.1640.1027@40.23.1640.1027" timestamp="1593043586179" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Flask$test_BOM.coverage" NAME="test_BOM Coverage Results" MODIFIED="1589791355418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />

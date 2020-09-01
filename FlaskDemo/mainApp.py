@@ -1,6 +1,5 @@
 
 from flask import Flask
-from flask_admin import Admin
 from flask_bootstrap import Bootstrap
 from config import Config
 from views import urlRoot, urlClient, urlTest, urlDownload, urlReport, urlMain, urlUser, urlApi
@@ -8,8 +7,6 @@ from views import urlRoot, urlClient, urlTest, urlDownload, urlReport, urlMain, 
 
 app = Flask(__name__)
 
-# Admin 管理页面
-# admin = Admin(app, name='管理后台', template_mode='bootstrap3')
 
 # app.config['SERVER_NAME'] ='192.168.1.60:8900'
 

@@ -2,51 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd6bbc7e-3182-436c-9ff5-f01f19a5884d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ERPServer/Log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/Log/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/AutoErpPlan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/AutoErpPlan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BOMA0106.py" beforeDir="false" afterPath="$PROJECT_DIR$/BOMA0106.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/.idea/FlaskApi.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/log/flask.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/mainApp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/modules/Api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/modules/Log/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/modules/Log/flaskLog.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/modules/Sql/MsSql.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/modules/Sql/MySql.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/modules/Sql/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/modules/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/ssl/nginx.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/ssl/nginx.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/ssl/server.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/ssl/server.csr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/ssl/server.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/ssl/server.key.org" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/static/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/views/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/views/urlApi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/views/urlRoot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskDemo/static/js/ajaxRefresh.js" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskDemo/static/js/keepAlive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskDemo/templates/urlMain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskDemo/templates/urlMain/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskDemo/templates/urlUser/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskDemo/templates/urlUser/login_bak.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskDemo/views/urlMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskDemo/views/urlMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskDemo/views/urlUser.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskDemo/views/urlUser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PySparkDemo/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PySparkDemo/.idea/PySparkTest.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PySparkDemo/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PySparkDemo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PySparkDemo/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PySparkDemo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/FlaskDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/FlaskDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/TEST.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TEST/.idea/TEST.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TEST/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TEST/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TEST/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +86,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -351,6 +313,7 @@
       <workItem from="1589780867333" duration="2491000" />
       <workItem from="1589788021104" duration="540000" />
       <workItem from="1589791347658" duration="644000" />
+      <workItem from="1592962249200" duration="12000" />
     </task>
     <servers />
   </component>
