@@ -1,366 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="36d581ef-397b-4c6c-a487-b7a11f7e8dbd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ERPServer/.idea/ERPServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/.idea/ERPServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/BaseHelper/ErpMsg.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/BaseHelper/ErpMsg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/Log/Main.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/Log/Main.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/Log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/Log/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/AutoErpPlan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/AutoErpPlan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/GetBomList.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/GetBomList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/MOCTC2Y.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/MOCTC2Y.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/BOM.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/BOMA0106.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/GetBomList.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskBase/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskBase/.idea/Flask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskBase/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskBase/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskBase/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskBase/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskBase/File/联友生产辅助工具.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskBase/WgFile/联友生产辅助工具.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskBase/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskBase/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/FlaskDemo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/.idea/webResources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/log/flask.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/mainAppCgPlatform.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/Api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/CgPlanform/CgPlatform.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/CgPlanform/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/GlobalModules/CheckSession.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/GlobalModules/CreateCheckCodeImg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/GlobalModules/CreateRandomCode.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/GlobalModules/DataConvert.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/GlobalModules/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/Log/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/Log/flaskLog.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/Sql/MsSql.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/Sql/MySql.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/Sql/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/User/UserLogin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/User/UserManagement.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/User/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/modules/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/shell/clean_checkCode.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/css/login/reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/css/login/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/font/font.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/img/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/img/bg2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/img/error/head404.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/img/error/txtbg404.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/img/login/name.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/img/login/password.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/img/logo/LY-logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/barcode/JsBarcode.all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/bootstrap-table-locale-all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/bootstrap-table-locale-all.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/bootstrap-table-vue.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/bootstrap-table-vue.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/bootstrap-table-vue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/bootstrap-table-vue.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/bootstrap-table.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/bootstrap-table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/bootstrap-table.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/bootstrap-table.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/accent-neutralise/bootstrap-table-accent-neutralise.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/addrbar/bootstrap-table-addrbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/addrbar/bootstrap-table-addrbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/cell-input/bootstrap-table-cell-input.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/cell-input/bootstrap-table-cell-input.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/cell-input/bootstrap-table-cell-input.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/cell-input/bootstrap-table-cell-input.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/cookie/bootstrap-table-cookie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/cookie/bootstrap-table-cookie.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/copy-rows/bootstrap-table-copy-rows.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/copy-rows/bootstrap-table-copy-rows.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/defer-url/bootstrap-table-defer-url.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/defer-url/bootstrap-table-defer-url.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/editable/bootstrap-table-editable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/editable/bootstrap-table-editable.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/export/bootstrap-table-export.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/export/bootstrap-table-export.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/filter-control/bootstrap-table-filter-control.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/fixed-columns/bootstrap-table-fixed-columns.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/fixed-columns/bootstrap-table-fixed-columns.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/fixed-columns/bootstrap-table-fixed-columns.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/fixed-columns/bootstrap-table-fixed-columns.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/group-by-v2/bootstrap-table-group-by.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/i18n-enhance/bootstrap-table-i18n-enhance.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/i18n-enhance/bootstrap-table-i18n-enhance.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/key-events/bootstrap-table-key-events.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/key-events/bootstrap-table-key-events.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/mobile/bootstrap-table-mobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/mobile/bootstrap-table-mobile.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/multiple-sort/bootstrap-table-multiple-sort.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/page-jump-to/bootstrap-table-page-jump-to.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/page-jump-to/bootstrap-table-page-jump-to.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/page-jump-to/bootstrap-table-page-jump-to.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/page-jump-to/bootstrap-table-page-jump-to.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/pipeline/bootstrap-table-pipeline.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/pipeline/bootstrap-table-pipeline.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/print/bootstrap-table-print.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/print/bootstrap-table-print.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder-columns.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder-columns.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/resizable/bootstrap-table-resizable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/resizable/bootstrap-table-resizable.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/sticky-header/bootstrap-table-sticky-header.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/toolbar/bootstrap-table-toolbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/treegrid/bootstrap-table-treegrid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/extensions/treegrid/bootstrap-table-treegrid.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-af-ZA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-af-ZA.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ar-SA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ar-SA.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ca-ES.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ca-ES.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-cs-CZ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-cs-CZ.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-da-DK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-da-DK.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-de-DE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-de-DE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-el-GR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-el-GR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-en-US.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-en-US.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-es-AR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-es-AR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-es-CL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-es-CL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-es-CR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-es-CR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-es-ES.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-es-ES.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-es-MX.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-es-MX.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-es-NI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-es-NI.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-es-SP.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-es-SP.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-et-EE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-et-EE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-eu-EU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-eu-EU.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-fa-IR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-fa-IR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-fi-FI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-fi-FI.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-fr-BE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-fr-BE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-fr-CH.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-fr-CH.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-fr-FR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-fr-FR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-fr-LU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-fr-LU.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-he-IL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-he-IL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-hr-HR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-hr-HR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-hu-HU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-hu-HU.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-id-ID.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-id-ID.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-it-IT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-it-IT.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ja-JP.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ja-JP.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ka-GE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ka-GE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ko-KR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ko-KR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ms-MY.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ms-MY.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-nb-NO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-nb-NO.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-nl-BE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-nl-BE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-nl-NL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-nl-NL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-pl-PL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-pl-PL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-pt-BR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-pt-BR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-pt-PT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-pt-PT.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ro-RO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ro-RO.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ru-RU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ru-RU.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-sk-SK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-sk-SK.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-sr-Cyrl-RS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-sr-Cyrl-RS.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-sr-Latn-RS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-sr-Latn-RS.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-sv-SE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-sv-SE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-th-TH.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-th-TH.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-tr-TR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-tr-TR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-uk-UA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-uk-UA.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ur-PK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-ur-PK.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-uz-Latn-UZ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-uz-Latn-UZ.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-vi-VN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-vi-VN.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-zh-CN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-zh-TW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/locale/bootstrap-table-zh-TW.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/bulma/bootstrap-table-bulma.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/bulma/bootstrap-table-bulma.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/bulma/bootstrap-table-bulma.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/bulma/bootstrap-table-bulma.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/foundation/bootstrap-table-foundation.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/foundation/bootstrap-table-foundation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/foundation/bootstrap-table-foundation.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/foundation/bootstrap-table-foundation.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/materialize/bootstrap-table-materialize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/materialize/bootstrap-table-materialize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/materialize/bootstrap-table-materialize.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/materialize/bootstrap-table-materialize.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/semantic/bootstrap-table-semantic.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/semantic/bootstrap-table-semantic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/semantic/bootstrap-table-semantic.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap-table/themes/semantic/bootstrap-table-semantic.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/cgPlatform.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/jquery/jquery-3.4.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/keepAlive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/login/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/login/particles.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/mydate/mydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/mydate/mydate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/js/qrcode/qrcode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/others/checkCode/20200512-103539-127.0.0.1-11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/others/checkCode/20200512-103556-127.0.0.1-39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/static/others/checkCode/20200515-134756-127.0.0.1-60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/templates/urlCgPlatform/shd.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/templates/urlDownload/download.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/templates/urlMain/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/templates/urlMain/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/templates/urlRoot/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/templates/urlTest/01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/templates/urlUser/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/templates/urlUser/login_bak.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/views/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/views/urlApi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/views/urlCgPlatform.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/views/urlDownload.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/views/urlMain.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/views/urlRoot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskCgPlatform/views/urlUser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskDemo/downloadFile/LyWg/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskDemo/downloadFile/LyWg/2/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskDemo/downloadFile/files/11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskDemo/downloadFile/files/222/22.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskDemo/downloadFile/files/222/你好.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskDemo/shell/clean_checkCode.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/MASTER.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/codeStyleSettings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/06c4715c-77f3-480e-bcb9-6e7e0867ae84/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/0eb82c08-edcc-4dac-8f44-11f1fd1aa153/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/1b016c6f-7c86-47ee-ae06-b99f2a7d8f4f/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/52e63a79-aef5-4d9b-97f8-9c39a05011fc/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/9c9da72c-a29f-45a4-aa30-6c56ca21a8e0/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/9fe564e8-90e9-4898-a514-99239e694026/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/a0240b75-7faf-4be4-a70c-61cc757046f0/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/aa615033-27ad-436c-a681-2ce1b2133734/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/b64b2c58-9a47-465e-ad16-0fc486fe7b02/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dataSources/f94dacaf-36c9-4adb-a744-2a79ee33f9d6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dictionaries/Administrator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/dictionaries/harveyz.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/libraries/R_User_Library.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/other.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/AES.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/BOM A0106.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/BOM.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/BOM2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/BOMCOPTR.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/LIB/ModuleDictionary.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/LIB/ModuleStander.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/LIB/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/Main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/SelfModule.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/SelfModule2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/Src/Img/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/sqlfrm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/test2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MASTER1/wl.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TEST.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TEST.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ERPServer/Main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/AutoErpPlan-Bak.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ERPServer/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/Flask.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/dictionaries/harvey.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/dictionaries/harveyz.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Comand/Route.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Comand/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Config/APSchedulerConfig.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Config/RouteConfig.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Config/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/File/WG/联友生产辅助工具.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/BS周生产进度表.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2019-01-02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2019-01-04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2019-02-20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2019-02-21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2019-02-23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2019-02-24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Error/Error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Error/Error.log.2019-03-14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Error/Error.log.2019-03-19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2019-01-02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2019-02-20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2019-02-21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2019-02-23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2019-02-24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2019-03-14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/MaDuo/MaDuoInfo.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/MaDuo/MaDuoInfo.log.2018-12-13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/MaDuo/MaDuoInfo.log.2018-12-14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/MaDuo/MaDuoInfo.log.2019-02-20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/MaDuo/MaDuoInfo.log.2019-03-19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/MaDuo/MaDuoInfo.log.2019-04-01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/MaDuo/MaDuoInfo.log.2019-05-22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2018-12-20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2018-12-21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2018-12-25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2018-12-28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2018-12-29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-02-20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-02-23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-02-24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-03-19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-03-22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-03-29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-03-30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-05-21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-05-22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_LL.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_LL.log.2019-02-20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_LL.log.2019-03-19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_LL.log.2019-03-29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_LL.log.2019-03-30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_LL.log.2019-05-21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log.2019-03-19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log.2019-03-21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log.2019-03-22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log.2019-03-24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log.2019-03-26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log.2019-03-27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log.2019-03-29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/MessionHandeler/Main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/MessionHandeler/Route.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/MessionHandeler/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/GetDbSvrTime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/GetVersion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/Log.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/MaDuoSystem/MD_GetInfo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/MaDuoSystem/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/ModuleDictionary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/Num2Char.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/PDA/JH_LYXA.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/PDA/LL_LYXA.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/PDA/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/Permission.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/SelfModule.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/UserManage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Module/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Test/BOM.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Test/Route.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Test/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Test/encript.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Test/encript2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Test/mysql_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Test/sqlsvrwork.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/Test/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/WebHandeler/Error.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/WebHandeler/Main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/WebHandeler/Route.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/WebHandeler/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/WebHandeler/gongshi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/WebTest/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/WebTest/test1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/pyc.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/static/img/error/head404.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/static/img/error/txtbg404.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/static/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/templates/error/403.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/templates/error/404.bak.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/templates/error/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/templates/error/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/templates/json table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/templates/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/templates/test1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/templates/testform.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/templates/zzz.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/templates/zzzz.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/pyc-0.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/二叉树.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/单链表.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/双链表.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/堆.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/字典树.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/栈.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/队列(数组).py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据结构/队列(链表).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoptrReplace.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoptrReplace.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoptrReplace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/pyc.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -406,14 +215,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.sc_plan">
+  <component name="RunManager" selected="Python.test0">
     <configuration name="BOM" type="PythonConfigurationType" factoryName="Python">
       <module name="TEST" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -444,13 +253,35 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.6" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CoptrReplace.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MoctaBoxSize" type="PythonConfigurationType" factoryName="Python">
+      <module name="TEST" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MoctaBoxSize.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -481,7 +312,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sc_plan" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="test0" type="PythonConfigurationType" factoryName="Python">
       <module name="TEST" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -493,8 +324,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plan_kid.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test000.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -504,12 +334,14 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.RandomCode" />
-      <item itemvalue="Python.CoptrReplace" />
       <item itemvalue="Python.BOM" />
-      <item itemvalue="Python.sc_plan" />
+      <item itemvalue="Python.CoptrReplace" />
+      <item itemvalue="Python.test0" />
+      <item itemvalue="Python.MoctaBoxSize" />
+      <item itemvalue="Python.RandomCode" />
     </list>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -554,73 +386,42 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="322" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596267886845">
-      <screen x="37" y="23" width="1643" height="1027" />
-    </state>
-    <state x="322" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/37.23.1643.1027@37.23.1643.1027" timestamp="1596267886845" />
-    <state x="324" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/40.23.1640.1027@40.23.1640.1027" timestamp="1592803382023" />
-    <state x="325" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/41.23.1639.1027@41.23.1639.1027" timestamp="1591774981585" />
-    <state x="548" y="279" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591769922243">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state x="548" y="279" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/41.23.1639.1027@41.23.1639.1027" timestamp="1591769922243" />
-    <state x="598" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591770290803">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state x="598" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/41.23.1639.1027@41.23.1639.1027" timestamp="1591770290803" />
-    <state width="1601" height="279" key="GridCell.Tab.0.bottom" timestamp="1596268507891">
-      <screen x="37" y="23" width="1643" height="1027" />
-    </state>
-    <state width="1601" height="279" key="GridCell.Tab.0.bottom/37.23.1643.1027@37.23.1643.1027" timestamp="1596268507891" />
-    <state width="1598" height="279" key="GridCell.Tab.0.bottom/40.23.1640.1027@40.23.1640.1027" timestamp="1592809959556" />
-    <state width="1597" height="279" key="GridCell.Tab.0.bottom/41.23.1639.1027@41.23.1639.1027" timestamp="1592277529799" />
-    <state width="1601" height="279" key="GridCell.Tab.0.center" timestamp="1596268507891">
-      <screen x="37" y="23" width="1643" height="1027" />
-    </state>
-    <state width="1601" height="279" key="GridCell.Tab.0.center/37.23.1643.1027@37.23.1643.1027" timestamp="1596268507891" />
-    <state width="1598" height="279" key="GridCell.Tab.0.center/40.23.1640.1027@40.23.1640.1027" timestamp="1592809959555" />
-    <state width="1597" height="279" key="GridCell.Tab.0.center/41.23.1639.1027@41.23.1639.1027" timestamp="1592277529798" />
-    <state width="1601" height="279" key="GridCell.Tab.0.left" timestamp="1596268507890">
-      <screen x="37" y="23" width="1643" height="1027" />
-    </state>
-    <state width="1601" height="279" key="GridCell.Tab.0.left/37.23.1643.1027@37.23.1643.1027" timestamp="1596268507890" />
-    <state width="1598" height="279" key="GridCell.Tab.0.left/40.23.1640.1027@40.23.1640.1027" timestamp="1592809959555" />
-    <state width="1597" height="279" key="GridCell.Tab.0.left/41.23.1639.1027@41.23.1639.1027" timestamp="1592277529796" />
-    <state width="1601" height="279" key="GridCell.Tab.0.right" timestamp="1596268507891">
-      <screen x="37" y="23" width="1643" height="1027" />
-    </state>
-    <state width="1601" height="279" key="GridCell.Tab.0.right/37.23.1643.1027@37.23.1643.1027" timestamp="1596268507891" />
-    <state width="1598" height="279" key="GridCell.Tab.0.right/40.23.1640.1027@40.23.1640.1027" timestamp="1592809959556" />
-    <state width="1597" height="279" key="GridCell.Tab.0.right/41.23.1639.1027@41.23.1639.1027" timestamp="1592277529799" />
-    <state width="1597" height="279" key="GridCell.Tab.1.bottom" timestamp="1591774966222">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state width="1597" height="279" key="GridCell.Tab.1.bottom/41.23.1639.1027@41.23.1639.1027" timestamp="1591774966222" />
-    <state width="1597" height="279" key="GridCell.Tab.1.center" timestamp="1591774966221">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state width="1597" height="279" key="GridCell.Tab.1.center/41.23.1639.1027@41.23.1639.1027" timestamp="1591774966221" />
-    <state width="1597" height="279" key="GridCell.Tab.1.left" timestamp="1591774966221">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state width="1597" height="279" key="GridCell.Tab.1.left/41.23.1639.1027@41.23.1639.1027" timestamp="1591774966221" />
-    <state width="1597" height="279" key="GridCell.Tab.1.right" timestamp="1591774966222">
-      <screen x="41" y="23" width="1639" height="1027" />
-    </state>
-    <state width="1597" height="279" key="GridCell.Tab.1.right/41.23.1639.1027@41.23.1639.1027" timestamp="1591774966222" />
-    <state x="361" y="175" key="SettingsEditor" timestamp="1592873719837">
-      <screen x="40" y="23" width="1640" height="1027" />
-    </state>
-    <state x="361" y="175" key="SettingsEditor/40.23.1640.1027@40.23.1640.1027" timestamp="1592873719837" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TEST$GeneratePassWd.coverage" NAME="GeneratePassWd Coverage Results" MODIFIED="1576812646888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TEST$BOM.coverage" NAME="BOM Coverage Results" MODIFIED="1592803895776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TEST$CoptrReplace.coverage" NAME="CoptrReplace Coverage Results" MODIFIED="1592277222000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TEST$test0.coverage" NAME="CoptrReplace Coverage Results" MODIFIED="1591777166580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TEST$sc_plan.coverage" NAME="sc_plan Coverage Results" MODIFIED="1596268133371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TEST$Oracle.coverage" NAME="Oracle Coverage Results" MODIFIED="1575017689381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TEST$logInsert.coverage" NAME="logInsert Coverage Results" MODIFIED="1572595377278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  <component name="WindowStateProjectService">
+    <state x="321" y="198" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606460716391">
+      <screen x="36" y="23" width="1644" height="1027" />
+    </state>
+    <state x="321" y="198" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog/36.23.1644.1027@36.23.1644.1027" timestamp="1606460716391" />
+    <state width="1622" height="280" key="GridCell.Tab.0.bottom" timestamp="1606463792207">
+      <screen x="36" y="23" width="1644" height="1027" />
+    </state>
+    <state width="1622" height="280" key="GridCell.Tab.0.bottom/36.23.1644.1027@36.23.1644.1027" timestamp="1606463792207" />
+    <state width="1622" height="280" key="GridCell.Tab.0.center" timestamp="1606463792206">
+      <screen x="36" y="23" width="1644" height="1027" />
+    </state>
+    <state width="1622" height="280" key="GridCell.Tab.0.center/36.23.1644.1027@36.23.1644.1027" timestamp="1606463792206" />
+    <state width="1622" height="280" key="GridCell.Tab.0.left" timestamp="1606463792205">
+      <screen x="36" y="23" width="1644" height="1027" />
+    </state>
+    <state width="1622" height="280" key="GridCell.Tab.0.left/36.23.1644.1027@36.23.1644.1027" timestamp="1606463792205" />
+    <state width="1622" height="280" key="GridCell.Tab.0.right" timestamp="1606463792206">
+      <screen x="36" y="23" width="1644" height="1027" />
+    </state>
+    <state width="1622" height="280" key="GridCell.Tab.0.right/36.23.1644.1027@36.23.1644.1027" timestamp="1606463792206" />
+    <state x="523" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1606461043437">
+      <screen x="36" y="23" width="1644" height="1027" />
+    </state>
+    <state x="523" y="250" width="670" height="676" key="search.everywhere.popup/36.23.1644.1027@36.23.1644.1027" timestamp="1606461043437" />
   </component>
 </project>

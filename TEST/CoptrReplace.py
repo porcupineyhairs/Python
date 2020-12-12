@@ -1,7 +1,24 @@
+# 用于替换易飞客户配置中的勾选项
+# 会修改COPTR表，慎用
+# 只需要修改映射关系和主Sql语句即可
+
 from MsSql import MsSqlHelper
-ph_list = [['3010301014', '3010301023'], ['3010301015', '3010301024'], ['3010301016', '3010301025'],
-           ['3010301017', '3010301026'], ['3010301018', '3010301027'], ['3010301019', '3010301028'],
-           ['3010301020', '3010301029'], ['3010301021', '3010301030'], ['3010301022', '3010301031']]
+
+# 被替换品号和新品号的映射关系
+ph_list = [['3010305017', '3010305021'],
+           ['3010305018', '3010305023'],
+           ['3010305019', '3010305022'],
+           ['3010305020', '3010305024']]
+
+# 主Sql语句，确定客户配置的范围
+mainSqlStr = r"SELECT DISTINCT RTRIM(TQ001), RTRIM(TQ002)  " \
+	         r"FROM COPTQ(NOLOCK) " \
+	         r"LEFT JOIN COPTR(NOLOCK) ON TQ001=TR001 AND TQ002=TR002 " \
+	         r"WHERE TR009 IN ('3010305017', '3010305018', '3010305019', '3010305020') " \
+	         r"AND TR017 = 'Y' " \
+	         r"AND TQ006 = 'Y' " \
+	         r"ORDER BY RTRIM(TQ001), RTRIM(TQ002) "
+
 
 mssql = MsSqlHelper(host='192.168.0.99', user='sa', passwd='comfortgroup2016{', database='COMFORT')
 
@@ -47,17 +64,13 @@ def replacePh(tr1, tr2, tr3, ph1, ph2):
 	sqlStr = r"UPDATE COPTR SET TR017='{4}' " \
 	         r"WHERE TR001='{0}' AND TR002='{1}' AND SUBSTRING(TR003, 1, LEN(TR003)-3)='{2}' AND TR009='{3}' "
 	print('replacePh: ' + sqlStr.format(tr1, tr2, tr3, ph2, 'Y'))
-	# mssql.sqlWork(sqlStr.format(tr1, tr2, tr3, ph2, 'Y'))
+	mssql.sqlWork(sqlStr.format(tr1, tr2, tr3, ph2, 'Y'))
 	print('replacePh: ' + sqlStr.format(tr1, tr2, tr3, ph1, 'N'))
-	# mssql.sqlWork(sqlStr.format(tr1, tr2, tr3, ph1, 'N'))
+	mssql.sqlWork(sqlStr.format(tr1, tr2, tr3, ph1, 'N'))
 
 
 def main():
-	sqlStr = r"SELECT RTRIM(TQ001), RTRIM(TQ002) FROM COPTQ WHERE TQ002 LIKE '%ZB%' AND TQ002 LIKE '%保友%'  " \
-	         r"AND TQ006 = 'Y' " \
-	         r"ORDER BY TQ001, TQ002"
-
-	mainGet = mssql.sqlWork(sqlStr=sqlStr)
+	mainGet = mssql.sqlWork(sqlStr=mainSqlStr)
 	if mainGet is not None:
 		for tmp in mainGet:
 			work(tmp)

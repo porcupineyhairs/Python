@@ -1,0 +1,113 @@
+2020-08-21 16:27:09,357 - INFO: AutoErpPlan: Work Start
+2020-08-21 16:27:09,424 - INFO: AutoErpPlan: 配置信息：全局使能锁：True, 计算低阶码：True，计算层级码：False，发放工单：True，发放请购单：False，最大执行次数：3
+2020-08-21 16:27:09,424 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-08-21 16:27:09,536 - INFO: AutoErpPlan: 重置已变更但工单未审的订单，不存在工单但状态为Y的订单
+2020-08-21 16:27:11,736 - INFO: AutoErpPlan: Work With PlanDd:2201-017001     0034  PlanId:A22010170010034
+2020-08-21 16:27:11,760 - INFO: AutoErpPlan: Set Working Flag planDd: 2201-017001     0034
+2020-08-21 16:27:11,886 - INFO: AutoErpPlan: Calculate PhList: [['22000397', '']]
+2020-08-21 16:27:12,106 - INFO: AutoErpPlan: Insert Job BomCalculate: 品号 :22000397 - JobId: 20200821001416
+2020-08-21 16:27:21,251 - INFO: AutoErpPlan: Job Done: JobId:20200821001416
+2020-08-21 16:27:21,440 - INFO: AutoErpPlan: Insert Job Generate Plan: planDd: 2201-017001     0034  planId: A22010170010034
+2020-08-21 16:28:06,727 - INFO: AutoErpPlan: Job Done: JobId:20200821001417
+2020-08-21 16:28:06,784 - INFO: AutoErpPlan: 计划为标准BOM物料
+2020-08-21 16:28:06,784 - INFO: AutoErpPlan: 当前订单执行LRP次数将达到配置上限3次，视为订单使用标准BOM配置
+2020-08-21 16:28:07,007 - INFO: AutoErpPlan: Insert Job Layout Sc Plan: A22010170010034
+2020-08-21 16:28:18,158 - INFO: AutoErpPlan: Job Done: JobId:20200821001419
+2020-08-21 16:28:18,347 - INFO: AutoErpPlan: Set Work Done Flag planDd: 2201-017001     0034
+2020-08-21 16:28:18,542 - INFO: AutoErpPlan: Insert Job Clean PlanId: A22010170010034
+2020-08-21 16:28:22,602 - INFO: AutoErpPlan: Job Done: JobId:20200821001421
+2020-08-21 16:28:26,485 - INFO: AutoErpPlan: Work With PlanDd:2201-017021     0005  PlanId:A22010170210005
+2020-08-21 16:28:26,501 - INFO: AutoErpPlan: Set Working Flag planDd: 2201-017021     0005
+2020-08-21 16:28:26,906 - INFO: AutoErpPlan: Calculate PhList: [['10570414', 'SEK W黑+SK黑 KD']]
+2020-08-21 16:28:27,103 - INFO: AutoErpPlan: Insert Job BomCalculate: 品号 :10570414 - JobId: 20200821001422
+2020-08-21 16:28:31,152 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-08-21 16:28:31,233 - INFO: AutoErpPlan: Work Finished
+2020-09-29 13:41:02,647 - INFO: AutoErpPlan: Work Start
+2020-09-29 13:41:02,694 - INFO: AutoErpPlan: 配置信息：全局使能锁：True, 计算低阶码：True，计算层级码：False，发放工单：True，发放请购单：False，最大执行次数：3
+2020-09-29 13:41:02,694 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-09-29 13:41:02,833 - INFO: AutoErpPlan: 重置已变更但工单未审的订单，不存在工单但状态为Y的订单
+2020-09-29 13:41:07,235 - INFO: AutoErpPlan: Work With PlanDd:2201-016946     0115  PlanId:A22010169460115
+2020-09-29 13:41:07,322 - INFO: AutoErpPlan: Set Working Flag planDd: 2201-016946     0115
+2020-09-29 13:41:08,056 - INFO: AutoErpPlan: Calculate PhList: [['3119900011', '']]
+2020-09-29 13:41:08,387 - INFO: AutoErpPlan: Insert Job BomCalculate: 品号 :3119900011 - JobId: 20200929000321
+2020-09-29 13:41:18,650 - INFO: AutoErpPlan: Job Done: JobId:20200929000321
+2020-09-29 13:41:18,851 - INFO: AutoErpPlan: Insert Job Generate Plan: planDd: 2201-016946     0115  planId: A22010169460115
+2020-09-29 13:41:27,451 - INFO: AutoErpPlan: Job Done: JobId:20200929000322
+2020-09-29 13:41:27,454 - INFO: AutoErpPlan: 该订单无客户配置
+2020-09-29 13:41:27,454 - INFO: AutoErpPlan: 当前订单执行LRP次数将达到配置上限3次，视为订单使用标准BOM配置
+2020-09-29 13:41:27,667 - INFO: AutoErpPlan: Insert Job Layout Sc Plan: A22010169460115
+2020-09-29 13:41:39,316 - INFO: AutoErpPlan: Job Done: JobId:20200929000323
+2020-09-29 13:41:39,498 - INFO: AutoErpPlan: Set Work Done Flag planDd: 2201-016946     0115
+2020-09-29 13:41:39,698 - INFO: AutoErpPlan: Insert Job Clean PlanId: A22010169460115
+2020-09-29 13:41:48,302 - INFO: AutoErpPlan: Job Done: JobId:20200929000324
+2020-09-29 13:41:48,379 - INFO: AutoErpPlan: Not Found Order List!
+2020-09-29 13:41:48,379 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-09-29 13:41:48,465 - INFO: AutoErpPlan: Work Finished
+2020-09-29 13:42:25,637 - INFO: AutoErpPlan: Work Start
+2020-09-29 13:42:25,675 - INFO: AutoErpPlan: 配置信息：全局使能锁：True, 计算低阶码：True，计算层级码：False，发放工单：True，发放请购单：False，最大执行次数：3
+2020-09-29 13:42:25,675 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-09-29 13:42:25,765 - INFO: AutoErpPlan: 重置已变更但工单未审的订单，不存在工单但状态为Y的订单
+2020-09-29 13:42:27,104 - INFO: AutoErpPlan: Work With PlanDd:2201-016946     0115  PlanId:A22010169460115
+2020-09-29 13:42:27,126 - INFO: AutoErpPlan: Set Working Flag planDd: 2201-016946     0115
+2020-09-29 13:42:27,267 - INFO: AutoErpPlan: Calculate PhList: [['3119900011', '']]
+2020-09-29 13:42:27,467 - INFO: AutoErpPlan: Insert Job BomCalculate: 品号 :3119900011 - JobId: 20200929000325
+2020-09-29 13:42:34,596 - INFO: AutoErpPlan: Job Done: JobId:20200929000325
+2020-09-29 13:42:34,798 - INFO: AutoErpPlan: Insert Job Generate Plan: planDd: 2201-016946     0115  planId: A22010169460115
+2020-09-29 13:42:46,439 - INFO: AutoErpPlan: Job Done: JobId:20200929000326
+2020-09-29 13:42:46,444 - INFO: AutoErpPlan: 该订单无客户配置
+2020-09-29 13:42:46,444 - INFO: AutoErpPlan: 当前订单执行LRP次数将达到配置上限3次，视为订单使用标准BOM配置
+2020-09-29 13:42:46,653 - INFO: AutoErpPlan: Insert Job Layout Sc Plan: A22010169460115
+2020-09-29 13:42:57,794 - INFO: AutoErpPlan: Job Done: JobId:20200929000327
+2020-09-29 13:42:57,975 - INFO: AutoErpPlan: Set Work Done Flag planDd: 2201-016946     0115
+2020-09-29 13:42:58,176 - INFO: AutoErpPlan: Insert Job Clean PlanId: A22010169460115
+2020-09-29 13:43:07,321 - INFO: AutoErpPlan: Job Done: JobId:20200929000328
+2020-09-29 13:43:07,420 - INFO: AutoErpPlan: Not Found Order List!
+2020-09-29 13:43:07,421 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-09-29 13:43:07,502 - INFO: AutoErpPlan: Work Finished
+2020-09-29 13:51:38,828 - INFO: AutoErpPlan: Work Start
+2020-09-29 13:51:38,870 - INFO: AutoErpPlan: 配置信息：全局使能锁：True, 计算低阶码：True，计算层级码：False，发放工单：True，发放请购单：False，最大执行次数：3
+2020-09-29 13:51:38,870 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-09-29 13:51:38,962 - INFO: AutoErpPlan: 重置已变更但工单未审的订单，不存在工单但状态为Y的订单
+2020-09-29 13:51:40,285 - INFO: AutoErpPlan: Work With PlanDd:2201-017009     0007  PlanId:A22010170090007
+2020-09-29 13:51:40,303 - INFO: AutoErpPlan: Set Working Flag planDd: 2201-017009     0007
+2020-09-29 13:51:40,665 - INFO: AutoErpPlan: Calculate PhList: [['22000461', '100S 205束55 电镀']]
+2020-09-29 13:51:40,877 - INFO: AutoErpPlan: Insert Job BomCalculate: 品号 :22000461 - JobId: 20200929000338
+2020-09-29 13:51:55,099 - INFO: AutoErpPlan: Job Done: JobId:20200929000338
+2020-09-29 13:51:55,322 - INFO: AutoErpPlan: Insert Job Generate Plan: planDd: 2201-017009     0007  planId: A22010170090007
+2020-09-29 13:52:04,951 - INFO: AutoErpPlan: Job Done: JobId:20200929000340
+2020-09-29 13:52:05,302 - INFO: AutoErpPlan: Insert Job Layout Sc Plan: A22010170090007
+2020-09-29 13:52:16,450 - INFO: AutoErpPlan: Job Done: JobId:20200929000342
+2020-09-29 13:52:16,654 - INFO: AutoErpPlan: Set Work Done Flag planDd: 2201-017009     0007
+2020-09-29 13:52:16,871 - INFO: AutoErpPlan: Insert Job Clean PlanId: A22010170090007
+2020-09-29 13:52:25,996 - INFO: AutoErpPlan: Job Done: JobId:20200929000344
+2020-09-29 13:52:26,088 - INFO: AutoErpPlan: Not Found Order List!
+2020-09-29 13:52:26,089 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-09-29 13:52:26,175 - INFO: AutoErpPlan: Work Finished
+2020-09-29 13:52:32,336 - INFO: AutoErpPlan: Work Start
+2020-09-29 13:52:32,376 - INFO: AutoErpPlan: 配置信息：全局使能锁：True, 计算低阶码：True，计算层级码：False，发放工单：True，发放请购单：False，最大执行次数：3
+2020-09-29 13:52:32,377 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-09-29 13:52:32,452 - INFO: AutoErpPlan: 重置已变更但工单未审的订单，不存在工单但状态为Y的订单
+2020-09-29 13:52:32,776 - INFO: AutoErpPlan: Not Found Order List!
+2020-09-29 13:52:32,776 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-09-29 13:52:32,870 - INFO: AutoErpPlan: Work Finished
+2020-09-29 13:57:03,366 - INFO: AutoErpPlan: Work Start
+2020-09-29 13:57:03,407 - INFO: AutoErpPlan: 配置信息：全局使能锁：True, 计算低阶码：True，计算层级码：False，发放工单：True，发放请购单：False，最大执行次数：3
+2020-09-29 13:57:03,407 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-09-29 13:57:03,486 - INFO: AutoErpPlan: 重置已变更但工单未审的订单，不存在工单但状态为Y的订单
+2020-09-29 13:57:03,818 - INFO: AutoErpPlan: Not Found Order List!
+2020-09-29 13:57:03,819 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-09-29 13:57:03,901 - INFO: AutoErpPlan: Work Finished
+2020-09-29 13:59:58,903 - INFO: AutoErpPlan: Work Start
+2020-09-29 13:59:58,943 - INFO: AutoErpPlan: 配置信息：全局使能锁：True, 计算低阶码：True，计算层级码：False，发放工单：True，发放请购单：False，最大执行次数：3
+2020-09-29 13:59:58,944 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-09-29 13:59:59,046 - INFO: AutoErpPlan: 重置已变更但工单未审的订单，不存在工单但状态为Y的订单
+2020-09-29 13:59:59,421 - INFO: AutoErpPlan: Not Found Order List!
+2020-09-29 13:59:59,421 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-09-29 13:59:59,520 - INFO: AutoErpPlan: Work Finished
+2020-09-29 14:13:34,910 - INFO: AutoErpPlan: Work Start
+2020-09-29 14:13:34,950 - INFO: AutoErpPlan: 配置信息：全局使能锁：True, 计算低阶码：True，计算层级码：False，发放工单：True，发放请购单：False，最大执行次数：3
+2020-09-29 14:13:34,950 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-09-29 14:13:35,064 - INFO: AutoErpPlan: 重置已变更但工单未审的订单，不存在工单但状态为Y的订单
+2020-09-29 14:13:35,533 - INFO: AutoErpPlan: Not Found Order List!
+2020-09-29 14:13:35,533 - INFO: AutoErpPlan: 还原LRPFLAG为n,y的状态
+2020-09-29 14:13:35,639 - INFO: AutoErpPlan: Work Finished

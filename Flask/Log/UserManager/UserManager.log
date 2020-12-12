@@ -1,4 +1,0 @@
-2019-03-30 09:08:06,019 - INFO: http://192.168.1.60/Client/UserManager - POST - 192.168.4.21 - get:{'Module': 'UserManager', 'Mode': 'UserLogin', 'Uid': '001161', 'Pwd': '52C69E3A57331081823331C4E69D3F2E'} - back:{'Module': 'UserManager', 'Mode': 'UserLogin', 'Status': 'Y', 'Uid': '001161', 'Role': None, 'Dpt': '仓储中心', 'Name': '胡秀丽', 'Permission': '仓储中心_扫描进货单|', 'Message': None}
-
-2019-03-30 10:31:38,849 - INFO: http://192.168.1.60/Client/UserManager - POST - 192.168.4.3 - get:{'Module': 'UserManager', 'Mode': 'UserLogin', 'Uid': '001165', 'Pwd': '81DF17A4559E1520AA32AAE12C25E6'} - back:{'Module': 'UserManager', 'Mode': 'UserLogin', 'Status': 'Y', 'Uid': '001165', 'Role': None, 'Dpt': '仓储中心', 'Name': '邓杏玲', 'Permission': '仓储中心_扫描领料单|', 'Message': None}
-

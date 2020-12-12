@@ -1,6 +1,0 @@
-2019-02-24 08:54:21,106 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.5.18 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.32'} - back:{'Mode': 'Yes', 'URL': None}
-
-2019-02-24 09:48:15,814 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.1.5 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.32'} - back:{'Mode': 'Yes', 'URL': None}
-
-2019-02-24 10:28:17,804 - INFO: http://192.168.1.60/Client/GetVersion - POST - 192.168.4.21 - get:{'ProgName': '联友生产辅助工具', 'Version': '2.1.6.32'} - back:{'Mode': 'Yes', 'URL': None}
-

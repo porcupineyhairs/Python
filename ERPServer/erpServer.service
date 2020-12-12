@@ -1,0 +1,16 @@
+[Unit]
+# 文件放置目录(CentOS 7)/usr/lib/systemd/system/erpServer.service
+# 服务描述
+Description=erpServer Service  
+# 在多用户运行后启动        
+After=multi-user.target
+[Service]
+Type=idle
+Restart=on-failure
+PIDFile=/tmp/erpServer.pid
+# 运行命令
+ExecStart=/usr/local/conda3/envs/ERPServer/bin/python3.7 /usr/local/ERPServer/Main.py
+ExecStop='ps -ef |grep erpServer |awk '{print $2}' | xargs kill -9 '
+RestartSec=10s
+[Install]
+WantedBy=multi-user.target

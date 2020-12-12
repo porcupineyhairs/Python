@@ -1,8 +1,0 @@
-2018-12-13 09:40:07,050 - INFO: http://192.168.7.252:8099/Client/MaDuo/GetInfo - POST - 192.168.7.252 - get:{'Mode': 'Insert'} - back:{'Return': 'OK'}
-
-2018-12-13 10:01:29,311 - INFO: http://192.168.7.252:8099/Client/MaDuo/GetInfo - POST - 192.168.7.251 - get:{'User': '001114', 'Mode': 'Insert'} - back:{'Return': 'OK'}
-
-2018-12-13 10:16:27,286 - INFO: http://192.168.7.252:8099/Client/MaDuo/GetInfo - POST - 192.168.7.251 - get:{'User': '001114', 'Mode': 'Insert'} - back:{'Return': 'OK'}
-
-2018-12-13 16:23:36,224 - INFO: http://192.168.7.252:8099/Client/MaDuo/GetInfo - POST - 192.168.7.252 - get:{'Mode': 'Insert'} - back:{'Return': 'OK'}
-

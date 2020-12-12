@@ -12,8 +12,8 @@ if __name__ == '__main__':
 	print('test')
 	# work = INVMBBoxSize()
 	# work = GetBomList()
-	work = AutoErpPlanHelper()
-	# work.test()
-	work.work()
+	# work = AutoErpPlanHelper()
+	# # work.test()
+	# work.work()
 	
-
+	print('AA'.ljust(10, ' '))
