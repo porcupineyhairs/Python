@@ -5,14 +5,14 @@ mssql = MsSqlHelper(host='192.168.0.99', user='sa', passwd='comfortgroup2016{', 
 
 # 删除领料数量为0的INVLA, MOCTE(5401, 5406)
 def cleanLlZero():
-	sqlstr1 = r"SELECT LA006, RTRIM(LA007), LA008, LA001, LA009, LA010, " \
+	sqlstr1 = r"SELECT LA004, LA006, RTRIM(LA007), LA008, LA001, LA009, LA010, " \
 	          r"CAST(LA011 AS FLOAT), LA024 " \
 	          r"FROM INVLA " \
 	          r"WHERE 1=1 " \
-	          r"AND LA004 BETWEEN '20200901' AND '20200931' " \
+	          r"AND LA004 BETWEEN '20200901' AND '20201131' " \
 	          r"AND LA011 = 0 " \
 	          r"AND LA006 IN ('5401', '5406') " \
-	          r"ORDER BY LA004, LA006, RTRIM(LA007), LA008"
+	          r"ORDER BY LA004, LA006, RTRIM(LA007), LA008 "
 	
 	sqlstr2 = r"DELETE FROM MOCTE WHERE TE001 = '{0}' AND TE002 = '{1}' AND TE003 = '{2}' " \
 	          r"DELETE FROM INVLA WHERE LA006 = '{0}' AND LA007 = '{1}' AND LA008 = '{2}' "
