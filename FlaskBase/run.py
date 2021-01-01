@@ -15,7 +15,7 @@ def DownloadFile1(filename):
 	directory = app.root_path + '/WgFile/'  # 文件目录
 	# 判断所需文件是否存在
 	if os.path.exists(directory + filename):
-		response = make_response(send_from_directory(directory, filename, as_attachment=True))
+		response = make_response(send_from_directory(directory, filename, as_attachment=True, conditional=False))
 		response.headers["Content-Disposition"] = "attachment; filename={}".\
 			format(filename.encode().decode('latin-1'))
 		return response
@@ -29,7 +29,7 @@ def DownloadFile2(filename):
 	directory = app.root_path + '/WgFile/'  # 文件目录
 	# 判断所需文件是否存在
 	if os.path.exists(directory + filename):
-		response = make_response(send_from_directory(directory, filename, as_attachment=True))
+		response = make_response(send_from_directory(directory, filename, as_attachment=True, conditional=False))
 		response.headers["Content-Disposition"] = "attachment; filename={}".\
 			format(filename.encode().decode('latin-1'))
 		return response
