@@ -9,7 +9,7 @@ def cleanLlZero():
 	          r"CAST(LA011 AS FLOAT), LA024 " \
 	          r"FROM INVLA " \
 	          r"WHERE 1=1 " \
-	          r"AND LA004 BETWEEN '20200901' AND '20201131' " \
+	          r"AND LA004 BETWEEN '20201201' AND '20210131' " \
 	          r"AND LA011 = 0 " \
 	          r"AND LA006 IN ('5401', '5406') " \
 	          r"ORDER BY LA004, LA006, RTRIM(LA007), LA008 "
@@ -59,6 +59,38 @@ def cleanGdFinished():
 			mssql.sqlWork(sqlstr2.format(dt1Tmp[0], dt1Tmp[1]))
 			index += 1
 
+
+# 订单已结束的请购、采购、采购变更、进货、退货
+def cleanCgFinished():
+	sqlstr1 = r"SELECT TA001, RTRIM(TA002) TA002, TD001, TD002,TD003, TD016, TA011, TD004 " \
+	          r"FROM MOCTA " \
+	          r"INNER JOIN COPTD ON TD001 = TA026 AND TD002 = TA027 AND TD003 = TA028 " \
+	          r"WHERE 1=1 " \
+	          r"AND TD016 = 'Y' " \
+	          r"AND TD013 BETWEEN '20140101' AND '20181231' " \
+	          r"AND TA011 IN ('Y', 'y') " \
+	          r"AND TA013 IN ('Y') " \
+	          r"AND TA001 = '5101' " \
+	          r"ORDER BY TA003, TD001, TD002, TD003"
+	
+	sqlstr2 = r"DELETE FROM MOCTE WHERE TE011 = '{0}' AND TE012 = '{1}' " \
+	          r"DELETE FROM MOCTD WHERE TD003 = '{0}' AND TD004 = '{1}' " \
+	          r"DELETE FROM MOCTG WHERE TG014 = '{0}' AND TG015 = '{1}' " \
+	          r"DELETE FROM MOCTO WHERE TO001 = '{0}' AND TO002 = '{1}' " \
+	          r"DELETE FROM MOCTP WHERE TP001 = '{0}' AND TP002 = '{1}' " \
+	          r"DELETE FROM MOCTB WHERE TB001 = '{0}' AND TB002 = '{1}' " \
+	          r"DELETE FROM MOCTA WHERE TA001 = '{0}' AND TA002 = '{1}' "
+	
+	dt1 = mssql.sqlWork(sqlstr1)
+	
+	if dt1 is not None:
+		print('共有' + str(len(dt1)) + '笔')
+		index = 1
+		for dt1Tmp in dt1:
+			print(index, dt1Tmp)
+			mssql.sqlWork(sqlstr2.format(dt1Tmp[0], dt1Tmp[1]))
+			index += 1
+			
 
 if __name__ == '__main__':
 	cleanLlZero()

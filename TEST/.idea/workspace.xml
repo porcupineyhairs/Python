@@ -19,158 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36d581ef-397b-4c6c-a487-b7a11f7e8dbd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ERPServer/Main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/AutoErpPlan-Bak.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/ScheduleHelper/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/Flask.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/dictionaries/harvey.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/dictionaries/harveyz.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/libraries/R_User_Library.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Comand/Route.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Comand/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Config/APSchedulerConfig.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Config/RouteConfig.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Config/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/File/WG/联友生产辅助工具.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/BS周生产进度表.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-25" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-27" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-28" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2018-12-29" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2019-01-02" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2019-01-04" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2019-02-20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2019-02-21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2019-02-23" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Connect/Connect.log.2019-02-24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Error/Error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Error/Error.log.2019-03-14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Error/Error.log.2019-03-19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-25" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-27" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-28" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2018-12-29" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2019-01-02" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2019-02-20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2019-02-21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2019-02-23" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2019-02-24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/Login/Login.log.2019-03-14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/MaDuo/MaDuoInfo.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/MaDuo/MaDuoInfo.log.2018-12-13" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/MaDuo/MaDuoInfo.log.2018-12-14" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/MaDuo/MaDuoInfo.log.2019-02-20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/MaDuo/MaDuoInfo.log.2019-03-19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/MaDuo/MaDuoInfo.log.2019-04-01" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/MaDuo/MaDuoInfo.log.2019-05-22" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2018-12-20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2018-12-21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2018-12-25" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2018-12-28" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2018-12-29" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-02-20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-02-23" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-02-24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-03-19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-03-22" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-03-29" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-03-30" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-05-21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_JH.log.2019-05-22" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_LL.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_LL.log.2019-02-20" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_LL.log.2019-03-19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_LL.log.2019-03-29" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_LL.log.2019-03-30" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/PDA/PDA_LL.log.2019-05-21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log.2019-03-19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log.2019-03-21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log.2019-03-22" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log.2019-03-24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log.2019-03-26" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log.2019-03-27" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Log/UserManager/UserManager.log.2019-03-29" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/MessionHandeler/Main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/MessionHandeler/Route.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/MessionHandeler/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/GetDbSvrTime.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/GetVersion.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/Log.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/MaDuoSystem/MD_GetInfo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/MaDuoSystem/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/ModuleDictionary.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/Num2Char.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/PDA/JH_LYXA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/PDA/LL_LYXA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/PDA/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/Permission.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/SelfModule.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/UserManage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Module/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Test/BOM.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Test/Route.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Test/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Test/encript.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Test/encript2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Test/mysql_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Test/sqlsvrwork.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/Test/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/WebHandeler/Error.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/WebHandeler/Main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/WebHandeler/Route.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/WebHandeler/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/WebHandeler/gongshi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/WebTest/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/WebTest/test1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/pyc.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/static/img/error/head404.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/static/img/error/txtbg404.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/static/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/templates/error/403.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/templates/error/404.bak.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/templates/error/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/templates/error/500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/templates/json table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/templates/table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/templates/test1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/templates/testform.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/templates/zzz.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/templates/zzzz.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoptrReplace.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoptrReplace.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoptrReplace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/pyc.sh" beforeDir="false" />
-    </list>
+    <list default="true" id="36d581ef-397b-4c6c-a487-b7a11f7e8dbd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -336,9 +185,9 @@
     <list>
       <item itemvalue="Python.BOM" />
       <item itemvalue="Python.CoptrReplace" />
-      <item itemvalue="Python.test0" />
       <item itemvalue="Python.MoctaBoxSize" />
       <item itemvalue="Python.RandomCode" />
+      <item itemvalue="Python.test0" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
