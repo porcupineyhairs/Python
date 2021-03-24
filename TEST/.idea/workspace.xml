@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36d581ef-397b-4c6c-a487-b7a11f7e8dbd" name="Default Changelist" comment="" />
+    <list default="true" id="36d581ef-397b-4c6c-a487-b7a11f7e8dbd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../FlaskBase/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskBase/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +64,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -173,6 +176,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test000.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -189,6 +193,18 @@
       <item itemvalue="Python.RandomCode" />
       <item itemvalue="Python.test0" />
     </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -229,48 +245,35 @@
       <workItem from="1593040698692" duration="371000" />
       <workItem from="1593043381656" duration="61000" />
       <workItem from="1596267594290" duration="833000" />
+      <workItem from="1616057919151" duration="13000" />
+      <workItem from="1616057969123" duration="110000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="321" y="198" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606460716391">
+    <state x="359" y="175" key="SettingsEditor" timestamp="1616057984928">
       <screen x="36" y="23" width="1644" height="1027" />
     </state>
-    <state x="321" y="198" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog/36.23.1644.1027@36.23.1644.1027" timestamp="1606460716391" />
-    <state width="1622" height="280" key="GridCell.Tab.0.bottom" timestamp="1606463792207">
+    <state x="359" y="175" key="SettingsEditor/36.23.1644.1027@36.23.1644.1027" timestamp="1616057984928" />
+    <state x="512" y="371" key="com.intellij.ide.util.TipDialog" timestamp="1616057925447">
       <screen x="36" y="23" width="1644" height="1027" />
     </state>
-    <state width="1622" height="280" key="GridCell.Tab.0.bottom/36.23.1644.1027@36.23.1644.1027" timestamp="1606463792207" />
-    <state width="1622" height="280" key="GridCell.Tab.0.center" timestamp="1606463792206">
-      <screen x="36" y="23" width="1644" height="1027" />
-    </state>
-    <state width="1622" height="280" key="GridCell.Tab.0.center/36.23.1644.1027@36.23.1644.1027" timestamp="1606463792206" />
-    <state width="1622" height="280" key="GridCell.Tab.0.left" timestamp="1606463792205">
-      <screen x="36" y="23" width="1644" height="1027" />
-    </state>
-    <state width="1622" height="280" key="GridCell.Tab.0.left/36.23.1644.1027@36.23.1644.1027" timestamp="1606463792205" />
-    <state width="1622" height="280" key="GridCell.Tab.0.right" timestamp="1606463792206">
-      <screen x="36" y="23" width="1644" height="1027" />
-    </state>
-    <state width="1622" height="280" key="GridCell.Tab.0.right/36.23.1644.1027@36.23.1644.1027" timestamp="1606463792206" />
-    <state x="523" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1606461043437">
-      <screen x="36" y="23" width="1644" height="1027" />
-    </state>
-    <state x="523" y="250" width="670" height="676" key="search.everywhere.popup/36.23.1644.1027@36.23.1644.1027" timestamp="1606461043437" />
+    <state x="512" y="371" key="com.intellij.ide.util.TipDialog/36.23.1644.1027@36.23.1644.1027" timestamp="1616057925447" />
   </component>
 </project>
