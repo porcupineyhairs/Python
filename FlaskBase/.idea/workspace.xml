@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd6bbc7e-3182-436c-9ff5-f01f19a5884d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ERPServer/.idea/ERPServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/.idea/ERPServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ERPServer/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskApi/mainApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskApi/mainApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskApi/modules/Jdy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskApi/modules/Jdy/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskApi/views/Api_Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskApi/views/Api_Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskApi/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskApi/views/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,6 +123,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -127,7 +134,18 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
@@ -199,6 +217,7 @@
       <workItem from="1592963974719" duration="27000" />
       <workItem from="1593043566013" duration="26000" />
       <workItem from="1594622150859" duration="16000" />
+      <workItem from="1617180352376" duration="658000" />
     </task>
     <servers />
   </component>
@@ -212,7 +231,7 @@
     </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />

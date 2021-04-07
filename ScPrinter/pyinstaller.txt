@@ -1,0 +1,1 @@
+pyinstaller  -c -F -i ./favicon.ico run.py

@@ -9,7 +9,7 @@ def cleanLlZero():
 	          r"CAST(LA011 AS FLOAT), LA024 " \
 	          r"FROM INVLA " \
 	          r"WHERE 1=1 " \
-	          r"AND LA004 BETWEEN '20201201' AND '20210131' " \
+	          r"AND LA004 BETWEEN '20210301' AND '20210331' " \
 	          r"AND LA011 = 0 " \
 	          r"AND LA006 IN ('5401', '5406') " \
 	          r"ORDER BY LA004, LA006, RTRIM(LA007), LA008 "

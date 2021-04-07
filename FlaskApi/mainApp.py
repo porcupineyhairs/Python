@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify, Response, render_template, current_app
 from config import Config
-from flask_cors import CORS, cross_origin
 from flask_restful import Api, Resource
 from views import *
 import json
@@ -10,9 +9,6 @@ app = Flask(__name__)
 
 # 实例化一个 Jdy 对象，用来创建、管理 RESTful Jdy
 api = Api(app)
-
-# 设置跨域
-CORS(app, resources=r'/apisys/*', supports_credentials=True)
 
 # 注册配置文件
 app.config.from_object(Config)
