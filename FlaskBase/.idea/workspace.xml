@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd6bbc7e-3182-436c-9ff5-f01f19a5884d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ERPServer/.idea/ERPServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/.idea/ERPServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ERPServer/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/mainApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskApi/mainApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/modules/Jdy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskApi/modules/Jdy/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/views/Api_Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskApi/views/Api_Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlaskApi/views/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskApi/views/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cd6bbc7e-3182-436c-9ff5-f01f19a5884d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,6 +210,7 @@
       <workItem from="1593043566013" duration="26000" />
       <workItem from="1594622150859" duration="16000" />
       <workItem from="1617180352376" duration="658000" />
+      <workItem from="1618974283333" duration="30000" />
     </task>
     <servers />
   </component>
