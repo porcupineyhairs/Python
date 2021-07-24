@@ -1,80 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="36d581ef-397b-4c6c-a487-b7a11f7e8dbd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../FlaskBase/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskBase/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="46b54733-003f-4cb5-a46a-6d14b3a6d30b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TEST.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TEST.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BOM.py" beforeDir="false" afterPath="$PROJECT_DIR$/BOM.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
-  </component>
-  <component name="MacroExpansionManager">
-    <option name="directoryName" value="wjSeYZqP" />
-  </component>
-  <component name="ProjectId" id="1XQcWXAG5UBlVBOAyannAfggcf3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="1vWQAIaaOusd6dfl7Id0kbgYQQF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.test0">
+  <component name="RunManager" selected="Python.1">
+    <configuration name="1" type="PythonConfigurationType" factoryName="Python">
+      <module name="TEST" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/conda3/envs/test/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="BOM" type="PythonConfigurationType" factoryName="Python">
       <module name="TEST" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -82,7 +65,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.6" />
+      <option name="SDK_HOME" value="/usr/local/conda3/envs/test/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -97,101 +80,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="CoptrReplace" type="PythonConfigurationType" factoryName="Python">
-      <output_file path="$PROJECT_DIR$/CoptrReplace.log" />
-      <module name="TEST" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CoptrReplace.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="MoctaBoxSize" type="PythonConfigurationType" factoryName="Python">
-      <module name="TEST" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MoctaBoxSize.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="RandomCode" type="PythonConfigurationType" factoryName="Python">
-      <module name="TEST" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.6" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RandomCode.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test0" type="PythonConfigurationType" factoryName="Python">
-      <module name="TEST" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/local/conda3/envs/ERPServer/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test000.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.BOM" />
-      <item itemvalue="Python.CoptrReplace" />
-      <item itemvalue="Python.MoctaBoxSize" />
-      <item itemvalue="Python.RandomCode" />
-      <item itemvalue="Python.test0" />
+      <item itemvalue="Python.1" />
     </list>
   </component>
   <component name="ServiceViewManager">
@@ -206,74 +97,68 @@
       </list>
     </option>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="36d581ef-397b-4c6c-a487-b7a11f7e8dbd" name="Default Changelist" comment="" />
-      <created>1572591624700</created>
+      <changelist id="46b54733-003f-4cb5-a46a-6d14b3a6d30b" name="Default Changelist" comment="" />
+      <created>1626675219996</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572591624700</updated>
-      <workItem from="1572591627028" duration="3795000" />
-      <workItem from="1575015605602" duration="2094000" />
-      <workItem from="1576808909328" duration="3468000" />
-      <workItem from="1579180463799" duration="1164000" />
-      <workItem from="1579621512607" duration="833000" />
-      <workItem from="1579959228737" duration="472000" />
-      <workItem from="1580981802735" duration="383000" />
-      <workItem from="1580982258864" duration="237000" />
-      <workItem from="1581345463985" duration="112000" />
-      <workItem from="1581345606554" duration="617000" />
-      <workItem from="1582159811652" duration="111000" />
-      <workItem from="1582165035443" duration="89000" />
-      <workItem from="1582165224433" duration="638000" />
-      <workItem from="1582167426824" duration="61000" />
-      <workItem from="1582167502524" duration="325000" />
-      <workItem from="1582167866835" duration="212000" />
-      <workItem from="1582168319825" duration="34000" />
-      <workItem from="1582168506551" duration="82000" />
-      <workItem from="1591769583612" duration="6232000" />
-      <workItem from="1591791999755" duration="285000" />
-      <workItem from="1591833972267" duration="1283000" />
-      <workItem from="1591944055680" duration="3789000" />
-      <workItem from="1592277199802" duration="330000" />
-      <workItem from="1592803171496" duration="1766000" />
-      <workItem from="1592873107641" duration="1018000" />
-      <workItem from="1593040698692" duration="371000" />
-      <workItem from="1593043381656" duration="61000" />
-      <workItem from="1596267594290" duration="833000" />
-      <workItem from="1616057919151" duration="13000" />
-      <workItem from="1616057969123" duration="110000" />
+      <updated>1626675219996</updated>
+      <workItem from="1626675222833" duration="505000" />
+      <workItem from="1626836468130" duration="1889000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="359" y="175" key="SettingsEditor" timestamp="1616057984928">
-      <screen x="36" y="23" width="1644" height="1027" />
+    <state x="141" y="322" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626838230741">
+      <screen x="42" y="25" width="2518" height="1415" />
     </state>
-    <state x="359" y="175" key="SettingsEditor/36.23.1644.1027@36.23.1644.1027" timestamp="1616057984928" />
-    <state x="512" y="371" key="com.intellij.ide.util.TipDialog" timestamp="1616057925447">
-      <screen x="36" y="23" width="1644" height="1027" />
+    <state x="141" y="322" key="#com.intellij.execution.impl.EditConfigurationsDialog/42.25.2518.1415@42.25.2518.1415" timestamp="1626838230741" />
+    <state width="1203" height="396" key="GridCell.Tab.0.bottom" timestamp="1626839632498">
+      <screen x="42" y="25" width="2518" height="1415" />
     </state>
-    <state x="512" y="371" key="com.intellij.ide.util.TipDialog/36.23.1644.1027@36.23.1644.1027" timestamp="1616057925447" />
+    <state width="1203" height="396" key="GridCell.Tab.0.bottom/42.25.2518.1415@42.25.2518.1415" timestamp="1626839632498" />
+    <state width="1203" height="396" key="GridCell.Tab.0.center" timestamp="1626839632497">
+      <screen x="42" y="25" width="2518" height="1415" />
+    </state>
+    <state width="1203" height="396" key="GridCell.Tab.0.center/42.25.2518.1415@42.25.2518.1415" timestamp="1626839632497" />
+    <state width="1203" height="396" key="GridCell.Tab.0.left" timestamp="1626839632497">
+      <screen x="42" y="25" width="2518" height="1415" />
+    </state>
+    <state width="1203" height="396" key="GridCell.Tab.0.left/42.25.2518.1415@42.25.2518.1415" timestamp="1626839632497" />
+    <state width="1203" height="396" key="GridCell.Tab.0.right" timestamp="1626839632498">
+      <screen x="42" y="25" width="2518" height="1415" />
+    </state>
+    <state width="1203" height="396" key="GridCell.Tab.0.right/42.25.2518.1415@42.25.2518.1415" timestamp="1626839632498" />
+    <state width="1203" height="396" key="GridCell.Tab.1.bottom" timestamp="1626839632499">
+      <screen x="42" y="25" width="2518" height="1415" />
+    </state>
+    <state width="1203" height="396" key="GridCell.Tab.1.bottom/42.25.2518.1415@42.25.2518.1415" timestamp="1626839632499" />
+    <state width="1203" height="396" key="GridCell.Tab.1.center" timestamp="1626839632498">
+      <screen x="42" y="25" width="2518" height="1415" />
+    </state>
+    <state width="1203" height="396" key="GridCell.Tab.1.center/42.25.2518.1415@42.25.2518.1415" timestamp="1626839632498" />
+    <state width="1203" height="396" key="GridCell.Tab.1.left" timestamp="1626839632498">
+      <screen x="42" y="25" width="2518" height="1415" />
+    </state>
+    <state width="1203" height="396" key="GridCell.Tab.1.left/42.25.2518.1415@42.25.2518.1415" timestamp="1626839632498" />
+    <state width="1203" height="396" key="GridCell.Tab.1.right" timestamp="1626839632498">
+      <screen x="42" y="25" width="2518" height="1415" />
+    </state>
+    <state width="1203" height="396" key="GridCell.Tab.1.right/42.25.2518.1415@42.25.2518.1415" timestamp="1626839632498" />
+    <state x="185" y="299" key="SettingsEditor" timestamp="1626838204135">
+      <screen x="42" y="25" width="2518" height="1415" />
+    </state>
+    <state x="185" y="299" key="SettingsEditor/42.25.2518.1415@42.25.2518.1415" timestamp="1626838204135" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/test$BOM.coverage" NAME="BOM Coverage Results" MODIFIED="1626681521320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$1.coverage" NAME="1 Coverage Results" MODIFIED="1626839080442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

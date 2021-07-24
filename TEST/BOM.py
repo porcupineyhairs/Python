@@ -77,7 +77,7 @@ def Select(pinhao, level=0):
 
 if __name__ == '__main__':
 	startdate = time.ctime()
-	pinhao = ['10260320']
+	pinhao = ['10680101']
 	# pinhao = ['10860105', '10860108', '10910105', '10910107', '10910109']
 	for p in pinhao:
 		STR = []

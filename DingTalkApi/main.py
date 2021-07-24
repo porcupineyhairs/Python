@@ -33,9 +33,9 @@ def user_update():
 	         r"left join vps_empinfo as empinfo_1 on empinfo_1.empcode  =department.cus_partman " \
 	         r"where empinfo.dd_id is not null and empinfo.is_entry = 1 " \
 	         r"and empinfo.isactive = 1 "
-	sqlStr += r"and empinfo.topdeptid = '001' "
+	# sqlStr += r"and empinfo.topdeptid = '003' "
 	# sqlStr += r"and empinfo.ischange_dd = 1 "
-	# sqlStr += r" and empinfo.empcode = '000215' "
+	sqlStr += r" and empinfo.empcode = '000037' "
 	sqlStr += "order by empinfo.empcode "
 
 	sql_get = sql.sqlWork(sqlStr)
@@ -56,7 +56,7 @@ def user_update():
 			try:
 
 				info_user = client.user.get(userid=dd_id)
-				# print(info_user)
+				print(info_user)
 
 				try:
 					o_jobnumber = info_user['jobnumber']
@@ -114,7 +114,7 @@ def user_update():
 					update_info.update({'workPlace': u_workPlace})
 
 				if update_info != {}:
-					update_info.update({'userid': dd_id})
+					# update_info.update({'userid': dd_id})
 					print(update_info, old_info)
 
 					try:
@@ -231,7 +231,7 @@ def department_delete():
 def empinfo_reset():
 	client = dingtalk.AppKeyClient(corp_id=corp_id, app_key=app_key, app_secret=app_secret)
 	sqlStr_get = r"SELECT empcode, is_entry, dd_id, dd_id_bak from vps_empinfo " \
-			     r"where isactive = 0 and is_entry = 1 and isnull(dd_id, '') != '' " \
+			     r"where isactive = 1 and is_entry = 1 and isnull(dd_id, '') != '' " \
 				 r"order by empcode "
 
 	sqlStr_upd = r"update vps_empinfo set dd_id_bak = dd_id where empcode = '{0}' " \
@@ -261,8 +261,9 @@ def main():
 
 
 if __name__ == '__main__':
-	empinfo_reset()
-	# user_update()
+	# empinfo_reset()
+	# user_delete()
+	user_update()
 	# department_delete()
 
 	# scheduler.add_job(trigger='interval', minutes=30, func=main)

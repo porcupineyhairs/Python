@@ -1,6 +1,9 @@
-from flask import Flask, make_response, send_from_directory, redirect, request, render_template
+from flask import Flask, make_response, send_from_directory, redirect
+import datetime
+import urllib.request
 import os
 import json
+import time
 
 # app文件的绝对路径 app.root_path
 
@@ -104,13 +107,24 @@ def jdyIndex():
 	return html
 
 
-@app.route('/dashboard/jdy/manager', methods=['GET', 'POST'])
-def editor():
-	# 如果是post方法就返回tinymce生成html代码，否则渲染editor.html
-	if request.method == 'POST':
-		return request.form['content']
-	return render_template('editor.html')
+def getNetworkTime():
+	intime = str(urllib.request.urlopen("http://api.m.taobao.com/rest/api3.do?api=mtop.common.getTimestamp").read().decode())
+	one = intime[:intime.rfind('"')]
+	times = datetime.datetime.fromtimestamp(int(one[one.rfind('"')+1:-3]))
+	return times
 
 
 if __name__ == '__main__':
-	app.run(host=hostIp, port=hostPort, debug=False)
+	netWorkTime = getNetworkTime()
+	localTime = datetime.datetime.now()
+	stopTime = datetime.datetime.strptime('2022-05-01', '%Y-%m-%d').date()
+
+	print('NetWork Time\t', netWorkTime)
+	print('Local Time\t\t', localTime)
+
+	if netWorkTime.date() < stopTime and localTime.date() < stopTime:
+		print('App Start')
+		app.run(host=hostIp, port=hostPort, debug=False)
+	else:
+		print('App Stop')
+		time.sleep(2)
