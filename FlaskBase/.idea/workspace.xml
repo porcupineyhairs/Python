@@ -2,92 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd6bbc7e-3182-436c-9ff5-f01f19a5884d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../TEST/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DingTalkApi/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DingTalkApi/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/tinymce_setup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/icons/default/icons.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/jquery.tinymce.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/langs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/license.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/advlist/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/anchor/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/autolink/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/autoresize/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/autosave/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/bbcode/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/charmap/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/code/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/codesample/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/colorpicker/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/directionality/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/emoticons/js/emojiimages.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/emoticons/js/emojiimages.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/emoticons/js/emojis.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/emoticons/js/emojis.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/emoticons/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/fullpage/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/help/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/hr/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/image/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/imagetools/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/importcss/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/legacyoutput/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/link/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/lists/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/media/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/noneditable/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/paste/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/preview/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/print/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/quickbars/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/save/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/tabfocus/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/table/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/template/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/textcolor/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/textpattern/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/toc/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/visualchars/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/plugins/wordcount/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/content/dark/content.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/content/default/content.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/content/document/content.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/content/writer/content.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/ui/oxide-dark/content.inline.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/ui/oxide-dark/content.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/ui/oxide-dark/content.mobile.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/ui/oxide-dark/fonts/tinymce-mobile.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/ui/oxide-dark/skin.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/ui/oxide-dark/skin.mobile.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/ui/oxide-dark/skin.shadowdom.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/ui/oxide/content.inline.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/ui/oxide/content.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/ui/oxide/content.mobile.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/ui/oxide/fonts/tinymce-mobile.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/ui/oxide/skin.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/ui/oxide/skin.mobile.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/skins/ui/oxide/skin.shadowdom.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/themes/mobile/theme.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/themes/silver/theme.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/tinymce.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tinymce/js/tinymce/tinymce.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/editor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/外挂更新后台服务.exe" beforeDir="false" afterPath="$PROJECT_DIR$/外挂更新后台服务.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TEST/.idea/TEST.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TEST/.idea/TEST.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TEST/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TEST/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TEST/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TEST/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TEST/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TEST/BOM.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TEST/BOM.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,9 +116,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/local/conda3/envs/FlaskDemo/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -314,17 +232,12 @@
       <workItem from="1626879425077" duration="1729000" />
       <workItem from="1626881754767" duration="115000" />
       <workItem from="1626930366265" duration="147000" />
+      <workItem from="1627267827820" duration="1240000" />
+      <workItem from="1627269485318" duration="1156000" />
+      <workItem from="1628430826805" duration="227000" />
+      <workItem from="1628431079419" duration="149000" />
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -333,33 +246,41 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1596" height="277" key="GridCell.Tab.0.bottom" timestamp="1626881868909">
-      <screen x="42" y="25" width="1638" height="1025" />
-    </state>
-    <state width="1596" height="277" key="GridCell.Tab.0.bottom/42.25.1638.1025@42.25.1638.1025" timestamp="1626881868909" />
-    <state width="1942" height="280" key="GridCell.Tab.0.bottom/42.25.2838.1595@42.25.2838.1595" timestamp="1624326281612" />
-    <state width="1596" height="277" key="GridCell.Tab.0.center" timestamp="1626881868909">
-      <screen x="42" y="25" width="1638" height="1025" />
-    </state>
-    <state width="1596" height="277" key="GridCell.Tab.0.center/42.25.1638.1025@42.25.1638.1025" timestamp="1626881868909" />
-    <state width="1942" height="280" key="GridCell.Tab.0.center/42.25.2838.1595@42.25.2838.1595" timestamp="1624326281611" />
-    <state width="1596" height="277" key="GridCell.Tab.0.left" timestamp="1626881868908">
-      <screen x="42" y="25" width="1638" height="1025" />
-    </state>
-    <state width="1596" height="277" key="GridCell.Tab.0.left/42.25.1638.1025@42.25.1638.1025" timestamp="1626881868908" />
-    <state width="1942" height="280" key="GridCell.Tab.0.left/42.25.2838.1595@42.25.2838.1595" timestamp="1624326281611" />
-    <state width="1596" height="277" key="GridCell.Tab.0.right" timestamp="1626881868909">
-      <screen x="42" y="25" width="1638" height="1025" />
-    </state>
-    <state width="1596" height="277" key="GridCell.Tab.0.right/42.25.1638.1025@42.25.1638.1025" timestamp="1626881868909" />
-    <state width="1942" height="280" key="GridCell.Tab.0.right/42.25.2838.1595@42.25.2838.1595" timestamp="1624326281612" />
-    <state x="459" y="369" key="SettingsEditor" timestamp="1626930407709">
+    <state x="615" y="391" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1627269554417">
       <screen x="42" y="25" width="2518" height="1415" />
     </state>
-    <state x="313" y="274" key="SettingsEditor/42.25.1638.1025@42.25.1638.1025" timestamp="1626879525412" />
-    <state x="459" y="369" key="SettingsEditor/42.25.2518.1415@42.25.2518.1415" timestamp="1626930407709" />
+    <state x="615" y="391" key="#com.intellij.execution.impl.EditConfigurationsDialog/42.25.2518.1415@42.25.2518.1415" timestamp="1627269554417" />
+    <state width="1596" height="277" key="GridCell.Tab.0.bottom" timestamp="1628431227812">
+      <screen x="42" y="25" width="1638" height="1025" />
+    </state>
+    <state width="1596" height="277" key="GridCell.Tab.0.bottom/42.25.1638.1025@42.25.1638.1025" timestamp="1628431227812" />
+    <state width="1155" height="342" key="GridCell.Tab.0.bottom/42.25.2518.1415@42.25.2518.1415" timestamp="1627270717340" />
+    <state width="1942" height="280" key="GridCell.Tab.0.bottom/42.25.2838.1595@42.25.2838.1595" timestamp="1624326281612" />
+    <state width="1596" height="277" key="GridCell.Tab.0.center" timestamp="1628431227811">
+      <screen x="42" y="25" width="1638" height="1025" />
+    </state>
+    <state width="1596" height="277" key="GridCell.Tab.0.center/42.25.1638.1025@42.25.1638.1025" timestamp="1628431227811" />
+    <state width="1155" height="342" key="GridCell.Tab.0.center/42.25.2518.1415@42.25.2518.1415" timestamp="1627270717339" />
+    <state width="1942" height="280" key="GridCell.Tab.0.center/42.25.2838.1595@42.25.2838.1595" timestamp="1624326281611" />
+    <state width="1596" height="277" key="GridCell.Tab.0.left" timestamp="1628431227810">
+      <screen x="42" y="25" width="1638" height="1025" />
+    </state>
+    <state width="1596" height="277" key="GridCell.Tab.0.left/42.25.1638.1025@42.25.1638.1025" timestamp="1628431227810" />
+    <state width="1155" height="342" key="GridCell.Tab.0.left/42.25.2518.1415@42.25.2518.1415" timestamp="1627270717339" />
+    <state width="1942" height="280" key="GridCell.Tab.0.left/42.25.2838.1595@42.25.2838.1595" timestamp="1624326281611" />
+    <state width="1596" height="277" key="GridCell.Tab.0.right" timestamp="1628431227811">
+      <screen x="42" y="25" width="1638" height="1025" />
+    </state>
+    <state width="1596" height="277" key="GridCell.Tab.0.right/42.25.1638.1025@42.25.1638.1025" timestamp="1628431227811" />
+    <state width="1155" height="342" key="GridCell.Tab.0.right/42.25.2518.1415@42.25.2518.1415" timestamp="1627270717339" />
+    <state width="1942" height="280" key="GridCell.Tab.0.right/42.25.2838.1595@42.25.2838.1595" timestamp="1624326281612" />
+    <state x="313" y="274" key="SettingsEditor" timestamp="1628431153111">
+      <screen x="42" y="25" width="1638" height="1025" />
+    </state>
+    <state x="313" y="274" key="SettingsEditor/42.25.1638.1025@42.25.1638.1025" timestamp="1628431153111" />
+    <state x="459" y="369" key="SettingsEditor/42.25.2518.1415@42.25.2518.1415" timestamp="1627269577543" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FlaskBase$run.coverage" NAME="run Coverage Results" MODIFIED="1626881859240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FlaskBase$run.coverage" NAME="run Coverage Results" MODIFIED="1628431208508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

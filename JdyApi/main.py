@@ -65,19 +65,19 @@ if __name__ == '__main__':
 
 	# scheduler.add_job(trigger='interval', seconds=30, func=logTimeHandler)
 	# scheduler.add_job(trigger='interval', minutes=1, func=logPlanHandler)
-	# scheduler.add_job(trigger='interval', minutes=1, func=getRobotGxGxSum)
+	# scheduler.add_job(trigger='interval', seconds=30, func=getRobotGxGxSum)
 	# scheduler.add_job(trigger='interval', seconds=30, func=basicPlanFixHandler)
 	# scheduler.add_job(trigger='interval', minutes=1, func=erpSelloutScanHandler)
 
-	try:
-		loggerMain.logger.warning('Main_定时任务开始')
-		loggerMain.logger.warning('Main_现有任务:{}'.format(scheduler.get_jobs()))
-
-		scheduler.start()
-
-	except (KeyboardInterrupt, SystemExit):
-		scheduler.shutdown()
-		loggerMain.logger.warning('Main_定时任务关闭')
-	except Exception as e:
-		loggerMain.logger.error('Main:{}'.format(str(e)))
-	pass
+	# try:
+	# 	loggerMain.logger.warning('Main_定时任务开始')
+	# 	loggerMain.logger.warning('Main_现有任务:{}'.format(scheduler.get_jobs()))
+	#
+	# 	scheduler.start()
+	#
+	# except (KeyboardInterrupt, SystemExit):
+	# 	scheduler.shutdown()
+	# 	loggerMain.logger.warning('Main_定时任务关闭')
+	# except Exception as e:
+	# 	loggerMain.logger.error('Main:{}'.format(str(e)))
+	# pass

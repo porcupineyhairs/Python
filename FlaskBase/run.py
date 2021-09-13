@@ -3,7 +3,6 @@ import datetime
 import urllib.request
 import os
 import json
-import time
 
 # app文件的绝对路径 app.root_path
 
@@ -16,43 +15,52 @@ app = Flask(__name__)
 # 下载文件，外挂程序的更新下载
 @app.route("/local/file/download/download/<filename>", methods=['GET'])
 def DownloadFile1(filename):
-	directory = app.root_path + '/WgFile/'  # 文件目录
-	# 判断所需文件是否存在
-	if os.path.exists(directory + filename):
-		response = make_response(send_from_directory(directory, filename, as_attachment=True, conditional=False))
-		response.headers["Content-Disposition"] = "attachment; filename={}".\
-			format(filename.encode().decode('latin-1'))
-		return response
+	if timeCompare():
+		directory = app.root_path + '/WgFile/'  # 文件目录
+		# 判断所需文件是否存在
+		if os.path.exists(directory + filename):
+			response = make_response(send_from_directory(directory, filename, as_attachment=True, conditional=True))
+			response.headers["Content-Disposition"] = "attachment; filename={}".\
+				format(filename.encode().decode('latin-1'))
+			return response
+		else:
+			return None
 	else:
-		return 'Error'
-        
+		return None
+
 
 # 下载文件，外挂程序的更新下载
 @app.route("/local/file/download/WgFile/<filename>", methods=['GET'])
 def DownloadFile2(filename):
-	directory = app.root_path + '/WgFile/'  # 文件目录
-	# 判断所需文件是否存在
-	if os.path.exists(directory + filename):
-		response = make_response(send_from_directory(directory, filename, as_attachment=True, conditional=False))
-		response.headers["Content-Disposition"] = "attachment; filename={}".\
-			format(filename.encode().decode('latin-1'))
-		return response
+	if timeCompare():
+		directory = app.root_path + '/WgFile/'  # 文件目录
+		# 判断所需文件是否存在
+		if os.path.exists(directory + filename):
+			response = make_response(send_from_directory(directory, filename, as_attachment=True, conditional=True))
+			response.headers["Content-Disposition"] = "attachment; filename={}".\
+				format(filename.encode().decode('latin-1'))
+			return response
+		else:
+			return None
 	else:
-		return 'Error'
+		return None
 
 
 # 下载文件
 @app.route("/local/file/download/downloadFile/<filename>", methods=['GET'])
 def DownloadFile3(filename):
-	directory = app.root_path + '/DownLoadFile/'  # 文件目录
-	# 判断所需文件是否存在
-	if os.path.exists(directory + filename):
-		response = make_response(send_from_directory(directory, filename, as_attachment=True))
-		response.headers["Content-Disposition"] = "attachment; filename={}".\
-			format(filename.encode().decode('latin-1'))
-		return response
+	if timeCompare():
+		directory = app.root_path + '/DownLoadFile/'  # 文件目录
+		# 判断所需文件是否存在
+		if os.path.exists(directory + filename):
+			response = make_response(send_from_directory(directory, filename, as_attachment=True, conditional=True))
+			response.headers["Content-Disposition"] = "attachment; filename={}".\
+				format(filename.encode().decode('latin-1'))
+			return response
+		else:
+			return None
 	else:
-		return 'Error'
+		return None
 
 
 # 主页重定向
@@ -89,22 +97,25 @@ def fileDownload():
 # 简道云界面索引页面
 @app.route('/dashboard/jdy/index', methods=['GET'])
 def jdyIndex():
-	html = '<title>简道云</title><h1>简道云报表明细</h1><br><br><h2>{0}</h2>'
-	htmltmp = '<a href="{1}">{0}</a><br>'
-	ll = ''
-	try:
-		file = open(app.root_path + '/Jdy/url.json', mode='r', encoding='utf-8')
-		jsonStr = file.read()
-		data = json.loads(jsonStr)
+	if timeCompare():
+		html = '<title>简道云</title><h1>简道云报表明细</h1><br><br><h2>{0}</h2>'
+		htmltmp = '<a href="{1}">{0}</a><br>'
+		ll = ''
+		try:
+			file = open(app.root_path + '/Jdy/url.json', mode='r', encoding='utf-8')
+			jsonStr = file.read()
+			data = json.loads(jsonStr)
 
-		for tmp in data:
-			if tmp['title'] != '':
-				ll += htmltmp.format(tmp['title'], tmp['url'])
+			for tmp in data:
+				if tmp['title'] != '':
+					ll += htmltmp.format(tmp['title'], tmp['url'])
 
-		html = html.format(ll)
-	except Exception as e:
-		html.format(str(e))
-	return html
+			html = html.format(ll)
+		except Exception as e:
+			html.format(str(e))
+		return html
+	else:
+		return None
 
 
 def getNetworkTime():
@@ -114,17 +125,13 @@ def getNetworkTime():
 	return times
 
 
-if __name__ == '__main__':
+def timeCompare():
 	netWorkTime = getNetworkTime()
 	localTime = datetime.datetime.now()
 	stopTime = datetime.datetime.strptime('2022-05-01', '%Y-%m-%d').date()
+	return True if netWorkTime.date() < stopTime and localTime.date() < stopTime else False
 
-	print('NetWork Time\t', netWorkTime)
-	print('Local Time\t\t', localTime)
 
-	if netWorkTime.date() < stopTime and localTime.date() < stopTime:
-		print('App Start')
-		app.run(host=hostIp, port=hostPort, debug=False)
-	else:
-		print('App Stop')
-		time.sleep(2)
+if __name__ == '__main__':
+	print('Status:', timeCompare())
+	app.run(host=hostIp, port=hostPort, debug=False)

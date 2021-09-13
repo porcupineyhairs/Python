@@ -1,5 +1,5 @@
 from JdyHelper.JdyApi import APIUtils
-from BaseHelper import MsSqlHelper
+from SqlHelper import MsSqlHelper
 from Handler.Logger import Logger
 import datetime
 
@@ -25,12 +25,12 @@ def main_work():
 	         ]
 
 	data_filter = {
-		'rel': 'and',
+		'rel': 'or',
 		'cond': [
 			# api.set_dict_filter('plan_order_id', 'empty'),
 			api.set_dict_filter('plan_order_id', 'empty'),
-			# api.set_dict_filter('order_type', 'eq', '外销'),
-			api.set_dict_filter('order_id', 'not_empty')
+			api.set_dict_filter('wlno_other_flag', 'empty'),
+			# api.set_dict_filter('order_id', 'not_empty')
 		]
 	}
 	data = api.get_form_data('', 100, field, data_filter)
@@ -74,16 +74,16 @@ def main_work():
 					# 补件标识
 					wlno_other_flag = ''
 					if sql_get_wlno.at[0, 'plan_wlno'] != '':
-						if sql_get_wlno.at[0, 'plan_wlno'].startswith('1') and 'LPO' in sql_get_wlno.at[0, 'plan_wlno_name']:
-							wlno_other_flag = '补件'
+						if sql_get_wlno.at[0, 'plan_wlno'].startswith('1'):
+							wlno_other_flag = '成品'
 						elif sql_get_wlno.at[0, 'plan_wlno'].startswith('2'):
 							wlno_other_flag = '补件'
-						elif sql_get_wlno.at[0, 'plan_wlno'].startswith('3'):
+						elif sql_get_wlno.at[0, 'plan_wlno'].startswith('3') or sql_get_wlno.at[0, 'plan_wlno'].startswith('4'):
 							wlno_other_flag = '原材料'
 						else:
 							wlno_other_flag = '成品'
 					api.set_dict_value(update, 'wlno_other_flag', wlno_other_flag)
 			except:
-				pass
+				api.set_dict_value(update, 'wlno_other_flag', 'Error')
 			finally:
 				result = api.update_data(dataId=_id, data=update)

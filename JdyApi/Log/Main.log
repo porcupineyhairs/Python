@@ -186,3 +186,45 @@
 2021-07-13 16:08:49,654 - WARNING: Main_定时任务开始
 2021-07-13 16:08:49,655 - WARNING: Main_现有任务:[]
 2021-07-13 17:16:49,140 - WARNING: Main_定时任务关闭
+2021-08-02 11:58:00,675 - WARNING: Main_定时任务开始
+2021-08-02 11:58:00,675 - WARNING: Main_现有任务:[<Job (id=ceb3bc5521834a66bd0dac86623bb9ed name=logTimeHandler)>, <Job (id=6da2b8950c9b4016b92e2e760e4616e6 name=logPlanHandler)>, <Job (id=0c9c582874594ee2aec1c1df649bae03 name=getRobotGxGxSum)>, <Job (id=48c299a038a044caa963567b3ad0797d name=basicPlanFixHandler)>, <Job (id=bb5258c2be4d4f75bbfe01028407a6d5 name=erpSelloutScanHandler)>]
+2021-08-02 12:00:27,214 - WARNING: Main_定时任务关闭
+2021-08-02 12:24:29,280 - WARNING: Main_定时任务开始
+2021-08-02 12:24:29,280 - WARNING: Main_现有任务:[<Job (id=779afb05d3fd4cd38f8554e5d68785a5 name=getRobotGxGxSum)>]
+2021-08-02 12:25:41,241 - WARNING: Main_定时任务关闭
+2021-08-02 12:25:42,045 - WARNING: Main_定时任务开始
+2021-08-02 12:25:42,046 - WARNING: Main_现有任务:[<Job (id=eff13552dfc34d9da28e4379bc8d0d09 name=getRobotGxGxSum)>]
+2021-08-02 12:26:16,362 - WARNING: Main_定时任务关闭
+2021-08-02 12:26:17,151 - WARNING: Main_定时任务开始
+2021-08-02 12:26:17,151 - WARNING: Main_现有任务:[<Job (id=b083b9baea9b42279df16c063c2fd956 name=getRobotGxGxSum)>]
+2021-08-02 12:28:42,221 - WARNING: Main_定时任务关闭
+2021-08-04 16:06:20,066 - WARNING: Main_定时任务开始
+2021-08-04 16:06:20,066 - WARNING: Main_现有任务:[<Job (id=47b25e2c93854cce8b0a15e10c9da66d name=getRobotGxGxSum)>]
+2021-08-04 16:06:21,910 - WARNING: Main_定时任务关闭
+2021-08-04 16:06:37,039 - WARNING: Main_定时任务开始
+2021-08-04 16:06:37,039 - WARNING: Main_现有任务:[]
+2021-08-04 16:07:33,894 - WARNING: Main_定时任务关闭
+2021-08-04 16:07:35,396 - WARNING: Main_定时任务开始
+2021-08-04 16:07:35,396 - WARNING: Main_现有任务:[]
+2021-08-04 16:08:45,814 - WARNING: Main_定时任务关闭
+2021-08-04 16:08:47,417 - WARNING: Main_定时任务开始
+2021-08-04 16:08:47,417 - WARNING: Main_现有任务:[]
+2021-08-04 16:10:29,872 - WARNING: Main_定时任务关闭
+2021-08-04 16:10:31,470 - WARNING: Main_定时任务开始
+2021-08-04 16:10:31,470 - WARNING: Main_现有任务:[]
+2021-08-04 16:11:38,007 - WARNING: Main_定时任务关闭
+2021-08-04 16:11:39,570 - WARNING: Main_定时任务开始
+2021-08-04 16:11:39,571 - WARNING: Main_现有任务:[]
+2021-08-04 16:12:20,349 - WARNING: Main_定时任务关闭
+2021-08-04 16:13:18,944 - WARNING: Main_定时任务开始
+2021-08-04 16:13:18,944 - WARNING: Main_现有任务:[]
+2021-08-04 16:13:21,774 - WARNING: Main_定时任务关闭
+2021-08-10 08:47:07,725 - WARNING: Main_定时任务开始
+2021-08-10 08:47:07,729 - WARNING: Main_现有任务:[]
+2021-08-10 11:54:30,941 - WARNING: Main_定时任务关闭
+2021-08-11 11:56:23,947 - WARNING: Main_定时任务开始
+2021-08-11 11:56:23,967 - WARNING: Main_现有任务:[]
+2021-08-11 11:57:03,313 - WARNING: Main_定时任务关闭
+2021-08-11 12:34:37,815 - WARNING: Main_定时任务开始
+2021-08-11 12:34:37,815 - WARNING: Main_现有任务:[]
+2021-08-11 12:34:42,783 - WARNING: Main_定时任务关闭

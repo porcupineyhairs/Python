@@ -63,7 +63,7 @@ def work1():
 
 			df = mssql.sqlWork(sqlStr.format(plan_date))
 			detail_sum = []
-			if len(df):
+			if df is not None:
 				# print(df)
 				# print(df.at[1, 'wlno_series'])
 				detail_sum = []
@@ -122,7 +122,7 @@ def work2():
 
 			df = mssql.sqlWork(sqlStr.format(plan_date))
 			detail_sum = []
-			if len(df):
+			if df is not None:
 				# print(df)
 				# print(df.at[1, 'wlno_series'])
 				detail_sum = []
