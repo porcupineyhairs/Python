@@ -1,0 +1,162 @@
+
+7d703e9c-48bf-4c8d-8e5c-ab7ac5571e7a
+{
+	'attached_process_instance_ids': {}, 
+	'biz_action': 'NONE', 
+	'business_id': '202110140717000056242', 
+	'cc_userids': 
+	{
+		'string': ['16166516877504595钟绮珊', '16166518264924622杨倩贤', '112067683126351429李燕芬', '194537373720984766冯洪妹']
+	}, 
+	'create_time': '2021-10-14 07:17:06', 
+	'finish_time': '2021-10-14 08:35:48', 
+	'form_component_values': 
+	{
+		'form_component_value_vo': 
+		[
+			{
+				'component_type': 'DDHolidayField', 
+				'ext_value': 
+				'{
+					"compressedValue":"1f8b0800000000000000a550cb4ec33010fc973d1be486280abe212ad44a5448253d210eabc4a516ae1df901aaa21c38f1391cf922243e8375896854f5866f3b33de999d0e6ad475d418e4c23612c4844123032a7dab7c00f1d041131d0665cddc4c71478273ced9089cd9e8409447e8429918a4079197fc88ba97b5350d88ac2c13b19618a24bd20eb06df5eec6d96da5b6294b71914f8acb82a7c77ed9ca1eb88c677ce06a8dded3e664e1f7b1a569ae6a673d4dc4d374f29f0fe8c248b79f4fb8f78f0c945fcad4c91ab5970c5ea4f3e40602a812e8196cd05fa7187f8a56a399d3a56754eaab75cf536a79d89bf37248908864386e2cb9fdbbf603be328a62c3ec6eb5044a15fda6c22702be3f3ebfdedea1ff01e44466d005020000",
+					"extension":"{\\"tag\\":\\"病假\\"}",
+					"unit":"HOUR",
+					"pushTag":"请假",
+					"isNaturalDay":false,
+					"detailList":[{"classInfo":{"hasClass":false,"sections":[{"endAcross":0,"startTime":1634169600000,"endTime":1634202000000,"startAcross":0}]},"workDate":1634140800000,"isRest":false,"workTimeMinutes":480,"approveInfo":{"fromAcross":0,"toAcross":0,"fromTime":1634169600000,"durationInDay":1,"durationInHour":8,"toTime":1634202000000}}],"durationInDay":1,"originDurationInDay":1,"originDurationInHour":8,"isModifiable":true,"durationInHour":8,"isLeaveTimeFormat":false
+				}', 
+				'id': 'DDHolidayField-J2BWEN12', 
+				'name': '["开始时间","结束时间"]', 'value': '["2021-10-14 08:00","2021-10-14 17:00",8,"hour","病假","请假类型"]'
+			}, 
+			{
+				'component_type': 'TextField', 
+				'id': 'TextField_P5SC8TG9XPFK', 
+				'name': '工号', 
+				'value': '500539'
+			}, 
+			{
+				'component_type': 'TextareaField', 
+				'id': '请假事由', 
+				'name': '请假事由', 
+				'value': '身体不舒服'
+			}, 
+			{'component_type': 'DDPhotoField', 'id': '图片', 'name': '图片', 'value': 'null'}, 
+			{'component_type': 'DDAttachment', 'id': 'DDAttachment_1S1JYB2RBFI80', 'name': '附件', 'value': 'null'}, 
+			{
+				'component_type': 'SignatureField', 
+				'ext_value': 
+				'{
+					"watermask":"仅限[请假]使用",
+					"sticker":{"time":1634166841993,"username":"冯小科"},
+					"time":1634166841993
+				}', 
+				'id': 'SignatureField-KCVC8D4E', 
+				'name': '手写签名', 
+				'value': 'https://down-cdn.dingtalk.com/ddmedia/iAELAqNwbmcDBgTNA6YFzQGTBtoAI4QBpCEHaZkCqgGO5mvOJXRjzRUDzwAAAXt1cOPJBM4AHttKBwAIAA.png'
+			}
+		]
+	}, 
+	'operation_records': 
+	{
+		'operation_records_vo': 
+		[
+			{
+				'date': '2021-10-14 07:17:05', 
+				'operation_result': 'NONE', 
+				'operation_type': 'START_PROCESS_INSTANCE', 
+				'userid': '16166517032672288冯小科'
+			}, 
+			{
+				'date': '2021-10-14 07:17:06', 
+				'operation_result': 'NONE', 
+				'operation_type': 'PROCESS_CC', 
+				'remark': '', 
+				'userid': '16166517032672288冯小科'
+			}, 
+			{
+				'date': '2021-10-14 07:17:06', 
+				'operation_result': 'NONE', 
+				'operation_type': 'PROCESS_CC', 
+				'remark': '', 
+				'userid': '16166517032672288冯小科'
+			}, 
+			{
+				'date': '2021-10-14 07:44:25', 
+				'operation_result': 'AGREE', 
+				'operation_type': 'EXECUTE_TASK_NORMAL', 
+				'userid': '16166515572072836何映远'
+			}, 
+			{
+				'date': '2021-10-14 07:49:35', 
+				'operation_result': 'AGREE', 
+				'operation_type': 'EXECUTE_TASK_NORMAL', 
+				'remark': '同意。', 
+				'userid': '16166515842537826伍小明'
+			}, 
+			{
+				'date': '2021-10-14 08:19:49', 
+				'operation_result': 'AGREE', 
+				'operation_type': 'EXECUTE_TASK_NORMAL', 
+				'remark': '', 
+				'userid': '16143230123406247刘龙辉'
+			}, 
+			{
+				'date': '2021-10-14 08:35:48', 
+				'operation_result': 'NONE', 
+				'operation_type': 'TERMINATE_PROCESS_INSTANCE', 
+				'remark': '', 
+				'userid': '16166517032672288冯小科'
+			}
+		]
+	}, 
+	'originator_dept_id': '505853296', 
+	'originator_dept_name': '联友集团-中山保友办公家具有限公司-生产部-五金部-焊接打磨组', 
+	'originator_userid': '16166517032672288冯小科', 
+	'result': 'agree', 
+	'status': 'TERMINATED', 
+	'tasks': 
+	{
+		'task_top_vo': 
+		[
+			{
+				'create_time': '2021-10-14 07:49:35', 
+				'finish_time': '2021-10-14 08:19:49', 
+				'task_result': 'AGREE', 
+				'task_status': 'COMPLETED', 
+				'taskid': '70822369028', 
+				'userid': '16143230123406247刘龙辉'
+			}, 
+			{
+				'create_time': '2021-10-14 08:19:50', 
+				'task_result': 'NONE', 
+				'task_status': 'TERMINATED', 
+				'taskid': '70850494516', 
+				'userid': '16166518264924622杨倩贤'
+			}, 
+			{
+				'create_time': '2021-10-14 08:19:50', 
+				'task_result': 'NONE', 
+				'task_status': 'TERMINATED', 
+				'taskid': '70850494517', 
+				'userid': '16166516877504595钟绮珊'
+			}, 
+			{
+				'create_time': '2021-10-14 07:17:07', 
+				'finish_time': '2021-10-14 07:44:25', 
+				'task_result': 'AGREE', 
+				'task_status': 'COMPLETED', 
+				'taskid': '70886771563', 
+				'userid': '16166515572072836何映远'
+			}, 
+			{
+				'create_time': '2021-10-14 07:44:25', 
+				'finish_time': '2021-10-14 07:49:35', 
+				'task_result': 'AGREE', 
+				'task_status': 'COMPLETED', 
+				'taskid': '70886771564', 
+				'userid': '16166515842537826伍小明'
+			}
+		]
+	}, 
+	'title': '冯小科提交的请假'
+}

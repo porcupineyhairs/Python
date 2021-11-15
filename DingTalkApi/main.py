@@ -34,8 +34,8 @@ def user_update():
 	         r"where empinfo.dd_id is not null and empinfo.is_entry = 1 " \
 	         r"and empinfo.isactive = 1 "
 	# sqlStr += r"and empinfo.topdeptid = '003' "
-	# sqlStr += r"and empinfo.ischange_dd = 1 "
-	sqlStr += r" and empinfo.empcode = '000037' "
+	sqlStr += r"and empinfo.ischange_dd = 1 "
+	# sqlStr += r" and empinfo.empcode = '000037' "
 	sqlStr += "order by empinfo.empcode "
 
 	sql_get = sql.sqlWork(sqlStr)

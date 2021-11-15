@@ -3,5 +3,5 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8 (DingTalkApi)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 3.8.12 (sftp://root@harvey-tools.top:22/usr/local/conda3/envs/DingTalkApi/bin/python)" project-jdk-type="Python SDK" />
 </project>

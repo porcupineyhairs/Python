@@ -1,0 +1,169 @@
+d4175d88-6aea-4ebd-8cb3-08045eedd620
+
+{
+	'attached_process_instance_ids': {}, 
+	'biz_action': 'NONE', 
+	'business_id': '202110160807000309702', 
+	'create_time': '2021-10-16 08:07:30', 
+	'form_component_values': 
+	{
+		'form_component_value_vo': 
+		[
+			{
+				'component_type': 'TextNote', 
+				'id': 'TextNote-KCWN9PI0', 
+				'value': '注意事项：\n\n一.请勾选作业内容栏，并填写作业时效栏；ERP/OA/简道云/辅助工具类与网络/维修类不能同时选，若需要同时作业，请分开提交两次IT作业申请单\n\n二.请在申请原因栏填写，如：新员工姓名，工号等；\n\n三.请在预期效果栏填写，如：开通ERP、OA账号，岗位为xxx，账号权限与员工xxx一致；\n'
+			}, 
+			{
+				'component_type': 'DDSelectField', 
+				'ext_value': 
+				'{
+					"label":"ERP/OA/简道云/辅助工具",
+					"key":"option_16WMA5Y1RPUYO"
+				}', 
+				'id': 'DDSelectField_1MM3F445E6OLC', 
+				'name': '作业内容', 
+				'value': 'ERP/OA/简道云/辅助工具'
+			}, 
+			{
+				'component_type': 'DDSelectField', 
+				'ext_value': 
+				'{
+					"label":"永久",
+					"key":"option_0"
+				}', 
+				'id': 'DDSelectField_OHG7H16NIVPC', 
+				'name': '作业时效', 
+				'value': '永久'
+			}, 
+			{
+				'component_type': 'TextareaField', 
+				'id': 'TextareaField-KCWN9PHY', 
+				'name': '申请原因', 
+				'value': '现在我们仓储中心物料只有两个仓位，P012低值易耗品仓和P013仓储原材料仓.但是有部分物料在退仓时默认的P015车间材料仓，若每次修改单身笔数较多，多的时候上千笔，甚时费时。不修改又导致仓位不对，库存不准，现请相关部门修改处理停用这个(P015车间材料仓).谢谢！\n请见附件查看品号信息'
+			}, 
+			{
+				'component_type': 'TextareaField', 
+				'id': 'TextareaField-KCWN9PHZ', 
+				'name': '预期效果', 
+				'value': '停用这个(P015车间材料仓)'
+			}, 
+			{
+				'component_type': 'DDAttachment', 
+				'id': 'DDAttachment_463FB2697KG0', 
+				'name': '附件', 
+				'value': 
+				'[
+					{
+						"spaceId":"3860656268",
+						"fileName":"P015(1).xls",
+						"fileSize":5999,"fileType":"xls",
+						"fileId":"44490184670"
+					}
+				]'
+			}
+		]
+	}, 
+	'operation_records': 
+	{
+		'operation_records_vo': 
+		[
+			{
+				'date': '2021-10-16 08:07:30', 
+				'operation_result': 'NONE', 
+				'operation_type': 'START_PROCESS_INSTANCE', 
+				'userid': '16143230909359151'
+			}, 
+			{
+				'date': '2021-10-16 19:46:26', 
+				'operation_result': 'AGREE', 
+				'operation_type': 'EXECUTE_TASK_NORMAL', 
+				'userid': '16143230221658222'
+			}, 
+			{
+				'date': '2021-10-16 20:46:20', 
+				'operation_result': 'AGREE', 
+				'operation_type': 'EXECUTE_TASK_NORMAL', 
+				'remark': '', 
+				'userid': '041407254937654923'
+			}, 
+			{
+				'date': '2021-10-16 20:47:23', 
+				'operation_result': 'AGREE', 
+				'operation_type': 'EXECUTE_TASK_NORMAL', 
+				'userid': '16166518713279524'
+			}, 
+			{
+				'date': '2021-10-18 09:01:28', 
+				'operation_result': 'NONE', 
+				'operation_type': 'ADD_REMARK', 
+				'remark': '已对品号信息中主要仓库为P015的修改为P013；因部分品号在P015仓中存在库存金额，且在2021年10月存在库存交易明细，需待2021年10月月底成本计价后才可调整P015仓的库存金额，待库存金额为0后才可停用P015仓。\n请在2021年10月内不要创建新的库存交易。', 
+				'userid': '01180666186637615720'
+			}
+		]
+	}, 
+	'originator_dept_id': '515950797', 
+	'originator_dept_name': '联友集团-广东联友办公家具有限公司-生产管理部-仓储中心-数据组', 
+	'originator_userid': '16143230909359151', 
+	'result': 'agree', 
+	'status': 'RUNNING', 
+	'tasks': 
+	{
+		'task_top_vo': 
+		[
+			{
+				'create_time': '2021-10-16 20:47:23', 
+				'task_result': 'NONE', 
+				'task_status': 'RUNNING', 
+				'taskid': '70864977752', 
+				'userid': 'manager4235'
+			}, 
+			{
+				'create_time': '2021-10-16 20:47:23', 
+				'task_result': 'NONE', 
+				'task_status': 'RUNNING', 
+				'taskid': '70864977753', 
+				'userid': '01180666186637615720'
+			}, 
+			{
+				'create_time': '2021-10-16 20:47:23', 
+				'task_result': 'NONE', 
+				'task_status': 'RUNNING', 
+				'taskid': '70864977754', 
+				'userid': '16166501188994528'
+			}, 
+			{
+				'create_time': '2021-10-16 20:47:23', 
+				'task_result': 'NONE', 
+				'task_status': 'RUNNING', 
+				'taskid': '70864977755', 
+				'userid': '16314931505867353'
+			}, 
+			{
+				'create_time': '2021-10-16 08:07:31', 
+				'finish_time': '2021-10-16 19:46:27', 
+				'task_result': 'AGREE', 
+				'task_status': 'COMPLETED', 
+				'taskid': '70886942695', 
+				'userid': '16143230221658222'
+			}, 
+			{
+				'create_time': '2021-10-16 19:46:27', 
+				'finish_time': '2021-10-16 20:46:20', 
+				'task_result': 'AGREE', 
+				'task_status': 'COMPLETED', 
+				'taskid': '70886942696', 
+				'userid': '041407254937654923'
+			}, 
+			{
+				'create_time': '2021-10-16 20:46:20', 
+				'finish_time': '2021-10-16 20:47:23', 
+				'task_result': 'AGREE', 
+				'task_status': 'COMPLETED', 
+				'taskid': '70886942697', 
+				'userid': '16166518713279524'
+			}
+		]
+	}, 
+	'title': '尹慧提交的IT作业申请单'
+}
