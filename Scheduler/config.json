@@ -1,0 +1,35 @@
+{
+  "list": [
+    {
+      "path": "modules",
+      "file_name": "Jdy",
+      "class_name": ["BasicPlanFix", "LogPlanHandler", "LogTimeHandler", "GetRobotGxSumHandler"],
+      "scheduler": {
+        "trigger": "interval",
+        "minute": 1,
+        "second": 0
+      }
+    },
+    {
+      "path": "modules",
+      "file_name": "Jdy",
+      "class_name": ["BasicPlanErrorAlert"],
+      "scheduler": {
+        "trigger": "cron",
+        "hour": "9-11, 13-17, 19-22",
+        "minute": "0",
+        "day_of_week": "1-5"
+      }
+    },
+    {
+      "path": "modules",
+      "file_name": "DingTalkRobot",
+      "class_name": ["WorkCardAlert"],
+      "scheduler": {
+        "trigger": "cron",
+        "hour": "8, 17",
+        "minute": "45"
+      }
+    }
+  ]
+}
