@@ -59,7 +59,7 @@ class BasicPlanFix:
 				self.api.set_dict_filter('wlno_other_flag', 'eq', 'Error')
 			]
 		}
-		data = self.api.get_form_data('', 100, title, data_filter)
+		data = self.api.get_form_data('', 1000, title, data_filter)
 
 		if not data:
 			logger.info('排程数据-填充 -- API返回无数据')
@@ -136,7 +136,7 @@ class LogPlanHandler:
 		title = ['work_uuid',
 				 'order_id', 'plan_order_id',
 				 'plan_wlno', 'plan_wlno_name',
-				 'plan_wlno_spec', 'plan_wlno_pz', 'plan_wlno_pz_spec', 'plan_wlno_series',
+				 'plan_wlno_spec', 'plan_wlno_pz', 'plan_wlno_pz_spec', 'plan_wlno_series', 'customer_name',
 				 'process_flag_1', 'process_flag_2', ]
 
 		data_filter = {
@@ -148,7 +148,7 @@ class LogPlanHandler:
 
 		# print(data_filter)
 
-		data = self.api.get_form_data('', 100, title, data_filter)
+		data = self.api.get_form_data('', 1000, title, data_filter)
 
 		# print('按条件获取表单数据：')
 		if not data:
@@ -166,11 +166,12 @@ class LogPlanHandler:
 				plan_wlno_pz = tmp['plan_wlno_pz']
 				plan_wlno_pz_spec = tmp['plan_wlno_pz_spec']
 				plan_wlno_series = tmp['plan_wlno_series']
+				plan_customer_name = tmp['customer_name']
 
 				# 排程单号，品号，品名
 				plan_order_id = str(order_id).split('(')[0].split('（')[0].replace(' ', '')
 
-				sqlStrWlno = r"SELECT TOP 1 SC028 plan_wlno, SC010 plan_wlno_name, SC012 plan_wlno_spec, " \
+				sqlStrWlno = r"SELECT TOP 1 SC028 plan_wlno, SC010 plan_wlno_name, SC012 plan_wlno_spec, SC004 customer_name, " \
 							 r"SC015 plan_wlno_pz, SC016 plan_wlno_pz_spec, ISNULL(INVMB.UDF12, '') plan_wlno_series  " \
 							 r"FROM SC_PLAN " \
 							 r"LEFT JOIN COMFORT.dbo.INVMB ON SC028 = MB001 " \
@@ -184,6 +185,7 @@ class LogPlanHandler:
 						plan_wlno_pz = sql_get.at[0, 'plan_wlno_pz']
 						plan_wlno_pz_spec = sql_get.at[0, 'plan_wlno_pz_spec']
 						plan_wlno_series = sql_get.at[0, 'plan_wlno_series']
+						plan_customer_name = sql_get.at[0, 'customer_name']
 				except:
 					pass
 
@@ -196,6 +198,7 @@ class LogPlanHandler:
 				self.api.set_dict_value(update, 'plan_wlno_pz', plan_wlno_pz)
 				self.api.set_dict_value(update, 'plan_wlno_pz_spec', plan_wlno_pz_spec)
 				self.api.set_dict_value(update, 'plan_wlno_series', plan_wlno_series)
+				self.api.set_dict_value(update, 'customer_name', plan_customer_name)
 				self.api.set_dict_value(update, 'process_flag_2', '1')
 
 				result = self.api.update_data(dataId=_id, data=update)
@@ -219,6 +222,7 @@ class LogTimeHandler:
 				 'update_time', 'update_date',
 				 'final_time', 'final_date',
 				 'work_time_type',
+		         'work_group', 'final_date_stamp_work_group',
 				 'process_flag_1', 'process_flag_2']
 
 		data_filter = {
@@ -229,7 +233,7 @@ class LogTimeHandler:
 			]
 		}
 
-		data = self.api.get_form_data('', 100, title, data_filter)
+		data = self.api.get_form_data('', 1000, title, data_filter)
 
 		delta1 = datetime.timedelta(hours=-12)
 		delta2 = datetime.timedelta(hours=8)
@@ -283,6 +287,9 @@ class LogTimeHandler:
 
 				final_date_stamp_int = int(time.mktime(final_date_array)) * 1000
 				final_date_stamp_str = str(final_date_stamp_int)
+				
+				work_group = tmp['work_group']
+				final_date_stamp_work_group = final_date_stamp_str + work_group
 
 				update = {}
 
@@ -292,6 +299,7 @@ class LogTimeHandler:
 				self.api.set_dict_value(update, 'final_date', final_date)
 				self.api.set_dict_value(update, 'final_date_stamp_int', final_date_stamp_int)
 				self.api.set_dict_value(update, 'final_date_stamp_str', final_date_stamp_str)
+				self.api.set_dict_value(update, 'final_date_stamp_work_group', final_date_stamp_work_group)
 				self.api.set_dict_value(update, 'process_flag_1', '1')
 
 				result = self.api.update_data(dataId=_id, data=update)
@@ -329,7 +337,7 @@ class GetRobotGxSumHandler:
 			]
 		}
 
-		data = api.get_form_data('', 100, title, data_filter)
+		data = api.get_form_data('', 1000, title, data_filter)
 
 		# print('按条件获取表单数据：')
 		if not data:
@@ -444,6 +452,7 @@ class BasicPlanErrorAlert:
 		data = self.api.get_form_data('', 1000, title, data_filter)
 		if not data:
 			logger.info('排程数据-异常 -- API返回无数据')
+			print('排程数据-异常 -- API返回无数据')
 		else:
 			data_len = len(data)
 			msg = '简道云-排程任务表，共有{data_len}笔异常(唯一序号|生产单号|生产组别 为空)'.format(data_len=data_len)

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>主页</title>
+        {% load static %}
+         <link  rel="stylesheet" href="{% static 'bootstrap.min.css' %}" media="screen" type="text/css">
+        <link  rel="stylesheet" href="{% static 'css/default.css' %}" media="screen" type="text/css">
+    </head>
+    <body>
+        <form method="post" action="/django/appdept/">
+            {% csrf_token %}
+            部门名称:<input name="deptname"><br>
+            部门经理:<input name="userid"><br>
+
+            <button type="submit">添加部门</button>
+
+        </form>
+        <div class="container" >
+        <div class="bs-component">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/django/index/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主页</font></font></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">链接</font></font><span class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（当前）</font></font></span></a></li>
+                            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">链接</font></font></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">落下 </font></font><span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">行动</font></font></a></li>
+                                    <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">另一个动作</font></font></a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#"  ><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ request.user.first_name}}</font></font></a>
+                            </li>
+
+                        </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#" ><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ request.user.last_name}}</font></font></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <table class="table table-hover table-bordered table-responsive">
+            <thead>
+                <tr>
+                    <th width="100px">产品名称</th>
+                    <th width="100px">产品管理员</th>
+                    <th>产品描述</th>
+                    <th width="80px">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for gg in productlist %}
+                <tr>
+                    <td>{{ gg.name }}</td>
+                    <td>{% for dd in userlist %}
+                        {% if dd.id == gg.user_id %}
+                            {{ dd.first_name }}
+                        {% endif %}
+                        {% endfor %}
+                    </td>
+                    <td>{{ gg.pdescribe }}</td>
+                    <th><a href="/django/upproduct/{{ gg.pid }}/" class="btn btn-primary">修改</a></th>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

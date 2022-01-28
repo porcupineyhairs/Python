@@ -4,8 +4,10 @@ import os
 import time
 import json
 from config import AppConfig
+from urls import root_blueprint
 from urls.api import api_root_blueprint
 from urls.web import web_root_blueprint
+from urls.others import others_root_blueprint
 
 
 def make_dir(make_dir_path):
@@ -23,7 +25,7 @@ def json_loads(json_str):
 		return json_str
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../static', template_folder='../templates')
 
 # 设置全局logger的最低等级，避免二级logger等级设置不成功
 logging.root.setLevel(logging.NOTSET)
@@ -40,8 +42,11 @@ log_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(mess
 app.config.from_object(AppConfig)
 app.logger.addHandler(log_handler)
 
-app.register_blueprint(api_root_blueprint, url_prefix='/api')
-app.register_blueprint(web_root_blueprint, url_prefix='/web')
+
+app.register_blueprint(root_blueprint, url_prefix='/flask')
+app.register_blueprint(api_root_blueprint, url_prefix='/flask/api')
+app.register_blueprint(web_root_blueprint, url_prefix='/flask/web')
+app.register_blueprint(others_root_blueprint, url_prefix='/flask/others')
 
 
 @app.route('/favicon.ico', methods=['GET'])
@@ -59,7 +64,7 @@ def after_request(response):
 	url = request.url.replace('://', '').split('/', 1)[1]
 	url_type = url.split('/', 1)[0]
 	methods = request.method
-	if url_type == 'api':
+	if url_type in ['api', 'others']:
 		request_data = request.data.decode("utf-8")
 		response_data = response.data.decode("utf-8")
 		status_code = response.status_code

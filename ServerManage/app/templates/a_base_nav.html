@@ -1,0 +1,31 @@
+{% load static %}
+<nav class="navbar navbar-inverse ng-scope" ng-controller="HeaderCtrl">
+    <div class="container-fluid">
+         <div class="navbar-header">
+            <a class="logo_img" href="{{ root_url }}/index/"><img src="{% static 'pic/zhuye2333.png' %}" alt="" class="logo"></a>
+        </div>
+        <div class="head_nav">
+            <ul class="open_list" style="position: relative;left: 50px">
+{#                <li class="list_active"><a href="{{ root_url }}/showmatter/" style="color:#000"> <img src="{% static 'pic/buglogo.png' %}" style=' width:25px'>Bug管理</a></li>#}
+{#                <li style="margin-left:-8px"><a href="//crash.testin.cn/" style="color:#fff">异常上报</a></li>#}
+            </ul>
+            <ol class="nav_list">
+                <li ng-show="bugRuleStatus==0 &amp;&amp; !demoAccount" class="">
+                    <font  class="automation" data-ng-click="gotoRulePage()">{{ request.user.last_name}}</font>
+                </li>
+                <li class="navbar-nav" ng-show="!demoAccount">
+                    {#小人图标#}
+                    <i class="nav_icon2 iconfont" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></i>
+                    {#姓名#}
+                    <a href="{{ root_url }}/user_show/{{ request.user.id}}/" style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span ng-bind="userName" class="ng-binding">{{ request.user.first_name}}</span></a>
+
+
+                </li>
+                {#退出按钮#}
+                <li class="li_03" data-ng-click="gotoNoitce()">
+                    <a href="{{ root_url }}/logout/"><img src="{% static 'pic/exit65.png' %}" ></a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</nav>

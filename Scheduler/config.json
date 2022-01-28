@@ -18,7 +18,7 @@
         "trigger": "cron",
         "hour": "9-11, 13-17, 19-22",
         "minute": "0",
-        "day_of_week": "1-5"
+        "day_of_week": "mon-fri"
       }
     },
     {

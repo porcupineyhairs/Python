@@ -1,6 +1,6 @@
 from SqlHelper import MsSqlHelper
 
-mssql = MsSqlHelper(host='192.168.0.99', user='sa', passwd='comfortgroup2016{', database='COMFORT')
+mssql = MsSqlHelper(host='comfort-oa.com:60043', user='sa', passwd='comfortgroup2016{', database='COMFORT')
 
 
 # 删除领料数量为0的INVLA, MOCTE(5401, 5406)
@@ -9,7 +9,7 @@ def cleanLlZero():
 	          r"CAST(LA011 AS FLOAT), LA024 " \
 	          r"FROM INVLA " \
 	          r"WHERE 1=1 " \
-	          r"AND LA004 BETWEEN '20210301' AND '20210331' " \
+	          r"AND LA004 BETWEEN '20211101' AND '20211231' " \
 	          r"AND LA011 = 0 " \
 	          r"AND LA006 IN ('5401', '5406') " \
 	          r"ORDER BY LA004, LA006, RTRIM(LA007), LA008 "
@@ -24,7 +24,7 @@ def cleanLlZero():
 		index = 1
 		for dt1Tmp in dt1:
 			print(index, dt1Tmp)
-			mssql.sqlWork(sqlstr2.format(dt1Tmp[0], dt1Tmp[1], dt1Tmp[2]))
+			mssql.sqlWork(sqlstr2.format(dt1Tmp[1], dt1Tmp[2], dt1Tmp[3]))
 			index += 1
 		
 

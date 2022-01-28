@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    {% load static %}
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>登录</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="renderer" content="webkit">
+
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'css/register.css' %}">
+        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+        <style type="text/css">@keyframes animate_dots{0%{opacity:1}to{opacity:0}}@-webkit-keyframes animate_dots{0%{opacity:1}to{opacity:0}}.dot0,.dot1{animation:animate_dots .9s infinite;-moz-animation:animate_dots .9s infinite;-webkit-animation:animate_dots .9s infinite;-o-animation:animate_dots .9s infinite}.dot1{animation-delay:.2s;-webkit-animation-delay:.2s}.dot2{animation:animate_dots .9s infinite;-moz-animation:animate_dots .9s infinite;-webkit-animation:animate_dots .9s infinite;-o-animation:animate_dots .9s infinite;animation-delay:.4s;-webkit-animation-delay:.4s}.dots_item{display:inline-block;margin-right:5px;width:10px;height:10px;border-radius:50%;background:#4886ff}.verify-icon{position:absolute;width:100%;margin-top:70px;text-align:center}.t-mask{width:100%;height:100%;position:fixed;_position:absolute;left:0;top:0;background:#000;opacity:.5;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);z-index:2000000000}</style>
+        <script type="text/javascript" async="" ></script>
+    </head>
+    <body style="background-color: #f7f8fa;">
+        <div class="upgrade_tips" id="tipsBrowserInfo" style="display: none"></div>
+        <div id="body" class="container">
+            <div id="content">
+                <div class="container" style="padding-left:0px;padding-right:0px;">
+                    <div id="form-title">
+                        服务管理系统
+                    </div>
+                    <form id="submit-form" action="{{ root_url }}/login/" method="post">
+                        {% csrf_token %}
+                        <div id="form-content">
+                            <div id="form-msg">登录账号&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span style="font-size: 15px;color: red">{{ msg }}</span></div>
+                            <div id="form-inputs">
+                                <div class="form-input">
+                                    <i class="iconfont"></i>
+                                    <input placeholder="账号" type="text"  name="username" value="{{ username }}">
+
+                                    <div class="err_msg" id="email_err"></div>
+                                </div>
+                                <div class="form-input">
+                                    <i class="iconfont"></i>
+                                    <input placeholder="密码" type="password" id="pwd" name="password">
+
+                                    <div class="err_msg" id="pwd_err"></div>
+                                </div>
+                                <div class="form-submit">
+                                    <button type="submit" class="btn btn-primary" id="submitBtn" >立即登录</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-left">
+            <img src="{% static 'pic/bottom-left.png' %}">
+        </div>
+        <div class="bottom-right">
+            <img src="{% static 'pic/bottom-right.png' %}">
+        </div>
+        {% include 'a_base_icp.html' %}
+    </body>
+</html>

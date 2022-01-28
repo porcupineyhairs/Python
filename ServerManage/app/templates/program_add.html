@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        {% load static %}
+        <title>{{ NORMAL_TITLE }}</title>
+        {% include 'a_base_css.html' %}
+    </head>
+
+    <body ng-app="app" id="app" ng-controller="AppCtrl" class="ng-scope">
+        <!-- 头部导航 -->
+        {% include 'a_base_nav.html' %}
+        <!-- 左边菜单 -->
+        {% include 'a_base_menu_none.html' %}
+        <!-- 右边公共部分 -->
+        <div id="dowebok" style="padding-left:70px;margin-top:60px;">
+
+           <div ng-view="" class="work_cont work_cont2">
+               <div class="main ng-scope" ng-controller="OverViewCtrl">
+                   <div class="well bs-component container" style="width: 650px">
+                        <form class="form-horizontal" action="{{root_url}}/program_add/" method="post">
+                        {% csrf_token %}
+                            <fieldset>
+                                <legend>
+                                    <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">添加程序信息</font>
+                                    </font>
+                                </legend>
+                                <div style="margin-top:15px;">
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="col-lg-2 control-label"><font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">应用名称</font></font>
+                                        </label>
+                                        <div class="col-lg-10">
+                                            <input name="progname" class="form-control" id="inputEmail" placeholder="添加应用名称" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="col-lg-2 control-label"><font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">程序名称</font></font>
+                                        </label>
+                                        <div class="col-lg-10">
+                                            <input name="systemname" class="form-control" id="inputEmail" placeholder="systemctl中服务名称" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="col-lg-2 control-label"><font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">备注</font></font>
+                                        </label>
+                                        <div class="col-lg-10">
+                                            <input name="remark" class="form-control" id="inputEmail" placeholder="备注信息" type="text">
+                                        </div>
+                                    </div>
+
+{#                                    <div class="form-group">#}
+{#                                        <label for="select" class="col-lg-2 control-label"><font style="vertical-align: inherit;">#}
+{#                                            <font style="vertical-align: inherit;">部门经理</font></font></label>#}
+{##}
+{#                                        <div class="col-lg-10">#}
+{#                                            <select name="userid" class="form-control   " id="select">#}
+{#                                                {% for dd in userlist %}#}
+{#                                                    <option value="{{ dd.id }}" >{{ dd.first_name }}</option>#}
+{##}
+{#                                                {% endfor %}#}
+{#                                            </select>#}
+{#                                        </div>#}
+{#                                    </div>#}
+
+                                    <div class="form-group">
+                                        <div class="col-lg-10 col-lg-offset-2">
+
+                                            <button type="submit" class="btn btn-primary" style="background-color: #1abc9c;border-color: #1abc9c"><font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">添加</font></font></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </body>
+</html>

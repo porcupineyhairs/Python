@@ -2,10 +2,123 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd6bbc7e-3182-436c-9ff5-f01f19a5884d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/Django 2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/Django.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/dataSources/878b9923-7603-47d6-bff1-b16f6ef2c14f.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/deployment 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/inspectionProfiles/profiles_settings 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/misc 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/modules 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/remote-mappings 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/remote-mappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/workspace 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/Django/__init__ 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/Django/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/Django/asgi 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/Django/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/Django/settings 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/Django/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/Django/urls 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/Django/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/Django/wsgi 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/Django/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/__init__ 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/admin 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/apps 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/migrations/__init__ 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/models 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/tests 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/views 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/app/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/db 2.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/manage 2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/static/favicon 2.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Django/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ERPServer/.idea/ERPServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/.idea/ERPServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ERPServer/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ERPServer/CleanERPData.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPServer/CleanERPData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/harveyz.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/harveyz.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jdy/url.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyinstaller.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pyinstaller.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/外挂更新后台服务.exe" beforeDir="false" afterPath="$PROJECT_DIR$/外挂更新后台服务.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskServer/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskServer/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/config/appConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskServer/config/appConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/dingtalk/client/api/report.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskServer/dingtalk/client/api/report.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/flask_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskServer/flask_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/infomation/202108040858000288226" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/infomation/202108040858000288226.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/infomation/202110140717000056242" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/infomation/202110140717000056242.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/infomation/202110160807000309702" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/infomation/202110160807000309702.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/infomation/202111031334000220339" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/infomation/202111031334000220339.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/infomation/202111091726000584040" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/infomation/202111091726000584040.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/logger-2021-11-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/logger-2021-11-30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/logger-2021-12-01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/logger-2021-12-02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/logger-2021-12-06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/logger-2021-12-07.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/logger-2021-12-08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/logger-2021-12-09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/logger-2021-12-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/logs/logger-2021-12-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskServer/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/urls/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskServer/urls/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/urls/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskServer/urls/api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/urls/api/dingtalk/program/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskServer/urls/api/dingtalk/program/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/urls/api/dingtalk/program/permission.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskServer/urls/api/dingtalk/program/permission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/urls/web/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskServer/urls/web/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/urls/web/dingtalk/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/views/api/dingtalk/PermissionHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskServer/views/api/dingtalk/PermissionHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlaskServer/views/api/dingtalk/UserHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/../FlaskServer/views/api/dingtalk/UserHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/.idea/GUI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/.idea/remote-mappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GUI/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MsSql.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scheduler/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Scheduler/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scheduler/logs/logger-2021-12-03.logs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scheduler/logs/logger-2021-12-04.logs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scheduler/logs/logger-2021-12-06.logs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scheduler/logs/logger-2021-12-08.logs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scheduler/logs/logger-2021-12-10.logs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scheduler/modules/Jdy.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Scheduler/modules/Jdy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scheduler/modules/test1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scheduler/modules/test2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../www_flask.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,6 +349,14 @@
       <workItem from="1627269485318" duration="1156000" />
       <workItem from="1628430826805" duration="227000" />
       <workItem from="1628431079419" duration="149000" />
+      <workItem from="1641301148886" duration="606000" />
+      <workItem from="1641305973188" duration="60000" />
+      <workItem from="1642125249887" duration="10000" />
+      <workItem from="1642125282741" duration="1080000" />
+      <workItem from="1642384545077" duration="190000" />
+      <workItem from="1642385962266" duration="72000" />
+      <workItem from="1642994449077" duration="1547000" />
+      <workItem from="1643012492366" duration="722000" />
     </task>
     <servers />
   </component>
@@ -246,41 +367,42 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="615" y="391" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1627269554417">
-      <screen x="42" y="25" width="2518" height="1415" />
-    </state>
-    <state x="615" y="391" key="#com.intellij.execution.impl.EditConfigurationsDialog/42.25.2518.1415@42.25.2518.1415" timestamp="1627269554417" />
-    <state width="1596" height="277" key="GridCell.Tab.0.bottom" timestamp="1628431227812">
+    <state x="609" y="277" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1642995067973">
       <screen x="42" y="25" width="1638" height="1025" />
     </state>
-    <state width="1596" height="277" key="GridCell.Tab.0.bottom/42.25.1638.1025@42.25.1638.1025" timestamp="1628431227812" />
-    <state width="1155" height="342" key="GridCell.Tab.0.bottom/42.25.2518.1415@42.25.2518.1415" timestamp="1627270717340" />
-    <state width="1942" height="280" key="GridCell.Tab.0.bottom/42.25.2838.1595@42.25.2838.1595" timestamp="1624326281612" />
-    <state width="1596" height="277" key="GridCell.Tab.0.center" timestamp="1628431227811">
+    <state x="1391" y="356" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.2560.1346@0.25.2560.1346" timestamp="1642142181662" />
+    <state x="609" y="277" key="#com.intellij.execution.impl.EditConfigurationsDialog/42.25.1638.1025@42.25.1638.1025" timestamp="1642995067973" />
+    <state x="1664" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1642141935366">
+      <screen x="0" y="25" width="2560" height="1346" />
+    </state>
+    <state x="1664" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.2560.1346@0.25.2560.1346" timestamp="1642141935366" />
+    <state width="1596" height="277" key="GridCell.Tab.0.bottom" timestamp="1643001157261">
       <screen x="42" y="25" width="1638" height="1025" />
     </state>
-    <state width="1596" height="277" key="GridCell.Tab.0.center/42.25.1638.1025@42.25.1638.1025" timestamp="1628431227811" />
-    <state width="1155" height="342" key="GridCell.Tab.0.center/42.25.2518.1415@42.25.2518.1415" timestamp="1627270717339" />
-    <state width="1942" height="280" key="GridCell.Tab.0.center/42.25.2838.1595@42.25.2838.1595" timestamp="1624326281611" />
-    <state width="1596" height="277" key="GridCell.Tab.0.left" timestamp="1628431227810">
+    <state width="1225" height="383" key="GridCell.Tab.0.bottom/0.25.2560.1346@0.25.2560.1346" timestamp="1642142198406" />
+    <state width="1596" height="277" key="GridCell.Tab.0.bottom/42.25.1638.1025@42.25.1638.1025" timestamp="1643001157261" />
+    <state width="1596" height="277" key="GridCell.Tab.0.center" timestamp="1643001157261">
       <screen x="42" y="25" width="1638" height="1025" />
     </state>
-    <state width="1596" height="277" key="GridCell.Tab.0.left/42.25.1638.1025@42.25.1638.1025" timestamp="1628431227810" />
-    <state width="1155" height="342" key="GridCell.Tab.0.left/42.25.2518.1415@42.25.2518.1415" timestamp="1627270717339" />
-    <state width="1942" height="280" key="GridCell.Tab.0.left/42.25.2838.1595@42.25.2838.1595" timestamp="1624326281611" />
-    <state width="1596" height="277" key="GridCell.Tab.0.right" timestamp="1628431227811">
+    <state width="1225" height="383" key="GridCell.Tab.0.center/0.25.2560.1346@0.25.2560.1346" timestamp="1642142198406" />
+    <state width="1596" height="277" key="GridCell.Tab.0.center/42.25.1638.1025@42.25.1638.1025" timestamp="1643001157261" />
+    <state width="1596" height="277" key="GridCell.Tab.0.left" timestamp="1643001157260">
       <screen x="42" y="25" width="1638" height="1025" />
     </state>
-    <state width="1596" height="277" key="GridCell.Tab.0.right/42.25.1638.1025@42.25.1638.1025" timestamp="1628431227811" />
-    <state width="1155" height="342" key="GridCell.Tab.0.right/42.25.2518.1415@42.25.2518.1415" timestamp="1627270717339" />
-    <state width="1942" height="280" key="GridCell.Tab.0.right/42.25.2838.1595@42.25.2838.1595" timestamp="1624326281612" />
-    <state x="313" y="274" key="SettingsEditor" timestamp="1628431153111">
+    <state width="1225" height="383" key="GridCell.Tab.0.left/0.25.2560.1346@0.25.2560.1346" timestamp="1642142198406" />
+    <state width="1596" height="277" key="GridCell.Tab.0.left/42.25.1638.1025@42.25.1638.1025" timestamp="1643001157260" />
+    <state width="1596" height="277" key="GridCell.Tab.0.right" timestamp="1643001157261">
       <screen x="42" y="25" width="1638" height="1025" />
     </state>
-    <state x="313" y="274" key="SettingsEditor/42.25.1638.1025@42.25.1638.1025" timestamp="1628431153111" />
-    <state x="459" y="369" key="SettingsEditor/42.25.2518.1415@42.25.2518.1415" timestamp="1627269577543" />
+    <state width="1225" height="383" key="GridCell.Tab.0.right/0.25.2560.1346@0.25.2560.1346" timestamp="1642142198406" />
+    <state width="1596" height="277" key="GridCell.Tab.0.right/42.25.1638.1025@42.25.1638.1025" timestamp="1643001157261" />
+    <state x="698" y="260" key="SettingsEditor" timestamp="1642994729726">
+      <screen x="42" y="25" width="1638" height="1025" />
+    </state>
+    <state x="1435" y="333" key="SettingsEditor/0.25.2560.1346@0.25.2560.1346" timestamp="1642384568481" />
+    <state x="698" y="260" key="SettingsEditor/42.25.1638.1025@42.25.1638.1025" timestamp="1642994729726" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FlaskBase$run.coverage" NAME="run Coverage Results" MODIFIED="1628431208508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FlaskBase$run.coverage" NAME="run Coverage Results" MODIFIED="1642995070057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

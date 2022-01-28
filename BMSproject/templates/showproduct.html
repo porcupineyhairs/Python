@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>主页</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'css/register.css' %}">
+        <link rel="stylesheet" href="{% static 'css/iconfont.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap-select.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bug_work.css' %}">
+        <link rel="stylesheet" href="{% static 'css/question_model.css' %}">
+
+        <link rel="stylesheet" href="{% static 'css/addUser_defect_v4.css' %}">
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+        <link rel="shortcut icon" href="{% static 'pic/bugtou.png' %}">
+        <style>
+            .actived:hover{
+                color:rgba(31,93,234,1) ;
+            }
+        </style>
+    </head>
+            <body ng-app="app" id="app" ng-controller="AppCtrl" class="ng-scope">
+            <!-- 头部导航 -->
+            <nav class="navbar navbar-inverse ng-scope" ng-controller="HeaderCtrl">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="logo_img" href="/django/index/"><img src="{% static 'pic/zhuye2333.png' %}" alt="" class="logo"></a>
+                    </div>
+                    <div class="head_nav">
+                        <ul class="open_list" style="position: relative;left: 50px">
+                            <li class="list_active"><a href="/django/showmatter/" style="color:#000"> <img src="{% static 'pic/buglogo.png' %}" style=' width:25px'>Bug管理</a></li>
+            {#                <li style="margin-left:-8px"><a href="//crash.testin.cn/" style="color:#fff">异常上报</a></li>#}
+                        </ul>
+                        <ol class="nav_list">
+                            <li ng-show="bugRuleStatus==0 &amp;&amp; !demoAccount" class="">
+
+                                <font  class="automation" data-ng-click="gotoRulePage()">{{ request.user.last_name}}</font>
+                            </li>
+                            <li class="navbar-nav" ng-show="!demoAccount">
+            {#                    小人图标#}
+                                <i class="nav_icon2 iconfont" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></i>
+            {#                    姓名#}
+                                <a href="/django/gerenxinxi/{{ request.user.id}}/" style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span ng-bind="userName" class="ng-binding">{{ request.user.first_name}}</span></a>
+                            </li>
+            {#                退出按钮#}
+                            <li class="li_03" data-ng-click="gotoNoitce()">
+                                <a href="/django/exitd/"><img src="{% static 'pic/exit65.png' %}" ></a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </nav>
+            <!-- 左边菜单 -->
+            <div class="nav_cont flex-container" style="display: block;">
+            </div>
+            <!-- 右边公共部分 -->
+            <div id="dowebok" style="padding-left:70px;margin-top:60px;">
+                <div ng-view="" class="work_cont work_cont2"><div class="main ng-scope" ng-controller="OverViewCtrl">
+                    <table class="table table-hover table-bordered table-responsive">
+                        <thead>
+                            <tr>
+                                <th >产品名称</th>
+                                <th >产品管理员</th>
+                                <th style="width: 60%">产品描述</th>
+                                <th >操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for gg in productlist %}
+                            <tr>
+                                <td>{{ gg.name }}</td>
+                                <td>{% for dd in userlist %}
+                                    {% if dd.id == gg.user_id %}
+                                        {{ dd.first_name }}
+                                    {% endif %}
+                                    {% endfor %}
+                                </td>
+                                <td>{{ gg.pdescribe }}</td>
+                                <th><a href="/django/upproduct/{{ gg.pid }}/" class="btn btn-primary" style="background-color: #1abc9c;
+            border-color: #1abc9c">修改</a></th>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <ul >
+                        {% if productlist.has_previous %}
+                        <a href="?page={{ productlist.previous_page_number }}{% if request.GET.year %}&year={{ request.GET.year }}{% endif %}{% if request.GET.month %}&month={{ request.GET.month }}{% endif %}{% if request.GET.cid %}&cid={{ request.GET.cid }}{% endif %}">&laquo;上一页</a>
+                        {% else %}
+                        &laquo;上一页
+                        {% endif %}
+
+                         {{ productlist.number }}/{{ productlist.paginator.num_pages }}
+                        {% if productlist.has_next %}
+                         <a href="?page={{ productlist.next_page_number }}{% if request.GET.year %}&year={{ request.GET.year }}{% endif %}{% if request.GET.month %}&month={{ request.GET.month }}{% endif %}{% if request.GET.cid %}&cid={{ request.GET.cid }}{% endif %}">下一页 &raquo;</a>
+                        {% else %}
+                          下一页 &raquo;
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

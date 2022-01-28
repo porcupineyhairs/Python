@@ -1,0 +1,12 @@
+.ipc-footer{
+    position: fixed;
+    bottom:1px;
+    color: #2324ff;
+    height:4%;
+    /*line-height: 30px;*/
+    /*right:500px;*/
+    width:100%;
+    text-align: center;
+    /*cursor: pointer;*/
+    border:1px dashed transparent;
+}

@@ -123,7 +123,7 @@ class Report(DingTalkBaseAPI):
         :param size: 分页大小，最大可设置成100
         """
         return self._top_request(
-            "dingtalk.oapi.report.template.listbyuserid",
+            "dingtalk.oapi.report.templates.listbyuserid",
             {
                 "userid": userid,
                 "offset": offset,

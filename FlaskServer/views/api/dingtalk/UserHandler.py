@@ -7,8 +7,10 @@ class DdUser:
 	def __init__(self, root_path):
 		self.__dd_app_key = "dingxnekg2ap7cqgcyuz"
 		self.__dd_app_secret = "oclwNjy_l6z_6kWGaUxzsok3ZZXgHOOmtEvleyJFWSrtxuflVo_sWJ-qHtTrCKpR"
-		self.__dd_corp_id = "1143998841"
-		self.__dd_op_user = '01180666186637615720'
+		# self.__dd_corp_id = "1143998841"
+		self.__dd_corp_id = 'ding270fdcd5e2ac7fd1'
+		# self.__dd_op_user = '01180666186637615720'
+		self.__dd_op_user = '18345336231284001'
 		self.__hr_sql = MsSqlHelper(host='comfort-hr.com', user='sa', passwd='WjzcomFort@2019', database='HYHRV3')
 		self.__dd_client = dingtalk.AppKeyClient(corp_id=self.__dd_corp_id,
 												 app_key=self.__dd_app_key,
@@ -76,11 +78,12 @@ class DdUser:
 		hr_user_id = info['hr_user_id']
 		try:
 			self.__set_dd_del_info(hr_user_id)
-			self.__set_hr_del_dd_info(hr_user_code)
-			result.update({'result': True})
 		except Exception as e:
 			# print(str(e))
 			pass
+		finally:
+			result.update({'result': True})
+			self.__set_hr_del_dd_info(hr_user_code)
 		return result
 
 	def set_dd_update_info_by_user_code(self, hr_user_code):
@@ -94,7 +97,7 @@ class DdUser:
 		return result
 
 	def __get_dd_user_info(self, dd_user_id):
-		result = {'dd_flag': False}
+		result = {'dd_flag': False, 'dd_user_name': ''}
 		try:
 			if dd_user_id != '':
 				info = self.__dd_client.user.get(dd_user_id)
@@ -107,7 +110,8 @@ class DdUser:
 					result.update({'dd_user_jobnumber': info.get('jobnumber', '')})
 					result.update({'dd_user_mobile': info.get('mobile', '')})
 					result.update({'dd_department': info.get('department', [])})
-
+					result.update({'dd_manager_user_id': info.get('managerUserid', '')})
+					result.update({'dd_manager_user_name': self.__get_dd_user_info(result.get('dd_manager_user_id', '')).get('dd_user_name', '')})
 					result.update({'dd_department_name': self.__get_dd_user_dept_info(result.get('dd_department', []))})
 					result.update({'dd_department_name_full': self.__get_dd_user_dept_info(result.get('dd_department', []),
 																						   full=True)})
@@ -194,9 +198,10 @@ class DdUser:
 	# 重置HR上关于钉钉的资料
 	def __set_hr_del_dd_info(self, hr_user_code):
 		__sql_str = r"update tps_empinfo set is_entry = 0, ischange_dd = 1, dd_id = null " \
-					r"from tps_empinfo where empcode = '{user_code}' and isactive = 1"
+					r"from tps_empinfo where empcode = '{user_code}' "
 		self.__hr_sql.sqlWork(__sql_str.format(user_code=hr_user_code))
 
+	# 创建新的人员
 	def __set_dd_new_info(self, hr_user_code):
 		sqlStr1 = r"select top 1 a.is_entry,a.empname,a.staname,a.empcode,a.mobilephone,a.workplace,convert(varchar(20), " \
 				  r"a.entrydate,120) as entrydate,b.dd_id as deptid,b.deptname  " \
@@ -242,7 +247,7 @@ class DdUser:
 		try:
 			self.__dd_client.user.delete(dd_user_id)
 		except Exception as e:
-			print(str(e))
+			# print(str(e))
 			pass
 
 	def __set_dd_user_info_update(self, hr_user_code):
@@ -282,6 +287,5 @@ class DdUser:
 			update_info.update({'workPlace': sql_data.at[0, 'workPlace']})
 			update_info.update({'userid': sql_data.at[0, 'userid']})
 			update_info.update({'name': sql_data.at[0, 'name']})
-
 			self.__dd_client.user.update(user_data=update_info)
 			self.__hr_sql.sqlWork(sqlStr2.format(hr_user_code=hr_user_code))

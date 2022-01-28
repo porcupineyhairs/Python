@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        {% load static %}
+        <title>{{ NORMAL_TITLE }}</title>
+        {% include 'a_base_css.html' %}
+    </head>
+
+    <body ng-app="app" id="app" ng-controller="AppCtrl" class="ng-scope">
+        <!-- 头部导航 -->
+        {% include 'a_base_nav.html' %}
+        <!-- 左边菜单 -->
+        {% include 'a_base_menu.html' %}
+        <!-- 右边公共部分 -->
+        <div id="dowebok" style="padding-left:70px;margin-top:60px;">
+            <div ng-view="" class="ng-scope">
+                <div class="main ng-scope" ng-controller="OverViewCtrl">
+                    <table class="table table-hover table-bordered table-responsive">
+                        <thead>
+                            <tr align="center">
+                                <td>序号</td>
+                                <td>程序名称</td>
+                                <td>应用名称</td>
+                                <td>备注</td>
+                                <td>操作</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for program_item in program_list %}
+                                <tr valign="middle" align="center" style="height: 90px">
+                                    <td>{{ program_item.id }}</td>
+                                    <td>{{ program_item.prog_name }}</td>
+                                    <td>{{ program_item.system_name }}</td>
+                                    <td>{{ program_item.remark }}</td>
+                                    <td>
+                                        <a href="{{ root_url }}/program_status/{{ program_item.id }}/" class="btn btn-primary" style="background-color: #1abc9c;border-color: #1abc9c;margin-top: 5px">详情</a>
+                                        <br>
+                                        <a href="{{ root_url }}/program_update/{{ program_item.id }}/" class="btn btn-primary" style="background-color: #a3bc2f;border-color: #a3bc2f;margin-top: 5px">修改</a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,1 +1,1 @@
-pyinstaller  -F -i ./favicon.ico run.py
+pyinstaller  -F --clean --name 外挂更新后台服务 -i ./favicon.ico run.py

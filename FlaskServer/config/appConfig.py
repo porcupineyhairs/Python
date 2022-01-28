@@ -4,4 +4,7 @@ class AppConfig(object):
 	APP_HOST = '127.0.0.1'
 	APP_PORT = 8001
 	APP_DEBUG = True
+	
+	STATIC_FOLDER = 'static'
+	TEMPLATE_FOLDER = 'templates'
 

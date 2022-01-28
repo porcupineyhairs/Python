@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="{% static 'js/dingtalk.open.js' %}"></script>
+        <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+        <script>
+            dd.ready(function() {
+                // dd.ready参数为回调函数，在环境准备就绪时触发，jsapi的调用需要保证在该回调函数触发后调用，否则无效。
+                dd.runtime.permission.requestAuthCode({
+                    corpId: "{{ dingtalk_corpid }}",
+                    onSuccess: function(result) {
+                        auth_code = result.code;
+                        goLogin(auth_code)
+                    },
+                    onFail : function(err) {}
+
+                });
+            });
+            function goLogin(auth_code){
+                $.ajax({
+                    type: "POST",
+                    contentType: 'application/json; charset=UTF-8',
+                    url:  'https://{{ host_url}}{{ root_url }}/dingtalk/login/autologin/main/',
+                    dataType: "json",
+                    data:JSON.stringify({
+                        auth_code: auth_code,
+                    }),
+                    async: false,
+                    success: function(data) {
+                        if (data.status == "ok") {
+                            window.location.href= 'https://{{ host_url }}{{ root_url }}/index';
+                        }
+                        else if (data.status == 'error') {
+                            alert('免密登录异常错误');
+                            window.location.href= 'https://{{ host_url }}{{ root_url }}/login';
+                        }
+                        else{
+                            window.location.href= 'https://{{ host_url }}{{ root_url }}/login';
+                        }
+                    },
+                    error: () => {
+                        alert('免密登录失败');
+                        window.location.href= 'https://{{ host_url }}{{ root_url }}/login';
+                    }
+                })
+            }
+        </script>
+    </head>
+    <body>
+    {% include 'a_normal_loading.html' %}
+    </body>
+</html>

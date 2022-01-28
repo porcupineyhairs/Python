@@ -1,0 +1,51 @@
+{% load static %}
+<div class="nav_cont flex-container" style="display: block;">
+    <ul class="nav-stacked" id="menu">
+        <li class="flex-item">
+            <a href="/django/showuser/"  class="actived" ><img src="{% static 'pic/tianjiauser.png' %}" style=' width:30px;position: relative;left: 20px'>用户管理</a>
+        </li>
+        <li class="flex-item">
+            <a href="/django/showdept/"  class="actived">
+                <img src="{% static 'pic/bumengli.png' %}" style=' width:38px;position: relative;left: 15px'>部门管理</a>
+        </li>
+        <li class="flex-item">
+            <a href="/django/showproject/"  class="actived">
+                <img src="{% static 'pic/xiangmu.png' %}" style=' width:38px;position: relative;left: 15px'>项目管理</a>
+        </li>
+        <li class="flex-item">
+            <a href="/django/showproduct/"  class="actived">
+                <img src="{% static 'pic/cpgl.png' %}" style=' width:40px;position: relative;left: 15px'>产品管理</a>
+        </li>
+        <li class="flex-item">
+            <a href="/django/showmeans/"  class="actived">
+                <img src="{% static 'pic/wjxzai.png' %}" style=' width:38px;position: relative;left: 15px'>版本下载</a>
+        </li>
+        <li class="flex-item">
+            <a href="/django/zhuce/"  class="actived">
+                <img src="{% static 'pic/tianjiauser2.png' %}" style=' width:38px;position: relative;left: 15px'>注册用户</a>
+        </li>
+        <li class="flex-item">
+            <a href="/django/appdept/"  class="actived">
+                <img src="{% static 'pic/tjbumen.png' %}" style=' width:38px;position: relative;left: 15px'>添加部门</a>
+        </li>
+        <li class="flex-item">
+            <a href="/django/appproject/"  class="actived">
+                <img src="{% static 'pic/tjxmu.png' %}" style=' width:38px;position: relative;left: 15px'>添加项目</a>
+        </li>
+        <li class="flex-item">
+            <a href="/django/appproduct/"  class="actived">
+                <img src="{% static 'pic/tjchanpin.png' %}" style=' width:38px;position: relative;left: 15px'>添加产品</a>
+        </li>
+        <li data-menuanchor="page6" class="flex-item flex-item6" style="height:52px">
+            <a class="actived"><i class="icon iconfont icon_sdk" style="font-size: 23px;left: 24px;" ></i>小程序</a>
+            <!-- 小程序二维码 -->
+            <div class="small_programbox">
+                <i class="arrow-left"></i>
+                <dl class="small_program">
+                    <dd>Bug小程序内测版上线</dd>
+                    </dt>
+                </dl>
+            </div>
+        </li>
+    </ul>
+</div>

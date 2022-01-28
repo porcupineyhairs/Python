@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>
+        主页
+    </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <link rel="stylesheet" href="{% static 'css/iconfont.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-select.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bug_work.css' %}">
+    <link rel="stylesheet" href="{% static 'css/question_model.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/addUser_defect_v4.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+
+    <link rel="shortcut icon" href="{% static 'pic/bugtou.png' %}">
+
+    <style>
+    .actived:hover{
+        color:rgba(31,93,234,1) ;
+}
+
+</style>
+</head>
+
+<body ng-app="app" id="app" ng-controller="AppCtrl" class="ng-scope">
+<!-- 头部导航 -->
+<nav class="navbar navbar-inverse ng-scope" ng-controller="HeaderCtrl">
+    <div class="container-fluid">
+         <div class="navbar-header">
+
+
+            <a class="logo_img" href="/django/index/"><img src="{% static 'pic/zhuye2333.png' %}" alt="" class="logo"></a>
+        </div>
+        <div class="head_nav">
+
+            <ul class="open_list" style="position: relative;left: 50px">
+                <li class="list_active"><a href="/django/showmatter/" style="color:#000"> <img src="{% static 'pic/buglogo.png' %}" style=' width:25px'>Bug管理</a></li>
+{#                <li style="margin-left:-8px"><a href="//crash.testin.cn/" style="color:#fff">异常上报</a></li>#}
+            </ul>
+
+
+
+            <ol class="nav_list">
+
+
+                <li ng-show="bugRuleStatus==0 &amp;&amp; !demoAccount" class="">
+
+                    <font  class="automation" data-ng-click="gotoRulePage()">{{ request.user.last_name}}</font>
+                </li>
+                <li class="navbar-nav" ng-show="!demoAccount">
+{#                    小人图标#}
+                    <i class="nav_icon2 iconfont" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></i>
+{#                    姓名#}
+                    <a href="/django/gerenxinxi/{{ request.user.id}}/" style="color: #fff;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span ng-bind="userName" class="ng-binding">{{ request.user.first_name}}</span></a>
+
+
+                </li>
+{#                退出按钮#}
+                <li class="li_03" data-ng-click="gotoNoitce()">
+
+                    <a href="/django/exitd/"><img src="{% static 'pic/exit65.png' %}" ></a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</nav>
+<!-- 左边菜单 -->
+<div class="nav_cont flex-container" style="display: block;">
+    <ul class="nav-stacked" id="menu">
+        <li class="flex-item">
+            <a href="/django/showuser/"  class="actived" ><img src="{% static 'pic/tianjiauser.png' %}" style=' width:30px;position: relative;
+left: 20px'>用户管理</a></li>
+        <li class="flex-item">
+            <a href="/django/showdept/"  class="actived">
+                <img src="{% static 'pic/bumengli.png' %}" style=' width:38px;position: relative;left: 15px'>查看部门</a>
+        </li>
+        <li class="flex-item">
+            <a href="/django/showproduct/"  class="actived">
+                <img src="{% static 'pic/cpgl.png' %}" style=' width:40px;position: relative;left: 15px'>查看产品</a>
+        </li>
+        <li class="flex-item">
+            <a href="/django/showproject/"  class="actived">
+                <img src="{% static 'pic/xiangmu.png' %}" style=' width:38px;position: relative;left: 15px'>查看项目</a>
+        </li>
+        <li class="flex-item">
+            <a href="/django/showmeans/"  class="actived">
+                <img src="{% static 'pic/wjxzai.png' %}" style=' width:38px;position: relative;left: 15px'>版本下载</a>
+        </li>
+        <li class="flex-item">
+            <a href="/django/appmatter/"  class="actived">
+                <img src="{% static 'pic/tianjiawenti.png' %}" style=' width:38px;position: relative;left: 15px'>添加问题</a>
+        </li>
+        <li class="flex-item">
+            <a href="/django/qshowmatter/"  class="actived">
+                <img src="{% static 'pic/querenwt.png' %}" style=' width:38px;position: relative;left: 15px'>确认问题</a>
+        </li>
+
+
+{#        <li data-menuanchor="page6" class="flex-item flex-item6" style="height:52px">#}
+{#            <a class="actived"><i class="icon iconfont icon_sdk" style="font-size: 23px;left: 24px;" ></i>小程序</a>#}
+{#            <!-- 小程序二维码 -->#}
+{#            <div class="small_programbox">#}
+{#                <i class="arrow-left"></i>#}
+{#                <dl class="small_program">#}
+{#                    <dd>Bug小程序内测版上线</dd>#}
+{#                    </dt>#}
+{#                </dl>#}
+{#            </div>#}
+{#        </li>#}
+    </ul>
+</div>
+<!-- 右边公共部分 -->
+<div id="dowebok" style="padding-left:70px;margin-top:60px;">
+
+    <div ng-view="" class="ng-scope"><div class="main ng-scope" ng-controller="OverViewCtrl">
+
+    <div class="work_cont work_cont2" id="div1">
+
+
+        <!-- 与我相关缺陷 -->
+        <div class="problem_situation">
+            <!-- 数据展示   -->
+            <div class="company_cont">
+                <div class="introduce_cont defect_wrapper">
+                    <p>与我相关缺陷</p>
+                    <div class="defects_num">
+                        <!-- ngRepeat: data in statisList | filter:{name:'我'} |limitTo:4 --><dl ng-repeat="data in statisList | filter:{name:&#39;我&#39;} |limitTo:4" data-ng-click="gotoDetailList(data.sort)" class="ng-scope">
+                            <dt ng-bind="data.count" class="ng-binding">{{ aa }}</dt>
+                            <dd ng-bind="data.name" class="ng-binding">我创建的</dd>
+                        </dl><!-- end ngRepeat: data in statisList | filter:{name:'我'} |limitTo:4 --><dl ng-repeat="data in statisList | filter:{name:&#39;我&#39;} |limitTo:4" data-ng-click="gotoDetailList(data.sort)" class="ng-scope">
+                            <dt ng-bind="data.count" class="ng-binding">{{ bb }}</dt>
+                            <dd ng-bind="data.name" class="ng-binding">我跟踪的</dd>
+                        </dl><!-- end ngRepeat: data in statisList | filter:{name:'我'} |limitTo:4 --><dl ng-repeat="data in statisList | filter:{name:&#39;我&#39;} |limitTo:4" data-ng-click="gotoDetailList(data.sort)" class="ng-scope">
+                            <dt ng-bind="data.count" class="ng-binding">{{ cc }}</dt>
+                            <dd ng-bind="data.name" class="ng-binding">指派给我的</dd>
+                        </dl><!-- end ngRepeat: data in statisList | filter:{name:'我'} |limitTo:4 --><dl ng-repeat="data in statisList | filter:{name:&#39;我&#39;} |limitTo:4" data-ng-click="gotoDetailList(data.sort)" class="ng-scope">
+                            <dt ng-bind="data.count" class="ng-binding">{{ dd }}</dt>
+                            <dd ng-bind="data.name" class="ng-binding">待我确认</dd>
+                        </dl><!-- end ngRepeat: data in statisList | filter:{name:'我'} |limitTo:4 -->
+                    </div>
+                </div>
+            </div>
+            <!--  echars图表 -->
+            <div class="echars_box">
+                <h6>问题概况</h6>
+                <div class="flex-container">
+
+                    <div class="flex-item ng-scope" ng-repeat="data in statisList02 | limitTo: 7" data-ng-click="gotoDefectList(data.sort)">
+                        <p ng-bind="data.count" class="ng-binding">{{ eelist }}</p>
+                        <p><i class="icon_boxse icon_boxsec_1F5DEA" ng-class="data.className"></i><b ng-bind="data.name" title="新建" class="ng-binding">待分配</b></p>
+                    </div>
+
+                    <div class="flex-item ng-scope" ng-repeat="data in statisList02 | limitTo: 7" data-ng-click="gotoDefectList(data.sort)">
+                        <p ng-bind="data.count" class="ng-binding">{{ fflist }}</p>
+                        <p><i class="icon_boxse icon_boxsec_FF9500" ng-class="data.className"></i><b ng-bind="data.name" title="进行中" class="ng-binding">以分配</b></p>
+                    </div>
+
+                    <div class="flex-item ng-scope" ng-repeat="data in statisList02 | limitTo: 7" data-ng-click="gotoDefectList(data.sort)">
+                        <p ng-bind="data.count" class="ng-binding">{{ gglist }}</p>
+                        <p><i class="icon_boxse icon_boxsec_00C185" ng-class="data.className"></i><b ng-bind="data.name" title="已解决" class="ng-binding">已解决</b></p>
+                    </div>
+
+                    <div class="flex-item ng-scope" ng-repeat="data in statisList02 | limitTo: 7" data-ng-click="gotoDefectList(data.sort)">
+                        <p ng-bind="data.count" class="ng-binding">{{ hhlist }}</p>
+                        <p><i class="icon_boxse icon_boxsec_25B3FA" ng-class="data.className"></i><b ng-bind="data.name" title="已验收" class="ng-binding">已确认</b></p>
+                    </div>
+                </div>
+
+                <div class="content_defect_echars" id="box" _echarts_instance_="ec_1545126874919" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;"><div style="position: relative; overflow: hidden; width: 1304px; height: 260px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="1304" height="260" style="position: absolute; left: 0px; top: 0px; width: 1304px; height: 260px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(23, 43, 77, 0.93); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 400 11px/17px PingFangSC-Regular; text-decoration: none; padding: 5px 10px; left: 729px; top: 73px;">12.15<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#1F5DEA;"></span>新建问题: 0</div></div>
+            </div>
+        </div>
+        <!--  项目成员 -->
+       <div class="content_defect_box" style="overflow: hidden">
+            <p class="create_title"><b>项目成员</b><i class="refresh_icon" data-ng-click="gotoUserListPageWithPermis()"></i></p>
+            <div class="information_list inner-container" style="width:100%;overflow-y:scroll;display:block; position:relative;height: 100%">
+                <div>
+                    {% for uu in xmuserlist %}
+                    <ul class="inner-container row ng-scope" ng-repeat="data in projectUsers">
+                        <li style="padding-left:12px"><img src="{% static 'pic/tianjiauser.png' %}" alt="" style="width: 20px;height: 20px;position: relative;top: -3px"></li>
+                        <li><span><a style="color: #172b4d;cursor: default;" title="" ng-bind="data.desc" class="ng-binding">{{ uu.first_name }}</a></span></li>
+                        <li><span><a style="color: #172b4d;cursor: default;" title="" ng-bind="data.desc" class="ng-binding">{{ uu.last_name }}&nbsp&nbsp{{ uu.email }}</a></span></li>
+
+
+                    </ul>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!-- 历史记录 -->
+        <div class="content_create_task">
+            <div class="create_task_title">
+                <b>最新动态</b>
+
+
+            </div>
+            <div class="information_list inner-container" style="width:100%;overflow-y:scroll;display:block; position:relative;height: calc(100% - 51px)">
+                <div >
+                <table  class="work_cont work_cont2 table-hover  " style="border-collapse: collapse;
+    border: none;
+    padding: 0;
+    margin: 0;
+border_top:none;
+line-height: 45px;
+">
+
+
+                    {% for dt in dongtailist %}
+                    <tr >
+                        <td  style="line-height: 45px;text-align:center">{{ dt.name }}</td>
+
+                        <td >{{ dt.describe }}</td>
+                        <td>{{ dt.date |date:'Y-m-d H:i:s'}}</td>
+
+                    {% endfor %}
+                    </tr>
+
+                </table>
+<div >
+    <ul >
+    {% if dongtailist.has_previous %}
+    <a href="?page={{ dongtailist.previous_page_number }}{% if request.GET.year %}&year={{ request.GET.year }}{% endif %}{% if request.GET.month %}&month={{ request.GET.month }}{% endif %}{% if request.GET.cid %}&cid={{ request.GET.cid }}{% endif %}">&laquo;上一页</a>
+    {% else %}
+    &laquo;上一页
+    {% endif %}
+
+     {{ dongtailist.number }}/{{ dongtailist.paginator.num_pages }}
+    {% if dongtailist.has_next %}
+     <a href="?page={{ dongtailist.next_page_number }}{% if request.GET.year %}&year={{ request.GET.year }}{% endif %}{% if request.GET.month %}&month={{ request.GET.month }}{% endif %}{% if request.GET.cid %}&cid={{ request.GET.cid }}{% endif %}">下一页 &raquo;</a>
+    {% else %}
+      下一页 &raquo;
+    {% endif %}
+   </ul>
+</div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

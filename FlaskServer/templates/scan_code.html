@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>钉钉扫码H5接口调用</title>
+	<style>
+		html,body{
+		height:100%;
+		}
+		#header{
+		background-color:cyan;
+		width:100%;
+		height:100%;
+		color:blue;
+		font-weight:bold;
+		font-size:50pt;
+		font-style:normal;
+		font-family:"標楷體";
+		float:left;
+		}
+		#title{
+		margin:0 auto;
+		margin-top:20pt;
+		text-align:center;
+		background-color:yellow;
+		width:50%;
+		}
+		#saoma{
+		margin:0 auto;
+		margin-top:20pt;
+		margin-bottom:20pt;
+		text-align:center;
+		background-color:green;
+		width:50%;
+		}
+		#appuse{
+			hidden:true;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="header">
+<!--		<div id="title">钉钉扫码H5接口调用</div>-->
+		<div id="saoma">
+			<button id="appuse" type="button" onclick="dingDingSaoMa()">扫码</button>
+		</div>
+	</div>
+    <script src="https://g.alicdn.com/dingding/dingtalk-jsapi/2.13.42/dingtalk.open.js"></script>
+    <script>
+        //扫码 可以用
+        function dingDingSaoMa() {
+            dd.ready(function () {
+                dd.biz.util.scan({
+                    type: 'all', // type 为 all、qrCode、barCode，默认是all。
+                    onSuccess: function (data) {
+                        //onSuccess将在扫码成功之后回调
+                        /* data结构
+                         { 'text': String}
+                         */
+                        alert(JSON.stringify(data));
+                    },
+                    onFail: function (err) {
+						alert("扫码失败！");
+					}
+                })
+            });
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        {% load static %}
+        <title>{{ NORMAL_TITLE }}</title>
+        {% include 'a_base_css.html' %}
+    </head>
+
+    <body ng-app="app" id="app" ng-controller="AppCtrl" class="ng-scope">
+        {% include 'a_base_nav.html' %}
+        <!-- 左边菜单 -->
+        {% include 'a_base_menu.html' %}
+        <!-- 右边公共部分 -->
+        <div id="dowebok" style="padding-left:70px;margin-top:60px;">
+            <div ng-view="" class="work_cont work_cont2">
+                <div class="main ng-scope" ng-controller="OverViewCtrl">
+                    <div class="well bs-component container form-horizontal" style="width: 650px">
+                        <legend><font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">程序详情</font></font>
+                        </legend>
+                        <div style="margin-top:15px;">
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-lg-2 control-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应用名称</font></font></label>
+                                <div class="col-lg-10">
+                                    <input name="progname" class="form-control" id="inputEmail" value="{{ prog_name }}" type="text" readonly="true">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-lg-2 control-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">系统名称</font></font></label>
+                                <div class="col-lg-10">
+                                    <input name="systemname" class="form-control" id="inputEmail" value="{{ system_name }}" type="text" readonly="true">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-lg-2 control-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">备注</font></font></label>
+                                <div class="col-lg-10">
+                                    <input name="remark" class="form-control" id="inputEmail" value="{{ remark }}" type="text" readonly="true">
+                                </div>
+                            </div>
+                        </div>
+                        <legend><font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">运行状态</font></font>
+                        </legend>
+                        <div style="margin-top:15px;">
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-lg-2 control-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开机自启</font></font></label>
+                                <div class="col-lg-10">
+                                    <input name="remark" class="form-control" id="inputEmail" value="{{ enable }}" type="text" readonly="true">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-lg-2 control-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行情况</font></font></label>
+                                <div class="col-lg-10">
+                                    <input name="active" class="form-control" id="inputEmail" value="{{ active }}" type="text" readonly="true">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-lg-2 control-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">状态</font></font></label>
+                                <div class="col-lg-10">
+                                    <input name="status" class="form-control" id="inputEmail" value="{{ status }}" type="text" readonly="true">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-lg-2 control-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PID</font></font></label>
+                                <div class="col-lg-10">
+                                    <input name="pid" class="form-control" id="inputEmail" value="{{ pid }}" type="text" readonly="true">
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-top: 5px;text-align:center;">
+                                <div>
+                                    {% for set_item in set_list %}
+                                        <a href="{{ root_url }}/program_set/{{ kid }}/{{ set_item.set_type }}/" class="btn btn-primary" style="margin-left: 20px;background-color: #1abc9c;border-color: #1abc9c;">{{ set_item.name }}</a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
