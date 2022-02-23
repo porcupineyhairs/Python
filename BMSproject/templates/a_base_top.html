@@ -1,14 +1,12 @@
 {% load static %}
 <nav class="navbar navbar-inverse ng-scope" ng-controller="HeaderCtrl">
     <div class="container-fluid">
-         <div class="navbar-header">
-            <a class="logo_img" href="{{ root_url }}/index/"><img src="{% static 'pic/zhuye2333.png' %}" alt="" class="logo"></a>
+        <div class="navbar-header">
+            <a class="logo_img" href="{{ root_url }}/index/">
+                <img class="logo" src="{% static 'pic/zhuye2333.png' %}" alt="">
+            </a>
         </div>
         <div class="head_nav">
-{#            <ul class="open_list" style="position: relative;left: 50px">#}
-{#                <li class="list_active"><a href="{{ root_url }}/showmatter/" style="color:#000"> <img src="{% static 'pic/buglogo.png' %}" style=' width:25px'>Bug管理</a></li>#}
-{#                <li style="margin-left:-8px"><a href="//crash.testin.cn/" style="color:#fff">异常上报</a></li>#}
-{#            </ul>#}
             <ol class="nav_list">
                 <li ng-show="bugRuleStatus==0 &amp;&amp; !demoAccount" class="">
                     <font  class="automation" data-ng-click="gotoRulePage()">{{ request.user.username}}</font>

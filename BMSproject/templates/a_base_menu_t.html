@@ -1,87 +1,52 @@
 {% load static %}
-<div class="nav_cont flex-container" style="display: block;">
-{#    <ul class="nav-stacked" id="menu">#}
-{#        <li class="flex-item">#}
-{#            <a href="{{ root_url }}/showuser"  class="actived" ><img src="{% static 'pic/tianjiauser.png' %}" style=' width:30px;position: relative;left: 20px'>用户管理</a>#}
-{#        </li>#}
-{#        <li class="flex-item">#}
-{#            <a href="{{ root_url }}/showdept"  class="actived">#}
-{#                <img src="{% static 'pic/bumengli.png' %}" style=' width:38px;position: relative;left: 15px'>部门管理</a>#}
-{#        </li>#}
-{#        <li class="flex-item">#}
-{#            <a href="{{ root_url }}/showproject"  class="actived">#}
-{#                <img src="{% static 'pic/xiangmu.png' %}" style=' width:38px;position: relative;left: 15px'>项目管理</a>#}
-{#        </li>#}
-{#        <li class="flex-item">#}
-{#            <a href="{{ root_url }}/showproduct"  class="actived">#}
-{#                <img src="{% static 'pic/cpgl.png' %}" style=' width:40px;position: relative;left: 15px'>产品管理</a>#}
-{#        </li>#}
-{#        <li class="flex-item">#}
-{#            <a href="{{ root_url }}/showmeans"  class="actived">#}
-{#                <img src="{% static 'pic/wjxzai.png' %}" style=' width:38px;position: relative;left: 15px'>版本下载</a>#}
-{#        </li>#}
-{#        <li class="flex-item">#}
-{#            <a href="{{ root_url }}/zhuce"  class="actived">#}
-{#                <img src="{% static 'pic/tianjiauser2.png' %}" style=' width:38px;position: relative;left: 15px'>注册用户</a>#}
-{#        </li>#}
-{#        <li class="flex-item">#}
-{#            <a href="{{ root_url }}/appdept"  class="actived">#}
-{#                <img src="{% static 'pic/tjbumen.png' %}" style=' width:38px;position: relative;left: 15px'>添加部门</a>#}
-{#        </li>#}
-{#        <li class="flex-item">#}
-{#            <a href="{{ root_url }}/appproject"  class="actived">#}
-{#                <img src="{% static 'pic/tjxmu.png' %}" style=' width:38px;position: relative;left: 15px'>添加项目</a>#}
-{#        </li>#}
-{#        <li class="flex-item">#}
-{#            <a href="{{ root_url }}/appproduct"  class="actived">#}
-{#                <img src="{% static 'pic/tjchanpin.png' %}" style=' width:38px;position: relative;left: 15px'>添加产品</a>#}
-{#        </li>#}
-{#        <li data-menuanchor="page6" class="flex-item flex-item6" style="height:52px">#}
-{#            <a class="actived"><i class="icon iconfont icon_sdk" style="font-size: 23px;left: 24px;" ></i>小程序</a>#}
-{#            <!-- 小程序二维码 -->#}
-{#            <div class="small_programbox">#}
-{#                <i class="arrow-left"></i>#}
-{#                <dl class="small_program">#}
-{#                    <dd>Bug小程序内测版上线</dd>#}
-{#                    </dt>#}
-{#                </dl>#}
-{#            </div>#}
-{#        </li>#}
-{#    </ul>#}
-    {% for perm_item1 in request.user.permission %}
-        <div>
-        {% if perm_item1.has_child %}
-            <i></i>{{ perm_item1.title }}
-            {% for perm_item2 in perm_item1.child %}
+<div class="menu">
+    <div class="menu_top">
+        <div class="menu_system_name">
+            <img src="{% static 'pic/system-logo.png' %}" class="menu_top_system_logo">
+            <div class="menu_top_system_name">
                 <div>
-                {% if perm_item2.has_child %}
-                    <i></i>{{ perm_item2.title }}
-                    {% for perm_item3 in perm_item2.child %}
-                        <div>
-                            <a href="{{ perm_item3.url }}" class="">{{ perm_item3.title }}</a>
+                    {{ system_name }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_user">
+        <div class="pos_relative">
+            {{ request.user.username }}
+        </div>
+    </div>
+    <div class="menu_middle">
+        <div id="menu_middle_list" class="menu_middle_list">
+            {% for perm_item1 in request.user.permission %}
+                {% if perm_item1.has_child %}
+                        <h3  class="menu_middle_list_head ">{{ perm_item1.title }}</h3>
+                        <div style="display:none" class="menu_middle_list_nva">
+                            {% for perm_item2 in perm_item1.child %}
+                                <a href="{{ root_url }}{{ perm_item2.url }}">{{ perm_item2.title }}</a>
+                            {% endfor %}
                         </div>
-                    {% endfor %}
-                {% else %}
-                        <a href="{{ perm_item2.url }}" class="">{{ perm_item2.title }}</a>
-                    </div>
                 {% endif %}
             {% endfor %}
-        {% else %}
-{#            <div class="body {{ perm_item1.class }}">#}
-                <a href="{{ perm_item1.url }}" class="">{{ perm_item1.title }}</a>
-            </div>
-        {% endif %}
-{#        <div class="item">#}
-{#            <div class="title">#}
-{#                <i class=""></i>{{ perm_item1.title }}#}
-{#            </div>#}
-{#            {% for child in perm_item.child %}#}
-{#                <div class="body {{ item.class }}">#}
-{#                    <a href="{{ child.url }}" class="">{{ child.title }}</a>#}
-{#                </div>#}
-{#            {% endfor %}#}
-{##}
-{#        </div>#}
-{#        </div>#}
-    {% endfor %}
+        </div>
+    </div>
+    <div class="menu_bottom">
+        <div class="menu_hide">
+            <a class="switch pull-right tip-control close" data-step="8" data-intro="关闭，展开左边菜单" data-position="top" href="javascript:void(0);" title="" data-original-title="隐藏菜单"> <i class="fa fa-angle-left"></i> </a>
+        </div>
+    </div>
 </div>
+<script src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
+<script>
+    $(document).ready(function(){
+        {#$("#menu_middle_list .menu_middle_list_nva:eq(0)").show();#}
+        $("#menu_middle_list h3.menu_middle_list_head").click(function(){
+            $(this).addClass("current").next("div.menu_middle_list_nva").slideToggle(200).siblings("div.menu_middle_list_nva").slideUp("slow");
+            $(this).siblings().removeClass("current");
+        });
+        $("#menu_middle_list0 .menu_middle_list_nva:eq(0)").show();
+        $("#menu_middle_list0 h3.menu_middle_list_head").mouseover(function(){
+            $(this).addClass("current").next("div.menu_middle_list_nva").slideDown(400).siblings("div.menu_middle_list_nva").slideUp("slow");
+            $(this).siblings().removeClass("current");
+        });
+    });
+</script>

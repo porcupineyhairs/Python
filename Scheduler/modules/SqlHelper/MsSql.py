@@ -2,15 +2,6 @@ import pymssql
 import pandas as pd
 
 
-class MsSqlHelperException(Exception):
-	def __init__(self, errInf):
-		self.__errInf = errInf
-		super().__init__(self)
-
-	def __str__(self):
-		return self.__errInf
-
-
 class MsSqlHelper:
 	def __doc__(self):
 		return 'Class Name: MsSqlHelper \n' \
@@ -65,7 +56,7 @@ class MsSqlHelper:
 	def __createObj(self):
 		if (self.__host is None or self.__host == '' or self.__user is None or self.__user == '' or
 				self.__passwd is None or self.__passwd == '' or self.__db is None or self.__db == ''):
-			raise MsSqlHelperException('Input Parameter is Error.')
+			raise self.__MsSqlHelperException('Input Parameter is Error.')
 
 		self.__conn = pymssql.connect(host=self.__host, user=self.__user, password=self.__passwd, database=self.__db,
 		                              charset=self.__charset)
@@ -95,7 +86,7 @@ class MsSqlHelper:
 
 	def __work(self):
 		if self.__sqlStr is None:
-			raise MsSqlHelperException('Sql Str is None.')
+			raise self.__MsSqlHelperException('Sql Str is None.')
 		# 根据SQL第一个关键字获取模式
 		self.__sqlMode = self.__sqlStr.lstrip().split(' ')[0].upper()
 		# 根据不同SQL关键字执行不同命令
@@ -104,7 +95,7 @@ class MsSqlHelper:
 		elif self.__sqlMode in ('UPDATE', 'INSERT', 'DELETE', 'TRUNCATE'):
 			self.__sqlCommit()
 		else:
-			raise MsSqlHelperException('Can Not Get Sql Mode, Please Check Sql Sentence. Sql: ' + self.__sqlStr)
+			raise self.__MsSqlHelperException('Can Not Get Sql Mode, Please Check Sql Sentence. Sql: ' + self.__sqlStr)
 
 	# 数据库查询方法
 	def __sqlExecute(self):
@@ -149,3 +140,11 @@ class MsSqlHelper:
 		for __TitleTmp in self.__cur.description:
 			__title.append(__TitleTmp[0])
 		self.__columns = __title
+	
+	class __MsSqlHelperException(Exception):
+		def __init__(self, err_inf):
+			self.err_inf = err_inf
+			super().__init__(self)
+		
+		def __str__(self):
+			return self.err_inf

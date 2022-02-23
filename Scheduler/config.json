@@ -1,9 +1,9 @@
 {
   "list": [
     {
-      "path": "modules",
-      "file_name": "Jdy",
-      "class_name": ["BasicPlanFix", "LogPlanHandler", "LogTimeHandler", "GetRobotGxSumHandler"],
+      "path": "functions",
+      "file_name": "Jdy_Sc",
+      "class_name": ["BasicPlanFix", "LogPlanHandler", "LogTimeHandler"],
       "scheduler": {
         "trigger": "interval",
         "minute": 1,
@@ -11,8 +11,8 @@
       }
     },
     {
-      "path": "modules",
-      "file_name": "Jdy",
+      "path": "functions",
+      "file_name": "Jdy_Sc",
       "class_name": ["BasicPlanErrorAlert"],
       "scheduler": {
         "trigger": "cron",
@@ -22,7 +22,7 @@
       }
     },
     {
-      "path": "modules",
+      "path": "functions",
       "file_name": "DingTalkRobot",
       "class_name": ["WorkCardAlert"],
       "scheduler": {

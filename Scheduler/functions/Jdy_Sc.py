@@ -1,35 +1,9 @@
 from modules.JdyHelper.JdyApi import APIUtils
 from modules.SqlHelper import MsSqlHelper
 from modules.LogHelper import logger
+from modules.DingTalkHelper import DingTalk_Base
 import datetime
-import requests
-import json
 import time
-
-
-class DingTalk_Base:
-	def __init__(self, url=''):
-		self.__headers = {'Content-Type': 'application/json;charset=utf-8'}
-		self.url = url
-	
-	def send_msg(self, text, mobile=[""]):
-		json_text = {
-			"msgtype": "text",
-			"text": {
-				"content": text
-			},
-		}
-		if mobile == 'all':
-			json_text.update({"at": {
-				"atMobiles": mobile,
-				"isAtAll": True
-			}})
-		else:
-			json_text.update({"at": {
-				"atMobiles": mobile,
-				"isAtAll": False
-			}})
-		return requests.post(self.url, json.dumps(json_text), headers=self.__headers).content
 
 
 class BasicPlanFix:
@@ -81,20 +55,22 @@ class BasicPlanFix:
 
 					sqlStrWlno = r"SELECT TOP 1 SC028 plan_wlno, SC010 plan_wlno_name, SC009 plan_po, " \
 								 r"SC017 plan_pz_color FROM SC_PLAN WHERE SC001 = '{0}' "
+					
+					# 获取工单部件信息
 					sqlStrPart = r"exec P_JDY_GetWlnoPartInfo '{0}' "
 
 					try:
 						if plan_order_id != '':
 							sql_get_wlno = self.mssql.sqlWork(sqlStrWlno.format(plan_order_id))
-							sql_get_part = self.mssql.sqlWork(sqlStrPart.format(plan_order_id))
+							# sql_get_part = self.mssql.sqlWork(sqlStrPart.format(plan_order_id))
 
 							# 把sql获取到的信息都填入到更新的字典里
 							if sql_get_wlno is not None:
 								for col in sql_get_wlno.columns:
 									self.api.set_dict_value(update, col, sql_get_wlno.at[0, col])
-							if sql_get_part is not None:
-								for col in sql_get_part.columns:
-									self.api.set_dict_value(update, col, sql_get_part.at[0, col])
+							# if sql_get_part is not None:
+							# 	for col in sql_get_part.columns:
+							# 		self.api.set_dict_value(update, col, sql_get_part.at[0, col])
 
 							# 特殊处理内容
 							# 补件标识
@@ -441,20 +417,34 @@ class BasicPlanErrorAlert:
 		title = ['order_id', 'order_type', 'plan_order_id', 'wlno_other_flag', 'plan_wlno', 'plan_dept',
 		         'plan_wlno_name']
 		
-		data_filter = {
-			'rel': 'or',
-			'cond': [
-				self.api.set_dict_filter('plan_index0', 'empty'),
-				self.api.set_dict_filter('order_id', 'empty'),
-				self.api.set_dict_filter('plan_dept', 'empty'),
-			]
+		data_filter1 = {
+			'rel': 'and',
+			'cond': [self.api.set_dict_filter('plan_index0', 'empty'), ]
 		}
-		data = self.api.get_form_data('', 1000, title, data_filter)
-		if not data:
+		data_filter2 = {
+			'rel': 'and',
+			'cond': [self.api.set_dict_filter('order_id', 'empty'), ]
+		}
+		data_filter3 = {
+			'rel': 'and',
+			'cond': [self.api.set_dict_filter('plan_dept', 'empty'), ]
+		}
+		data1 = self.api.get_form_data('', 1000, title, data_filter1)
+		data2 = self.api.get_form_data('', 1000, title, data_filter2)
+		data3 = self.api.get_form_data('', 1000, title, data_filter3)
+		
+		msg_tmp = ''
+		if data1:
+			msg_tmp += '唯一序号为空共有{data_len}行\n'.format(data_len=len(data1))
+		if data2:
+			msg_tmp += '生产单号为空共有{data_len}行\n'.format(data_len=len(data2))
+		if data3:
+			msg_tmp += '生产组别为空共有{data_len}行\n'.format(data_len=len(data3))
+		if msg_tmp == '':
 			logger.info('排程数据-异常 -- API返回无数据')
 			print('排程数据-异常 -- API返回无数据')
 		else:
-			data_len = len(data)
-			msg = '简道云-排程任务表，共有{data_len}笔异常(唯一序号|生产单号|生产组别 为空)'.format(data_len=data_len)
+			msg = '简道云-排程任务表:\n' + msg_tmp + '\n请尽快处理！'
 			logger.info('排程数据-异常 -- ' + msg)
 			self.ding.send_msg(msg, 'all')
+

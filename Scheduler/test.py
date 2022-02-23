@@ -1,5 +1,6 @@
-from modules.Jdy import LogTimeHandler
+from functions.Jdy_Qc import QcIpqcCheckHandler
 
 if __name__ == '__main__':
-    test = LogTimeHandler()
+    test = QcIpqcCheckHandler()
+    # print(test.__doc__())
     test.main()

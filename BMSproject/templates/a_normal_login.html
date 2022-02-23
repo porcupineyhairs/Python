@@ -12,34 +12,31 @@
         <meta name="renderer" content="webkit">
 
         <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        <link rel="stylesheet" href="{% static 'css/register.css' %}">
-        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
 
         <style type="text/css">@keyframes animate_dots{0%{opacity:1}to{opacity:0}}@-webkit-keyframes animate_dots{0%{opacity:1}to{opacity:0}}.dot0,.dot1{animation:animate_dots .9s infinite;-moz-animation:animate_dots .9s infinite;-webkit-animation:animate_dots .9s infinite;-o-animation:animate_dots .9s infinite}.dot1{animation-delay:.2s;-webkit-animation-delay:.2s}.dot2{animation:animate_dots .9s infinite;-moz-animation:animate_dots .9s infinite;-webkit-animation:animate_dots .9s infinite;-o-animation:animate_dots .9s infinite;animation-delay:.4s;-webkit-animation-delay:.4s}.dots_item{display:inline-block;margin-right:5px;width:10px;height:10px;border-radius:50%;background:#4886ff}.verify-icon{position:absolute;width:100%;margin-top:70px;text-align:center}.t-mask{width:100%;height:100%;position:fixed;_position:absolute;left:0;top:0;background:#000;opacity:.5;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);z-index:2000000000}</style>
         <script type="text/javascript" async="" ></script>
     </head>
-    <body style="background-color: #f7f8fa;">
-        <div class="upgrade_tips" id="tipsBrowserInfo" style="display: none"></div>
+    <body>
         <div id="body" class="container">
-            <div id="content">
+            <div class="login_content">
                 <div class="container" style="padding-left:0px;padding-right:0px;">
-                    <div id="form-title">
-                        <img src="{% static 'pic/company-logo.png' %}" style=' width:45px'>
-                        {{ system_title }}
+                    <div class="login_form_title">
+                        <img src="{% static 'pic/system-logo.png' %}" style=' width:45px'>
+                        {{ system_name }}
                     </div>
                     <form id="submit-form" action="{{ root_url }}/login/" method="post">
                         {% csrf_token %}
-                        <div id="form-content">
-                            <div id="form-msg">登录账号&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span style="font-size: 15px;color: red">{{ msg }}</span></div>
-                            <div id="form-inputs">
-                                <div class="form-input">
+                        <div class="login_form_content">
+                            <div class="login_form_msg">登录账号&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span style="font-size: 15px;color: red">{{ msg }}</span></div>
+                            <div class="login_form_inputs">
+                                <div class="login_form_input">
                                     <i class="iconfont"></i>
-                                    <input placeholder="账号" type="text"  name="username" >
+                                    <input placeholder="手机号码" type="text"  name="username" >
 
                                     <div class="err_msg" id="email_err"></div>
                                 </div>
-                                <div class="form-input">
+                                <div class="login_form_input">
                                     <i class="iconfont"></i>
                                     <input placeholder="密码" type="password" id="pwd" name="password">
 
@@ -54,12 +51,12 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-left">
+        <div class="login_bottom_left">
             <img src="{% static 'pic/bottom-left.png' %}">
         </div>
-        <div class="bottom-right">
+        <div class="login_bottom_right">
             <img src="{% static 'pic/bottom-right.png' %}">
         </div>
-        <div class="ipc-footer" >{{ ICP_NO }}</div>
+        <div class="icp_footer" >{{ icp_no }}</div>
     </body>
 </html>

@@ -95,24 +95,24 @@ class IndexView(View):
 				'child': [
 					{
 						'id': 11,
-						'title': '系统参数1-1',
+						'title': '成本异常报表(生产)导出',
 						'image': '',
 						'has_child': False,
-						'url': 'uuuuu'
+						'url': '/test/11'
 					},
 					{
 						'id': 12,
 						'title': '系统参数1-2',
 						'image': '',
 						'has_child': False,
-						'url': 'uuuuu'
+						'url': '/test/12'
 					},
 					{
 						'id': 13,
 						'title': '系统参数1-3',
 						'image': '',
 						'has_child': False,
-						'url': 'uuuuu'
+						'url': '/test/13'
 					},
 				]
 			},
@@ -127,46 +127,389 @@ class IndexView(View):
 						'title': '系统参数2-1',
 						'image': '',
 						'has_child': False,
-						'url': 'uuuuu'
+						'url': '/test/21'
 					},
 					{
 						'id': 22,
 						'title': '系统参数2-2',
 						'image': '',
 						'has_child': False,
-						'url': 'uuuuu'
-					},
-					{
-						'id': 23,
-						'title': '系统参数2-3',
-						'image': '',
-						'has_child': True,
-						'child': [
-							{
-								'id': 231,
-								'title': '系统参数2-3-1',
-								'image': '',
-								'has_child': False,
-								'url': 'uuuuu'
-							},
-							{
-								'id': 232,
-								'title': '系统参数2-3-2',
-								'image': '',
-								'has_child': False,
-								'url': 'uuuuu'
-							},
-						]
+						'url': '/test/22'
 					},
 				]
 			},
 			{
-				'id': 99,
-				'title': '最后一个',
+				'id': 3,
+				'title': '系统管理3',
 				'image': '',
-				'has_child': False,
-				'url': 'last'
-			}
+				'has_child': True,
+				'child': [
+					{
+						'id': 31,
+						'title': '系统参数3-1',
+						'image': '',
+						'has_child': False,
+						'url': '/test/31'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+					{
+						'id': 32,
+						'title': '系统参数3-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/32'
+					},
+				]
+			},
+			{
+				'id': 4,
+				'title': '系统管理4',
+				'image': '',
+				'has_child': True,
+				'child': [
+					{
+						'id': 41,
+						'title': '系统参数4-1',
+						'image': '',
+						'has_child': False,
+						'url': '/test/41'
+					},
+					{
+						'id': 42,
+						'title': '系统参数4-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/42'
+					},
+				]
+			},
+			{
+				'id': 5,
+				'title': '系统管理5',
+				'image': '',
+				'has_child': True,
+				'child': [
+					{
+						'id': 51,
+						'title': '系统参数5-1',
+						'image': '',
+						'has_child': False,
+						'url': '/test/51'
+					},
+					{
+						'id': 52,
+						'title': '系统参数5-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/52'
+					},
+				]
+			},
+			{
+				'id': 6,
+				'title': '系统管理6',
+				'image': '',
+				'has_child': True,
+				'child': [
+					{
+						'id': 61,
+						'title': '系统参数6-1',
+						'image': '',
+						'has_child': False,
+						'url': '/test/61'
+					},
+					{
+						'id': 62,
+						'title': '系统参数6-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/62'
+					},
+				]
+			},
+			{
+				'id': 7,
+				'title': '系统管理7',
+				'image': '',
+				'has_child': True,
+				'child': [
+					{
+						'id': 71,
+						'title': '系统参数7-1',
+						'image': '',
+						'has_child': False,
+						'url': '/test/71'
+					},
+					{
+						'id': 72,
+						'title': '系统参数7-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/72'
+					},
+				]
+			},
+			{
+				'id': 8,
+				'title': '系统管理8',
+				'image': '',
+				'has_child': True,
+				'child': [
+					{
+						'id': 81,
+						'title': '系统参数8-1',
+						'image': '',
+						'has_child': False,
+						'url': '/test/81'
+					},
+					{
+						'id': 82,
+						'title': '系统参数8-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/82'
+					},
+				]
+			},
+			{
+				'id': 9,
+				'title': '系统管理9',
+				'image': '',
+				'has_child': True,
+				'child': [
+					{
+						'id': 91,
+						'title': '系统参数9-1',
+						'image': '',
+						'has_child': False,
+						'url': '/test/91'
+					},
+					{
+						'id': 92,
+						'title': '系统参数9-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/92'
+					},
+				]
+			},
+			{
+				'id': 10,
+				'title': '系统管理10',
+				'image': '',
+				'has_child': True,
+				'child': [
+					{
+						'id': 101,
+						'title': '系统参数10-1',
+						'image': '',
+						'has_child': False,
+						'url': '/test/101'
+					},
+					{
+						'id': 102,
+						'title': '系统参数10-2',
+						'image': '',
+						'has_child': False,
+						'url': '/test/102'
+					},
+				]
+			},
 		]
 		user.permission = pm
 		# print('perm', user.permission)
