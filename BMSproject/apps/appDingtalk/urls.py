@@ -3,6 +3,6 @@ from django.views.generic import RedirectView
 from appDingtalk.views import DingTalkAutoLoginMainView
 
 urlpatterns = [
-	path('login/autologin/main/', DingTalkAutoLoginMainView.as_view()),
+	path('dingtalk/login/autologin/main/', DingTalkAutoLoginMainView.as_view()),
 	
 ]

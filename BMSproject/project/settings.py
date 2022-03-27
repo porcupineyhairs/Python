@@ -19,7 +19,7 @@ SECRET_KEY = 'xu+s%(*pqt741l%zp9$&)^3&z@4lpu8ha+)hzp4y%=-t!2o$7g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['harvey-tools.top', 'comfortApp-oa.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['harvey-tools.top', 'comfort-oa.com', '127.0.0.1', 'localhost']
 
 # 自定义登录认证
 AUTHENTICATION_BACKENDS = (
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
 	'appTest',
 	'appDingtalk',
 	# 'appWechat',
+	'appComfortSc',
 
 ]
 
@@ -50,7 +51,7 @@ MIDDLEWARE = [
 	'django.contrib.auth.middleware.AuthenticationMiddleware',
 	'django.contrib.messages.middleware.MessageMiddleware',
 	'django.middleware.clickjacking.XFrameOptionsMiddleware',
-	'appBase.middleware.MiddlewareApp',  # 自定义中间处理层，process_request
+	'appBase.middleware.MiddlewareApp',  # 自定义中间处理层，process_request, process_response
 ]
 
 ROOT_URLCONF = 'project.urls'
@@ -58,8 +59,8 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
 	{
 		'BACKEND': 'django.template.backends.django.DjangoTemplates',
-		'DIRS': [os.path.join(BASE_DIR, 'appUsers', 'templates'),
-			os.path.join(BASE_DIR, 'templates'), ],
+		'DIRS': [os.path.join(BASE_DIR, 'apps', 'templates'),
+			os.path.join(BASE_DIR, 'apps_other', 'templates'), ],
 		'APP_DIRS': True,
 		'OPTIONS': {
 			'context_processors': [
@@ -122,7 +123,8 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+# 取消注释了，时区会不准确
+# USE_TZ = True
 
 AUTH_USER_MODEL = "appUsers.User"
 
@@ -132,7 +134,7 @@ AUTH_USER_MODEL = "appUsers.User"
 SESSION_COOKIE_DOMAIN = None  # Session的cookie保存的域名（默认）
 SESSION_COOKIE_SECURE = False  # 是否Https传输cookie（默认）
 SESSION_COOKIE_HTTPONLY = True  # 是否Session的cookie只支持http传输（默认）
-SESSION_COOKIE_AGE = 86400  # Session的cookie失效日期（4小时）（数字为秒数）（默认）
+SESSION_COOKIE_AGE = 86400  # Session的cookie失效日期（数字为秒数）（默认）
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False  # 是否关闭浏览器使得Session过期（默认）
 SESSION_SAVE_EVERY_REQUEST = False  # 是否每次请求都保存Session，默认修改之后才保存（默认）
 

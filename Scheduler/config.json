@@ -28,7 +28,7 @@
       "scheduler": {
         "trigger": "cron",
         "hour": "8, 17",
-        "minute": "45"
+        "minute": "30"
       }
     }
   ]

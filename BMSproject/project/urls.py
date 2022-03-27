@@ -16,8 +16,11 @@ urlpatterns = [
 	# 引用App的url配置
 	path(root_url, include('appBase.urls')),
 	path(root_url, include('appUsers.urls')),
-	path(root_url + 'test/', include('appTest.urls')),
-	path(root_url + 'dingtalk/', include('appDingtalk.urls')),
+	path(root_url, include('appComfortSc.urls')),
+	path(root_url, include('appComfortCw.urls')),
+	path(root_url, include('appComfortHr.urls')),
+	path(root_url, include('appTest.urls')),
+	path(root_url, include('appDingtalk.urls')),
 ]
 
 # 全局404页面配置

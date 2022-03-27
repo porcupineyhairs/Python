@@ -94,7 +94,7 @@ class WorkCardAlert:
 
 					if workTimeType == '上班':
 						# 正常打卡
-						if int(timeTmp1[0]) < 8:
+						if (int(timeTmp1[0]) <= 8) or (int(timeTmp1[0]) == 8 and int(timeTmp1[1]) == 0):
 							textList1.append(
 								'{name}({empcode}){workTimeType}打卡时间为{time}'.format(name=empname, time=onTime1,
 																					empcode=empcode,

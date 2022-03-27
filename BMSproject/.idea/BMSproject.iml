@@ -19,7 +19,7 @@
       <sourceFolder url="file://$MODULE_DIR$/apps_comfort" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/apps_other" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Remote Python 3.8.12 (sftp://root@harvey-tools.top:22/usr/local/conda3/envs/Web/bin/python)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (Web)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
@@ -27,6 +27,7 @@
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/templates" />
+        <option value="$MODULE_DIR$/apps/appUsers/templates" />
       </list>
     </option>
   </component>

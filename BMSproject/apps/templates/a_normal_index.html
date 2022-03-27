@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <!-- Basic -->
+    	<meta charset="UTF-8" />
+		<!-- Mobile Metas -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        {% include 'a_base_title.html' %}
+        <!-- Favicon -->
+        {% include 'a_base_sortcut.html' %}
+        <!-- Css -->
+        {% include 'a_base_css.html' %}
+    </head>
+    <body>
+        {% include 'a_base_sidebar.html' %}
+        {% include 'a_base_header.html' %}
+
+        <div class="container-fluid content">
+			<div class="row">
+				<div class="main">
+                    <div class="page-header">
+                        <div class="pull-left">
+                        </div>
+                        <div class="pull-right">
+                            <h2>主页</h2>
+                        </div>
+                    </div>
+
+                    <!-- 主空间 -->
+                    <!-- 主空间 End -->
+
+				</div>
+            </div>
+        </div>
+
+		<div class="clearfix"></div>
+
+        <!-- Js -->
+        {% include 'a_base_js.html' %}
+    </body>
+</html>

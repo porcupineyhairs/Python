@@ -4,6 +4,7 @@ from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.views.generic.base import View
 from django.contrib.auth import authenticate, login
 from appBase.models import AppConfig
+from appBase.function import BaseFunction
 from django.db.models import Q, F
 from django.core.paginator import Paginator
 import dingtalk
@@ -50,11 +51,12 @@ class DingTalkAutoLoginMainView(View):
 				dingtalkid = info['userid']
 				info2 = dd_client.user.get(dingtalkid)
 				mobile = info2['mobile']
-				# print(dingtalkid, mobile)
+				print('钉钉免登', dingtalkid, mobile)
 
 				user = authenticate(dingtalkid=dingtalkid, mobile=mobile, types='DingTalk')
 				if user is not None:
 					login(request, user)
+					BaseFunction.UserInfoOpt.set_init_user_extend_info(request)
 					result.update({'status': 'ok'})
 			except Exception as e:
 				print(e)

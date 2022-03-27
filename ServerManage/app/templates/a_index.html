@@ -19,11 +19,11 @@
                     <table class="table table-hover table-bordered table-responsive">
                         <thead>
                             <tr align="center">
-                                <td>序号</td>
-                                <td>程序名称</td>
-                                <td>应用名称</td>
-                                <td>备注</td>
-                                <td>操作</td>
+                                <td style="width: 50px">序号</td>
+                                <td style="width: 200px">程序名称</td>
+                                <td style="width: 200px">应用名称</td>
+                                <td style="width: 300px">备注</td>
+                                <td style="width: 200px">操作</td>
                             </tr>
                         </thead>
                         <tbody>
@@ -34,9 +34,10 @@
                                     <td>{{ program_item.system_name }}</td>
                                     <td>{{ program_item.remark }}</td>
                                     <td>
-                                        <a href="{{ root_url }}/program_status/{{ program_item.id }}/" class="btn btn-primary" style="background-color: #1abc9c;border-color: #1abc9c;margin-top: 5px">详情</a>
-                                        <br>
-                                        <a href="{{ root_url }}/program_update/{{ program_item.id }}/" class="btn btn-primary" style="background-color: #a3bc2f;border-color: #a3bc2f;margin-top: 5px">修改</a>
+                                        <div class="">
+                                            <a href="{{ root_url }}/program_status/{{ program_item.id }}/" class="btn btn-primary" style="background-color: #1abc9c;border-color: #1abc9c;margin-top: 5px;position: relative">详情</a>
+                                            <a href="{{ root_url }}/program_update/{{ program_item.id }}/" class="btn btn-primary" style="background-color: #a3bc2f;border-color: #a3bc2f;margin-top: 5px;position: relative">修改</a>
+                                        </div>
                                     </td>
                                 </tr>
                             {% endfor %}

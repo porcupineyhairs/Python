@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% include 'a_base_title.html' %}
+        <!-- Favicon -->
+        {% include 'a_base_sortcut.html' %}
+        <!-- Css -->
+        {% include 'a_base_css.html' %}
+    </head>
+
+    <body>
+        <!-- 边栏 Start -->
+        {% include 'a_base_sidebar.html' %}
+        <!-- 边栏 End -->
+        <!-- 顶部导航 Start -->
+        {% include 'a_base_header.html' %}
+        <!-- 顶部导航 End -->
+
+        <!-- 主空间 Start -->
+        <div class="content-wrap">
+            <div class="main">
+                <div class="container-fluid">
+                    <div class="page-header">
+                        <div class="pull-left">
+                        </div>
+                        <div class="pull-right">
+                            <h2>demo page</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 主空间 End -->
+        
+
+        <!-- Js -->
+        {% include 'a_base_js.html' %}
+    </body>
+</html>

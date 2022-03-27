@@ -9,6 +9,7 @@ from app.models import Program, OptionType, LoginLog, OptionLog
 
 from django.core.paginator import Paginator
 from ServerManage.global_setting import global_setting
+from app.function import ProgramStatusInfo
 
 root_url = global_setting(None).get('root_url')
 
@@ -100,7 +101,9 @@ class ProgramView:
 				remark = request.POST.get('remark')
 				Program.objects.filter(id=kid).update(prog_name=progname, system_name=systemname, remark=remark)
 				
-			program_list = Program.objects.filter(id=kid).all()[0]
+			else:
+				program_list = Program.objects.filter(id=kid).all()[0]
+				file = ProgramStatusInfo.get_service_file(program_list.system_name)
 			return render(request, 'program_update.html', locals())
 		else:
 			return HttpResponseRedirect(root_url + '/login/')
@@ -124,9 +127,8 @@ class ProgramView:
 			system_name = program_list.system_name
 			remark = program_list.remark
 			
-			from app.function import ProgramStatusInfo
-			program_status = ProgramStatusInfo()
-			active, status, pid, enable = program_status.get_status(program_name=system_name)
+			# program_status = ProgramStatusInfo()
+			active, status, pid, enable= ProgramStatusInfo.get_status(program_name=system_name)
 			set_list = []
 			if enable is True:
 				set_list.append({'name': '关闭开机自启', 'set_type': 'disable'})
@@ -150,16 +152,16 @@ class ProgramView:
 			system_name = program_list.system_name
 			
 			from app.function import ProgramStatusInfo
-			program_status = ProgramStatusInfo()
+			# program_status = ProgramStatusInfo()
 			
 			if set_type == 'stop':
-				program_status.set_stop(system_name)
+				ProgramStatusInfo.set_stop(system_name)
 			elif set_type == 'start':
-				program_status.set_start(system_name)
+				ProgramStatusInfo.set_start(system_name)
 			elif set_type == 'enable':
-				program_status.set_enable(system_name)
+				ProgramStatusInfo.set_enable(system_name)
 			elif set_type == 'disable':
-				program_status.set_disable(system_name)
+				ProgramStatusInfo.set_disable(system_name)
 			
 			time.sleep(0.5)
 			return HttpResponseRedirect(root_url + '/program_status/' + str(kid) + '/')

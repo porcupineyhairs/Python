@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <title>Title</title>
+</head>
+<body>
+<h1>测试页面</h1>
+<h1>{{ no }}</h1>
+
+
+{% csrf_token %}
+<form action="" method="post">
+    <input type="hidden" name="data" value="{{ data }}">
+    <button type="submit" name="button" value="select">查询</button>
+</form>
+<form action="" method="post">
+    <input type="hidden" name="data" value="{{ data }}">
+    <button type="submit" name="button" value="output" {{ shoucang3_disabled }}>导出</button>
+</form>
+
+<p>{{ msg }}</p>
+<p>{{ msg3 }}</p>
+{% if msg3 %}
+    <script>
+        alert({{msg3}});
+    </script>
+{% endif %}
+
+</body>
+</html>
