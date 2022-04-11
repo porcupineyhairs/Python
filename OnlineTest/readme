@@ -1,0 +1,23 @@
+python manage.py makemigrations
+
+python manage.py migrate
+
+
+op_user = '01180666186637615720'
+
+
+
+
+# appBase_appconfig
+INSERT INTO `ManageOnline`.`appBase_appconfig` (`valid`, `apps`, `name`, `value`, `remark`, `createdate`, `createuser`, `modidate`, `modiuser`) VALUES (1, 'dingtalk', 'app', '{\"corp_id\":\"ding270fdcd5e2ac7fd1\", \"app_key\":\"ding93sgxdv1pl77lbtr\", \"app_secret\":\"yzGeUyuL6PslWeH9Sl3vG_gXqfjr-xCZWEQxxhXO-3gWBug6rucapOx2lyQ4jFdV\"}', NULL, '2022-01-21 01:00:00.000000', 'harvey', NULL, NULL);
+INSERT INTO `ManageOnline`.`appBase_appconfig` (`valid`, `apps`, `name`, `value`, `remark`, `createdate`, `createuser`, `modidate`, `modiuser`) VALUES (1, 'database', 'wg_db', '{\"host\"=\"comfort-oa.com:60043\", \"user\"=\"sa\", \"passwd\":\"comfortgroup2016{\", \"database\":\"WG_DB\"}', NULL, '2022-01-21 01:00:00.000000', 'harvey', NULL, NULL);
+INSERT INTO `ManageOnline`.`appBase_appconfig` (`valid`, `apps`, `name`, `value`, `remark`, `createdate`, `createuser`, `modidate`, `modiuser`) VALUES (1, 'database', 'comfort', '{\"host\"=\"comfort-oa.com:60043\", \"user\"=\"sa\", \"passwd\":\"comfortgroup2016{\", \"database\":\"COMFORT\"}', NULL, '2022-01-21 01:00:00.000000', 'harvey', NULL, NULL);
+INSERT INTO `ManageOnline`.`appBase_appconfig` (`valid`, `apps`, `name`, `value`, `remark`, `createdate`, `createuser`, `modidate`, `modiuser`) VALUES (1, 'database', 'comfortseating', '{\"host\"=\"comfort-oa.com:60044\", \"user\"=\"sa\", \"passwd\":\"comfortsjl2013{\", \"database\":\"comfortseating\"}', NULL, '2022-01-21 01:00:00.000000', 'harvey', NULL, NULL);
+INSERT INTO `ManageOnline`.`appBase_appconfig` (`valid`, `apps`, `name`, `value`, `remark`, `createdate`, `createuser`, `modidate`, `modiuser`) VALUES (1, 'database', 'hyhr', '{\"host\"=\"comfort-hr.com\", \"user\"=\"sa\", \"passwd\":\"WjzcomFort@2019\", \"database\":\"HYHRV3\"}', NULL, '2022-01-21 01:00:00.000000', 'harvey', NULL, NULL);
+
+# appUsers_user
+INSERT INTO `ManageOnline`.`appUsers_user` (`password`, `last_login`, `is_superuser`, `is_staff`, `is_active`, `date_joined`, `username`, `deptid`, `nick_name`, `birthday`, `gender`, `adress`, `mobile`, `email`, `image`, `dingtalkid`, `is_dingtalk`, `wechatid`, `is_wechat`, `first_name`, `last_name`, `remark`, `createdate`, `createuser`, `modidate`, `modiuser`) VALUES ('pbkdf2_sha256$320000$EnQpEYS7dSSrRGgKsqLbwO$3c29fa/H6h2M9M6KyBRiKJwZu0i27X2M/IgRER4P9QI=', '2022-01-21 00:00:00.000000', 0, 1, 1, '2022-01-21 00:00:00.000000', 'harvey', NULL, 'harvey', NULL, 'male', '', '13302496581', 'harveyzyh@hotmail.com', 'image/default.png', '01180666186637615720', 1, '', 0, '', '', NULL, '2022-01-21 00:00:00.000000', 'harvey', NULL, NULL);
+INSERT INTO `ManageOnline`.`appUsers_user` (`password`, `last_login`, `is_superuser`, `is_staff`, `is_active`, `date_joined`, `username`, `deptid`, `nick_name`, `birthday`, `gender`, `adress`, `mobile`, `email`, `image`, `dingtalkid`, `is_dingtalk`, `wechatid`, `is_wechat`, `first_name`, `last_name`, `remark`, `createdate`, `createuser`, `modidate`, `modiuser`) VALUES ('pbkdf2_sha256$320000$duZY5qB0otmBvpi08YvPdR$rWtZy/lDfr6lP9M53J0gXbf3tFe2ZKW5TKC0RvMrCzk=', '2022-01-21 00:00:00.000000', 1, 1, 1, '2022-01-21 00:00:00.000000', 'fgt', NULL, '冯国涛', NULL, 'male', '', '15072299807', 'get@test.com', 'image/default.png', '16166501188994528', 1, '', 0, '', '', NULL, '2022-01-21 00:00:00.000000', 'harvey', NULL, NULL);
+
+
+

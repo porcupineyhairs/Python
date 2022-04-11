@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <!-- Basic -->
+    	<meta charset="UTF-8" />
+		<!-- Mobile Metas -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        {% include 'a_base_title.html' %}
+        <!-- Favicon -->
+        {% include 'a_base_sortcut.html' %}
+        <!-- Css -->
+        {% include 'a_base_css.html' %}
+    </head>
+    <body>
+        {% include 'a_base_sidebar.html' %}
+        {% include 'a_base_header.html' %}
+
+        <div class="container-fluid content">
+			<div class="row">
+				<div class="main">
+                    <div class="page-header">
+                        <div class="pull-left">
+                        </div>
+                        <div class="pull-right">
+                            <h2>用户类型管理</h2>
+                        </div>
+                    </div>
+
+                    <!-- 主空间 -->
+                    <div class="row">
+						<div class="col-sm-12">
+							<div class="panel">
+								<div class="panel-body">
+                                    <div id="toolbar">
+                                        <div class="bk-margin-5 btn-group">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default <span class="caret"></span></button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="bk-margin-5 btn-sm btn-default" id="btn-perm-add"><i class="fa fa-plus"></i> 添加</button>
+                                    </div>
+									<div class="table-responsive">
+                                        <table id="table"></table>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+                    <!-- 主空间 End -->
+				</div>
+            </div>
+            <div class="modal fade" id="permModal" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title bk-fg-primary">
+                                <span id="perm-opt-add-son">新增子权限</span>
+                                <span id="perm-opt-edit">修改权限</span>
+                                <span id="perm-opt-add-parent">新增父权限</span>
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group" id="form-group-perm-parent-id">
+                                    <label class="col-lg-2 col-md-2 col-sm-12 control-label">父级编号</label>
+                                    <div class="col-lg-10 col-md-10">
+                                        <input type="text" class="form-control" id="perm-parent-id">
+                                    </div>
+                                </div>
+                                <div class="form-group" id="form-group-perm-parent-name">
+                                    <label class="col-lg-2 col-md-2 col-sm-12 control-label" >父级权限名称</label>
+                                    <div class="col-lg-10 col-md-10">
+                                        <input type="text" class="form-control" readonly="true" id="perm-parent-name">
+                                    </div>
+                                </div>
+                                <div class="form-group" id="form-group-perm-id">
+                                    <label class="col-lg-2 col-md-2 col-sm-12 control-label">编号</label>
+                                    <div class="col-lg-10 col-md-10">
+                                        <input type="text" class="form-control" id="perm-id">
+                                    </div>
+                                </div>
+                                <div class="form-group" id="form-group-perm-name">
+                                    <label class="col-lg-2 col-md-2 col-sm-12 control-label">权限名称</label>
+                                    <div class="col-lg-10 col-md-10">
+                                        <input type="text" class="form-control" id="perm-name">
+                                        <span class="help-block" id="perm-name-exists">权限名称已存在</span>
+                                    </div>
+                                </div>
+                                <div class="form-group" id="form-group-perm-url">
+                                    <label class="col-lg-2 col-md-2 col-sm-12 control-label">权限地址</label>
+                                    <div class="col-lg-10 col-md-10">
+                                        <input type="text" class="form-control" id="perm-url">
+                                        <span class="help-block" id="perm-url-exists">权限地址已存在</span>
+                                    </div>
+                                </div>
+                                <div class="form-group" id="form-group-perm-valid">
+                                    <label class="col-lg-2 col-md-2 col-sm-12 control-label">生效</label>
+                                    <div class="col-lg-10 col-md-10">
+                                        <select class="form-control" id="valid-select">
+                                            <option value="1">启用</option>
+                                            <option value="0">失效</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group" id="">
+                                    <label class="col-lg-2 col-md-2 col-sm-12 control-label">显示序号</label>
+                                    <div class="col-lg-10 col-md-10">
+                                        <input type="text" class="form-control" id="perm-show-index">
+                                    </div>
+                                </div>
+                                <div class="form-group" id="">
+                                    <label class="col-lg-2 col-md-2 col-sm-12 control-label">图标</label>
+                                    <div class="col-lg-10 col-md-10">
+                                        <input type="text" class="form-control" id="perm-image">
+                                    </div>
+                                </div>
+                                <div class="form-group" id="form-group-perm-remark">
+                                    <label class="col-lg-2 col-md-2 col-sm-12 control-label">备注</label>
+                                    <div class="col-lg-10 col-md-10">
+                                        <input type="text" class="form-control" id="perm-remark">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary" id="btn-perm-save">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Js -->
+        {% include 'a_base_js.html' %}
+{#        <script src="{% static 'js/pages/b_permission_base.1.0.js' %}"></script>#}
+    <script>
+        $('#table').bootstrapTable({
+            toolbar: '#toolbar',
+            striped: true,                      //是否显示行间隔色
+            cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+            //pagination: true,                   //是否显示分页（*）
+            sortable: true,                     //是否启用排序
+            sortOrder: "asc",                   //排序方式
+            sidePagination: "client",           //分页方式：client客户端分页，server服务端分页（*）
+            //pageNumber: 1,                       //初始化加载第一页，默认第一页
+            //pageSize: 1000,                       //每页的记录行数（*）
+            //pageList: [25, 50],        //可供选择的每页的行数（*）
+            search: true,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
+            strictSearch: true,
+            showColumns: true,                  //是否显示所有的列
+            minimumCountColumns: 2,             //最少允许的列数
+            clickToSelect: false,                //是否启用点击选中行
+            //height: 500,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
+            idField: "id",                     //每一行的唯一标识，一般为主键列
+            showToggle: true,                    //是否显示详细视图和列表视图的切换按钮
+            cardView: false,                    //是否显示详细视图
+            detailView: false,                   //是否显示父子表
+
+            columns: [
+                { field: 'name', title: '权限名称', width:'300px',  },
+                { field: 'valid',  title: '状态', align: 'center', width:'50px',
+                    formatter: function(value, row, index) {
+                        if (value == true) {
+                            return '<span class="label label-success">启用</span>';
+                        } else {
+                            return '<span class="label label-default">失效</span>';
+                        }
+                    }
+                },
+                { field: 'url', title: '访问地址' },
+                { field: 'show_index', title: '序号', align: 'center', width:'80px'},
+                { field: 'operate', title: '操作', width: '180px', align: 'center',
+                    events : {
+                        'click .Btn-Edit': function (e, value, row, index) { dataEdit(row); },
+                        'click .Btn-Add': function (e, value, row, index) { dataAdd(row); },
+                    },
+                    formatter: function(value, row, index) {
+                        var rtnStr = '';
+                        rtnStr += '<div class="bk-margin-5 btn-group">'
+                        if(row.parent == '0'){
+                            rtnStr += '<button type="button" class="Btn-Add btn btn-xs btn-info"><i class="fa fa-plus" ></i>新增</button>'
+                        }
+                        rtnStr += '<button type="button" class="Btn-Edit btn btn-xs btn-info"><i class="fa fa-pencil-square-o" ></i>修改</button>'
+                        rtnStr += '</div>'
+                        return rtnStr;
+                    }
+                },
+            ],
+            treeShowField: 'name',
+            parentIdField: 'parent',
+            onResetView: function(data) {
+                //console.log('load');
+                $('#table').treegrid({
+                    initialState: 'collapsed',// 所有节点都折叠
+                    //initialState: 'expanded',// 所有节点都展开，默认展开
+                    treeColumn: 0,
+                    {#saveState: true,#}
+                    // expanderExpandedClass: 'glyphicon glyphicon-minus',  //图标样式
+                    // expanderCollapsedClass: 'glyphicon glyphicon-plus',
+                    onChange: function() {
+                        //$('#table').bootstrapTable('resetWidth');
+                    }
+                });
+            },
+            onClickRow: function(row, $element, field) {
+                //jq-treegrid默认点击小箭头是span,加入行点击后，span会响应一次，行也会响应一次
+                //结果就是点击箭头span没有响应
+                //所以这里将点击箭头span排除，点击箭头时只响应行点击
+                if (!$(event.target).is($("span")) && field !== "operate") {
+                    $element.treegrid('toggle');
+                }
+            }
+        });
+
+        var url = location.href;
+        var opt = '';
+        $('#btn-perm-add').click(function (t) {
+            opt = 'post';
+            $('#perm-opt-add-son').hide();
+            $('#perm-opt-edit').hide();
+            $('#perm-opt-add-parent').show();
+            $('#form-group-perm-parent-id').hide();
+            $('#form-group-perm-parent-name').hide();
+            $('#form-group-perm-id').hide();
+            $('#form-group-perm-valid').show();
+            $('#perm-name').val('')
+            $('#perm-parent-id').val('0')
+            $('#perm-parent-name').val('')
+            $('#perm-id').val('-1')
+            $('#perm-show-index').val('')
+            $('#perm-iamge').val('')
+            $('#perm-remark').val('')
+            $('#form-group-perm-name').removeClass('has-error');
+            $('#perm-name-exists').hide();
+            $('#form-group-perm-url').removeClass('has-error');
+            $('#perm-url-exists').hide();
+            $('#permModal').modal('show')
+        });
+        $('#btn-perm-save').click(function(t) {
+            $.ajax({
+                url: url,
+                dataType: 'json',
+                type: 'POST',
+                async: true,
+                data: {
+                    'opt': opt,
+                    'id': $('#perm-id').val(),
+                    'name': $('#perm-name').val(),
+                    'parent': $('#perm-parent-id').val(),
+                    'parent_name': $('#perm-parent-name').val(),
+                    'valid': $('#valid-select').val(),
+                    'url': $('#perm-url').val(),
+                    'show_index': $('#perm-show-index').val(),
+                    'image': $('#perm-image').val(),
+                    'remark': $('#perm-remark').val()},
+                success: function(req){
+                    $('#permModal').modal('hide');
+                    init();
+                },
+                error: function(){
+
+                },
+            });
+        });
+        init();
+        function getTableAll(){
+            $.ajax({
+                url: url,
+                dataType: 'json',
+                type: 'POST',
+                async: true, //请求是否异步，默认为异步，这也是ajax重要特性
+                data: {'opt': 'get'},
+                success: function (data){
+                    $('#table').bootstrapTable('load', data);
+                },
+                error: function (){
+
+                },
+            })
+        }
+        function init(){
+            getTableAll();
+            $('#type-name-exists').hide();
+            $('#btn-type-save').attr('disabled', true);
+        }
+        function dataEdit(row){
+            opt = 'put';
+            $('#perm-opt-add-son').hide();
+            $('#perm-opt-edit').show();
+            $('#perm-opt-add-parent').hide();
+            $('#form-group-perm-parent-name').show();
+            $('#form-group-perm-id').show();
+            $('#form-group-perm-valid').show();
+            $('#form-group-perm-name').removeClass('has-error');
+            $('#perm-name-exists').hide();
+            $('#perm-url-exists').hide();
+            $('#perm-id').attr('readonly', true);
+            $('#perm-id').val(row.id);
+            $('#perm-parent-id').attr('readonly', true);
+            $('#perm-parent-id').val(row.parent);
+            $('#perm-parent-name').attr('readonly', true);
+            $('#perm-parent-name').val(row.parent_name);
+            $('#perm-name').val(row.name);
+            $('#perm-url').val(row.url);
+            $('#valid-select').val(row.valid ? 1 : 0);
+            $('#perm-show-index').val(row.show_index);
+            $('#perm-image').val(row.image);
+            $('#perm-remark').val(row.remark);
+            $('#btn-perm-save').attr('disabled', false);
+
+            $('#permModal').modal('show');
+        }
+        function dataAdd(row){
+            opt = 'post';
+            $('#perm-opt-edit').hide();
+            $('#perm-opt-add').show();
+            $('#perm-opt-add-parent').hide();
+            $('#form-group-perm-parent-name').show();
+            $('#form-group-perm-id').show();
+            $('#form-group-perm-valid').show();
+            $('#form-group-perm-name').removeClass('has-error');
+            $('#perm-name-exists').hide();
+            $('#perm-url-exists').hide();
+            $('#perm-id').attr('readonly', true);
+            $('#perm-id').val('-1');
+            $('#form-group-perm-id').hide();
+            $('#perm-parent-id').attr('readonly', true);
+            $('#perm-parent-id').val(row.id);
+            $('#perm-parent-name').attr('readonly', true);
+            $('#perm-parent-name').val(row.name);
+            $('#perm-name').val('');
+            $('#perm-url').val('');
+            $('#perm-show-index').val('1');
+            $('#perm-image').val('');
+            $('#perm-remark').val('');
+            $('#btn-perm-save').attr('disabled', false);
+            $('#permModal').modal('show');
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+.fixed-table-header-columns,
+.fixed-table-body-columns {
+ position: absolute;
+ background-color: #fff;
+ display: none;
+ box-sizing: border-box;
+ overflow: hidden;
+}
+ .fixed-table-header-columns .table,
+ .fixed-table-body-columns .table {
+  border-right: 1px solid #ddd;
+ }
+  .fixed-table-header-columns .table.table-no-bordered,
+  .fixed-table-body-columns .table.table-no-bordered {
+   border-right: 1px solid transparent;
+  }
+ .fixed-table-body-columns table {
+  position: absolute;
+  animation: none;
+ }
+.bootstrap-table .table-hover > tbody > tr.hover > td {
+ background-color: #f5f5f5;
+}
+.fixed-table-header{height: auto;}
+.fixed-table-body-columns{border-right: 1px solid #999;}
+.fixed-table-container tbody td .th-inner, .fixed-table-container thead th .th-inner{    padding: 6px 5px;font-weight: normal;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.bootstrap-table .table td,.fixed-table-body tbody td div,.fixed-table-body-columns tbody td div{overflow: hidden; text-overflow: ellipsis; white-space: nowrap;    font-size: 9pt;}
+.bootstrap-table .table td a{font-size:9pt;}
+.fixed-table-footer{position: relative; bottom: 0px; z-index: 0;border-top: 1px solid #3b85bf;}
+.fixed-table-footer .table{padding: 0 !important;margin: 0;}
+.fixed-table-footer .table td{background: #e7eaec; color: #333;border-color: rgb(212, 217, 220);}
+.fixed-table-footer .table td .th-inner{font-size:10pt;}
+.footerFixed{position: absolute; bottom:0;z-index: 100;  height: 36px;    border-right: 1px solid #3b85bf;}
+.hideFooter{display: none;position: absolute;}
+.fixed-table-footer .table tr:after{display: table; content: " ";width: 17px;height: 36px;}

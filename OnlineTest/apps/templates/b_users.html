@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <!-- Basic -->
+    	<meta charset="UTF-8" />
+		<!-- Mobile Metas -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        {% include 'a_base_title.html' %}
+        <!-- Favicon -->
+        {% include 'a_base_sortcut.html' %}
+        <!-- Css -->
+        {% include 'a_base_css.html' %}
+    </head>
+    <body>
+        {% include 'a_base_sidebar.html' %}
+        {% include 'a_base_header.html' %}
+
+        <div class="container-fluid content">
+			<div class="row">
+				<div class="main">
+                    <div class="page-header">
+                        <div class="pull-left">
+                        </div>
+                        <div class="pull-right">
+                            <h2>用户管理</h2>
+                        </div>
+                    </div>
+
+                    <!-- 主空间 -->
+                    <div class="row">
+						<div class="col-sm-12">
+							<div class="panel">
+								<div class="panel-body">
+                                    <div id="toolbar">
+                                        <button type="button" class="bk-margin-5 btn-sm btn-default" id="btn-user-add"><i class="fa fa-plus"></i> 添加</button>
+{#                                        <div class="btn-group">#}
+{#											<button id="btnGroupVerticalDrop1" type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">导入<span class="caret"></span></button>#}
+{#											<ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop1">#}
+{#												<li><a href="#" id="btn-user-add-dingtalk">从钉钉导入</a></li>#}
+{#												<li><a href="#" id="btn-user-add-file">从文件导入</a></li>#}
+{#											</ul>#}
+{#										</div>#}
+                                    </div>
+									<div class="table-responsive">
+                                        <table id="table"></table>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+                    <!-- 主空间 End -->
+				</div>
+            </div>
+            <div class="modal fade" id="userModal" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title bk-fg-primary">
+                                <span id="opt-type-add">新增用户</span>
+                                <span id="opt-type-edit">修改信息</span>
+                                <span id="opt-type-delete">删除用户</span>
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal" role="form">
+                                <div class="panel-info">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-12 ">
+                                            <div class="form-group" id="form-group-username">
+                                                <label class="col-lg-3 col-md-3 col-sm-12 control-label">手机号码</label>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <input type="text" class="form-control" id="username" oninput="value=value.replace(/[^\d]/g,'')">
+                                                    <span class="help-block" id="username-exists">该手机号码已存在系统中</span>
+                                                    <span class="help-block" id="username-null">此为必填项</span>
+                                                    <span class="help-block" id="username-error">请填写11位手机号码</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="form-group-nick-name">
+                                                <label class="col-lg-3 col-md-3 col-sm-12 control-label">姓名</label>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <input type="text" class="form-control" id="nick_name">
+                                                    <span class="help-block" id="nick-name-null">此为必填项</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="">
+                                                <label class="col-lg-3 col-md-3 col-sm-12 control-label">邮箱</label>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <input type="text" class="form-control" id="email">
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="">
+                                                <label class="col-lg-3 col-md-3 col-sm-12 control-label">地址</label>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <input type="text" class="form-control" id="address">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-3 col-md-3 col-sm-12 control-label">出生日期</label>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <div class="input-group">
+                                                        <input type="text" data-plugin-datepicker="" readonly="true" class="form-control" id="birthday">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="">
+                                                <label class="col-lg-3 col-md-3 col-sm-12 control-label">性别</label>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <select class="form-control" id="gender-select">
+                                                        <option value="未填写">未填写</option>
+                                                        <option value="男">男</option>
+                                                        <option value="女">女</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="">
+                                                <label class="col-lg-3 col-md-3 col-sm-12 control-label">部门</label>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <select class="form-control select2-search-choice" id="dept-select"></select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="">
+                                                <label class="col-lg-3 col-md-3 col-sm-12 control-label">用户组</label>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <select class="form-control " id="group-select"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 ">
+                                            <div class="form-group" id="">
+                                                <label class="col-lg-3 col-md-3 col-sm-12 control-label">用户类型</label>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <select class="form-control" id="type-select"></select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="form-group-hr-no">
+                                                <label class="col-lg-3 col-md-3 col-sm-12 control-label">工号</label>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <input type="text" class="form-control" id="hr-no">
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="form-group-erp-no">
+                                                <label class="col-lg-3 col-md-3 col-sm-12 control-label">ERP账号</label>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <input type="text" class="form-control" id="erp-no">
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="form-group-client-no" style="display: none">
+                                                <label class="col-lg-3 col-md-3 col-sm-12 control-label">客户编号</label>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <input type="text" class="form-control" id="client-no">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-3 control-label">登录选项</label>
+                                                <div class="col-sm-9">
+                                                    <div class="checkbox-custom checkbox-default">
+                                                        <input type="checkbox" id="is-dingtalk">
+                                                        <label for="is-dingtalk">钉钉免密登录</label>
+                                                    </div>
+                                                    <div class="checkbox-custom checkbox-default">
+                                                        <input type="checkbox" id="is-wechat">
+                                                        <label for="is-wechat">微信免密登录</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="form-group-dingtalkid" style="display: none">
+                                                <label class="col-lg-3 col-md-3 col-sm-12 control-label">钉钉ID</label>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <input type="text" class="form-control" id="dingtalkid">
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="form-group-wechatid" style="display: none">
+                                                <label class="col-lg-3 col-md-3 col-sm-12 control-label">微信ID</label>
+                                                <div class="col-lg-9 col-md-9">
+                                                    <input type="text" class="form-control" id="wechatid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="pull-left">
+                                <button type="button" class="btn btn-danger" id="btn-user-delete">删除</button>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary" id="btn-user-save">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Js -->
+        {% include 'a_base_js.html' %}
+    </body>
+    <script>
+        $('#table').bootstrapTable({
+            toolbar: '#toolbar',
+            striped: true,                      //是否显示行间隔色
+            cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+            pagination: true,                   //是否显示分页（*）
+            sortable: true,                     //是否启用排序
+            sortOrder: "asc",                   //排序方式
+            sidePagination: "client",           //分页方式：client客户端分页，server服务端分页（*）
+            pageNumber: 1,                       //初始化加载第一页，默认第一页
+            pageSize: 10,                       //每页的记录行数（*）
+            pageList: [10, 25, 50],        //可供选择的每页的行数（*）
+            search: true,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
+            strictSearch: true,
+            showColumns: true,                  //是否显示所有的列
+            minimumCountColumns: 2,             //最少允许的列数
+            clickToSelect: false,                //是否启用点击选中行
+            {#height: 500,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度#}
+            uniqueId: "type_id",                     //每一行的唯一标识，一般为主键列
+            showToggle: true,                    //是否显示详细视图和列表视图的切换按钮
+            cardView: false,                    //是否显示详细视图
+            detailView: false,                   //是否显示父子表
+            {#fixedColumns: true,#}
+            {#leftFixedColumns: true,             // 启用左边固定列#}
+            {#leftFixedNumber: 1,                 // 左边固定列数量#}
+
+            columns: [
+                { field: 'username', title: '手机号码' },
+                { field: 'nick_name', title: '姓名' },
+                { field: 'dept__dept_name', title: '部门' },
+                { field: 'group__group_name', title: '用户组' },
+                { field: 'type__type_name', title: '用户类型' },
+            ],
+            onClickRow:function(row, $element, field)
+            {
+                 rowClick(row, $element, field);
+            }
+        });
+        var url = location.href;
+        var opt = '';
+        init();
+        $('#username').on('input propertychange',function(){
+            if($(this).val() == ''){
+                $('#form-group-username').addClass('has-error');
+                $('#username-null').show();
+                $('#username-exists').hide();
+                $('#username-error').hide();
+                $('#btn-user-save').attr('disabled', true);
+            }
+            else if($(this).val().length !== 11 && $(this).val().length > 0){
+                $('#form-group-username').addClass('has-error');
+                $('#username-null').hide();
+                $('#username-exists').hide();
+                $('#username-error').show();
+                $('#btn-user-save').attr('disabled', true);
+            }
+            else{
+                $('#username-error').hide();
+                $.ajax({
+                    url: url,
+                    dataType: 'json',
+                    type: 'POST',
+                    async: true,
+                    data: {'opt': 'check', 'username': $('#username').val()},
+                    success: function(req){
+                        if(req.status != 'ok'){
+                            $('#form-group-username').addClass('has-error')
+                            $('#username-exists').show();
+                            $('#btn-user-save').attr('disabled', true);
+                        }
+                        else{
+                            $('#form-group-username').removeClass('has-error')
+                            $('#username-exists').hide();
+                            $('#btn-user-save').attr('disabled', false);
+                        }
+                    },
+                    error: function(){
+
+                    },
+                });
+            }
+        });
+        $('#nick-name').on('input propertychange',function(){
+            if($(this).val() == ''){
+                $('#form-group-nick-name').addClass('has-error');
+                $('#nick-name-null').show();
+                $('#btn-user-save').attr('disabled', true);
+            }
+            else{
+                $('#nick-name-error').hide();
+                $('#form-group-nick-name').removeClass('has-error')
+                $('#btn-user-save').attr('disabled', false);
+            }
+        });
+        $('#is-dingtalk').change(function(){
+            if($('#is-dingtalk').attr('checked')){
+                $('#form-group-dingtalkid').show();
+            }
+            else{
+                $('#form-group-dingtalkid').hide();
+            }
+        });
+        $('#is-wechat').change(function(){
+            if($('#is-wechat').attr('checked')){
+                $('#form-group-wechatid').show();
+            }
+            else{
+                $('#form-group-wechatid').hide();
+            }
+        });
+        $('#type-select').change(function(){
+            if($(this).find("option:selected").text() in {'供应商': '', '客户': ''}){
+                $('#form-group-hr-no').hide();
+                $('#form-group-erp-no').hide();
+                $('#form-group-client-no').show();
+            }
+            else{
+                $('#form-group-hr-no').show();
+                $('#form-group-erp-no').show();
+                $('#form-group-client-no').hide();
+            }
+        });
+
+        function init(){
+            $.ajax({
+                url: url,
+                dataType: 'json',
+                type: 'POST',
+                async: true, //请求是否异步，默认为异步，这也是ajax重要特性
+                data: {'opt': 'get'},
+                success: function (req){
+                    $('#table').bootstrapTable('load', req.users);
+
+                    $('#group-select').empty();
+                    $.each(req.groups, function(index, value){
+                        $('#group-select').append("<option value='"+value.group_id+"'>"+value.group_name+"</option>")
+                    });
+                    $('#dept-select').empty();
+                    $.each(req.depts, function(index, value){
+                        $('#dept-select').append("<option value='"+value.dept_id+"'>"+value.dept_name+"</option>")
+                    });
+                    $('#type-select').empty();
+                    $.each(req.types, function(index, value){
+                        $('#type-select').append("<option value='"+value.type_id+"'>"+value.type_name+"</option>")
+                    });
+                },
+                error: function (){
+
+                },
+            });
+            $('#username-exists').hide();
+            $('#username-null').hide();
+            $('#username-error').hide();
+            $('#nick-name-null').hide();
+            $('#btn-user-save').attr('disabled', true);
+        }
+        $('#btn-user-add').click(function (t) {
+            opt = 'post';
+            $('#opt-type-add').show();
+            $('#opt-type-edit').hide();
+            $('#opt-type-delete').hide();
+            $('#form-group-username').removeClass('has-error');
+
+            $('#username').attr('readonly', false);
+            $('#username-exists').hide();
+            $('#btn-user-delete').hide();
+
+            $('#username').val('')
+            $('#nick_name').val('')
+            $('#birthday').val('2022-01-01')
+            $('#email').val('')
+            $('#address').val('')
+            $('#client-no').val('')
+            $('#hr-no').val('')
+            $('#erp-no').val('')
+            $('#dingtalkid').val('')
+            $('#wechatid').val('')
+
+            $('#userModal').modal('show')
+        });
+        $('#btn-user-save').click(function(t) {
+            $.ajax({
+                url: url,
+                dataType: 'json',
+                type: 'POST',
+                async: true,
+                data: {
+                    'opt': opt,
+                    'username': $('#username').val(),
+                    'nick_name': $('#nick_name').val(),
+                    'email': $('#email').val(),
+                    'address': $('#address').val(),
+                    'birthday': $('#birthday').val(),
+                    'gender': $('#gender-select').val(),
+                    'group_id':$('#group-select').val(),
+                    'dept_id': $('#dept-select').val(),
+                    'type_id': $('#type-select').val(),
+                    'is_dingtalk': $('#is-dingtalk').attr('checked'),
+                    'dingtalkid': $('#dingtalkid').val(),
+                    'is_wechat': $('#is-wechat').attr('checked'),
+                    'wechatid': $('#wechatid').val(),
+                    'client_no': $('#client-no').val(),
+                    'erp_no': $('#erp-no').val(),
+                    'hr_no': $('#hr-no').val(),
+                },
+                success: function(req){
+                    $('#userModal').modal('hide');
+                    init();
+                },
+                error: function(){
+
+                },
+            });
+        });
+        $('#btn-user-delete').click(function(t) {
+            opt = 'delete';
+            $.ajax({
+                url: url,
+                dataType: 'json',
+                type: 'POST',
+                async: true,
+                data: {
+                    'opt': opt,
+                    'username': $('#username').val(),
+                },
+                success: function(req){
+                    $('#userModal').modal('hide');
+                    init();
+                },
+                error: function(){
+
+                },
+            });
+        });
+        function rowClick(row, $element, field){
+            opt = 'put';
+            $('#opt-type-add').hide();
+            $('#opt-type-edit').show();
+            $('#opt-type-delete').hide();
+            $('#form-group-dingtalkid').hide();
+            $('#form-group-wechatid').hide();
+
+            $('#form-group-username').removeClass('has-error');
+            $('#username-exists').hide();$('#username-null').hide();$('#username-error').hide();
+            $('#nick-name-null').hide();
+
+            $('#username').attr('readonly', true);
+            $('#username').val(row.username);
+            $('#nick_name').val(row.nick_name);
+            $('#email').val(row.email);
+            $('#address').val(row.address);
+            $('#birthday').val(row.birthday);
+            $('#erp-no').val(row.erp_no);
+            $('#hr-no').val(row.hr_no);
+            $('#client-no').val(row.client_no);
+            $('#type-select').val(row.type_id);
+            $('#dept-select').val(row.dept_id);
+            $('#group-select').val(row.group_id);
+            $('#gender-select').val(row.gender);
+            if(row.type__type_name in {'供应商': '', '客户': ''}){
+                $('#form-group-hr-no').hide();
+                $('#form-group-erp-no').hide();
+                $('#form-group-client-no').show();
+            }
+            else{
+                $('#form-group-hr-no').show();
+                $('#form-group-erp-no').show();
+                $('#form-group-client-no').hide();
+            }
+            if(row.is_dingtalk){
+                $('#is-dingtalk').attr("checked", true);
+                $('#dingtalkid').val(row.dingtalkid);
+                $('#form-group-dingtalkid').show();
+            }
+            if(row.is_wechat){
+                $('#is-wechat').attr("checked", true);
+                $('#wechatid').val(row.wechatid);
+                $('#form-group-wechatid').show();
+            }
+
+            $('#btn-user-save').attr('disabled', false);
+
+            $('#userModal').modal('show');
+        }
+        $('#btn-user-add-dingtalk').click(function (){
+            alert('btn-user-add-dingtalk')
+        })
+    </script>
+</html>

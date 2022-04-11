@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% include 'a_base_title.html' %}
+        <!-- Favicon -->
+        {% include 'a_base_sortcut.html' %}
+        <!-- Css -->
+        {% include 'a_base_css.html' %}
+    </head>
+    <body>
+        <!-- 边栏 Start -->
+        {% include 'a_base_sidebar.html' %}
+        <!-- 边栏 End -->
+        <!-- 顶部导航 Start -->
+        {% include 'a_base_header.html' %}
+        <!-- 顶部导航 End -->
+
+        <!-- 主空间 Start -->
+        <div class="content-wrap">
+            <div class="main">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="card">
+{#                                <div class="card-title">#}
+                                    <h4>添加用户</h4>
+{#                                </div>#}
+                                <div class="card-body">
+                                    <div class="basic-elements">
+                                        {% csrf_token %}
+                                        <form action="" method="post">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>手机号码</label>
+                                                        <input type="text" class="form-control" max="11" name="mobile" value="{{ mobile }}" placeholder="请输入用户登录的手机号码">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>用户姓名</label>
+                                                        <input type="text" class="form-control" name="nick_name" value="{{ nick_name }}" placeholder="姓名">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>邮箱</label>
+                                                        <input type="email" class="form-control" name="email" value="{{ email }}" placeholder="邮箱地址" >
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>联系地址</label>
+                                                        <input type="text" class="form-control" name="address" value="{{ address }}" placeholder="联系地址" >
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>登录密码</label>
+                                                        <input type="password" class="form-control" name="passwd" value="{{ passwd }}" placeholder="请输入密码">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>确认密码</label>
+                                                        <input type="password" class="form-control" name="passwd_check" value="{{ passwd_check }}" placeholder="请再次输入密码">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>出生日期</label>
+                                                        <div class="row">
+                                                        <select class="form-control col-lg-3" name="birthday_year_select">
+                                                            {% for item in birthday_year %}
+                                                                <option value="{{ item }}" {% if item == now_year %} selected {% endif %}>{{ item }}</option>
+                                                            {% endfor %}
+														</select>年
+                                                        <select class="form-control col-lg-3" name="birthday_month_select">
+                                                            {% for item in birthday_month %}
+                                                                <option value="{{ item }}" {% if item == now_month %} selected {% endif %}>{{ item }} </option>
+                                                            {% endfor %}
+														</select>月
+                                                        <select class="form-control col-lg-3" name="birthday_day_select">
+                                                            {% for item in birthday_day %}
+                                                                <option value="{{ item }}" {% if item == now_day %} selected {% endif %}>{{ item }}</option>
+                                                            {% endfor %}
+														</select>日
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>性别</label>
+                                                        <select class="form-control" name="gender_select">
+															<option value="未填写">未填写</option>
+                                                            <option value="男">男</option>
+                                                            <option value="女">女</option>
+														</select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>用户类型</label>
+                                                        <select class="form-control" name="user_type_select">
+															<option value="">请选择</option>
+                                                            {% for item in user_type %}
+                                                                <option value="{{ item.type_id }}" {% if user_type_select == item.type_id %} selected {% endif %} >{{ item.type_name }}</option>
+                                                            {% endfor %}
+														</select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>用户部门</label>
+                                                        <select class="form-control" name="dept_select">
+															<option value="">请选择</option>
+                                                            {% for item in dept %}
+                                                                <option value="{{ item.dept_id }}" {% if dept_select == item.dept_id %} selected {% endif %}>{{ item.dept_name }}</option>
+                                                            {% endfor %}
+														</select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>用户组</label>
+                                                        <select class="form-control" name="user_group_select">
+															<option value="">请选择</option>
+                                                            {% for item in user_group %}
+                                                                <option value="{{ item.group_id }}" {% if user_group_select == item.group_id %} selected {% endif %}>{{ item.group_name }}</option>
+                                                            {% endfor %}
+														</select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center">
+                                                <button type="submit" class="btn btn-primary btn-flat" name="button" >添加</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- 主空间 End -->
+
+        <!-- Js -->
+        {% include 'a_base_js.html' %}
+    </body>
+</html>

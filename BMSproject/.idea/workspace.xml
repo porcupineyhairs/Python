@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7a52d934-b777-4411-a1e3-5a5f2ea7d2c6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../OnlineTest/apps/appTest/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OnlineTest/apps/appUsers/function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BMSproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/.idea/OnlineTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remote-mappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/.idea/remote-mappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/.idea/webResources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appBase/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appBase/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appBase/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appBase/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appBase/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appBase/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appBase/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appBase/function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appBase/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appBase/middleware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appBase/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appBase/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appBase/migrations/0002_applog_browser_type_applog_device_type_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appBase/migrations/0002_applog_browser_type_applog_device_type_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appBase/migrations/0003_applog_user_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appBase/migrations/0003_applog_user_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appBase/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appBase/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appBase/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appBase/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appBase/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appBase/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appBase/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appBase/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appBase/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appBase/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appDingtalk/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appDingtalk/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appDingtalk/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appDingtalk/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appDingtalk/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appDingtalk/function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appDingtalk/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appDingtalk/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appDingtalk/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appDingtalk/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appDingtalk/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appDingtalk/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appDingtalk/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appDingtalk/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appDingtalk/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appDingtalk/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appTest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appTest/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appTest/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appTest/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appTest/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appTest/function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appTest/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appTest/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appTest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appTest/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appTest/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appTest/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appTest/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appTest/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appTest/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appUsers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appUsers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appUsers/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appUsers/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appUsers/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appWechat/function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appUsers/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appUsers/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appUsers/migrations/0002_rename_dept_id_user_dept_rename_group_id_user_group_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appUsers/migrations/0002_rename_dept_id_user_dept_rename_group_id_user_group_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appUsers/migrations/0003_alter_user_permission.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appUsers/migrations/0003_alter_user_permission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appUsers/migrations/0004_permissiongroupdetail_permissiongrouptitle_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appUsers/migrations/0004_permissiongroupdetail_permissiongrouptitle_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appUsers/migrations/0005_user_erp_no_user_hr_no.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appUsers/migrations/0005_user_erp_no_user_hr_no.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appUsers/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appUsers/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appUsers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appUsers/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appUsers/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appUsers/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appUsers/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appUsers/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appUsers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appUsers/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appWechat/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appWechat/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appWechat/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appWechat/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appWechat/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortCw/function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appWechat/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appWechat/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appWechat/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appWechat/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appWechat/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appWechat/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appWechat/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appWechat/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/appWechat/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/appWechat/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_autologin_dingtalk.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_autologin_dingtalk.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_autologin_loading.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_autologin_loading.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_autologin_wechat.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_autologin_wechat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_base_404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_base_404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_base_500.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_base_500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_base_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_base_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_base_css.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_base_css.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_base_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_base_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_base_js.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_base_js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_base_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_base_sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_base_sortcut.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_base_sortcut.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_base_title.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_base_title.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_normal_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_normal_demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_normal_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_normal_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_normal_index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_test_chart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_normal_lockscreen.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_normal_lockscreen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_normal_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_normal_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_normal_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_normal_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_normal_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_normal_register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_normal_reset_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_normal_reset_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_test_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_test_demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/a_test_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/a_test_table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/b_department.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/b_department.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/b_users.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps/templates/b_users2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/templates/page-register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortCw/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortCw/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortCw/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortCw/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortCw/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortHr/function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortCw/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortCw/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortCw/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortCw/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortCw/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortCw/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortCw/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortCw/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortCw/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortCw/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortHr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortHr/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortHr/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortHr/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortHr/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortSc/function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortHr/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortHr/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortHr/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortHr/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortHr/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortHr/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortHr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortHr/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortHr/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortHr/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortSc/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortSc/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortSc/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortSc/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortSc/function.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortSc/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortSc/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortSc/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortSc/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortSc/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortSc/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortSc/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortSc/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps_comfort/appComfortSc/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/apps_comfort/appComfortSc/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/project/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/global_setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/project/global_setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/project/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/project/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/re.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/re.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/readme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/add-ons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/css/add-ons.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/jquery.mmenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/css/jquery.mmenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/WeatherIcons-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/WeatherIcons-Regular.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/climacons-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/climacons-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/climacons-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/climacons-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/climacons-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/climacons-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/climacons-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/climacons-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/weathericons-regular-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/weathericons-regular-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/weathericons-regular-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/weathericons-regular-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/weathericons-regular-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/weathericons-regular-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/weathericons-regular-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/fonts/weathericons-regular-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ico/apple-touch-icon-114x114.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/ico/apple-touch-icon-114x114.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ico/apple-touch-icon-120x120.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/ico/apple-touch-icon-120x120.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ico/apple-touch-icon-144x144.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/ico/apple-touch-icon-144x144.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ico/apple-touch-icon-152x152.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/ico/apple-touch-icon-152x152.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ico/apple-touch-icon-57x57.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/ico/apple-touch-icon-57x57.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ico/apple-touch-icon-72x72.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/ico/apple-touch-icon-72x72.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ico/apple-touch-icon-76x76.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/ico/apple-touch-icon-76x76.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ico/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/ico/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ico/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/ico/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/avatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/avatar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/avatar1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/avatar1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/avatar2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/avatar2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/avatar3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/avatar3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/avatar4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/avatar4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/avatar5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/avatar5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/avatar6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/avatar6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/avatar7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/avatar7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/bg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/bg1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/browser-chrome-big.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/browser-chrome-big.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/browser-firefox-big.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/browser-firefox-big.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/browser-ie.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/browser-ie.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/browser-opera.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/browser-opera.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/browser-safari.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/browser-safari.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/flat-landscape.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/flat-landscape.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/flat-sun.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/flat-sun.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/photo9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/gallery/photo9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/general/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/general-img-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/general/general-img-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/general-img-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/general/general-img-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/general/general-img-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/general/general-img-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/login/bottom-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/login/bottom-left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/login/bottom-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/login/bottom-right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/login/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/login/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/login/system-logo-wide.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/login/system-logo-wide.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/login/system-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/login/system-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/sunny-large.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/sunny-large.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/users_ico/13302496581.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/users_ico/13302496581.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/users_ico/default.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/img/users_ico/default.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/core.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/core.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/dingtalk.open.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/dingtalk.open.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.mmenu.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/jquery.mmenu.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/activity.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/activity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/buttons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/charts-flot.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/charts-flot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/charts-other.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/charts-other.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/charts-xcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/charts-xcharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/font-awesome.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/font-awesome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/form-dropzone.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/form-dropzone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/form-editors.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/form-editors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/form-elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/form-elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/form-wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/form-wizard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/form-x-editable-demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/form-x-editable-demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/form-x-editable.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/form-x-editable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/glyphicon.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/glyphicon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/invoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/invoice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/mailbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/mailbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/nestable.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/nestable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/page-404.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/page-404.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/page-lockscreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/page-lockscreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/page-login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/page-login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/page-register.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/page-register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/pricing-tables.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/pricing-tables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/typography.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/typography.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/ui-elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/ui-elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/ui-panels.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/ui-panels.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/ui-progress-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/ui-progress-bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/weathericons.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/weathericons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/pages/widgets.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/js/pages/widgets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/autosize/jquery.autosize.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/autosize/jquery.autosize.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootkit/css/bootkit.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootkit/css/bootkit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootkit/js/bootkit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootkit/js/bootkit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-colorpicker/img/bootstrap-colorpicker/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-colorpicker/img/bootstrap-colorpicker/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-colorpicker/img/bootstrap-colorpicker/alpha.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-colorpicker/img/bootstrap-colorpicker/alpha.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-colorpicker/img/bootstrap-colorpicker/hue.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-colorpicker/img/bootstrap-colorpicker/hue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-colorpicker/img/bootstrap-colorpicker/saturation.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-colorpicker/img/bootstrap-colorpicker/saturation.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/css/datepicker-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-datepicker/css/datepicker-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/css/datepicker3.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-datepicker/css/datepicker3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-markdown/js/bootstrap-markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-markdown/js/bootstrap-markdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-markdown/js/markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-markdown/js/markdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-markdown/js/to-markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-markdown/js/to-markdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-timepicker/css/bootstrap-timepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-timepicker/css/bootstrap-timepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-timepicker/js/bootstrap-timepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/bootstrap-timepicker/js/bootstrap-timepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/chosen/js/chosen.jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/chosen/js/chosen.jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/d3/js/d3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/d3/js/d3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/datatables/js/dataTables.bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/datatables/js/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/dropzone/css/dropzone.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/dropzone/css/dropzone.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/dropzone/images/spritemap.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/dropzone/images/spritemap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/dropzone/js/dropzone.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/dropzone/js/dropzone.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/easypiechart/js/jquery.easypiechart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/easypiechart/js/jquery.easypiechart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/editable/css/bootstrap-editable.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/editable/css/bootstrap-editable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/editable/inputs-ext/address/address.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/editable/inputs-ext/address/address.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/editable/inputs-ext/typeaheadjs/typeaheadjs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/editable/inputs-ext/typeaheadjs/typeaheadjs.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/editable/js/bootstrap-editable.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/editable/js/bootstrap-editable.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/excel/xlsx.core.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/excel/xlsx.core.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/filesaver/FileSaver.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/filesaver/FileSaver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/filesaver/FileSaver.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/filesaver/FileSaver.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/filesaver/FileSaver.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/filesaver/FileSaver.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/flot/js/jquery.flot.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/flot/js/jquery.flot.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/flot/js/jquery.flot.pie.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/flot/js/jquery.flot.pie.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/flot/js/jquery.flot.resize.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/flot/js/jquery.flot.resize.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/flot/js/jquery.flot.spline.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/flot/js/jquery.flot.spline.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/flot/js/jquery.flot.stack.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/flot/js/jquery.flot.stack.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/flot/js/jquery.flot.time.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/flot/js/jquery.flot.time.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/fullcalendar/css/fullcalendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/fullcalendar/css/fullcalendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/fullcalendar/js/fullcalendar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/fullcalendar/js/fullcalendar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/gauge/js/gauge.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/gauge/js/gauge.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-ui/css/jquery-ui-1.10.4.custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/jquery-ui/css/jquery-ui-1.10.4.custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-ui/css/jquery-ui-1.10.4.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/jquery-ui/css/jquery-ui-1.10.4.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-ui/js/jquery-ui-1.10.4.custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/jquery-ui/js/jquery-ui-1.10.4.custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/justgage/js/justgage.1.0.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/justgage/js/justgage.1.0.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/magnific-popup/css/magnific-popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/magnific-popup/css/magnific-popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/magnific-popup/js/magnific-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/magnific-popup/js/magnific-popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/maskedinput/js/jquery.maskedinput.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/maskedinput/js/jquery.maskedinput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/maskedinput/js/jquery.maskedinput.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/maskedinput/js/jquery.maskedinput.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/mockjax/js/jquery.mockjax.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/mockjax/js/jquery.mockjax.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/modernizr/js/modernizr.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/modernizr/js/modernizr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/js/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/moment/js/moment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/js/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/moment/js/moment.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris/css/morris.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/morris/css/morris.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris/js/morris.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/morris/js/morris.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/placeholder/js/jquery.placeholder.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/placeholder/js/jquery.placeholder.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/raphael/js/raphael.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/raphael/js/raphael.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/scrollbar/css/mCustomScrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/scrollbar/css/mCustomScrollbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/js/select2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/select2/js/select2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/sparkline/js/jquery.sparkline.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/sparkline/js/jquery.sparkline.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/summernote/css/summernote-bs3.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/summernote/css/summernote-bs3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/summernote/css/summernote.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/summernote/css/summernote.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/summernote/js/summernote.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/summernote/js/summernote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/touchpunch/js/jquery.ui.touch-punch.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/touchpunch/js/jquery.ui.touch-punch.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/wizard/js/jquery.bootstrap.wizard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/wizard/js/jquery.bootstrap.wizard.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/xcharts/css/xcharts.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/xcharts/css/xcharts.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/xcharts/js/xcharts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/plugins/xcharts/js/xcharts.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/temp_file/upload/aaaa.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/temp_file/upload/aaaa.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-bak/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-bak/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-bak/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-bak/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-bak/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-bak/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-bak/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-bak/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-bak/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-bak/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-bak/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-bak/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-table/css/bootstrap-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-table/css/bootstrap-table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-table/fonts/bootstrap-table.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-table/fonts/bootstrap-table.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-table/fonts/bootstrap-table.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-table/fonts/bootstrap-table.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-table/fonts/bootstrap-table.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-table/fonts/bootstrap-table.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-table/fonts/bootstrap-table.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-table/fonts/bootstrap-table.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-table/js/bootstrap-table-export.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-table/js/bootstrap-table-export.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-table/js/bootstrap-table-zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-table/js/bootstrap-table-zh-CN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-table/js/bootstrap-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-table/js/bootstrap-table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-table/js/bootstrap-table.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-table/js/bootstrap-table.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap-table/js/tableExport.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap-table/js/tableExport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-theme.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap-theme.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/bootstrap/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/bootstrap/js/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/font-awesome/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/js/jquery-2.1.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/js/jquery-2.1.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/js/jquery-3.4.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/js/jquery-migrate-1.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/js/jquery-migrate-1.2.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/skycons/css/skycons.css" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/skycons/css/skycons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/skycons/fonts/WeatherIcons-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/skycons/fonts/WeatherIcons-Regular.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/skycons/fonts/weathericons-regular-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/skycons/fonts/weathericons-regular-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/skycons/fonts/weathericons-regular-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/skycons/fonts/weathericons-regular-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/skycons/fonts/weathericons-regular-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/skycons/fonts/weathericons-regular-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/skycons/fonts/weathericons-regular-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/skycons/fonts/weathericons-regular-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/vendor/skycons/js/skycons.js" beforeDir="false" afterPath="$PROJECT_DIR$/../OnlineTest/static/vendor/skycons/js/skycons.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/BMSproject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1545382619398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="auth_user: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="23DE7bgby9YJ8sYMRCQJcBraSXm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/templates" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/templates" />
+      <recent name="$PROJECT_DIR$/static/plugins" />
+      <recent name="$PROJECT_DIR$/static/plugins/summernote" />
+      <recent name="$PROJECT_DIR$/static/vendor/bootstrap-table/js" />
+      <recent name="$PROJECT_DIR$/static/vendor/bootstrap-table/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/img/users" />
+      <recent name="$PROJECT_DIR$/static/img" />
+      <recent name="$PROJECT_DIR$/apps/templates" />
+      <recent name="$PROJECT_DIR$/apps_other" />
+      <recent name="$PROJECT_DIR$/apps" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django Server.OnlineTest">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python">
+      <module name="OnlineTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver 127.0.0.1:8101" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python">
+      <module name="OnlineTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://root@harvey-tools.top:22/usr/local/conda3/envs/Web/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Local" type="Python.DjangoServer" factoryName="Django server">
+      <module name="OnlineTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="project.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8101" />
+      <option name="host" value="127.0.0.1" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="OnlineTest" type="Python.DjangoServer" factoryName="Django server">
+      <module name="OnlineTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="project.settings" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://root@harvey-tools.top:22/usr/local/conda3/envs/Web/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8106" />
+      <option name="host" value="127.0.0.1" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django Server.OnlineTest" />
+      <item itemvalue="Django Server.Local" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.manage" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a52d934-b777-4411-a1e3-5a5f2ea7d2c6" name="Default" comment="" />
+      <created>1545355512147</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545355512147</updated>
+      <workItem from="1641260091443" duration="2172000" />
+      <workItem from="1641439580780" duration="2741000" />
+      <workItem from="1641454808284" duration="1680000" />
+      <workItem from="1641456706841" duration="640000" />
+      <workItem from="1641457382222" duration="220000" />
+      <workItem from="1641460646199" duration="200000" />
+      <workItem from="1641474886050" duration="3372000" />
+      <workItem from="1641480274050" duration="3207000" />
+      <workItem from="1641579404014" duration="1574000" />
+      <workItem from="1641631380305" duration="5729000" />
+      <workItem from="1641708792629" duration="251000" />
+      <workItem from="1641712042014" duration="721000" />
+      <workItem from="1641738237554" duration="118000" />
+      <workItem from="1641738852098" duration="1293000" />
+      <workItem from="1642509928993" duration="1802000" />
+      <workItem from="1642609157774" duration="285000" />
+      <workItem from="1642691014416" duration="4543000" />
+      <workItem from="1642885185616" duration="542000" />
+      <workItem from="1643014007137" duration="5229000" />
+      <workItem from="1644336465134" duration="183000" />
+      <workItem from="1644635811230" duration="193000" />
+      <workItem from="1645623352916" duration="316000" />
+      <workItem from="1645751594957" duration="18471000" />
+      <workItem from="1646580605250" duration="171000" />
+      <workItem from="1646613824992" duration="3547000" />
+      <workItem from="1646618841650" duration="12653000" />
+      <workItem from="1646746027690" duration="9090000" />
+      <workItem from="1646784558971" duration="5616000" />
+      <workItem from="1646791393621" duration="3968000" />
+      <workItem from="1646827124570" duration="10738000" />
+      <workItem from="1646888187941" duration="5239000" />
+      <workItem from="1646960070466" duration="12804000" />
+      <workItem from="1647023448110" duration="5829000" />
+      <workItem from="1647070971012" duration="181000" />
+      <workItem from="1647078393179" duration="1124000" />
+      <workItem from="1647229585638" duration="674000" />
+      <workItem from="1647235067452" duration="732000" />
+      <workItem from="1647245936753" duration="479000" />
+      <workItem from="1647307440970" duration="6420000" />
+      <workItem from="1647326601530" duration="7264000" />
+      <workItem from="1647352260189" duration="10298000" />
+      <workItem from="1647407986574" duration="6626000" />
+      <workItem from="1647436309116" duration="319000" />
+      <workItem from="1647438863572" duration="6605000" />
+      <workItem from="1647478656551" duration="14074000" />
+      <workItem from="1647569540018" duration="7504000" />
+      <workItem from="1647588681056" duration="4336000" />
+      <workItem from="1647658228562" duration="1671000" />
+      <workItem from="1647672329265" duration="1177000" />
+      <workItem from="1647731083859" duration="9368000" />
+      <workItem from="1647842871379" duration="365000" />
+      <workItem from="1647844332051" duration="3101000" />
+      <workItem from="1647920097132" duration="931000" />
+      <workItem from="1647939027929" duration="347000" />
+      <workItem from="1647952296462" duration="15028000" />
+      <workItem from="1648040980709" duration="3456000" />
+      <workItem from="1648047318401" duration="7946000" />
+      <workItem from="1648136262467" duration="2370000" />
+      <workItem from="1648187171529" duration="7242000" />
+      <workItem from="1648215185759" duration="3540000" />
+      <workItem from="1648220285114" duration="3169000" />
+      <workItem from="1648372737179" duration="16962000" />
+      <workItem from="1648514378596" duration="33369000" />
+      <workItem from="1648692363767" duration="3618000" />
+      <workItem from="1648797401110" duration="3226000" />
+      <workItem from="1648802991019" duration="108000" />
+      <workItem from="1648864848890" duration="112000" />
+      <workItem from="1648866339236" duration="3937000" />
+      <workItem from="1648917459601" duration="28000" />
+      <workItem from="1648917498966" duration="238000" />
+      <workItem from="1648917888146" duration="198000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BMSproject$test.coverage" NAME="test Coverage Results" MODIFIED="1641660462298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BMSproject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1641634034969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

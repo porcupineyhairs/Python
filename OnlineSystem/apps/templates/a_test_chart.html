@@ -1,0 +1,1229 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <!-- Basic -->
+    	<meta charset="UTF-8" />
+		<!-- Mobile Metas -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        {% include 'a_base_title.html' %}
+        <!-- Favicon -->
+        {% include 'a_base_sortcut.html' %}
+        <!-- Css -->
+        {% include 'a_base_css.html' %}
+    </head>
+    <body>
+        {% include 'a_base_sidebar.html' %}
+        {% include 'a_base_header.html' %}
+
+        <div class="container-fluid content">
+			<div class="row">
+				<div class="main ">
+                    <div class="page-header">
+                        <div class="pull-left">
+                        </div>
+                        <div class="pull-right">
+                            <h2>图表</h2>
+                        </div>
+                    </div>
+
+                    <!-- 主空间 -->
+                    <div class="row">
+						<div class="col-lg-6">
+							<div class="panel">
+								<div class="panel-heading bk-bg-primary">
+									<h6><i class="fa fa-table red"></i><span class="break"></span>Basic</h6>
+									<div class="panel-actions">
+										<a href="table.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+										<a href="table.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+										<a href="table.html#" class="btn-close"><i class="fa fa-times"></i></a>
+									</div>
+								</div>
+								<div class="panel-body">
+									<div class="table-responsive">
+										<table class="table">
+											  <thead>
+												  <tr>
+													  <th>Employe</th>
+													  <th>Position</th>
+													  <th>Salary</th>
+													  <th>Status</th>
+												  </tr>
+											  </thead>
+											  <tbody>
+												<tr>
+													<td>Willson</td>
+													<td>Developer</td>
+													<td>2563$</td>
+													<td>
+														<span class="label label-success">Active</span>
+													</td>
+												</tr>
+												<tr>
+													<td>James</td>
+													<td>SEO</td>
+													<td>5000$</td>
+													<td>
+														<span class="label label-danger">Banned</span>
+													</td>
+												</tr>
+												<tr>
+													<td>Steven</td>
+													<td>Photographer</td>
+													<td>1269$</td>
+													<td>
+														<span class="label label-default">Inactive</span>
+													</td>
+												</tr>
+												<tr>
+													<td>Aselay</td>
+													<td>Project manger</td>
+													<td>6253$</td>
+													<td>
+														<span class="label label-warning">Pending</span>
+													</td>
+												</tr>
+											  </tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="panel">
+								<div class="panel-heading bk-bg-primary">
+									<h6><i class="fa fa-table red"></i><span class="break"></span>Striped</h6>
+									<div class="panel-actions">
+										<a href="table.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+										<a href="table.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+										<a href="table.html#" class="btn-close"><i class="fa fa-times"></i></a>
+									</div>
+								</div>
+								<div class="panel-body">
+									<div class="table-responsive">
+										<table class="table table-striped">
+											  <thead>
+												  <tr>
+													  <th>Employe</th>
+													  <th>Position</th>
+													  <th>Salary</th>
+													  <th>Status</th>
+												  </tr>
+											  </thead>
+											  <tbody>
+												<tr>
+													<td>Willson</td>
+													<td>Developer</td>
+													<td>2563$</td>
+													<td>
+														<span class="label label-success">Active</span>
+													</td>
+												</tr>
+												<tr>
+													<td>James</td>
+													<td>SEO</td>
+													<td>5000$</td>
+													<td>
+														<span class="label label-danger">Banned</span>
+													</td>
+												</tr>
+												<tr>
+													<td>Steven</td>
+													<td>Photographer</td>
+													<td>1269$</td>
+													<td>
+														<span class="label label-default">Inactive</span>
+													</td>
+												</tr>
+												<tr>
+													<td>Aselay</td>
+													<td>Project manger</td>
+													<td>6253$</td>
+													<td>
+														<span class="label label-warning">Pending</span>
+													</td>
+												</tr>
+											  </tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="panel">
+								<div class="panel-heading bk-bg-primary">
+									<h6><i class="fa fa-table red"></i><span class="break"></span>Condensed</h6>
+									<div class="panel-actions">
+										<a href="table.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+										<a href="table.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+										<a href="table.html#" class="btn-close"><i class="fa fa-times"></i></a>
+									</div>
+								</div>
+								<div class="panel-body">
+									<div class="table-responsive">
+										<table class="table table-condensed">
+											  <thead>
+												  <tr>
+													  <th>Employe</th>
+													  <th>Position</th>
+													  <th>Salary</th>
+													  <th>Status</th>
+												  </tr>
+											  </thead>
+											  <tbody>
+												<tr>
+													<td>Willson</td>
+													<td>Developer</td>
+													<td>2563$</td>
+													<td>
+														<span class="label label-danger">Banned</span>
+													</td>
+												</tr>
+												<tr>
+													<td>James</td>
+													<td>SEO</td>
+													<td>5000$</td>
+													<td>
+														<span class="label label-default">Inactive</span>
+													</td>
+												</tr>
+												<tr>
+													<td>Steven</td>
+													<td>Photographer</td>
+													<td>1269$</td>
+													<td>
+														<span class="label label-warning">Pending</span>
+													</td>
+												</tr>
+												<tr>
+													<td>Aselay</td>
+													<td>Project manger</td>
+													<td>6253$</td>
+													<td>
+														<span class="label label-success">Active</span>
+													</td>
+												</tr>
+												<tr>
+													<td>James</td>
+													<td>Executive manger</td>
+													<td>6852$</td>
+													<td>
+														<span class="label label-primary">Active</span>
+													</td>
+												</tr>
+											  </tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="panel">
+								<div class="panel-heading bk-bg-primary">
+									<h6><i class="fa fa-table red"></i><span class="break"></span>Bordered</h6>
+									<div class="panel-actions">
+										<a href="table.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+										<a href="table.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+										<a href="table.html#" class="btn-close"><i class="fa fa-times"></i></a>
+									</div>
+								</div>
+								<div class="panel-body">
+									<div class="table-responsive">
+										<table class="table table-bordered">
+											  <thead>
+												  <tr>
+													  <th>Employe</th>
+													  <th>Position</th>
+													  <th>Salary</th>
+                                                      <th>Example</th>
+													  <th>Status</th>
+												  </tr>
+											  </thead>
+											  <tbody>
+                                                <tr>
+                                                    <td>Willson</td>
+                                                    <td>Developer</td>
+                                                    <td>2563$</td>
+                                                    <td>Example</td>
+                                                    <td>
+                                                        <span class="label label-success">Active</span>
+                                                    </td>
+                                                </tr>
+												<tr>
+													<td>James</td>
+													<td>SEO</td>
+													<td>5000$</td>
+                                                    <td>Example</td>
+													<td>
+														<span class="label label-danger">Banned</span>
+													</td>
+												</tr>
+												<tr>
+													<td>Steven</td>
+													<td>Photographer</td>
+													<td>1269$</td>
+                                                    <td>Example</td>
+													<td>
+														<span class="label label-default">Inactive</span>
+													</td>
+												</tr>
+												<tr>
+													<td>Aselay</td>
+													<td>Project manger</td>
+													<td>6253$</td>
+                                                    <td>Example</td>
+													<td>
+														<span class="label label-warning">Pending</span>
+													</td>
+												</tr>
+											  </tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-danger bk-bg-white bk-fg-danger bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-icon bk-icon-3x bk-bg-danger bk-border-off">
+												<i class="fa fa-users fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">TOTAL USERS</h6>
+											<h4 class="bk-margin-off">326,269</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+											<span class="sr-only">90% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>This month: 6,269</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-danger bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off">
+								<div class="bk-border-primary bk-bg-white bk-fg-primary bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-primary">
+												<i class="fa fa-globe fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">VISITS TODAY</h6>
+											<h4 class="bk-margin-off">10,256</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Top country: INDONESIA</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-primary bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-success bk-bg-white bk-fg-success bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-success">
+												<i class="fa fa-download fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">DOWNLOAD</h6>
+											<h4 class="bk-margin-off">1,256</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Stock Item: 32,269</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-success bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-warning bk-bg-white bk-fg-warning bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-warning">
+												<i class="fa fa-shopping-cart fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">PURCHASE</h6>
+											<h4 class="bk-margin-off">$526,369</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Top day: 02/01/2015</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-warning bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-danger bk-bg-white bk-fg-danger bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-icon bk-icon-3x bk-bg-danger bk-border-off">
+												<i class="fa fa-users fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">TOTAL USERS</h6>
+											<h4 class="bk-margin-off">326,269</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+											<span class="sr-only">90% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>This month: 6,269</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-danger bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off">
+								<div class="bk-border-primary bk-bg-white bk-fg-primary bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-primary">
+												<i class="fa fa-globe fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">VISITS TODAY</h6>
+											<h4 class="bk-margin-off">10,256</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Top country: INDONESIA</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-primary bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-success bk-bg-white bk-fg-success bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-success">
+												<i class="fa fa-download fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">DOWNLOAD</h6>
+											<h4 class="bk-margin-off">1,256</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Stock Item: 32,269</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-success bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-warning bk-bg-white bk-fg-warning bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-warning">
+												<i class="fa fa-shopping-cart fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">PURCHASE</h6>
+											<h4 class="bk-margin-off">$526,369</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Top day: 02/01/2015</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-warning bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-danger bk-bg-white bk-fg-danger bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-icon bk-icon-3x bk-bg-danger bk-border-off">
+												<i class="fa fa-users fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">TOTAL USERS</h6>
+											<h4 class="bk-margin-off">326,269</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+											<span class="sr-only">90% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>This month: 6,269</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-danger bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off">
+								<div class="bk-border-primary bk-bg-white bk-fg-primary bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-primary">
+												<i class="fa fa-globe fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">VISITS TODAY</h6>
+											<h4 class="bk-margin-off">10,256</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Top country: INDONESIA</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-primary bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-success bk-bg-white bk-fg-success bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-success">
+												<i class="fa fa-download fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">DOWNLOAD</h6>
+											<h4 class="bk-margin-off">1,256</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Stock Item: 32,269</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-success bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-warning bk-bg-white bk-fg-warning bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-warning">
+												<i class="fa fa-shopping-cart fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">PURCHASE</h6>
+											<h4 class="bk-margin-off">$526,369</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Top day: 02/01/2015</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-warning bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-danger bk-bg-white bk-fg-danger bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-icon bk-icon-3x bk-bg-danger bk-border-off">
+												<i class="fa fa-users fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">TOTAL USERS</h6>
+											<h4 class="bk-margin-off">326,269</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+											<span class="sr-only">90% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>This month: 6,269</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-danger bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off">
+								<div class="bk-border-primary bk-bg-white bk-fg-primary bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-primary">
+												<i class="fa fa-globe fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">VISITS TODAY</h6>
+											<h4 class="bk-margin-off">10,256</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Top country: INDONESIA</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-primary bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-success bk-bg-white bk-fg-success bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-success">
+												<i class="fa fa-download fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">DOWNLOAD</h6>
+											<h4 class="bk-margin-off">1,256</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Stock Item: 32,269</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-success bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-warning bk-bg-white bk-fg-warning bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-warning">
+												<i class="fa fa-shopping-cart fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">PURCHASE</h6>
+											<h4 class="bk-margin-off">$526,369</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Top day: 02/01/2015</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-warning bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-danger bk-bg-white bk-fg-danger bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-icon bk-icon-3x bk-bg-danger bk-border-off">
+												<i class="fa fa-users fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">TOTAL USERS</h6>
+											<h4 class="bk-margin-off">326,269</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+											<span class="sr-only">90% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>This month: 6,269</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-danger bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off">
+								<div class="bk-border-primary bk-bg-white bk-fg-primary bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-primary">
+												<i class="fa fa-globe fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">VISITS TODAY</h6>
+											<h4 class="bk-margin-off">10,256</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Top country: INDONESIA</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-primary bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-success bk-bg-white bk-fg-success bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-success">
+												<i class="fa fa-download fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">DOWNLOAD</h6>
+											<h4 class="bk-margin-off">1,256</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Stock Item: 32,269</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-success bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-warning bk-bg-white bk-fg-warning bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-warning">
+												<i class="fa fa-shopping-cart fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">PURCHASE</h6>
+											<h4 class="bk-margin-off">$526,369</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Top day: 02/01/2015</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-warning bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-danger bk-bg-white bk-fg-danger bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-icon bk-icon-3x bk-bg-danger bk-border-off">
+												<i class="fa fa-users fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">TOTAL USERS</h6>
+											<h4 class="bk-margin-off">326,269</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+											<span class="sr-only">90% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>This month: 6,269</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-danger bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off">
+								<div class="bk-border-primary bk-bg-white bk-fg-primary bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-primary">
+												<i class="fa fa-globe fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">VISITS TODAY</h6>
+											<h4 class="bk-margin-off">10,256</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Top country: INDONESIA</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-primary bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-success bk-bg-white bk-fg-success bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-success">
+												<i class="fa fa-download fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">DOWNLOAD</h6>
+											<h4 class="bk-margin-off">1,256</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Stock Item: 32,269</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-success bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-warning bk-bg-white bk-fg-warning bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-warning">
+												<i class="fa fa-shopping-cart fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">PURCHASE</h6>
+											<h4 class="bk-margin-off">$526,369</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Top day: 02/01/2015</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-warning bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-danger bk-bg-white bk-fg-danger bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-icon bk-icon-3x bk-bg-danger bk-border-off">
+												<i class="fa fa-users fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">TOTAL USERS</h6>
+											<h4 class="bk-margin-off">326,269</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+											<span class="sr-only">90% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>This month: 6,269</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-danger bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off">
+								<div class="bk-border-primary bk-bg-white bk-fg-primary bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-primary">
+												<i class="fa fa-globe fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">VISITS TODAY</h6>
+											<h4 class="bk-margin-off">10,256</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Top country: INDONESIA</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-primary bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-success bk-bg-white bk-fg-success bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-success">
+												<i class="fa fa-download fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">DOWNLOAD</h6>
+											<h4 class="bk-margin-off">1,256</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Stock Item: 32,269</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-success bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="panel bk-widget bk-border-off bk-noradius">
+								<div class="bk-border-warning bk-bg-white bk-fg-warning bk-ltr bk-padding-15">
+									<div class="row">
+										<div class="col-xs-4 text-left bk-vcenter bk-padding-off">
+											<span class="bk-round bk-border-off bk-icon bk-icon-3x bk-bg-warning">
+												<i class="fa fa-shopping-cart fa-3x"></i>
+											</span>
+										</div>
+										<div class="col-xs-8 text-center bk-vcenter">
+											<h6 class="bk-margin-off">PURCHASE</h6>
+											<h4 class="bk-margin-off">$526,369</h4>
+										</div>
+									</div>
+									<div class="progress bk-margin-off-bottom bk-margin-top-10 bk-noradius" style="height: 6px;">
+										<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									<div class="bk-margin-top-10">
+										<div class="row">
+											<div class="col-xs-6">
+												<small>Top day: 02/01/2015</small>
+											</div>
+											<div class="col-xs-6 text-right">
+												<a href="#" class="bk-fg-warning bk-fg-darken"><small>View details</small> <i class="fa fa-database"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <!-- 主空间 End -->
+
+				</div>
+            </div>
+        </div>
+
+        <!-- Modal Dialog -->
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title bk-fg-primary">Modal title</h4>
+					</div>
+					<div class="modal-body">
+						<p class="bk-fg-danger">Here settings can be configured...</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!-- End Modal Dialog -->
+
+		<div class="clearfix"></div>
+
+        <!-- Js -->
+        {% include 'a_base_js.html' %}
+    </body>
+</html>
