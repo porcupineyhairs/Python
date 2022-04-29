@@ -1,4 +1,5 @@
 from flask import current_app, Blueprint, send_file, render_template
+from werkzeug.utils import safe_join 
 import os
 
 
@@ -17,8 +18,8 @@ def downloadFile(url):
 
 @urlDownload.route('/file/<path:url>', methods=['GET'])
 def downloadFileWork(url):
-	downloadPath = current_app.root_path + '/downloadFile/files/'
-	if os.path.exists(downloadPath + url):
-		return send_file(downloadPath + str(url), as_attachment=True)
+	downloadPath = safe_join(current_app.root_path,'/downloadFile/files/',url)
+	if os.path.exists(downloadPath):
+		return send_file(downloadPath, as_attachment=True)
 	else:
 		return 'File "{}" Dose Not Exists!'.format(url)
